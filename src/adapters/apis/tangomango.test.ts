@@ -296,6 +296,27 @@ describe("Tango Mango parser", () => {
         }
       });
     });
+
+    // Daily check 2026-11-17: notes in the time or price block ("FREE with Oxygen monthly pass",
+    // "Class 9 - 10pm", "ALL LEVELS WELCOME") were shown as the venue. The venue is the block
+    // just before the street address (D-887).
+    const venueCases = [
+      { id: "30904", venue: "Oxygen Tango-Inglewood" },
+      { id: "30595", venue: "The Tango Room Dance Center" },
+      { id: "30648", venue: "Miami Dance Center" },
+      { id: "31011", venue: "The Tango Room Dance Center" },
+      { id: "29223", venue: "Fuegos La" },
+      { id: "26297", venue: "Woman's Club of Redondo Beach" },
+    ];
+    venueCases.forEach(({ id, venue }) => {
+      it(`takes the venue from the block before the street, not a note (${id})`, () => {
+        const html = readFileSync(
+          new URL(`./__fixtures__/tangomango/detail-${id}.html`, import.meta.url),
+          "utf8",
+        );
+        expect(parseTangoMangoEvent(html).venueName).toBe(venue);
+      });
+    });
   });
 
   describe("pickSocialTime", () => {

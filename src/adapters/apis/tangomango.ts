@@ -152,36 +152,46 @@ export function parseTangoMangoEvent(html: string): TangoMangoEvent {
   const remainingLines = relevantLines.slice(i);
 
   // Find price lines
-  const priceLines: string[] = [];
-  const otherLines: string[] = [];
-  for (const line of remainingLines) {
-    if (line === "") continue;
-    if (line.includes("$")) {
-      priceLines.push(line);
+  const priceLines = remainingLines.filter((line) => line !== "" && line.includes("$"));
+
+  // Venue name (D-887). The page is blocks separated by blank lines: times, then prices and notes,
+  // then the venue, the street, any second address line, the city. Notes without a "$" ("FREE with
+  // Oxygen monthly pass", "ALL LEVELS WELCOME", "Class 9 - 10pm") sit in the time or price block, so
+  // the venue is the block just before the first street line (one that starts with a digit). With no
+  // street, it is the block before the city line. The time block runs to its first blank line, even
+  // when a note inside it stopped the time lines above.
+  let timeBlockEnd = i;
+  while (timeBlockEnd < relevantLines.length && (relevantLines[timeBlockEnd] ?? "") !== "") {
+    timeBlockEnd++;
+  }
+  const blocks: string[][] = [];
+  let current: string[] = [];
+  for (const line of relevantLines.slice(timeBlockEnd)) {
+    if (line === "") {
+      if (current.length > 0) blocks.push(current);
+      current = [];
     } else {
-      otherLines.push(line);
+      current.push(line);
     }
   }
+  if (current.length > 0) blocks.push(current);
 
-  // Venue name: first line that doesn't contain $, doesn't start with digit, and is not the last non-empty line
-  // Also exclude lines containing "contact ahead" and lines that look like a city line (contain ", FL" or "FL")
+  const streetIndex = blocks.findIndex((block) => /^\d/.test(block[0] ?? ""));
+  const venueIndex = streetIndex >= 0 ? streetIndex - 1 : blocks.length - 2;
+  const venueBlock = venueIndex >= 0 ? blocks[venueIndex] : undefined;
   let venueName: string | null = null;
-  if (otherLines.length > 0) {
-    // Exclude the last line (city line)
-    const candidates = otherLines.slice(0, -1);
-    for (const line of candidates) {
-      const lowerLine = line.toLowerCase();
-      if (!/^\d/.test(line) && !line.includes("$") && !lowerLine.includes("contact ahead")) {
-        // Exclude lines that look like city lines (contain ", FL" or "FL" or "Florida")
-        if (
-          !lowerLine.includes(", fl") &&
-          !lowerLine.includes(" fl") &&
-          !lowerLine.includes("florida")
-        ) {
-          venueName = line;
-          break;
-        }
-      }
+  const venueLine = venueBlock?.[0];
+  if (venueBlock && venueLine && !venueBlock.some((line) => line.includes("$"))) {
+    const lowerLine = venueLine.toLowerCase();
+    // Exclude "contact ahead" and lines that look like a city line (", FL", " FL", "Florida").
+    if (
+      !/^\d/.test(venueLine) &&
+      !lowerLine.includes("contact ahead") &&
+      !lowerLine.includes(", fl") &&
+      !lowerLine.includes(" fl") &&
+      !lowerLine.includes("florida")
+    ) {
+      venueName = venueLine;
     }
   }
 
