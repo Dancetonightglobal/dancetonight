@@ -1,0 +1,42 @@
+name: archive
+
+# Maintenance M1 (the owner 2026-11-16): nights more than 30 days past each city's tonight are copied to the archive
+# spreadsheet (a tab per month, user reports in "reports <month>"), then deleted; their addresses answer "This night
+# has passed". Dry run (counts only) unless the repository variable ARCHIVE_DRY_RUN is "0". Writing needs the
+# GOOGLE_SA_JSON secret (a service-account key) and the ARCHIVE_SPREADSHEET_ID variable (a sheet shared with it).
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      ARCHIVE_DRY_RUN: ${{ vars.ARCHIVE_DRY_RUN }}
+      ARCHIVE_SPREADSHEET_ID: ${{ vars.ARCHIVE_SPREADSHEET_ID }}
+      GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Apply migrations
+        run: pnpm db:migrate
+      - name: Archive past nights
+        run: pnpm -s archive:past

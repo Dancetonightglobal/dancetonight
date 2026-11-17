@@ -69,5 +69,5 @@ export function silentSourceNote(s: SilentSource): string {
     const lastSeen = reportInstant(s.lastRowSeenAt);
     return `read fine (last ${lastSuccess}) but lists nothing on the next ${SILENT_NIGHTS} nights; its last row was seen ${lastSeen}.`;
   }
-  return `read fine (last ${lastSuccess}) but lists nothing on the next ${SILENT_NIGHTS} nights; it has never written a row.`;
+  return `read fine (last ${lastSuccess}) but lists nothing on the next ${SILENT_NIGHTS} nights; it has written no row in the last 30 days (older nights are archived).`;
 }

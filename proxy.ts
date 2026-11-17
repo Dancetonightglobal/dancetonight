@@ -3,6 +3,8 @@
 //
 // - a listing merged into another (one night two sources listed) sends the dancer to the listing
 //   that stands, page or calendar file alike, with a temporary redirect: a merge can be undone;
+// - a past night the retention job archived (M1) answers 410 Gone for the calendar file and a
+//   "This night has passed" page;
 // - a listing that is gone, or was never ours, answers 404. The page is served from an address no
 //   route matches, so Next renders the full not-found page with a real 404 (app/not-found.tsx,
 //   told by a request header to say the listing is gone). A notFound() from the page itself would
@@ -23,6 +25,9 @@ import { cityRewrite } from "@/src/ui/home/city-path";
 
 /** Set on a rewritten request: app/not-found.tsx then says the listing is gone. */
 export const MISSING_LISTING_HEADER = "x-dancetonight-missing";
+
+/** Set on a rewritten request for a passed night: the slug of the archived event. */
+export const MISSING_SLUG_HEADER = "x-dancetonight-slug";
 
 /** An address no route matches, under which the not-found page renders with its 404. */
 const MISSING_PATH = "/_listing-gone";
@@ -63,7 +68,24 @@ export async function proxy(request: NextRequest): Promise<NextResponse> {
     to.pathname = `/e/${encodeURIComponent(answer.slug)}${calendar ? "/calendar.ics" : ""}`;
     return NextResponse.redirect(to, 307);
   }
+  if (answer.kind === "passed") return passed(request, calendar, slug);
   return gone(request, calendar);
+}
+
+/** A 410 for a passed night's calendar file, rewrite for the page. */
+function passed(request: NextRequest, calendar: boolean, slug: string): NextResponse {
+  if (calendar) {
+    return new NextResponse(t("errors.nightPassed"), {
+      status: 410,
+      headers: { "content-type": "text/plain; charset=utf-8" },
+    });
+  }
+  const headers = new Headers(request.headers);
+  headers.set(MISSING_LISTING_HEADER, "passed");
+  headers.set(MISSING_SLUG_HEADER, slug);
+  const to = request.nextUrl.clone();
+  to.pathname = MISSING_PATH;
+  return NextResponse.rewrite(to, { request: { headers } });
 }
 
 /** A 404: plain text for the calendar file, the full missing-listing page for the page. */

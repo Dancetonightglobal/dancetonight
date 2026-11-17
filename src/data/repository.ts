@@ -126,9 +126,20 @@ export interface MetroSummary {
 
 /**
  * What an event address answers (D-092): the listing is listed; it was merged into another, which
- * stands under `slug`; or there is no listing to show (gone, or never ours).
+ * stands under `slug`; or there is no listing to show (gone, or never ours); or a past night the
+ * retention job archived (M1).
  */
-export type SlugAnswer = { kind: "listed" } | { kind: "moved"; slug: string } | { kind: "gone" };
+export type SlugAnswer =
+  | { kind: "listed" }
+  | { kind: "moved"; slug: string }
+  | { kind: "gone" }
+  | {
+      kind: "passed";
+      title: string;
+      nightDate: string;
+      venueName: string | null;
+      metroSlug: string;
+    };
 
 /** How many merges an old address follows to the listing that stands (D-092). */
 export const MERGED_HOPS = 3;

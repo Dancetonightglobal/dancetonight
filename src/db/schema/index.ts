@@ -9,3 +9,4 @@ export * from "@/src/db/schema/provenance";
 export * from "@/src/db/schema/submissions";
 export * from "@/src/db/schema/ops";
 export * from "@/src/db/schema/census";
+export * from "@/src/db/schema/archive";

@@ -25,6 +25,7 @@
     "ingest": "tsx src/jobs/ingest.ts",
     "dedupe:unmerge": "tsx src/jobs/dedupe-unmerge.ts",
     "link:check": "tsx src/jobs/link-check.ts",
+    "archive:past": "tsx src/jobs/archive-past.ts",
     "discover": "tsx src/jobs/discover.ts",
     "eval:extraction": "tsx evals/extraction/run.ts",
     "eval:refresh": "tsx evals/refresh/replay.ts",

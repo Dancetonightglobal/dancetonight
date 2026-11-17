@@ -40,6 +40,7 @@ import {
 } from "@/src/data/repository";
 import { getDb, type Db } from "@/src/db/client";
 import {
+  archivedEvents,
   eventSources,
   events,
   fieldProvenance,
@@ -553,8 +554,30 @@ export class DbListingsRepository implements ListingsRepository {
             select slug, status, depth from chain order by depth desc limit 1
           `);
           const last = [...rows][0];
-          if (!last || !(LISTED_STATUSES as readonly string[]).includes(last.status))
+          if (!last || !(LISTED_STATUSES as readonly string[]).includes(last.status)) {
+            // A past night the retention job deleted keeps its address (M1).
+            const archived = await this.db()
+              .select({
+                title: archivedEvents.title,
+                nightDate: archivedEvents.nightDate,
+                venueName: archivedEvents.venueName,
+                metroSlug: archivedEvents.metroSlug,
+              })
+              .from(archivedEvents)
+              .where(eq(archivedEvents.slug, slug))
+              .limit(1);
+            if (archived.length > 0) {
+              const row = archived[0]!;
+              return {
+                kind: "passed",
+                title: row.title,
+                nightDate: row.nightDate,
+                venueName: row.venueName,
+                metroSlug: row.metroSlug,
+              };
+            }
             return { kind: "gone" };
+          }
           return Number(last.depth) === 0 ? { kind: "listed" } : { kind: "moved", slug: last.slug };
         },
       }),

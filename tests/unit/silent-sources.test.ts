@@ -272,7 +272,7 @@ describe("silentSourceNote", () => {
     };
     const note = silentSourceNote(source);
     expect(note).toBe(
-      "read fine (last Mon, Sep 28, 12pm ET) but lists nothing on the next 7 nights; it has never written a row.",
+      "read fine (last Mon, Sep 28, 12pm ET) but lists nothing on the next 7 nights; it has written no row in the last 30 days (older nights are archived).",
     );
   });
 });

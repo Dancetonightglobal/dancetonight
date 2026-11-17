@@ -37,6 +37,7 @@ const PLAN_TABLES = [
   "ai_quota",
   "extraction_cache",
   "link_checks",
+  "archived_events",
 ] as const;
 
 /** Event fields named in docs/SPEC.md section 3, plus the PLAN section 4 additions. */
@@ -130,7 +131,7 @@ describe("schema tables", () => {
   it("uses uuid primary keys with a random default on every row-oriented table", () => {
     // Tables keyed by what they count or cache rather than holding rows of their own: a GeoNames
     // or OSM id, a link pair, a quota counter per provider and day, a cache entry per page hash,
-    // a link check per URL (D-768).
+    // a link check per URL (D-768), an archived night per slug (D-885).
     const naturalKeys = new Set([
       "geonames_places",
       "osm_places",
@@ -138,6 +139,7 @@ describe("schema tables", () => {
       "ai_quota",
       "extraction_cache",
       "link_checks",
+      "archived_events",
     ]);
     for (const [name, config] of configs) {
       if (naturalKeys.has(name)) continue;

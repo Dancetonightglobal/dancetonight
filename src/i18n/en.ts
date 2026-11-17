@@ -593,6 +593,8 @@ export const en = {
     notFound: "We can't find that page.",
     listingNotFound: "That listing isn't here anymore.",
     listingRemoved: "That listing was removed at the organizer's request.",
+    nightPassed: "This night has passed.",
+    seeTonight: "See what's on tonight",
     generic: "Something went wrong. Try again.",
     tryAgain: "Try again",
     goHome: "Back to tonight",
