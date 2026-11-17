@@ -581,6 +581,10 @@ const WATCH_LISTENING_CHALLENGE = new RegExp(
       "flea markets?|rehearsals?|card games?|commander casual|magic the gathering|ai festivals?",
       // D-883 (daily check 11-13): aerial silks and weekly film screenings (roller skating stays: D-815 keeps it)
       "acrobacias? en telas|telas? a[eé]reas?|aerial silks?|aerial hoops?|movie (?:mondays?|nights?|screenings?)",
+      // D-886 (daily check 2026-11-16, RA): panels, listening events, swap markets, music theatre, string quartets,
+      // dining experiences, synth workshops, vinyl and DJ masterclasses
+      "panel talks?|panel discussions?|pre ?listening|listening events?|swap markets?|musiktheater|music theat(?:re|er)",
+      "string quartets?|dining experiences?|circuit design|(?:vinyl|dj|production) masterclass(?:es)?",
     ].join("|") +
     ")\\b",
 );

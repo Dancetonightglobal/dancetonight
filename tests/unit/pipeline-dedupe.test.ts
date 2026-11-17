@@ -602,7 +602,7 @@ describeDb("dedupe and merge, against Postgres", () => {
       discoveredBy: "seed_list",
     });
     // The METRO_SOURCES config for NYC includes this URL with startTimesShifted: true
-    const fields = { title: "Test Event", venue: { name: "Test Venue" } };
+    const fields = { title: "Sample Salsa Social", venue: { name: "Test Venue" } };
     await write(organizerFeed, [
       event(organizerFeed, { ...fields, dancing_time: "21:00" }, W14, "org"),
     ]);

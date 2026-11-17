@@ -71,6 +71,33 @@ export function skiddleUrl(
   return url.toString();
 }
 
+/** Daytime words: a club event with one of these really is a morning or day event. */
+const DAYTIME =
+  /\b(?:day|daytime|morning|brunch|breakfast|coffee|sunrise|afternoon|daylight|matinee|lunch|after ?hours|afters|after ?party)\b/i;
+
+/**
+ * D-886 (daily check 2026-11-16, London): Skiddle carries a promoter's 12-hour slip as given, so a club night's doors
+ * read "09:00" beside RA's 9pm ("NQ JPN: House & Techno - Free Entry Until 3am") and the two copies never pair. A
+ * club event (CLUB/LGB) whose doors open 06:00-11:59 and whose close is missing or crosses midnight, with no daytime
+ * word in its title, opens 12 hours later. Returns the doors time to use.
+ */
+export function clubNightMorningSlip(
+  eventCode: string | null,
+  title: string | null,
+  doorsOpen: string | null,
+  doorsClose: string | null,
+): string | null {
+  if (eventCode !== "CLUB" && eventCode !== "LGB") return doorsOpen;
+  const open = doorsOpen && /^(\d{2}):(\d{2})/.exec(doorsOpen);
+  if (!open) return doorsOpen;
+  const hour = Number(open[1]);
+  if (hour < 6 || hour > 11) return doorsOpen;
+  if (title && DAYTIME.test(title)) return doorsOpen;
+  const close = doorsClose && /^\d{2}:\d{2}/.test(doorsClose) ? doorsClose.slice(0, 5) : null;
+  if (close !== null && close > doorsOpen.slice(0, 5)) return doorsOpen; // closes the same day: a day event
+  return `${String(hour + 12).padStart(2, "0")}:${open[2]}${doorsOpen.slice(5)}`;
+}
+
 function localMoment(date: string | null, time: string | null, zone: string): LocalMoment | null {
   if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
   const hour = time && /^\d{2}:\d{2}/.test(time) ? Number(time.slice(0, 2)) : 12;
@@ -197,13 +224,19 @@ export function skiddleToListings(
     // Start time
     const date = str(event.date);
     const openingTimes = isObject(event.openingtimes) ? event.openingtimes : null;
-    const doorsOpen = openingTimes ? str(openingTimes.doorsopen) : null;
+    const doorsClose0 = openingTimes ? str(openingTimes.doorsclose) : null;
+    const doorsOpen = clubNightMorningSlip(
+      eventCode,
+      name,
+      openingTimes ? str(openingTimes.doorsopen) : null,
+      doorsClose0,
+    );
     const start = localMoment(date, doorsOpen, options.metro.tz);
     if (!start) continue;
 
     // End time
     let end: LocalMoment | null = null;
-    const doorsClose = openingTimes ? str(openingTimes.doorsclose) : null;
+    const doorsClose = doorsClose0;
     if (doorsClose && /^\d{2}:\d{2}/.test(doorsClose)) {
       end = localMoment(date, doorsClose, options.metro.tz);
       // If end is earlier than or equal to start, move to next day

@@ -619,3 +619,4 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-883 One source's two titles for one night, clock-time title leads, morning-only socials, Ticketmaster tags, four screens (coverage)
 ## D-884 All-day exports with times, CMS lists inside filter forms, one source's unplaced timed twin (coverage)
 ## D-885 Archive and delete nights more than 30 days past; their addresses say the night has passed (maintenance M1)
+## D-886 Ad and stub rows, club-night morning slips, ends before starts, stale Halloween titles (coverage)

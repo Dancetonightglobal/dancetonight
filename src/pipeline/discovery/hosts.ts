@@ -165,7 +165,12 @@ export function hostSkip(host: string): HostSkip | null {
   // A university's campus-wide calendar (calendar.usc.edu, trojanevents.usc.edu) lists talks, panels and
   // games by the hundred, never a venue's nights (D-846, LA 2026-11-10). A department's own site is probed.
   const sub = host.toLowerCase().slice(0, -(domain.length + 1));
-  if (/\.(?:edu|edu\.[a-z]{2}|ac\.[a-z]{2})$/.test(domain) && /calendar|events?/.test(sub))
+  // D-886 (Raleigh 2026-11-16): the arts office, box office and film program list plays, concerts and screenings too.
+  if (
+    /\.(?:edu|edu\.[a-z]{2}|ac\.[a-z]{2})$/.test(domain) &&
+    (/calendar|events?/.test(sub) ||
+      /(?:^|[.-])(?:arts|tickets?|box-?office|cinematicarts|cinema|film)(?:$|[.-])/.test(sub))
+  )
     return { kind: "not_a_venue_site", reason: "a university's campus-wide calendar" };
   return null;
 }

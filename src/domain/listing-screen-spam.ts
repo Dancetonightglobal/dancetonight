@@ -30,8 +30,28 @@ export function screenBillSpam(title: string): { kind: "not_a_dance"; reason: st
     };
   }
 
+  // D-886 (daily check 2026-11-16): other SEO ads posted to RA, an RA artist-page stub, a promoter's test row.
+  const t = title.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+  if (/\brecover(?:y|ing)?\b.*\b(?:crypto|bitcoin|scam(?:med|mers?)?|stolen funds)\b/.test(t))
+    return { kind: "not_a_dance", reason: "crypto-recovery ad, not an event (D-886)" };
+  if (
+    /\blove spells?\b/.test(t) &&
+    /\b(?:powerful|reunion|marriage|attraction|relationship|ex back|lost love)\b/.test(t)
+  )
+    return { kind: "not_a_dance", reason: "love-spell ad, not an event (D-886)" };
+  if (/\b(?:promo|discount|coupon|voucher) codes\b/.test(t))
+    return { kind: "not_a_dance", reason: "promo-code ad, not an event (D-886)" };
+  if (/\bartist profile setup\b/.test(t))
+    return { kind: "not_a_dance", reason: "an artist-page stub, not an event (D-886)" };
+  if (TEST_ROW.test(t))
+    return { kind: "not_a_dance", reason: "a test listing, not an event (D-886)" };
+
   return null;
 }
+
+/** A whole title that only says it is a test ("recurring event test", posh.vip NYC 2026-11-16). */
+const TEST_ROW =
+  /^\s*(?:(?:recurring |sample |dummy )?(?:test|testing)(?: (?:event|listing|page|ticket))?|(?:recurring )?event test)(?: \d+)?\s*$/;
 
 // A seer word plus an ad word, accents folded: "Voyant" alone (French "flashy") or "Marabout" alone stays.
 function isFortuneTellerAd(title: string): boolean {

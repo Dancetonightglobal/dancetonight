@@ -384,6 +384,13 @@ export function expandRecurrence(
   }
 }
 
+/** A Halloween title on a night outside October 1 - November 15 (night is "YYYY-MM-DD"). */
+export function staleHalloween(title: string, night: string): boolean {
+  if (!/\bhalloween\b/i.test(title)) return false;
+  const md = night.slice(5, 10);
+  return !(md >= "10-01" && md <= "11-15");
+}
+
 function zoneOf(harvested: HarvestedListing, metroTz: string): string {
   return harvested.tz && isValidZone(harvested.tz) ? harvested.tz : metroTz;
 }
@@ -407,6 +414,14 @@ export function normalizeListing(
   if (talk) return { ok: false, kind: "not_an_event", reason: talk.reason, title };
   if (!l.local_date) return { ok: false, kind: "rejected", reason: "no date listed", title };
   const localDate = l.local_date;
+  // D-886 (Belushi's London 2026-11-16): a Halloween title on a night after early November is a stale row.
+  if (staleHalloween(title, localDate))
+    return {
+      ok: false,
+      kind: "not_an_event",
+      reason: "Halloween title out of season (D-886)",
+      title,
+    };
   const tz = zoneOf(harvested, ctx.metro.tz);
 
   const toInstant = (time: string | null) =>
@@ -442,8 +457,13 @@ export function normalizeListing(
     const earliest = Math.min(...stated.map(Number));
     const next = end < earliest ? end + 24 * 3_600_000 : end;
     const sameAsStart = stated.some((d) => d.getTime() === end);
+    // D-886 (Tokyo 2026-11-16, "Doors 11am", start 2pm, "until 12:30pm"): an end after the doors
+    // but not after the start is no end.
+    const beforeStart = startsAt !== null && next <= startsAt.getTime();
     endsAt =
-      sameAsStart || next - earliest > MAX_NIGHT_SPAN_HOURS * 3_600_000 ? null : new Date(next);
+      sameAsStart || beforeStart || next - earliest > MAX_NIGHT_SPAN_HOURS * 3_600_000
+        ? null
+        : new Date(next);
   }
 
   const fallbackCurrency = currencyForCountry(ctx.metro.countryCode);

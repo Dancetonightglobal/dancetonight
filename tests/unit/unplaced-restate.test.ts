@@ -88,7 +88,7 @@ describeDb("unplaced rows get restated venue fixes", () => {
   it("places a stored unplaced row when restate provides a valid address", async () => {
     // Write an event with a venue name only, no address, and placeVenue returns null -> unplaced
     const event = normalized({
-      title: "Test Event",
+      title: "Sample Salsa Social",
       local_date: "2026-10-01",
       doors_time: "20:00",
       venue: { name: "Main Space" },
@@ -118,7 +118,7 @@ describeDb("unplaced rows get restated venue fixes", () => {
 
   it("leaves row unplaced without restate (no address)", async () => {
     const event = normalized({
-      title: "Test Event",
+      title: "Sample Salsa Social",
       local_date: "2026-10-01",
       doors_time: "20:00",
       venue: { name: "Main Space" },
