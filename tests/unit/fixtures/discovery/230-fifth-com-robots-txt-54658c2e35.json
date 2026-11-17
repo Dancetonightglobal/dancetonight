@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://230-fifth.com/robots.txt"
+  },
+  "response": {
+    "url": "https://230-fifth.com/robots.txt",
+    "status": 202,
+    "headers": {
+      "cache-control": "no-store,no-cache,max-age=0",
+      "content-length": "176",
+      "content-type": "text/html",
+      "date": "Sun, 04 Oct 2026 20:56:43 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+      "server": "nginx",
+      "set-cookie": "nevercache-b39818=Y;Max-Age=-1",
+      "sg-captcha": "challenge",
+      "x-proxy-cache-info": "DT:1",
+      "x-robots-tag": "noindex"
+    },
+    "body": "<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Frobots.txt&y=ipr:35.193.9.97:1791147403.155\"></meta></head></html>"
+  },
+  "note": "recorded 2026-10-04"
+}

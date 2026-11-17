@@ -1,0 +1,83 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789961338914,
+      "tag": "0000_init",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790511221125,
+      "tag": "0001_ai_quota_and_extraction_cache",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790614541907,
+      "tag": "0002_allow_listings_without_a_start_time",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1790627162059,
+      "tag": "0003_remember_google_place_lookups",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1790632705446,
+      "tag": "0004_place_id_name_check",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1790649925803,
+      "tag": "0005_event_page_per_source",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1790656254700,
+      "tag": "0006_recheck_place_ids",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791150495842,
+      "tag": "0007_sources_mixed_calendar",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792540000000,
+      "tag": "0008_rls_public_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1793620000000,
+      "tag": "0009_venue_name_joiner_clean",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794007581855,
+      "tag": "0010_link_checks",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Rio de Janeiro + Niteroi known dance nights for Friday 2026-11-06, researched from the public web on 2026-10-29.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Evidence per row (D = page names 2026-11-06; W = weekly night with recent dated evidence; V = venue's own standing hours):
+#  Forro da Praca D (forrozinho dated page; bafafa 2026-09-28 lists every Friday in Oct at 19h, so time may be 19:00)
+#  Forro do Barba, Forro do Baixo Gigoia, Forro da Gloria D (forrozinho dated pages, generated from weekly schedule)
+#  Forro do Demo D (forrozinho dated page; also vaidancar 2026-10-30 and thedancefloor recurring Fri)
+#  Festival Jato no Forro opening D (vaidancar); Congresso Brasileiro de Bolero D (thedancefloor; bailes 20:30-01:00)
+#  Leviano Latin Night D (salsavida calendar lists Nov 6); D-Edge Beltran D (technoairlines, an RA mirror; RA itself not fetched)
+#  Milonga Xango W (buscadanca weekly Fri 20h; thedancefloor recurring, next date 2026-10-30)
+#  Bien Portena W-weak (metropolitanotangorj.com.br 2026 championship page lists it as a Friday milonga, Sept 2026)
+#  Rio Scenarium W (Rio Times 2026-10-23: Friday open 19:00-02:00, live samba/gafieira)
+#  Carioca da Gema W (Rio Times 2026-09-04 Friday show 21:30; 2026-09-14 Fri/Sat cover)
+#  Pedra do Sal Friday roda W-weak (Rio Times 2026-09-14 "Friday to Monday from 6pm"; planrio says verify Fridays)
+#  Feira de Sao Cristovao V (venue site: Fri/Sat open to 04:00, forro stages; no dated show list)
+title,venue,start_time,style,source_url
+Forró da Praça,"Praça São Salvador, Laranjeiras",18:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-da-praca-2026-11-06
+Forró do Barba,"O Encontro Street Food Park, Recreio dos Bandeirantes",19:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-do-barba-2026-11-06
+Forró do Baixo Gigóia,"Baixo Gigóia, Barra da Tijuca",19:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-do-baixo-gigoia-2026-11-06
+Forró do Demo,"Clube dos Democráticos, Rua do Riachuelo 91, Lapa",20:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-do-demo-2026-11-06
+Forró da Glória,"Forró da Glória, Glória",21:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-da-gloria-2026-11-06
+Festival Jatô no Forró - Baile de Abertura,"Jaime Arôxa Tijuca, Rua Almirante Cochrane 162, Tijuca",20:00,forro,https://vaidancar.com.br/baile/details/BLb4UXoPnO
+Congresso Brasileiro de Bolero - Baile do Branco,"Sintracont-Rio, Rua Haddock Lobo 74, Tijuca",20:30,bolero samba de gafieira,https://www.thedancefloor.dance/eventos/3d2c5f7e-7d68-45b3-96e2-5b86bfae1706
+Leviano Latin Night,"Leviano Bar, Av. Mem de Sá 47, Lapa",22:00,salsa,https://www.salsavida.com/event/brazil/rio-de-janeiro/boate-leviano-latin-night-every-friday/
+D-Edge Rio apresenta Beltran,"D-Edge Rio, Av. Rodrigues Alves 293, Saúde",23:00,house techno,https://www.technoairlines.com/event/d-edge-rio-apresenta-beltran-d-edge-rio-2026-11-06
+Milonga Xangô,"Espaço ViraLapa, Av. Gomes Freire 663, Lapa",20:00,tango,https://buscadanca.com.br/eventos-de-danca/milonga-xango/
+Milonga Bien Porteña,"iDance! Arte e Movimento, Rua General Severiano 217, Botafogo",19:00,tango,https://www.metropolitanotangorj.com.br/milongas
+Rio Scenarium (Friday live samba and gafieira),"Rio Scenarium, Rua do Lavradio 20, Centro",19:00,samba gafieira,https://www.riotimesonline.com/rio-de-janeiro-nightlife-tonight-october-23-2026/
+Carioca da Gema (Friday samba),"Carioca da Gema, Av. Mem de Sá 79, Lapa",21:30,samba,https://www.riotimesonline.com/rio-de-janeiro-nightlife-tonight-september-4-2026/
+Roda de Samba da Pedra do Sal (Friday),"Largo João da Baiana, Saúde",18:00,samba,https://www.riotimesonline.com/rio-de-janeiro-nightlife-monday-september-14-2026/
+Forró na Feira de São Cristóvão,"Centro Luiz Gonzaga de Tradições Nordestinas, São Cristóvão",,forro,https://www.feiradesaocristovao.org.br/

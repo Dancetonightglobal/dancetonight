@@ -1,0 +1,14 @@
+# Philadelphia (City of Philadelphia) known nights for 2026-11-05, researched from the public web on 2026-10-29.
+# A list we drafted is biased toward what we already find (D-048 Q3); the owner corrected it on 2026-10-29 (Gayborhood nights added).
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+title,venue,start_time,style,source_url
+Thursday Contra: Penelope Weinberger w/ Countercurrent,Commodore Barry Arts and Cultural Center (6815 Emlen St 19119),20:00,contra,https://thursdaycontra.com/
+Thank You Thursday at Brasil's Nightclub,Brasil's Nightclub (112 Chestnut St 19106),19:30,salsa bachata,https://www.salsavida.com/guides/pennsylvania/philadelphia/
+Joyhauser (PTO Thursdays),NOTO Philadelphia (1209 Vine St 19107),20:00,techno club,https://www.eventbrite.com/o/16917375439
+AfroFuture: An Experimental Dance Experience,Franky Bradley's (1320 Chancellor St 19107),20:00,afro dance party,https://www.eventbrite.com/o/19213387803
+Subspace Soniq,Franky Bradley's (1320 Chancellor St 19107),22:00,dj night,https://www.eventbrite.com/o/19213387803
+Ladies Free Before 10,Vibe Lounge (216 South St 19147),21:00,dj night club,https://www.eventbrite.com/d/pa--philadelphia/dance-party/
+Thursdays at Woody's,Woody's (202 S 13th St 19107),22:00,dj night queer,https://outxout.com/events/philadelphia-pa
+Thursday Nights at Voyeur,Voyeur Nightclub (1221 St James St 19107),23:59,dj night queer,https://outxout.com/events/philadelphia-pa
+Ascend Lounge DJ night,Tavern on Camac (243 S Camac St 19107),21:00,dj night queer,https://tavernoncamac.com/

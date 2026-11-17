@@ -1,0 +1,146 @@
+{
+  "error": 0,
+  "totalcount": "6",
+  "pagecount": 6,
+  "results": [
+    {
+      "id": "40001",
+      "EventCode": "CLUB",
+      "eventname": "Bottom Heavy: Jungle All Night",
+      "cancelled": "0",
+      "date": "2026-10-31",
+      "startdate": "2026-10-31T22:00:00+00:00",
+      "enddate": "2026-11-01T04:00:00+00:00",
+      "openingtimes": { "doorsopen": "22:00", "doorsclose": "04:00", "lastentry": "02:00" },
+      "venue": {
+        "id": 9001,
+        "name": "Venue MOT",
+        "address": "Unit 18, Mercury Way",
+        "town": "London",
+        "postcode": "SE14 5RR",
+        "latitude": 51.4818,
+        "longitude": -0.0466
+      },
+      "entryprice": "12.50",
+      "link": "https://www.skiddle.com/whats-on/London/Venue-MOT/Bottom-Heavy/40001/",
+      "description": "Promoter copy that must never be stored.",
+      "genres": [{ "genreid": "12", "name": "Drum & Bass" }],
+      "MinAge": "18"
+    },
+    {
+      "id": "40002",
+      "EventCode": "BARPUB",
+      "eventname": "Tooting Salsa Social",
+      "cancelled": "0",
+      "date": "2026-10-29",
+      "startdate": "2026-10-29T20:00:00+00:00",
+      "enddate": "2026-10-29T23:30:00+00:00",
+      "openingtimes": { "doorsopen": "20:00", "doorsclose": "23:30" },
+      "venue": {
+        "id": 9002,
+        "name": "The Castle",
+        "address": "38 Tooting High Street",
+        "town": "London",
+        "postcode": "SW17 0RG",
+        "latitude": 51.4274,
+        "longitude": -0.1678
+      },
+      "entryprice": "8.00",
+      "link": "https://www.skiddle.com/whats-on/London/The-Castle/Tooting-Salsa-Social/40002/",
+      "description": "",
+      "genres": []
+    },
+    {
+      "id": "40003",
+      "EventCode": "BARPUB",
+      "eventname": "Thursday Pub Quiz",
+      "cancelled": "0",
+      "date": "2026-10-29",
+      "startdate": "2026-10-29T19:30:00+00:00",
+      "enddate": "2026-10-29T22:00:00+00:00",
+      "openingtimes": { "doorsopen": "19:30", "doorsclose": "22:00" },
+      "venue": {
+        "id": 9003,
+        "name": "The Old Red Lion",
+        "address": "418 St John Street",
+        "town": "London",
+        "postcode": "EC1V 4NJ",
+        "latitude": 51.5333,
+        "longitude": -0.1055
+      },
+      "entryprice": "0.00",
+      "link": "https://www.skiddle.com/whats-on/London/The-Old-Red-Lion/Thursday-Pub-Quiz/40003/",
+      "description": "",
+      "genres": []
+    },
+    {
+      "id": "40004",
+      "EventCode": "CLUB",
+      "eventname": "Halloween Rave (cancelled)",
+      "cancelled": "1",
+      "date": "2026-10-31",
+      "startdate": "2026-10-31T23:00:00+00:00",
+      "enddate": "2026-11-01T05:00:00+00:00",
+      "openingtimes": { "doorsopen": "23:00", "doorsclose": "05:00" },
+      "venue": {
+        "id": 9004,
+        "name": "Colour Factory",
+        "address": "Queen's Yard, White Post Lane",
+        "town": "London",
+        "postcode": "E9 5EN",
+        "latitude": 51.5435,
+        "longitude": -0.0236
+      },
+      "entryprice": "",
+      "link": "https://www.skiddle.com/whats-on/London/Colour-Factory/Halloween-Rave/40004/",
+      "description": "",
+      "genres": [{ "genreid": "3", "name": "Techno" }]
+    },
+    {
+      "id": "40005",
+      "EventCode": "KIDS",
+      "eventname": "Family Roller Disco",
+      "cancelled": "0",
+      "date": "2026-11-01",
+      "startdate": "2026-11-01T11:00:00+00:00",
+      "enddate": "2026-11-01T13:00:00+00:00",
+      "openingtimes": { "doorsopen": "11:00", "doorsclose": "13:00" },
+      "venue": {
+        "id": 9005,
+        "name": "Rollernation",
+        "address": "Unit 1, Ashley Road",
+        "town": "London",
+        "postcode": "N17 9LJ",
+        "latitude": 51.5895,
+        "longitude": -0.0637
+      },
+      "entryprice": "10.00",
+      "link": "https://www.skiddle.com/whats-on/London/Rollernation/Family-Roller-Disco/40005/",
+      "description": "",
+      "genres": []
+    },
+    {
+      "id": "40006",
+      "EventCode": "LGB",
+      "eventname": "Queer Disco Night",
+      "cancelled": "0",
+      "date": "2026-10-30",
+      "startdate": "",
+      "enddate": "",
+      "openingtimes": { "doorsopen": "", "doorsclose": "" },
+      "venue": {
+        "id": 9006,
+        "name": "Dalston Superstore",
+        "address": "117 Kingsland High Street",
+        "town": "London",
+        "postcode": "E8 2PB",
+        "latitude": 51.5487,
+        "longitude": -0.0753
+      },
+      "entryprice": "Free",
+      "link": "https://www.skiddle.com/whats-on/London/Dalston-Superstore/Queer-Disco-Night/40006/",
+      "description": "",
+      "genres": []
+    }
+  ]
+}

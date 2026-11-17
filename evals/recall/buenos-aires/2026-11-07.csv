@@ -1,0 +1,36 @@
+# Drafted by us from public listings (D-048 Q3); the owner accepted it as drafted (2026-10-29: "assume they are good").
+# DanceTonight Buenos Aires recall set, Saturday 2026-11-07 (CABA only). Built 2026-10-29.
+# start_time is local (America/Argentina/Buenos_Aires). Confidence: tango rows medium, Salsa Vida and club rows high. Tango rows: same-weekday listing on hoy-milonga (2026-10-31), not a listing dated 2026-11-07.
+# Excluded on purpose: seated tango shows and cena shows, classes without a social, kids events, boat parties, bar crawls (Pulseport BA), concerts (Planeador V and Ty Segall at Niceto), and anything outside CABA (Conurbano, La Plata, Avellaneda).
+title,venue,start_time,style,source_url
+Tango Camargo,El Beso,15:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490833/Tango-Camargo
+La Maria Rolera,La Paila,15:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490453/La-Maria-Rolera
+La Matineta,Club Gricel,15:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492978/La-Matineta
+Che che Tango,Asociación Casa de Galicia,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492961/Che-che-Tango
+La Di Sarlita,C. C. Doblar el Viento,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491643/La-Di-Sarlita
+Mariposita,Mariposita,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491097/Mariposita
+A Media Luz,C.C. Ruta 213,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492769/A-Media-Luz
+TanTan Práctica,Estudio Cultura Tango,16:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/495424/TanTan-Practica
+EL VERMU!,El Zorzal Cultural,16:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492954/EL-VERMU!-
+Viento Norte,La Morada,16:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/499836/Viento-Norte
+La Divina Milonga,Palacio Barolo,17:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/500189/-La-Divina-Milonga-
+Practica Patricios,Parque de los Patricios,17:00,tango (práctica),https://hoy-milonga.com/buenos-aires/es/milonga/491185/Practica-Patricios
+Milonga de Buenos Aires,Salón Canning,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490823/Milonga-de-Buenos-Aires
+Bien Milonga en Glorieta de Versalles,La Glorieta de Versalles,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/493361/Bien-Milonga-en-Glorieta-de-Versalles
+Milonga Abierta (La Glorieta),La Glorieta de Belgrano,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492619/Milonga-Abierta--La-Glorieta-
+PractiCuir,Estudio Tango Cuir,20:00,"tango (práctica, queer)",https://hoy-milonga.com/buenos-aires/es/milonga/490110/PractiCuir
+Milonga Congreso,Plaza Congreso,20:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492707/Milonga-Congreso
+La Pomada,MT Ballroom,20:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/500061/La-Pomada
+Cachirulo,El Beso,21:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492651/Cachirulo
+Devoto Tango Club,Devoto Tango Club,21:15,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/499744/Devoto-Tango-Club
+Abrazo de Tango,Sunderland Club,21:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/500326/Abrazo-de-Tango
+El Tacuari Tango,El Tacuarí Tango,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/493110/El-Tacuari-Tango
+Zonatango,Balvanera,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492734/Zonatango
+Milonga Malena,Salón Marabu,22:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490776/Milonga-Malena
+Si Sos Brujo Milonga,Club Fulgor de Villa Crespo,22:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490568/Si-Sos-Brujo-Milonga
+La Viruta Tango Ar,Asociación Armenia,23:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492949/La-Viruta-Tango-Ar
+Tango & Amigos,El Beso,18:00,tango (milonga),https://www.eventbrite.com/e/tango-amigos-tickets-2003536907825
+El Social de Bachata Weekly Saturday Social,Club Glorias Argentinas (Bragado 6875),20:00,bachata (social),https://www.salsavida.com/event/argentina/buenos-aires/el-social-de-bachata-weekly-saturday-social/
+La Salsera Salsa & Bachata Social Nights,La Salsera (Yatay 961),22:30,salsa / bachata (class + social),https://www.salsavida.com/event/argentina/buenos-aires/la-salsera-salsa-bachata-social-nights/
+VISCERAL. Pura Actitud Clubber by Independence Music.,"VISCERAL (Av. Belgrano y 9 de Julio, secret spot Microcentro)",22:00,"club/DJ (dark progressive, techno)",https://www.eventbrite.com.ar/e/visceral-pura-actitud-clubber-by-independence-music-tickets-2002601355563
+Fiesta Trevi,Niceto Club (Sala Humboldt),23:59,club night (party),https://nicetoclub.com/agenda/

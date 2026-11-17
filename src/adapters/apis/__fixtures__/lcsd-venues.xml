@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<venues>
+  <venue id="3210299">
+    <venuec><![CDATA[伊利沙伯體育館 (表演場)]]></venuec>
+    <venuee><![CDATA[Queen Elizabeth Stadium (Arena)]]></venuee>
+    <latitude />
+    <longitude />
+  </venue>
+  <venue id="36310037">
+    <venuec><![CDATA[沙田大會堂 (展覽廳)]]></venuec>
+    <venuee><![CDATA[Sha Tin Town Hall (Exhibition Gallery)]]></venuee>
+    <latitude><![CDATA[22.38136]]></latitude>
+    <longitude><![CDATA[114.18990]]></longitude>
+  </venue>
+  <venue id="50110015">
+    <venuec><![CDATA[香港文化中心 (大劇院)]]></venuec>
+    <venuee><![CDATA[Hong Kong Cultural Centre (Grand Theatre)]]></venuee>
+    <latitude><![CDATA[22.29386]]></latitude>
+    <longitude><![CDATA[114.17053]]></longitude>
+  </venue>
+  <venue id="50110016">
+    <venuec><![CDATA[香港文化中心 (劇場)]]></venuec>
+    <venuee><![CDATA[Hong Kong Cultural Centre (Studio Theatre)]]></venuee>
+    <latitude><![CDATA[22.29386]]></latitude>
+    <longitude><![CDATA[114.17053]]></longitude>
+  </venue>
+  <venue id="76810048">
+    <venuec><![CDATA[屯門大會堂 (演奏廳)]]></venuec>
+    <venuee><![CDATA[Tuen Mun Town Hall (Auditorium)]]></venuee>
+    <latitude><![CDATA[22.391810]]></latitude>
+    <longitude><![CDATA[113.976771]]></longitude>
+  </venue>
+  <venue id="76810295">
+    <venuec><![CDATA[屯門大會堂 (音樂室)]]></venuec>
+    <venuee><![CDATA[Tuen Mun Town Hall (Music Studio)]]></venuee>
+    <latitude><![CDATA[22.391810]]></latitude>
+    <longitude><![CDATA[113.976771]]></longitude>
+  </venue>
+  <venue id="8332">
+    <venuec><![CDATA[東區區內場地]]></venuec>
+    <venuee><![CDATA[Venues in Eastern district]]></venuee>
+    <latitude />
+    <longitude />
+  </venue>
+  <venue id="8344">
+    <venuec><![CDATA[沙田區內場地]]></venuec>
+    <venuee><![CDATA[Venues in Sha Tin district]]></venuee>
+    <latitude />
+    <longitude />
+  </venue>
+  <venue id="8347">
+    <venuec><![CDATA[屯門區內場地]]></venuec>
+    <venuee><![CDATA[Venues in Tuen Mun district]]></venuee>
+    <latitude />
+    <longitude />
+  </venue>
+  <venue id="87310362">
+    <venuec><![CDATA[元朗劇院 (舞蹈室)]]></venuec>
+    <venuee><![CDATA[Yuen Long Theatre (Dance Studio)]]></venuee>
+    <latitude><![CDATA[22.44152]]></latitude>
+    <longitude><![CDATA[114.02289]]></longitude>
+  </venue>
+  <venue id="87710034">
+    <venuec><![CDATA[西灣河文娛中心 (劇院)]]></venuec>
+    <venuee><![CDATA[Sai Wan Ho Civic Centre (Theatre)]]></venuee>
+    <latitude><![CDATA[22.2818]]></latitude>
+    <longitude><![CDATA[114.222501]]></longitude>
+  </venue>
+</venues>

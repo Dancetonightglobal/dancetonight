@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:mec="http://webnus.net/rss/mec/"
+	>
+<channel>
+	<title>Donde Bailar Salsa</title>
+	<link>https://viajandoybailando.com</link>
+            <item>
+		<title>Guaynabo: Salsa en Vivo al Aire Libre</title>
+		<link>https://viajandoybailando.com/events/guaynabo-salsa-en-vivo-al-aire-libre-983/</link>
+        <pubDate>Thu, 29 Oct 2026 19:00:00 -0400</pubDate>
+		<guid isPermaLink="false">https://viajandoybailando.com/?post_type=mec-events&#038;p=1487</guid>
+        <description><![CDATA[Disfruta de salsa en vivo en Los Almendros en Guaynabo jueves y sábado de 7:00pm en adelante. #Outdoor]]></description>
+                <content:encoded><![CDATA[<p>Disfruta de salsa en vivo en Los Almendros en Guaynabo jueves y sábado de 7:00pm en adelante.</p>
+<p>#Outdoor</p>
+]]></content:encoded>
+        <mec:startDate>2026-10-29</mec:startDate>
+                <mec:startHour>7:00 pm</mec:startHour>
+        <mec:endDate>2026-10-29</mec:endDate>
+                <mec:endHour></mec:endHour>
+                <mec:location>PR-169, Guaynabo, PR</mec:location>
+                <mec:category>Guaynabo</mec:category>
+        	</item>
+            <item>
+		<title>San Juan / Cupey: Clase de Salsa gratis y salsa en Vivo</title>
+		<link>https://viajandoybailando.com/events/san-juan-cupey-clase-de-salsa-gratis-y-salsa-en-vivo/</link>
+		<guid isPermaLink="false">https://viajandoybailando.com/?post_type=mec-events&#038;p=2002</guid>
+        <description><![CDATA[Disfruta de los jueves de salsa en Downtown Cupey. 7:00pm: Clase de salsa gratis con @learnsalsain 8:00pm Música en Vivo]]></description>
+        <mec:startDate>2026-10-29</mec:startDate>
+                <mec:startHour>8:00 pm</mec:startHour>
+        <mec:endDate>2026-10-29</mec:endDate>
+                <mec:endHour>11:45 pm</mec:endHour>
+                <mec:location>#54 Ave. Paraná, San Juan, PR</mec:location>
+                <mec:category>Cupey, Puerto Rico, San Juan</mec:category>
+        	</item>
+            <item>
+		<title>Carolina: Bachata Night</title>
+		<link>https://viajandoybailando.com/events/carolina-bachata-night/</link>
+		<guid isPermaLink="false">https://viajandoybailando.com/?post_type=mec-events&#038;p=3100</guid>
+        <description><![CDATA[Bachata social &amp; DJ.]]></description>
+        <mec:startDate>2026-10-30</mec:startDate>
+                <mec:startHour>10:00 pm</mec:startHour>
+        <mec:endDate>2026-10-31</mec:endDate>
+                <mec:endHour>2:00 am</mec:endHour>
+                <mec:location>Calle Loíza 1800, San Juan, PR 00911</mec:location>
+                <mec:category>Carolina</mec:category>
+        	</item>
+            <item>
+		<title>Old event</title>
+		<link>https://viajandoybailando.com/events/old/</link>
+		<guid isPermaLink="false">https://viajandoybailando.com/?post_type=mec-events&#038;p=9</guid>
+        <description><![CDATA[Salsa]]></description>
+        <mec:startDate>2026-09-01</mec:startDate>
+                <mec:startHour>8:00 pm</mec:startHour>
+        <mec:endDate>2026-09-01</mec:endDate>
+                <mec:endHour></mec:endHour>
+                <mec:location>San Juan, PR</mec:location>
+                <mec:category>San Juan</mec:category>
+        	</item>
+</channel>
+</rss>

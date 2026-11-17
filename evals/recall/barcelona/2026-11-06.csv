@@ -1,0 +1,22 @@
+# Drafted by us from public listings (D-048 Q3), accepted by the owner 2026-10-29 (D-361): biased toward what we already find.
+# DanceTonight Barcelona recall set, Friday 2026-11-06 (Barcelonès only). Built 2026-10-29.
+# start_time is local (Europe/Madrid). Confidence notes per row are in evals/recall/barcelona/recall-notes.md.
+# Excluded on purpose: concerts (Santero y Los Muchachos and Camellos at Apolo, Romanthica at Razzmatazz, Reality at Sant Jordi Club); MIRA Festival (no venue found, mostly audiovisual); Lloret de Mar and Girona salsa events (outside the Barcelonès); daytime/rooftop/listening-bar sessions (Solstice at Safestay, Bridge 48 immersive, Dr. Dou, 303 Audiophile Bar, Drake film screening); KRANK at Sauvage Swinger Club (sex-positive venue); M7 Club, Colors club, Imperial Private Club, 7833 Soundlab (venue municipality not confirmed); Mojito Club Friday Latin night (last dated evidence Aug 2026)
+title,venue,start_time,style,source_url
+Salsa Timba & Bachata Nights,Antilla Salsa Barcelona,22:00,salsa,https://www.salsavida.com/event/spain/catalunya/barcelona/barcelona-city/salsa-timba-bachata-nights-at-antilla-salsa-barcelona/
+Milonga La Morocha,Argenfolk (C/ Mèxic 3),22:00,tango,https://tangoenbarcelona.es/agenda/
+Milonga El Desbande,El Desbande (C/ Mare de Déu dels Desamparats 5),22:00,tango,https://tangoenbarcelona.es/agenda/
+Milonga La Yumba,La Yumba (C/ Calàbria 89),22:00,tango,https://tangoenbarcelona.es/agenda/
+Friday Swing Jam,Swing Maniacs,22:30,lindy hop,https://www.timeout.es/barcelona/es/que-hacer/bailar-swing-en-barcelona
+Studio Stereo x DSS! x Muelle pres. Max Sprauer,Studio Stereo,21:30,house,https://www.technoairlines.com/event/studio-stereo-x-dss-x-muelle-pres-max-sprauer-tba-studio-stereo-close-to-pl-catalunya-08007-barcelona-2026-11-06
+RAZZCLUBS: Egyptian Lover + Griffi + Alvaro Medina + BMT: Flava D,Razzmatazz,23:59,electro,https://www.technoairlines.com/event/razzclubs-egyptian-lover-griffi-alvaro-medina-bmt-flava-d-razzmatazz-2026-11-06
+INPUT pres Mika Heggemann,INPUT High Fidelity Dance Club,23:59,techno,https://www.technoairlines.com/event/input-pres-mika-heggemann-input-high-fidelity-dance-club-2026-11-06
+Hot Meal Records: Bad Boombox · Mija · lizaliza / horsegiirL,Nitsa (Sala Apolo),23:59,techno,https://www.technoairlines.com/event/hot-meal-records-bad-boombox-%c2%b7-mija-%c2%b7-lizaliza-horsegiirl-nitsa-2026-11-06
+"Boris pres. SIROB Mihai Popoviciu, BizZa, Paula GM",Boris Club,23:59,house,https://www.technoairlines.com/event/boris-pres-sirob-mihai-popoviciu-bizza-paula-gm-boris-club-2026-11-06
+24Seven Records presents: ISAbella & Liquid Earth,Bikini Barcelona,23:59,trance,https://www.technoairlines.com/event/24seven-records-presents-isabella-liquid-earth-bikini-barcelona-2026-11-06
+Pegatina pres. Young Sun,Les Enfants Brillants,23:59,house,https://www.technoairlines.com/event/pegatina-pres-young-sun-les-enfants-brillants-2026-11-06
+Tribalesque: Navider,Slow Club,23:59,house,https://www.technoairlines.com/event/tribalesque-navider-slow-club-2026-11-06
+Bla Bla Music Night,Macarena Club,23:59,house,https://www.technoairlines.com/event/bla-bla-music-night-macarena-club-2026-11-06
+La Paloma meets AMEBA,La Paloma,23:59,electronic,https://www.technoairlines.com/event/la-paloma-meets-ameba-la-paloma-2026-11-06
+Andy Martin + Rootian B2B Memory Palace,LAUT,23:59,techno,https://www.technoairlines.com/event/andy-martin-rootian-b2b-memory-palace-laut-2026-11-06
+Rabent,Moog,23:59,techno,https://www.technoairlines.com/event/rabent-moog-2026-11-06

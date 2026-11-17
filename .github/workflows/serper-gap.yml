@@ -1,0 +1,63 @@
+name: serper-gap
+
+# The Serper gap measurement (D-040, D-125): once per test metro, never scheduled. It spends at
+# most 130 of Serper's free sign-up credits (ACCOUNTS 3f), reads the database (the sources we hold
+# and the seeded venues' websites) and writes nothing to it. The integrator dispatches it after
+# venue discovery's backlog has run, so the gap is measured against a full deterministic path.
+# The CSV and summary come back as an artifact for evals/recall/serper-gap/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      metro:
+        description: Metro to measure
+        default: nyc
+        required: true
+      max_queries:
+        description: Searches (one free credit each)
+        default: "130"
+        required: true
+
+# Reads the repository, nothing more.
+permissions:
+  contents: read
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      METRO: ${{ inputs.metro }}
+      MAX_QUERIES: ${{ inputs.max_queries }}
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+      PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+      BOT_CONTACT_EMAIL: ${{ vars.BOT_CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Measure
+        run: pnpm eval:serper-gap --metro "$METRO" --max-queries "$MAX_QUERIES" --out serper-gap
+
+      - name: Report
+        if: always()
+        run: |
+          for f in serper-gap/*.txt; do
+            [ -f "$f" ] && { echo '```'; cat "$f"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: serper-gap-${{ env.METRO }}-${{ github.run_id }}
+          path: serper-gap/
+          if-no-files-found: ignore
+          retention-days: 30

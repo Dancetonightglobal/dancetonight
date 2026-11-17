@@ -1,0 +1,51 @@
+name: snapshots-rebuild
+
+# Forces city snapshots to be rebuilt (src/data/city-snapshot.ts) by deleting them from Workers KV.
+# Use after a change that writes no job_runs row: a db:migrate data fix or manual SQL. Until a
+# city's snapshot is rebuilt (the Worker's next cron, or its next visit), its pages read the database.
+# Never scheduled.
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: One city slug as in the URL (e.g. nyc, london), or "all"
+        required: true
+        default: all
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_DEPLOY_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CITY: ${{ inputs.city }}
+    steps:
+      - name: Delete the snapshots
+        run: |
+          if ! printf '%s' "$CITY" | grep -Eq '^(all|[a-z0-9-]+)$'; then echo "::error::Bad city: $CITY"; exit 1; fi
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces"
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          ns=$(curl -fsS -H "$auth" "$api?per_page=100" \
+            | jq -r '.result[] | select(.title == "dancetonight-snapshots") | .id' | head -1)
+          if [ -z "$ns" ]; then echo "::error::No KV namespace dancetonight-snapshots."; exit 1; fi
+          if [ "$CITY" = all ]; then prefix="city/"; else prefix="city/$CITY"; fi
+          keys=$(curl -fsS -H "$auth" "$api/$ns/keys?prefix=$prefix&limit=1000" \
+            | jq -c --arg c "city/$CITY" '[.result[].name | select($c == "city/all" or . == $c)]')
+          # "all" also drops the city directory (src/data/city-directory.ts); the next cron rebuilds it.
+          if [ "$CITY" = all ]; then keys=$(printf '%s' "$keys" | jq -c '. + ["cities/v1"]'); fi
+          echo "Deleting: $keys"
+          # One city that matches no snapshot is a wrong slug ("new-york" for "nyc" deleted nothing on 11-04),
+          # not a success: list the slugs that exist and fail.
+          if [ "$keys" = "[]" ]; then
+            if [ "$CITY" = all ]; then exit 0; fi
+            have=$(curl -fsS -H "$auth" "$api/$ns/keys?prefix=city/&limit=1000" | jq -r '[.result[].name] | join(", ")')
+            echo "::error::No snapshot city/$CITY (a wrong slug, or already deleted and not rebuilt yet). Snapshots now: $have"
+            exit 1
+          fi
+          curl -fsS -X POST -H "$auth" -H "Content-Type: application/json" --data "$keys" \
+            "$api/$ns/bulk/delete" > /dev/null

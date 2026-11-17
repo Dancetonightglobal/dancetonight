@@ -1,0 +1,38 @@
+# Drafted by us from public listings (D-048 Q3); the owner accepted it as drafted (2026-10-29: "assume they are good").
+# DanceTonight Buenos Aires recall set, Friday 2026-11-06 (CABA only). Built 2026-10-29.
+# start_time is local (America/Argentina/Buenos_Aires). Confidence: tango rows medium, Salsa Vida and club rows high. Tango rows: same-weekday listing on hoy-milonga (2026-10-30), not a listing dated 2026-11-06.
+# Excluded on purpose: seated tango shows and cena shows, classes without a social, kids events, boat parties, bar crawls (Pulseport BA), concerts (Planeador V and Ty Segall at Niceto), and anything outside CABA (Conurbano, La Plata, Avellaneda).
+title,venue,start_time,style,source_url
+El Abrazo Tango Club,El Beso,14:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490782/El-Abrazo-Tango-Club
+45 y 15,Espacio Riobamba,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491132/45-y-15
+El Chamuyo Buenos Aires Milonga,C.C. Ruta 213,16:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/489988/El-Chamuyo-Buenos-Aires-Milonga
+Milonga & Milonga,La Glorieta de Versalles,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491257/Milonga-&-Milonga
+Milonga Abierta (La Glorieta),La Glorieta de Belgrano,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/498905/Milonga-Abierta--La-Glorieta-
+Milonga de Chacarita,Mutual Sentimiento,18:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491247/Milonga-de-Chacarita
+Remembranzas,Lo De Celia,19:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490265/Remembranzas
+Milonga en El Plata,Cine Teatro El Plata,19:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/499984/Milonga-en-El-Plata
+La previa de los viernes,Escuela Mundial de Tango GE,19:15,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491978/La-previa-de-los-viernes
+Milonga Congreso,Plaza Congreso,20:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492706/Milonga-Congreso
+La Milonga de Norma,Club Oeste,21:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490226/La-Milonga-de-Norma
+Yira Yira,Club Gricel,21:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490373/Yira-Yira
+La Boutique del Tango,Centro Cultural Beit el Emir,21:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491495/La-Boutique-del-Tango
+La Yumba,Casa Armenia,21:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491736/La-Yumba
+Pocas Palabras Parque de la estación,Parque de la Estación (Perón y Agüero),21:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/499211/Pocas-Palabras-Parque-de-la-estacion
+Floreal Milonga,Vecinal Saavedra y Biblioteca Popular 25 de mayo,21:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490340/Floreal-Milonga
+Fervor Tango,Club Malcolm,21:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490635/Fervor-Tango
+Corazón de Tango + La Bullanguera,Don Elio,21:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/500629/Corazon-de-Tango-+-La-Bullanguera
+Vení Raquel Milonga,Salón Marabu,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/493417/Veni-Raquel-Milonga
+Milonga Cañón,La Tierra Invisible,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490955/Milonga-Canon
+Muchaches Noches de Tango Queer,Lugar Gay,22:00,"tango (milonga, queer)",https://hoy-milonga.com/buenos-aires/es/milonga/492185/Muchaches-Noches-de-Tango-Queer
+Bravita Milonga,El Beso,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492932/Bravita-Milonga
+Noche Milonguera en PECES,Espacio Peces,22:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/500834/Noche-Milonguera-en-PECES
+La Mordidita,El Zorzal Cultural,22:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490516/La-Mordidita
+La Baldosa,Salón El Pial,22:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/490828/La-Baldosa
+Bilongón,Balvanera,22:30,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492755/Bilongon
+A las Brasas,Sexto Cultural,23:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/492937/A-las-Brasas
+La Viruta Tango Club,Asociación Armenia,23:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491008/La-Viruta-Tango-Club
+La Salsera Salsa & Bachata Social Nights,La Salsera (Yatay 961),22:30,salsa / bachata (class + social),https://www.salsavida.com/event/argentina/buenos-aires/la-salsera-salsa-bachata-social-nights/
+Salsa and Bachata Classes and Social at El Barcito Bachatero,El Barcito Bachatero (Av. Rivadavia 7927),21:00,salsa / bachata (class + social),https://www.salsavida.com/event/argentina/buenos-aires/salsa-and-bachata-classes-and-social-at-el-barcito-bachatero/
+Friday Outdoor Salsa and Bachata Social at Parque Patricios,Parque Patricios (front of the flagpole),19:30,"salsa / bachata (outdoor, free)",https://www.salsavida.com/event/argentina/buenos-aires/friday-outdoor-salsa-and-bachata-social-at-parque-patricios/
+After House Tango de madrugada,Espacio Almagro,05:00,tango (milonga),https://hoy-milonga.com/buenos-aires/es/milonga/491336/After-House-Tango-de-madrugada
+DRAMER,Crobar Studio (Crobar),,club night (electronic),https://www.crobar.com.ar/fechas

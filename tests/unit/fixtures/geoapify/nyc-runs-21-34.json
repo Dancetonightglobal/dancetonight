@@ -1,0 +1,2269 @@
+{
+  "recorded": "ingest runs 21 to 34, 2026-09-27 to 2026-09-29; one Geoapify answer per address",
+  "answers": {
+    "https://cdny.org/": {
+      "results": [],
+      "query": {
+        "text": "https://cdny.org/"
+      }
+    },
+    "205 Cypress Ave, Brooklyn : The Keep": {
+      "results": [
+        {
+          "country_code": "us",
+          "housenumber": "16",
+          "street": "Cypress Avenue",
+          "country": "United States",
+          "county": "Kings County",
+          "datasource": {
+            "sourcename": "openaddresses",
+            "attribution": "\u00a9 OpenAddresses contributors",
+            "license": "BSD-3-Clause License"
+          },
+          "postcode": "11237",
+          "state": "New York",
+          "state_code": "NY",
+          "county_code": "BK",
+          "city": "New York",
+          "district": "Brooklyn",
+          "suburb": "Bushwick",
+          "iso3166_2": "US-NY",
+          "lon": -73.921329,
+          "lat": 40.708933,
+          "result_type": "building",
+          "distance": 7149.610907187429,
+          "formatted": "16 Cypress Avenue, New York, NY 11237, United States of America",
+          "address_line1": "16 Cypress Avenue",
+          "address_line2": "New York, NY 11237, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P35H+HF",
+          "plus_code_short": "P35H+HF New York, Kings County, United States",
+          "rank": {
+            "popularity": 7.075203049844351,
+            "confidence": 0.3088235294117647,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 0.031746031746031744,
+            "match_type": "full_match"
+          },
+          "place_id": "51cff6e80df77a52c05910070951be5a4440c00203e2034c6f70656e6164647265737365733a616464726573733a75732f6e792f636974795f6f665f6e65775f796f726b2d6164647265737365732d636974793a62346563626236343864663831336130"
+        }
+      ],
+      "query": {
+        "text": "205 Cypress Ave, Brooklyn : The Keep"
+      }
+    },
+    "101 Avenue A, New York, NY, 10009": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10009",
+          "district": "Alphabet City",
+          "suburb": "Manhattan",
+          "street": "Avenue A",
+          "housenumber": "101",
+          "iso3166_2": "US-NY",
+          "lon": -73.9840365,
+          "lat": 40.7258533,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "101 Avenue A, New York, NY 10009, United States of America",
+          "address_line1": "101 Avenue A",
+          "address_line2": "New York, NY 10009, United States of America",
+          "category": "building.residential",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2G8+89",
+          "plus_code_short": "P2G8+89 New York, New York County, United States",
+          "rank": {
+            "importance": 0.04539457909600718,
+            "popularity": 7.964551626909043,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5180643a74fa7e52c059ca98ccc2e85c4440f00102f901ea59ca0e00000000c00203",
+          "bbox": {
+            "lon1": -73.9842258,
+            "lat1": 40.7257595,
+            "lon2": -73.9838701,
+            "lat2": 40.7259475
+          }
+        }
+      ],
+      "query": {
+        "text": "101 Avenue A, New York, NY, 10009",
+        "parsed": {
+          "housenumber": "101",
+          "street": "avenue a",
+          "postcode": "10009",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "Norfolk St": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Norfolk Street",
+          "other_names": {
+            "name:ko": "\ub178\ud37d \uc2a4\ud2b8\ub9ac\ud2b8"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10002",
+          "district": "Lower East Side",
+          "suburb": "Manhattan",
+          "street": "Norfolk Street",
+          "iso3166_2": "US-NY",
+          "lon": -73.9879118,
+          "lat": 40.7173474,
+          "state_code": "NY",
+          "result_type": "street",
+          "distance": 1606.1740874206353,
+          "formatted": "Norfolk Street, New York, NY 10002, United States of America",
+          "address_line1": "Norfolk Street",
+          "address_line2": "New York, NY 10002, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P286+WR",
+          "plus_code_short": "P286+WR New York, New York County, United States",
+          "rank": {
+            "importance": 0.05342509269855799,
+            "popularity": 8.206053246172774,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5148156af2397f52c059716f230ad25b4440f00102f901f08b560000000000c0020492030e4e6f72666f6c6b20537472656574",
+          "bbox": {
+            "lon1": -73.9883771,
+            "lat1": 40.7164549,
+            "lon2": -73.9874583,
+            "lat2": 40.7182459
+          }
+        }
+      ],
+      "query": {
+        "text": "Norfolk St",
+        "parsed": {
+          "street": "norfolk st",
+          "expected_type": "unknown"
+        }
+      }
+    },
+    "15 East 27th st (btw 5th & 6th Ave)": {
+      "results": [
+        {
+          "country_code": "us",
+          "housenumber": "15",
+          "street": "East 27th Street",
+          "country": "United States",
+          "county": "New York County",
+          "datasource": {
+            "sourcename": "openaddresses",
+            "attribution": "\u00a9 OpenAddresses contributors",
+            "license": "BSD-3-Clause License"
+          },
+          "postcode": "10016",
+          "state": "New York",
+          "state_code": "NY",
+          "city": "New York",
+          "district": "Manhattan",
+          "suburb": "Midtown East",
+          "iso3166_2": "US-NY",
+          "lon": -73.986809,
+          "lat": 40.743785,
+          "result_type": "building",
+          "distance": 3806.0146933417986,
+          "formatted": "15 East 27th Street, New York, NY 10016, United States of America",
+          "address_line1": "15 East 27th Street",
+          "address_line2": "New York, NY 10016, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2V7+G7",
+          "plus_code_short": "P2V7+G7 New York, New York County, United States",
+          "rank": {
+            "popularity": 8.615793062435909,
+            "confidence": 0.33333333333333337,
+            "confidence_street_level": 0.33333333333333337,
+            "confidence_building_level": 0.33333333333333337,
+            "match_type": "full_match"
+          },
+          "place_id": "518099efe0277f52c059b020cd58345f4440c00203e2034c6f70656e6164647265737365733a616464726573733a75732f6e792f636974795f6f665f6e65775f796f726b2d6164647265737365732d636974793a34336438623233346635383764323230"
+        }
+      ],
+      "query": {
+        "text": "15 East 27th st (btw 5th & 6th Ave)",
+        "parsed": {
+          "housenumber": "15",
+          "street": "east 27th st btw 5th & 6th ave",
+          "expected_type": "building"
+        }
+      }
+    },
+    "319 Frost St, Brooklyn, NY, 11222": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "Kings County",
+          "city": "New York",
+          "postcode": "11222",
+          "suburb": "Brooklyn",
+          "street": "Frost Street",
+          "housenumber": "319",
+          "iso3166_2": "US-NY",
+          "lon": -73.9386922,
+          "lat": 40.7192769,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "319 Frost Street, Brooklyn, New York, NY 11222, United States of America",
+          "address_line1": "319 Frost Street",
+          "address_line2": "Brooklyn, New York, NY 11222, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P396+PG",
+          "plus_code_short": "P396+PG New York, Kings County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 7.090037213614202,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51a9007388137c52c0595622f543115c4440f00103f901041a45a900000000c00203",
+          "bbox": {
+            "lon1": -73.9387422,
+            "lat1": 40.7192269,
+            "lon2": -73.9386422,
+            "lat2": 40.7193269
+          }
+        }
+      ],
+      "query": {
+        "text": "319 Frost St, Brooklyn, NY, 11222",
+        "parsed": {
+          "housenumber": "319",
+          "street": "frost st",
+          "postcode": "11222",
+          "district": "brooklyn",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "17 Irving Place, New York, NY, 10003": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Irving Plaza",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10003",
+          "district": "Union Square",
+          "suburb": "Manhattan",
+          "street": "Irving Place",
+          "housenumber": "17",
+          "iso3166_2": "US-NY",
+          "lon": -73.9882699,
+          "lat": 40.7349099,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "Irving Plaza, 17 Irving Place, New York, NY 10003, United States of America",
+          "address_line1": "Irving Plaza",
+          "address_line2": "17 Irving Place, New York, NY 10003, United States of America",
+          "category": "entertainment.culture.theatre",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2M6+XM",
+          "plus_code_short": "P2M6+XM New York, New York County, United States",
+          "rank": {
+            "importance": 0.4076496563503252,
+            "popularity": 8.615793062435909,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "51c20765d03f7f52c059d9001187115e4440f00103f901adbcba9800000000c0020192030c497276696e6720506c617a61",
+          "bbox": {
+            "lon1": -73.9883199,
+            "lat1": 40.7348599,
+            "lon2": -73.9882199,
+            "lat2": 40.7349599
+          }
+        }
+      ],
+      "query": {
+        "text": "17 Irving Place, New York, NY, 10003",
+        "parsed": {
+          "housenumber": "17",
+          "street": "irving place",
+          "postcode": "10003",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "152 W. 66th St. (Broadway & Amsterdam)": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Amsterdam Deli & Grocery",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10025",
+          "district": "Manhattan Valley",
+          "suburb": "Manhattan",
+          "street": "Amsterdam Avenue",
+          "housenumber": "880",
+          "iso3166_2": "US-NY",
+          "lon": -73.9672434,
+          "lat": 40.7986993,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "distance": 10094.031595161005,
+          "formatted": "Amsterdam Deli & Grocery, 880 Amsterdam Avenue, New York, NY 10025, United States of America",
+          "address_line1": "Amsterdam Deli & Grocery",
+          "address_line2": "880 Amsterdam Avenue, New York, NY 10025, United States of America",
+          "category": "commercial.convenience",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q2XM+F4",
+          "plus_code_short": "Q2XM+F4 New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 7.771330503778907,
+            "confidence": 0.11252115,
+            "confidence_street_level": 0.2250423,
+            "confidence_building_level": 0.0018547442307692307,
+            "match_type": "inner_part"
+          },
+          "place_id": "516691dc50e77d52c059476b56c73b664440f00103f901716a249700000000c00201920318416d7374657264616d2044656c6920262047726f63657279e203236f70656e7374726565746d61703a76656e75653a6e6f64652f32353335373436313631",
+          "bbox": {
+            "lon1": -73.9672934,
+            "lat1": 40.7986493,
+            "lon2": -73.9671934,
+            "lat2": 40.7987493
+          }
+        }
+      ],
+      "query": {
+        "text": "152 W. 66th St. (Broadway & Amsterdam)",
+        "parsed": {
+          "housenumber": "152",
+          "street": "w. 66th st. broadway & amsterdam",
+          "expected_type": "building"
+        }
+      }
+    },
+    "25 Lafayette Street, Newark, NJ, 07102": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Prudential Center",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New Jersey",
+          "county": "Essex County",
+          "city": "Newark",
+          "postcode": "07102",
+          "district": "Teachers Village",
+          "street": "Lafayette Street",
+          "housenumber": "25",
+          "iso3166_2": "US-NJ",
+          "lon": -74.1711482,
+          "lat": 40.7334302,
+          "state_code": "NJ",
+          "result_type": "amenity",
+          "formatted": "Prudential Center, 25 Lafayette Street, Newark, NJ 07102, United States of America",
+          "address_line1": "Prudential Center",
+          "address_line2": "25 Lafayette Street, Newark, NJ 07102, United States of America",
+          "category": "sport.stadium",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7PRMH+9G",
+          "plus_code_short": "MH+9G, 07102 Newark, United States",
+          "rank": {
+            "importance": 0.5425896579595145,
+            "popularity": 7.07493080646451,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "513c719417f48a52c0590a73710ae15d4440f00102f9013ac5b55400000000c0020192031150727564656e7469616c2043656e746572",
+          "bbox": {
+            "lon1": -74.1723168,
+            "lat1": 40.7325468,
+            "lon2": -74.1699696,
+            "lat2": 40.7344325
+          }
+        }
+      ],
+      "query": {
+        "text": "25 Lafayette Street, Newark, NJ, 07102",
+        "parsed": {
+          "housenumber": "25",
+          "street": "lafayette street",
+          "postcode": "07102",
+          "city": "newark",
+          "state": "nj",
+          "expected_type": "building"
+        }
+      }
+    },
+    "15 Sylvan Street, Rutherford, NJ, 07070": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Tenmomi",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New Jersey",
+          "county": "Bergen County",
+          "city": "Rutherford",
+          "postcode": "07070",
+          "street": "Sylvan Street",
+          "housenumber": "15",
+          "iso3166_2": "US-NJ",
+          "lon": -74.1032129,
+          "lat": 40.8272018,
+          "state_code": "NJ",
+          "result_type": "amenity",
+          "formatted": "Tenmomi, 15 Sylvan Street, Rutherford, NJ 07070, United States of America",
+          "address_line1": "Tenmomi",
+          "address_line2": "15 Sylvan Street, Rutherford, NJ 07070, United States of America",
+          "category": "catering.restaurant",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7RVGW+VP",
+          "plus_code_short": "GW+VP, 07070 Rutherford, United States",
+          "rank": {
+            "importance": 5.243839169904658e-5,
+            "popularity": 5.474059335599239,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "519f81470a9b8652c0599e18a3bfe1694440f00103f901fbf6063203000000c0020192030754656e6d6f6d69",
+          "bbox": {
+            "lon1": -74.1032629,
+            "lat1": 40.8271518,
+            "lon2": -74.1031629,
+            "lat2": 40.8272518
+          }
+        }
+      ],
+      "query": {
+        "text": "15 Sylvan Street, Rutherford, NJ, 07070",
+        "parsed": {
+          "housenumber": "15",
+          "street": "sylvan street",
+          "postcode": "07070",
+          "city": "rutherford",
+          "state": "nj",
+          "expected_type": "building"
+        }
+      }
+    },
+    "3050 Bristol St, Costa Mesa, CA": {
+      "results": [
+        {
+          "country_code": "us",
+          "street": "Bristol Street",
+          "country": "United States",
+          "county": "Kings County",
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "state": "New York",
+          "state_code": "NY",
+          "county_code": "BK",
+          "city": "New York",
+          "district": "Brooklyn",
+          "suburb": "Brownsville",
+          "iso3166_2": "US-NY",
+          "lon": -73.911125,
+          "lat": 40.663654,
+          "housenumber": "3050",
+          "result_type": "building",
+          "postcode": "11212",
+          "formatted": "3050 Bristol Street, New York, NY 11212, United States of America",
+          "address_line1": "3050 Bristol Street",
+          "address_line2": "New York, NY 11212, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8M37Q+FH",
+          "plus_code_short": "M37Q+FH New York, Kings County, United States",
+          "rank": {
+            "popularity": 6.677674224505882,
+            "confidence": 0,
+            "confidence_city_level": 0,
+            "confidence_street_level": 0,
+            "confidence_building_level": 0,
+            "match_type": "full_match"
+          },
+          "place_id": "515a643bdf4f7a52c05907ee409df2544440c00203e203266f70656e7374726565746d61703a7374726565743a706f6c796c696e653a3134363139333131",
+          "bbox": {
+            "lon1": -73.913086,
+            "lat1": 40.655995,
+            "lon2": -73.909179,
+            "lat2": 40.67131
+          }
+        }
+      ],
+      "query": {
+        "text": "3050 Bristol St, Costa Mesa, CA",
+        "parsed": {
+          "housenumber": "3050",
+          "street": "bristol st",
+          "city": "costa mesa",
+          "state": "ca",
+          "expected_type": "building"
+        }
+      }
+    },
+    "385 9th Avenue, Midtown": {
+      "results": [
+        {
+          "country_code": "us",
+          "name": "Downtown",
+          "country": "United States",
+          "county": "Union County",
+          "datasource": {
+            "sourcename": "whosonfirst",
+            "attribution": "Who's On First",
+            "license": "CC0",
+            "url": "https://www.whosonfirst.org/docs/licenses/"
+          },
+          "state": "New Jersey",
+          "state_code": "NJ",
+          "county_code": "UN",
+          "district": "Elizabeth",
+          "city": "Elizabeth",
+          "suburb": "Downtown",
+          "iso3166_2": "US-NJ",
+          "lon": -74.200963,
+          "lat": 40.675516,
+          "result_type": "suburb",
+          "distance": 16951.749178960425,
+          "formatted": "Downtown, Elizabeth, NJ, United States of America",
+          "address_line1": "Downtown",
+          "address_line2": "Elizabeth, NJ, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7MQGX+6J",
+          "plus_code_short": "GX+6J Elizabeth, Union County, United States",
+          "rank": {
+            "popularity": 5.70274309379127,
+            "confidence": 0.07142857142857142,
+            "confidence_city_level": 0.2857142857142857,
+            "match_type": "match_by_city_or_disrict"
+          },
+          "place_id": "51302dea93dc8c52c0595ef6eb4e77564440c00205920308446f776e746f776ee2032277686f736f6e66697273743a6e65696768626f7572686f6f643a3835383737323135",
+          "bbox": {
+            "lon1": -74.205963,
+            "lat1": 40.670516,
+            "lon2": -74.195963,
+            "lat2": 40.680516
+          }
+        }
+      ],
+      "query": {
+        "text": "385 9th Avenue, Midtown",
+        "parsed": {
+          "housenumber": "385",
+          "street": "9th avenue",
+          "suburb": "midtown",
+          "expected_type": "building"
+        }
+      }
+    },
+    "311 West 34th Street, New York, NY, 10001": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10001",
+          "district": "Chelsea District",
+          "suburb": "Manhattan",
+          "street": "West 34th Street",
+          "housenumber": "311",
+          "iso3166_2": "US-NY",
+          "lon": -73.9942655,
+          "lat": 40.7527232,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "311 West 34th Street, New York, NY 10001, United States of America",
+          "address_line1": "311 West 34th Street",
+          "address_line2": "New York, NY 10001, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q234+37",
+          "plus_code_short": "Q234+37 New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.615793062435909,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51a182c30ba27f52c0596178db3b59604440f00103f901cd007ca100000000c00203",
+          "bbox": {
+            "lon1": -73.9943155,
+            "lat1": 40.7526732,
+            "lon2": -73.9942155,
+            "lat2": 40.7527732
+          }
+        }
+      ],
+      "query": {
+        "text": "311 West 34th Street, New York, NY, 10001",
+        "parsed": {
+          "housenumber": "311",
+          "street": "west 34th street",
+          "postcode": "10001",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "Warsaw, PL": {
+      "results": [],
+      "query": {
+        "text": "Warsaw, PL",
+        "parsed": {
+          "city": "warsaw",
+          "country": "pl",
+          "expected_type": "city"
+        }
+      }
+    },
+    "385 Flatbush Ave. Extension, Brooklyn, NY, 11201": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "Kings County",
+          "city": "New York",
+          "postcode": "11201",
+          "district": "Downtown Brooklyn",
+          "suburb": "Brooklyn",
+          "street": "Flatbush Avenue Extension",
+          "housenumber": "385",
+          "iso3166_2": "US-NY",
+          "lon": -73.9817296860465,
+          "lat": 40.690036790697675,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "385 Flatbush Avenue Extension, Brooklyn, New York, NY 11201, United States of America",
+          "address_line1": "385 Flatbush Avenue Extension",
+          "address_line2": "Brooklyn, New York, NY 11201, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8M2R9+28",
+          "plus_code_short": "M2R9+28 New York, Kings County, United States",
+          "rank": {
+            "importance": 9.99999999995449e-6,
+            "popularity": 7.841917183957797,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5141c5bfa8d47e52c059aa8a242053584440f00102f901ba78231900000000c00203",
+          "bbox": {
+            "lon1": -73.9817797,
+            "lat1": 40.6899868,
+            "lon2": -73.9816797,
+            "lat2": 40.6900868
+          }
+        }
+      ],
+      "query": {
+        "text": "385 Flatbush Ave. Extension, Brooklyn, NY, 11201",
+        "parsed": {
+          "housenumber": "385",
+          "street": "flatbush ave. extension",
+          "postcode": "11201",
+          "district": "brooklyn",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "112 West 25th Street on 38th fl (btw 6th & 7th ave)": {
+      "results": [
+        {
+          "country_code": "us",
+          "housenumber": "112",
+          "street": "West 25th Street",
+          "country": "United States",
+          "county": "New York County",
+          "datasource": {
+            "sourcename": "openaddresses",
+            "attribution": "\u00a9 OpenAddresses contributors",
+            "license": "BSD-3-Clause License"
+          },
+          "postcode": "10001",
+          "state": "New York",
+          "state_code": "NY",
+          "city": "New York",
+          "district": "Manhattan",
+          "suburb": "Chelsea",
+          "iso3166_2": "US-NY",
+          "lon": -73.992701,
+          "lat": 40.744383,
+          "result_type": "building",
+          "distance": 3686.3374045841206,
+          "formatted": "112 West 25th Street, New York, NY 10001, United States of America",
+          "address_line1": "112 West 25th Street",
+          "address_line2": "New York, NY 10001, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2V4+QW",
+          "plus_code_short": "P2V4+QW New York, New York County, United States",
+          "rank": {
+            "popularity": 8.53410285953225,
+            "confidence": 0.2727272727272727,
+            "confidence_street_level": 0.2727272727272727,
+            "confidence_building_level": 0.2727272727272727,
+            "match_type": "full_match"
+          },
+          "place_id": "51376dc669887f52c059645930f1475f4440c00203e2034c6f70656e6164647265737365733a616464726573733a75732f6e792f636974795f6f665f6e65775f796f726b2d6164647265737365732d636974793a39643337393835613435646365663763"
+        }
+      ],
+      "query": {
+        "text": "112 West 25th Street on 38th fl (btw 6th & 7th ave)",
+        "parsed": {
+          "housenumber": "112",
+          "street": "west 25th street on 38th fl btw 6th & 7th ave",
+          "expected_type": "building"
+        }
+      }
+    },
+    "1501 Broadway, New York, NY, 10036": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "1501 Broadway",
+          "other_names": {
+            "alt_name": "Paramount Building"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10036",
+          "district": "Manhattan Community Board 5",
+          "suburb": "Manhattan",
+          "commercial": "Times Square",
+          "street": "Broadway",
+          "housenumber": "1501",
+          "iso3166_2": "US-NY",
+          "lon": -73.9866623,
+          "lat": 40.7572684,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "1501 Broadway, New York, NY 10036, United States of America",
+          "address_line1": "1501 Broadway",
+          "address_line2": "New York, NY 10036, United States of America",
+          "category": "building.commercial",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q247+W8",
+          "plus_code_short": "Q247+W8 New York, New York County, United States",
+          "rank": {
+            "importance": 0.43196118896284763,
+            "popularity": 8.615793062435909,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "518eaca179257f52c059aa25c22bee604440f00102f901fd1ddd0f00000000c0020192030d313530312042726f6164776179",
+          "bbox": {
+            "lon1": -73.987214,
+            "lat1": 40.7568499,
+            "lon2": -73.9862132,
+            "lat2": 40.7576052
+          }
+        }
+      ],
+      "query": {
+        "text": "1501 Broadway, New York, NY, 10036",
+        "parsed": {
+          "housenumber": "1501",
+          "street": "broadway",
+          "postcode": "10036",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "481 8th Ave NY, in the basement": {
+      "results": [
+        {
+          "country_code": "us",
+          "housenumber": "481",
+          "street": "8th Avenue",
+          "country": "United States",
+          "county": "New York County",
+          "datasource": {
+            "sourcename": "openaddresses",
+            "attribution": "\u00a9 OpenAddresses contributors",
+            "license": "BSD-3-Clause License"
+          },
+          "postcode": "10001",
+          "state": "New York",
+          "state_code": "NY",
+          "city": "New York",
+          "district": "Manhattan",
+          "suburb": "Hell's Kitchen",
+          "iso3166_2": "US-NY",
+          "lon": -73.993383,
+          "lat": 40.752632,
+          "result_type": "building",
+          "distance": 4554.92135862205,
+          "formatted": "481 8th Avenue, New York, NY 10001, United States of America",
+          "address_line1": "481 8th Avenue",
+          "address_line2": "New York, NY 10001, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q234+3J",
+          "plus_code_short": "Q234+3J New York, New York County, United States",
+          "rank": {
+            "popularity": 8.615793062435909,
+            "confidence": 0.07523510971786834,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51c0594a96937f52c05927f6d03e56604440c00203e2034c6f70656e6164647265737365733a616464726573733a75732f6e792f636974795f6f665f6e65775f796f726b2d6164647265737365732d636974793a64616130663263626534313866643737"
+        }
+      ],
+      "query": {
+        "text": "481 8th Ave NY, in the basement"
+      }
+    },
+    "Back Room 102 Norfolk St": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "The Back Room",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10002",
+          "district": "Lower East Side",
+          "suburb": "Manhattan",
+          "street": "Norfolk Street",
+          "housenumber": "102",
+          "iso3166_2": "US-NY",
+          "lon": -73.9869338,
+          "lat": 40.7187356,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "distance": 1737.1787842741662,
+          "formatted": "The Back Room, 102 Norfolk Street, New York, NY 10002, United States of America",
+          "address_line1": "The Back Room",
+          "address_line2": "102 Norfolk Street, New York, NY 10002, United States of America",
+          "category": "catering.bar",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P297+F6",
+          "plus_code_short": "P297+F6 New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.098587008372329,
+            "confidence": 0,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "514a9462ec297f52c059483c3487ff5b4440f00103f901bdf823f700000000c0020192030d546865204261636b20526f6f6de203236f70656e7374726565746d61703a76656e75653a6e6f64652f34313436333239373839",
+          "bbox": {
+            "lon1": -73.9869838,
+            "lat1": 40.7186856,
+            "lon2": -73.9868838,
+            "lat2": 40.7187856
+          }
+        }
+      ],
+      "query": {
+        "text": "Back Room 102 Norfolk St",
+        "parsed": {
+          "house": "back room",
+          "housenumber": "102",
+          "street": "norfolk st",
+          "expected_type": "amenity"
+        }
+      }
+    },
+    "620 Atlantic Ave, Brooklyn, NY, 11217": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Barclays Center",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "Kings County",
+          "city": "New York",
+          "postcode": "11217",
+          "district": "Fort Greene",
+          "suburb": "Brooklyn",
+          "street": "Atlantic Avenue",
+          "housenumber": "620",
+          "iso3166_2": "US-NY",
+          "lon": -73.9752519,
+          "lat": 40.6825106,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "Barclays Center, 620 Atlantic Avenue, Brooklyn, New York, NY 11217, United States of America",
+          "address_line1": "Barclays Center",
+          "address_line2": "620 Atlantic Avenue, Brooklyn, New York, NY 11217, United States of America",
+          "category": "sport.stadium",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8M2MF+2V",
+          "plus_code_short": "M2MF+2V New York, Kings County, United States",
+          "rank": {
+            "importance": 0.5659848273877951,
+            "popularity": 7.7565230287212925,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "5129f7f1866a7e52c0593016e1815c574440f00101f9019d61830000000000c0020192030f426172636c6179732043656e746572",
+          "bbox": {
+            "lon1": -73.9764936,
+            "lat1": 40.6817547,
+            "lon2": -73.974199,
+            "lat2": 40.6833691
+          }
+        }
+      ],
+      "query": {
+        "text": "620 Atlantic Ave, Brooklyn, NY, 11217",
+        "parsed": {
+          "housenumber": "620",
+          "street": "atlantic ave",
+          "postcode": "11217",
+          "district": "brooklyn",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "6 Delancey St., New York, NY, 10002": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10002",
+          "district": "Lower East Side",
+          "suburb": "Manhattan",
+          "street": "Delancey Street",
+          "housenumber": "6",
+          "iso3166_2": "US-NY",
+          "lon": -73.98550776871294,
+          "lat": 40.71792947729543,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "6 Delancey Street, New York, NY 10002, United States of America",
+          "address_line1": "6 Delancey Street",
+          "address_line2": "New York, NY 10002, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P297+5Q",
+          "plus_code_short": "P297+5Q New York, New York County, United States",
+          "rank": {
+            "importance": 9.99999999995449e-6,
+            "popularity": 8.036427108832772,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51dd242d8f127f52c059bce8f41ce55b4440f00102f901ed26e53800000000c00203",
+          "bbox": {
+            "lon1": -73.9855578,
+            "lat1": 40.7178795,
+            "lon2": -73.9854578,
+            "lat2": 40.7179795
+          }
+        }
+      ],
+      "query": {
+        "text": "6 Delancey St., New York, NY, 10002",
+        "parsed": {
+          "housenumber": "6",
+          "street": "delancey st.",
+          "postcode": "10002",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "89 South Street, New York, NY, 10038": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Cobble Fish",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10038",
+          "district": "Seaport",
+          "suburb": "Manhattan",
+          "street": "South Street",
+          "housenumber": "89",
+          "iso3166_2": "US-NY",
+          "lon": -74.0024556,
+          "lat": 40.7051819,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "Cobble Fish, 89 South Street, New York, NY 10038, United States of America",
+          "address_line1": "Cobble Fish",
+          "address_line2": "89 South Street, New York, NY 10038, United States of America",
+          "category": "catering.restaurant",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7PX4X+32",
+          "plus_code_short": "4X+32 New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.180574627063258,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "514b6c883b288052c059961d8766435a4440f00102f90107f8ce4600000000c0020192030b436f62626c652046697368",
+          "bbox": {
+            "lon1": -74.0025161,
+            "lat1": 40.7051369,
+            "lon2": -74.0023952,
+            "lat2": 40.7052269
+          }
+        }
+      ],
+      "query": {
+        "text": "89 South Street, New York, NY, 10038",
+        "parsed": {
+          "housenumber": "89",
+          "street": "south street",
+          "postcode": "10038",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "125 East 11th Street, New York, NY, 10003": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Webster Hall",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10003",
+          "district": "East Village",
+          "suburb": "Manhattan",
+          "street": "East 11th Street",
+          "housenumber": "125",
+          "iso3166_2": "US-NY",
+          "lon": -73.9890945,
+          "lat": 40.7317616,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "Webster Hall, 125 East 11th Street, New York, NY 10003, United States of America",
+          "address_line1": "Webster Hall",
+          "address_line2": "125 East 11th Street, New York, NY 10003, United States of America",
+          "category": "adult.nightclub",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2J6+P9",
+          "plus_code_short": "P2J6+P9 New York, New York County, United States",
+          "rank": {
+            "importance": 0.4205554723964049,
+            "popularity": 8.467680000375148,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "51d28904534d7f52c059fc3b365daa5d4440f00102f901f4ffc50e00000000c0020192030c576562737465722048616c6c",
+          "bbox": {
+            "lon1": -73.989317,
+            "lat1": 40.7315896,
+            "lon2": -73.9888639,
+            "lat2": 40.7319477
+          }
+        }
+      ],
+      "query": {
+        "text": "125 East 11th Street, New York, NY, 10003",
+        "parsed": {
+          "housenumber": "125",
+          "street": "east 11th street",
+          "postcode": "10003",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "61 Wythe Ave, Brooklyn, NY, 11249": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "Kings County",
+          "city": "New York",
+          "postcode": "11249",
+          "suburb": "Brooklyn",
+          "quarter": "Williamsburg",
+          "street": "Wythe Avenue",
+          "housenumber": "61",
+          "iso3166_2": "US-NY",
+          "lon": -73.96571171428572,
+          "lat": 40.71320728571428,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "61 Wythe Avenue, Brooklyn, New York, NY 11249, United States of America",
+          "address_line1": "61 Wythe Avenue",
+          "address_line2": "Brooklyn, New York, NY 11249, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P27M+7P",
+          "plus_code_short": "P27M+7P New York, Kings County, United States",
+          "rank": {
+            "importance": 9.99999999995449e-6,
+            "popularity": 7.726213128667819,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51298e8138ce7d52c059b5b457604a5b4440f00102f9017559db0b00000000c00203",
+          "bbox": {
+            "lon1": -73.9657617,
+            "lat1": 40.7131573,
+            "lon2": -73.9656617,
+            "lat2": 40.7132573
+          }
+        }
+      ],
+      "query": {
+        "text": "61 Wythe Ave, Brooklyn, NY, 11249",
+        "parsed": {
+          "housenumber": "61",
+          "street": "wythe ave",
+          "postcode": "11249",
+          "district": "brooklyn",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "123 Jazz St, New York, NY": {
+      "results": [
+        {
+          "country_code": "us",
+          "name": "Manhattan",
+          "country": "United States",
+          "county": "New York County",
+          "datasource": {
+            "sourcename": "whosonfirst",
+            "attribution": "Who's On First",
+            "license": "CC0",
+            "url": "https://www.whosonfirst.org/docs/licenses/"
+          },
+          "state": "New York",
+          "state_code": "NY",
+          "city": "New York",
+          "district": "Manhattan",
+          "iso3166_2": "US-NY",
+          "lon": -73.967596,
+          "lat": 40.777048,
+          "result_type": "district",
+          "formatted": "Manhattan, New York, NY, United States of America",
+          "address_line1": "Manhattan",
+          "address_line2": "New York, NY, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q2GJ+RX",
+          "plus_code_short": "Q2GJ+RX New York, New York County, United States",
+          "rank": {
+            "popularity": 7.973771516314431,
+            "confidence": 0.25,
+            "confidence_city_level": 1,
+            "match_type": "match_by_city_or_disrict"
+          },
+          "place_id": "5163efc517ed7d52c0590bb6114f76634440c002069203094d616e68617474616ee2031d77686f736f6e66697273743a626f726f7567683a343231323035373731",
+          "bbox": {
+            "lon1": -74.04773,
+            "lat1": 40.682917,
+            "lon2": -73.906651,
+            "lat2": 40.879038
+          }
+        }
+      ],
+      "query": {
+        "text": "123 Jazz St, New York, NY",
+        "parsed": {
+          "housenumber": "123",
+          "street": "jazz st",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "610 W. 56th Street, New York, NY, 10019": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10019",
+          "district": "Manhattan Community Board 4",
+          "suburb": "Manhattan",
+          "street": "West 56th Street",
+          "housenumber": "610",
+          "iso3166_2": "US-NY",
+          "lon": -73.99229628571429,
+          "lat": 40.76971304081633,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "610 West 56th Street, New York, NY 10019, United States of America",
+          "address_line1": "610 West 56th Street",
+          "address_line2": "New York, NY 10019, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q295+V3",
+          "plus_code_short": "Q295+V3 New York, New York County, United States",
+          "rank": {
+            "importance": 9.99999999995449e-6,
+            "popularity": 7.850443103192887,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5173c547c8817f52c05930cef8f485624440f00102f901fd02d10f00000000c00203",
+          "bbox": {
+            "lon1": -73.9923463,
+            "lat1": 40.769663,
+            "lon2": -73.9922463,
+            "lat2": 40.769763
+          }
+        }
+      ],
+      "query": {
+        "text": "610 W. 56th Street, New York, NY, 10019",
+        "parsed": {
+          "housenumber": "610",
+          "street": "w. 56th street",
+          "postcode": "10019",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "201 West 13th Street, New York, NY 10011": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10011",
+          "district": "Union Square",
+          "suburb": "Manhattan",
+          "street": "West 13th Street",
+          "housenumber": "201",
+          "iso3166_2": "US-NY",
+          "lon": -74.0005681,
+          "lat": 40.7381368,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "201 West 13th Street, New York, NY 10011, United States of America",
+          "address_line1": "201 West 13th Street",
+          "address_line2": "New York, NY 10011, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7PXQX+7Q",
+          "plus_code_short": "PXQX+7Q New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.139531248419916,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "51efbac84e098052c059affc43447b5e4440f00103f90114f1239900000000c00203",
+          "bbox": {
+            "lon1": -74.0006181,
+            "lat1": 40.7380868,
+            "lon2": -74.0005181,
+            "lat2": 40.7381868
+          }
+        }
+      ],
+      "query": {
+        "text": "201 West 13th Street, New York, NY 10011",
+        "parsed": {
+          "housenumber": "201",
+          "street": "west 13th street",
+          "postcode": "10011",
+          "city": "new york",
+          "state": "ny",
+          "expected_type": "building"
+        }
+      }
+    },
+    "King Jagiello Plaza": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "King Jagiello Monument",
+          "other_names": {
+            "name:be": "\u041f\u043e\u043c\u043d\u0456\u043a \u043a\u0430\u0440\u0430\u043b\u044e \u042f\u0433\u0430\u0439\u043b\u0443",
+            "name:pl": "Pomnik Kr\u00f3la Jagie\u0142\u0142y",
+            "name:ru": "\u041f\u0430\u043c\u044f\u0442\u043d\u0438\u043a \u043a\u043e\u0440\u043e\u043b\u044e \u042f\u0433\u0430\u0439\u043b\u043e"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10075",
+          "suburb": "Manhattan",
+          "quarter": "Upper East Side",
+          "street": "East Drive",
+          "iso3166_2": "US-NY",
+          "lon": -73.9666796,
+          "lat": 40.7789243,
+          "state_code": "NY",
+          "district": "Manhattan",
+          "result_type": "amenity",
+          "distance": 8064.398710274734,
+          "formatted": "King Jagiello Monument, East Drive, New York, NY 10075, United States of America",
+          "address_line1": "King Jagiello Monument",
+          "address_line2": "East Drive, New York, NY 10075, United States of America",
+          "category": "tourism.attraction.artwork",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q2HM+H8",
+          "plus_code_short": "Q2HM+H8 New York, New York County, United States",
+          "rank": {
+            "importance": 0.3618648643770844,
+            "popularity": 8.056651382367173,
+            "confidence": 0.7,
+            "match_type": "full_match"
+          },
+          "place_id": "5177ed1c14de7d52c059a4479dcab3634440f00103f901453103b600000000c002019203164b696e67204a616769656c6c6f204d6f6e756d656e74e203236f70656e7374726565746d61703a76656e75653a6e6f64652f33303533363632353333",
+          "bbox": {
+            "lon1": -73.9667296,
+            "lat1": 40.7788743,
+            "lon2": -73.9666296,
+            "lat2": 40.7789743
+          }
+        }
+      ],
+      "query": {
+        "text": "King Jagiello Plaza"
+      }
+    },
+    "37 W 26th St, 2nd floor, NYC": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10001",
+          "district": "NoMad",
+          "suburb": "Manhattan",
+          "street": "West 26th Street",
+          "housenumber": "37",
+          "iso3166_2": "US-NY",
+          "lon": -73.9904434,
+          "lat": 40.744505,
+          "state_code": "NY",
+          "result_type": "building",
+          "formatted": "37 West 26th Street, New York, NY 10001, United States of America",
+          "address_line1": "37 West 26th Street",
+          "address_line2": "New York, NY 10001, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2V5+RR",
+          "plus_code_short": "P2V5+RR New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.615793062435909,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5180e2b66c637f52c059af5a99f04b5f4440f00103f9013732fd9700000000c00203",
+          "bbox": {
+            "lon1": -73.9904934,
+            "lat1": 40.744455,
+            "lon2": -73.9903934,
+            "lat2": 40.744555
+          }
+        }
+      ],
+      "query": {
+        "text": "37 W 26th St, 2nd floor, NYC",
+        "parsed": {
+          "housenumber": "37",
+          "street": "w 26th st",
+          "city": "nyc",
+          "expected_type": "building"
+        }
+      }
+    },
+    "573 Johnson Avenue, Brooklyn": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "Kings County",
+          "city": "New York",
+          "postcode": "11237",
+          "suburb": "Brooklyn",
+          "street": "Johnson Avenue",
+          "housenumber": "573",
+          "iso3166_2": "US-NY",
+          "lon": -73.924549,
+          "lat": 40.709089285714285,
+          "state_code": "NY",
+          "result_type": "building",
+          "distance": 6877.644783187975,
+          "formatted": "573 Johnson Avenue, Brooklyn, New York, NY 11237, United States of America",
+          "address_line1": "573 Johnson Avenue",
+          "address_line2": "Brooklyn, New York, NY 11237, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P35G+J5",
+          "plus_code_short": "P35G+J5 New York, Kings County, United States",
+          "rank": {
+            "importance": 9.99999999995449e-6,
+            "popularity": 7.037078765758319,
+            "confidence": 1,
+            "confidence_city_level": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "512ba391cf2b7b52c0591e0b0e70c35a4440f00102f901f78caf0600000000c00203",
+          "bbox": {
+            "lon1": -73.924599,
+            "lat1": 40.7090393,
+            "lon2": -73.924499,
+            "lat2": 40.7091393
+          }
+        }
+      ],
+      "query": {
+        "text": "573 Johnson Avenue, Brooklyn",
+        "parsed": {
+          "housenumber": "573",
+          "street": "johnson avenue",
+          "city": "brooklyn",
+          "expected_type": "building"
+        }
+      }
+    },
+    "The RSCDS New York": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "The Sphere",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10048",
+          "district": "Battery Park City",
+          "suburb": "Manhattan",
+          "quarter": "Lower Manhattan",
+          "street": "Liberty Street",
+          "iso3166_2": "US-NY",
+          "lon": -74.0138892,
+          "lat": 40.7104974,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "formatted": "The Sphere, Liberty Street, New York, NY 10048, United States of America",
+          "address_line1": "The Sphere",
+          "address_line2": "Liberty Street, New York, NY 10048, United States of America",
+          "category": "tourism.attraction.artwork",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7PX6P+5C",
+          "plus_code_short": "6P+5C New York, New York County, United States",
+          "rank": {
+            "importance": 0.4335521303750159,
+            "popularity": 8.615793062435909,
+            "confidence": 0,
+            "confidence_city_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5120f1868fe38052c0594f722c94f15a4440f00103f901fed2702100000000c0020192030a54686520537068657265e203226f70656e7374726565746d61703a76656e75653a6e6f64652f353631303432313734",
+          "bbox": {
+            "lon1": -74.0139392,
+            "lat1": 40.7104474,
+            "lon2": -74.0138392,
+            "lat2": 40.7105474
+          }
+        }
+      ],
+      "query": {
+        "text": "The RSCDS New York",
+        "parsed": {
+          "house": "the rscds",
+          "city": "new york",
+          "expected_type": "amenity"
+        }
+      }
+    },
+    "263 W 86th St": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "name": "Church of St. Paul and St. Andrew",
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10024",
+          "district": "Manhattan Community Board 7",
+          "suburb": "Manhattan",
+          "quarter": "Upper West Side",
+          "street": "West 86th Street",
+          "housenumber": "263",
+          "iso3166_2": "US-NY",
+          "lon": -73.977291,
+          "lat": 40.7889381,
+          "state_code": "NY",
+          "result_type": "amenity",
+          "distance": 8804.80657740241,
+          "formatted": "Church of St. Paul and St. Andrew, 263 West 86th Street, New York, NY 10024, United States of America",
+          "address_line1": "Church of St. Paul and St. Andrew",
+          "address_line2": "263 West 86th Street, New York, NY 10024, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q2QF+H3",
+          "plus_code_short": "Q2QF+H3 New York, New York County, United States",
+          "rank": {
+            "importance": 0.3538242275522032,
+            "popularity": 7.710558544579947,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "inner_part"
+          },
+          "place_id": "5135eb8cef8b7e52c059c10875ecfb644440f00102f901ae59261000000000c00201920321436875726368206f662053742e205061756c20616e642053742e20416e64726577",
+          "bbox": {
+            "lon1": -73.977602,
+            "lat1": 40.7887418,
+            "lon2": -73.9769675,
+            "lat2": 40.7891344
+          }
+        }
+      ],
+      "query": {
+        "text": "263 W 86th St",
+        "parsed": {
+          "housenumber": "263",
+          "street": "w 86th st",
+          "expected_type": "building"
+        }
+      }
+    },
+    "102 Norfolk St": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10002",
+          "district": "Lower East Side",
+          "suburb": "Manhattan",
+          "street": "Norfolk Street",
+          "housenumber": "102",
+          "iso3166_2": "US-NY",
+          "lon": -73.9869705,
+          "lat": 40.7187462,
+          "state_code": "NY",
+          "result_type": "building",
+          "distance": 1734.766789946095,
+          "formatted": "102 Norfolk Street, New York, NY 10002, United States of America",
+          "address_line1": "102 Norfolk Street",
+          "address_line2": "New York, NY 10002, United States of America",
+          "category": "building",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P297+F6",
+          "plus_code_short": "P297+F6 New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.098587008372329,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5179e750862a7f52c059e88f1fe0ff5b4440f00102f901c728961000000000c00203",
+          "bbox": {
+            "lon1": -73.9870977,
+            "lat1": 40.7186422,
+            "lon2": -73.9867675,
+            "lat2": 40.7188286
+          }
+        }
+      ],
+      "query": {
+        "text": "102 Norfolk St",
+        "parsed": {
+          "housenumber": "102",
+          "street": "norfolk st",
+          "expected_type": "building"
+        }
+      }
+    },
+    "140 2nd Ave": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "other_names": {
+            "name:ko": "\uc138\ucee8\ub4dc \uc560\ube44\ub274",
+            "name:ru": "2-\u044f \u0410\u0432\u0435\u043d\u044e",
+            "alt_name:ko": "2\ubc88\uac00"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "district": "Manhattan Community Board 11",
+          "suburb": "Manhattan",
+          "street": "2nd Avenue",
+          "iso3166_2": "US-NY",
+          "lon": -73.9871544,
+          "lat": 40.7288929,
+          "state_code": "NY",
+          "housenumber": "140",
+          "result_type": "building",
+          "distance": 2392.5972462889795,
+          "postcode": "10003",
+          "formatted": "140 2nd Avenue, New York, NY 10003, United States of America",
+          "address_line1": "140 2nd Avenue",
+          "address_line2": "New York, NY 10003, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8P2H7+H4",
+          "plus_code_short": "P2H7+H4 New York, New York County, United States",
+          "rank": {
+            "importance": 0.5008888311756161,
+            "popularity": 8.255622544051208,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "518f06a6892d7f52c059afe4cf5c4c5d4440c00203",
+          "bbox": {
+            "lon1": -73.935467,
+            "lat1": 40.799819,
+            "lon2": -73.9339793,
+            "lat2": 40.801884
+          }
+        }
+      ],
+      "query": {
+        "text": "140 2nd Ave",
+        "parsed": {
+          "housenumber": "140",
+          "street": "2nd ave",
+          "expected_type": "building"
+        }
+      }
+    },
+    "239 W 14th St": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "postcode": "10011",
+          "district": "Chelsea District",
+          "suburb": "Manhattan",
+          "street": "West 14th Street",
+          "housenumber": "239",
+          "iso3166_2": "US-NY",
+          "lon": -74.001168,
+          "lat": 40.7394534,
+          "state_code": "NY",
+          "result_type": "building",
+          "distance": 2991.567209209308,
+          "formatted": "239 West 14th Street, New York, NY 10011, United States of America",
+          "address_line1": "239 West 14th Street",
+          "address_line2": "New York, NY 10011, United States of America",
+          "category": "building.residential",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G7PXQX+QG",
+          "plus_code_short": "PXQX+QG New York, New York County, United States",
+          "rank": {
+            "importance": 9.175936522464359e-5,
+            "popularity": 8.159755521954317,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "515073f222138052c05940f5b468a65e4440f00102f901c6f2c50f00000000c00203",
+          "bbox": {
+            "lon1": -74.0012648,
+            "lat1": 40.7393607,
+            "lon2": -74.0010295,
+            "lat2": 40.7396033
+          }
+        }
+      ],
+      "query": {
+        "text": "239 W 14th St",
+        "parsed": {
+          "housenumber": "239",
+          "street": "w 14th st",
+          "expected_type": "building"
+        }
+      }
+    },
+    "353 W 48th St, 3rd fl": {
+      "results": [
+        {
+          "datasource": {
+            "sourcename": "openstreetmap",
+            "attribution": "\u00a9 OpenStreetMap contributors",
+            "license": "Open Database License",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          "other_names": {
+            "name:ru": "\u0417\u0430\u043f\u0430\u0434\u043d\u0430\u044f 48-\u044f \u0441\u0442\u0440\u0438\u0442"
+          },
+          "country": "United States",
+          "country_code": "us",
+          "state": "New York",
+          "county": "New York County",
+          "city": "New York",
+          "district": "Hell's Kitchen",
+          "suburb": "Manhattan",
+          "street": "West 48th Street",
+          "iso3166_2": "US-NY",
+          "lon": -73.9888247,
+          "lat": 40.7620937,
+          "state_code": "NY",
+          "housenumber": "353",
+          "result_type": "building",
+          "distance": 5669.018576985308,
+          "postcode": "10036",
+          "formatted": "353 West 48th Street, New York, NY 10036, United States of America",
+          "address_line1": "353 West 48th Street",
+          "address_line2": "New York, NY 10036, United States of America",
+          "timezone": {
+            "name": "America/New_York",
+            "offset_STD": "-05:00",
+            "offset_DST": "-04:00",
+            "offset_STD_seconds": -18000,
+            "offset_DST_seconds": -14400,
+            "abbreviation_STD": "EST",
+            "abbreviation_DST": "EDT"
+          },
+          "plus_code": "87G8Q266+RF",
+          "plus_code_short": "Q266+RF New York, New York County, United States",
+          "rank": {
+            "importance": 0.05342509269855799,
+            "popularity": 8.238570705581026,
+            "confidence": 1,
+            "confidence_street_level": 1,
+            "confidence_building_level": 1,
+            "match_type": "full_match"
+          },
+          "place_id": "5187fe64e7487f52c0596bfe4e498c614440c00203",
+          "bbox": {
+            "lon1": -73.9955216,
+            "lat1": 40.7610365,
+            "lon2": -73.9870177,
+            "lat2": 40.7646184
+          }
+        }
+      ],
+      "query": {
+        "text": "353 W 48th St, 3rd fl",
+        "parsed": {
+          "housenumber": "353",
+          "street": "w 48th st",
+          "expected_type": "building"
+        }
+      }
+    }
+  }
+}

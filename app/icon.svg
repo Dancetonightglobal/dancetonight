@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="DanceTonight">
+  <!--
+    The app icon (D-069): the now rule cut into the bill, the loudest thing on the page (DESIGN.md
+    section 5). Paper, two ink hour lines, and the spot tab with its rule, in the design's own
+    tokens (app/globals.css; tests/unit/app-icon.test.ts holds the two to the same values). Square,
+    because a flyer is cut, not rounded. The dark print run follows the device, as the page does.
+    scripts/build-icons.mjs renders apple-icon.png and favicon.ico from this file.
+  -->
+  <style>
+    .paper { fill: #fbfaf7; }
+    .ink { fill: #191919; }
+    .spot { fill: #b93815; }
+    @media (prefers-color-scheme: dark) {
+      .paper { fill: #151412; }
+      .ink { fill: #f2efe8; }
+      .spot { fill: #ff8a5b; }
+    }
+  </style>
+  <rect class="paper" width="32" height="32" />
+  <rect class="ink" x="3" y="4" width="26" height="2" />
+  <rect class="spot" x="3" y="11" width="11" height="10" />
+  <rect class="spot" x="13" y="14" width="16" height="4" />
+  <rect class="ink" x="3" y="26" width="26" height="2" />
+</svg>

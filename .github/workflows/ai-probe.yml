@@ -1,0 +1,26 @@
+name: ai-probe
+
+# Times one made-up extraction on Workers AI under several response formats (D-055), so a slow
+# or runaway reply is diagnosed in a few minutes instead of one full ingest run per guess. Started
+# by hand from the Actions tab. It reads no third-party page and writes nothing.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Probe the extraction formats
+        run: pnpm ai:probe

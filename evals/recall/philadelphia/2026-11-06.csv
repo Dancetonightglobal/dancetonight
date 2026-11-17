@@ -1,0 +1,21 @@
+# Philadelphia (City of Philadelphia) known nights for 2026-11-06, researched from the public web on 2026-10-29.
+# A list we drafted is biased toward what we already find (D-048 Q3); the owner corrected it on 2026-10-29 (Gayborhood nights added).
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+title,venue,start_time,style,source_url
+Finally Friday's at Brasil Nightclub,Brasil's Nightclub (112 Chestnut St 19106),20:30,salsa bachata,https://www.salsavida.com/guides/pennsylvania/philadelphia/
+Cuba Libre Nights,Cuba Libre Restaurant & Rum Bar (10 S 2nd St 19106),23:00,salsa latin,https://www.salsavida.com/guides/pennsylvania/philadelphia/
+Latin Night Party,Society Hill Dance Academy (1919 E Passyunk Ave 19148),20:30,salsa bachata zouk,https://societyhilldance.com/events.php
+Noches Bravas,National Mechanics (22 S 3rd St 19106),21:00,latin,https://www.eventbrite.com/o/120626298488
+A Black Celebration - Depeche Mode Dance Party,Johnny Brenda's (1201 Frankford Ave 19125),21:00,dj night new wave,https://johnnybrendas.com/events/
+DJ Santi,Concourse Dance Bar (1635 Market St 19103),21:00,dj night,https://www.concoursedancebar.com/events
+CARIBBEAN NIGHT,Silk City (435 Spring Garden St 19123),,caribbean dj night,https://silkcityphilly.com/events/
+MEDUZA,The Ave Live,,house,https://theavelive.com/events
+Valentino Khan,NOTO Philadelphia (1209 Vine St 19107),22:00,house edm,https://www.eventbrite.com/o/16917375439
+SOUNDGASM.INTL Fridays,Reserve Lounge (724 Arch St 19106),22:00,afrobeats,https://www.eventbrite.com/o/53900670923
+Fridays Themed TAKEOVER,Infusion Lounge (16 S 2nd St 19106),22:00,dj night,https://www.eventbrite.com/o/12259966201
+FRIEDdays SPADES on FRIDAY,Spades Restaurant & Lounge (4022 Lancaster Ave 19104),22:00,dj night hip-hop,https://www.eventbrite.com/d/pa--philadelphia/dance-party/
+PHILLY DIWALI AFTER DARK 2026,VOIX (2825 Cottman Ave 19149),22:00,bollywood,https://www.eventbrite.com/d/pa--philadelphia/dance-party/
+Giddy Up Philly Country Line Dancing,Voyeur Nightclub (1221 St James St 19107),19:00,line dance queer,https://outxout.com/events/philadelphia-pa
+WKND Part 1,Woody's (202 S 13th St 19107),19:00,dj night queer,https://outxout.com/events/philadelphia-pa
+Weekends at Voyeur,Voyeur Nightclub (1221 St James St 19107),23:00,dj night queer,https://outxout.com/events/philadelphia-pa

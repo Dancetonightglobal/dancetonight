@@ -1,0 +1,215 @@
+{
+  "measured": "ingest run 50 (GitHub Actions run 37334230086), 2026-10-05 11:37am to 12:08pm ET: seconds from each source's first log line to the next source's",
+  "sources": [
+    {
+      "url": "https://www.ticketmaster.com/",
+      "readBy": "reader",
+      "seconds": 74,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://bigappleballroom.com/schedule",
+      "readBy": "model",
+      "seconds": 127,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://calendar.houseofyes.org/",
+      "readBy": "model",
+      "seconds": 139,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://cobblefish.net/events",
+      "readBy": "model",
+      "seconds": 34,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://frimframjam.com/calendar",
+      "readBy": "reader",
+      "seconds": 24,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://gygnyc.com/new-york-soho-greenwich-village-gonzalez-y-gonzalez-live-salsa",
+      "readBy": "model",
+      "seconds": 73,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://h0l0.nyc/",
+      "readBy": "model",
+      "seconds": 80,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://lpr.com/",
+      "readBy": "model",
+      "seconds": 64,
+      "cachedInRun50": false,
+      "listsTonight": true
+    },
+    {
+      "url": "https://misalsadurabaileevent.netlify.app/",
+      "readBy": "model",
+      "seconds": 42,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://nievesdancestudio.com/manhattan/",
+      "readBy": "model",
+      "seconds": 127,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://nuevotangoarts.org/2026-calendar",
+      "readBy": "model",
+      "seconds": 35,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.bluesdancenewyork.com/events",
+      "readBy": "reader",
+      "seconds": 13,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.lebainnewyork.com/",
+      "readBy": "model",
+      "seconds": 94,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.nylindy.com/dances-2026",
+      "readBy": "model",
+      "seconds": 74,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.rscdsnewyork.org/classes",
+      "readBy": "model",
+      "seconds": 203,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://bigappleranch.com/",
+      "readBy": "reader",
+      "seconds": 27,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://brooklyncontra.org/",
+      "readBy": "reader",
+      "seconds": 25,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://cdny.org/calendar-events",
+      "readBy": "model",
+      "seconds": 2,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://newyorktango.com/",
+      "readBy": "reader",
+      "seconds": 40,
+      "cachedInRun50": false,
+      "listsTonight": true
+    },
+    {
+      "url": "https://nycswings.net/",
+      "readBy": "reader",
+      "seconds": 113,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://nycwcs.com/",
+      "readBy": "model",
+      "seconds": 1,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://rscdsnewyork.org/",
+      "readBy": "reader",
+      "seconds": 39,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://sobs.com/calendar",
+      "readBy": "model",
+      "seconds": 1,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://steppingoutstudios.com/social-events1",
+      "readBy": "model",
+      "seconds": 25,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://swingremixnyc.com/",
+      "readBy": "model",
+      "seconds": 6,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://theronda.us/nyc",
+      "readBy": "model",
+      "seconds": 6,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://thisweekinswingnyc.com/",
+      "readBy": "model",
+      "seconds": 180,
+      "cachedInRun50": false,
+      "listsTonight": true
+    },
+    {
+      "url": "https://www.bluesdancenewyork.com/calendar",
+      "readBy": "model",
+      "seconds": 1,
+      "cachedInRun50": true,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.elsewhere.club/events",
+      "readBy": "reader",
+      "seconds": 25,
+      "cachedInRun50": false,
+      "listsTonight": false
+    },
+    {
+      "url": "https://www.eventbrite.com/o/115478120751",
+      "readBy": "reader",
+      "seconds": 16,
+      "cachedInRun50": false,
+      "listsTonight": false
+    }
+  ]
+}

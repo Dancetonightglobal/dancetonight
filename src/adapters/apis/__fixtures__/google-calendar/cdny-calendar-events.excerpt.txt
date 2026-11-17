@@ -1,0 +1,36 @@
+<!-- Excerpt (1,200 characters around the calendar embed) of cdny-calendar-events, fetched 2026-10-04 by DanceTonightBot. -->
+prevents stretching on large screens */
+    margin: 0 auto;
+    padding-bottom: 71%; /* aspect ratio (4:3). Adjust if needed */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .calendar-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Optional: make the calendar taller on mobile */
+  @media (max-width: 600px) {
+    .calendar-container {
+      padding-bottom: 120%;
+    }
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;calendar-container&quot;&gt;
+  &lt;iframe 
+    src=&quot;https://calendar.google.com/calendar/embed?src=4e2tnmgfn2ph2tvaefa8ldbuqo%40group.calendar.google.com&amp;ctz=America%2FNew_York&quot;
+    frameborder=&quot;0&quot;
+    scrolling=&quot;no&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;" data-tile-id="30604a6fd5b4fdf2_963" data-enable-html-sites-gen-ai="false" data-is-liquid-artifact="false" data-in-editor="false" jsaction="rcuQ6b:WYd;"><div class="EmVfjc qs41qe UzswCe" data-loadingmessage=" " jscontroller="qAKInc" jsaction="animationend:kWijWc;dyRcpb:dyRcpb" data-active="true" jsname="Hy6Uif"><div class="Cg7hO" aria-live="assertive" jsname="vyyg5"> </div><div jsn

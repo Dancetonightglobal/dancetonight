@@ -1,0 +1,19 @@
+# DanceTonight Istanbul recall set, Friday 2026-11-06 (Istanbul province). Built 2026-10-31. start_time is local (Europe/Istanbul).
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Drafted by us from public listings (D-048 Q3): biased toward what we already find. Rows come from Resident Advisor
+# (area 73) and Bugece as listed on 2026-10-31 (read 41206926207); an independent web search (salsa, bachata, tango)
+# found no dated Friday or Saturday social for this night. Istanbul tango milongas exist (333, La Cumparsita, Soho
+# Tangoport, Zeytuna per AP 2026) but publish no readable schedule (milongaistanbul.com does not resolve), so they are
+# not listed. Left out: Altin Saatler "Turkish Music" (Bugece, 11-07: a seated music night, not clearly dancing).
+title,venue,start_time,style,source_url
+Friday Frankhan: DJ Tennis & Kybba,Frankhan Selectist,22:00,house,https://ra.co/events/2510395
+Appleblim & DJ Regret,Arkaoda,22:00,techno,https://ra.co/events/2569872
+Peninsulas presents: Elias Mazian & Bayram Ozcan,Minimüzikhol,23:00,house,https://ra.co/events/2559124
+Barbara,Suma Han,22:30,house,https://ra.co/events/2568612
+Cristobal Pesce - Light Dominion,74 Hall,21:30,techno,https://ra.co/events/2528738
+Mix Festival 10th Year,Zorlu PSM,22:00,house,https://ra.co/events/2525086
+Henri Bergmann + NODUS + Arian & Aryou Sepassi,Klein Phönix,21:00,house,https://ra.co/events/2571576
+1NIGHT,Flux,22:00,techno,https://bugece.co/tr/event/1night-11-06-26--90b6da6a
+Oceanvs Orientalis,Blind,20:00,house,https://bugece.co/tr/event/oceanvs-orientalis-11-06-26--8f9108fe
+The Sisters 90's 2000's Pop Gecesi,Blind,23:45,pop,https://bugece.co/tr/event/the-sisters-90s-2000s-pop-gecesi-11-06-26--9bfe5b78

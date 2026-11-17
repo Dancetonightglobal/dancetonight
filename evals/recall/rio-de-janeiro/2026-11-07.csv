@@ -1,0 +1,30 @@
+# Rio de Janeiro + Niteroi known dance nights for Saturday 2026-11-07, researched from the public web on 2026-10-29.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Evidence per row (D = page names 2026-11-07; W = weekly night with recent dated evidence; V = venue's own standing hours):
+#  Forro de Pife Descalco D (forrozinho dated page; thedancefloor recurring Sat, next 2026-10-31)
+#  Jato no Forro / 2 Anos Forro DuGato D (vaidancar; text says Democraticos 21h-02h, the map pin says Jaime Aroxa)
+#  Congresso Brasileiro de Bolero Baile de Gala D (thedancefloor); Fiesta Latina Baila Baila D (salsavida calendar)
+#  Privilege Magic, Halloween do Copa D (raentretenimento ticket pages); H4U at The Home Rio D (gaytravel4u)
+#  MENACE, D-Edge DJ Marky D (technoairlines, an RA mirror; RA itself not fetched)
+#  Milongas Passional, Tres Esquinas, Alma Milonguera, La Milonguita (Niteroi) W-weak: metropolitanotangorj.com.br 2026
+#   championship page lists them as Saturday milongas (Sept 2026); Passional reportedly 1st and 3rd Saturdays (Nov 7 = 1st)
+#  Rio Scenarium W (Rio Times 2026-10-24: Saturday 20:00-03:00); Carioca da Gema W (Rio Times 2026-09-14 Fri/Sat cover)
+#  Feira de Sao Cristovao V (venue site: Fri/Sat open to 04:00, forro stages)
+title,venue,start_time,style,source_url
+Forró de Pife Descalço,"Antigo Rampa, Lugar de Criação, Copacabana",18:00,forro,https://forrozinho.com.br/pt/brasil/rj/rio-de-janeiro/eventos/forro-de-pife-descalco-2026-11-07
+Festival Jatô no Forró - 2 Anos Forró DuGato (Trio Dona Zefa),"Clube dos Democráticos, Rua do Riachuelo 91, Lapa",21:00,forro,https://vaidancar.com.br/baile/details/BLIIulv6we
+Congresso Brasileiro de Bolero - Baile de Gala,"Sintracont-Rio, Rua Haddock Lobo 74, Tijuca",20:30,bolero samba de gafieira,https://www.thedancefloor.dance/eventos/3d2c5f7e-7d68-45b3-96e2-5b86bfae1706
+Fiesta Latina Baila Baila,"Club Substation, Rua Siqueira Campos 143, Copacabana",22:00,salsa bachata,https://www.salsavida.com/event/brazil/rio-de-janeiro/fiesta-latina-baila-baila-at-club-substation/
+Privilège Magic,"Edifício Touring, Praça Mauá, Centro",22:00,electronic house,https://raentretenimento.com/eventos/ingressos-desconto-privilege-magic-rio-de-janeiro-0711/
+Halloween do Copa,"Copacabana Palace, Av. Atlântica 1702, Copacabana",22:00,dj party,https://raentretenimento.com/eventos/ingressos-desconto-halloween-do-copa/
+H4U - Halloween Harem Edition,"The Home Rio, Rua Sacadura Cabral 135, Saúde",22:00,house,https://www.gaytravel4u.com/event/the-home-rio-presents/
+MENACE - O Desvendar do Renascer,"Rua da Alfândega 50, Centro",22:00,techno,https://www.technoairlines.com/event/menace-o-desvendar-do-renascer-the-rebirths-unveil-rua-da-alfandega-50-2026-11-07
+D-Edge Rio apresenta DJ Marky & Friends,"D-Edge Rio, Av. Rodrigues Alves 293, Saúde",23:00,drum and bass,https://www.technoairlines.com/event/d-edge-rio-apresenta-dj-marky-friends-d-edge-rio-2026-11-07
+Milonga Passional,"Casa do Tango, Rua da Passagem 172, Botafogo",20:00,tango,https://www.metropolitanotangorj.com.br/milongas
+Milonga Três Esquinas,"La Tangueria, Av. Nossa Senhora de Copacabana 420, Copacabana",20:00,tango,https://www.metropolitanotangorj.com.br/milongas
+Alma Milonguera La Milonga,"Espaço Alma Milonguera, Av. Gomes Freire 663, Lapa",20:00,tango,https://www.metropolitanotangorj.com.br/milongas
+Milonga La Milonguita,"Studio Solange Dantas, Rua Gavião Peixoto 182, Icaraí, Niterói",16:00,tango,https://www.metropolitanotangorj.com.br/milongas
+Rio Scenarium (Saturday live samba and gafieira),"Rio Scenarium, Rua do Lavradio 20, Centro",20:00,samba gafieira,https://www.riotimesonline.com/rio-de-janeiro-nightlife-tonight-october-24-2026/
+Carioca da Gema (Saturday samba),"Carioca da Gema, Av. Mem de Sá 79, Lapa",,samba,https://www.riotimesonline.com/rio-de-janeiro-nightlife-monday-september-14-2026/
+Forró na Feira de São Cristóvão,"Centro Luiz Gonzaga de Tradições Nordestinas, São Cristóvão",,forro,https://www.feiradesaocristovao.org.br/

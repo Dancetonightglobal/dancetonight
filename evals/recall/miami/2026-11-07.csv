@@ -1,0 +1,28 @@
+# Drafted by us from public listings (D-048 Q3), accepted by the owner 2026-10-29 (D-321): biased toward what we already find.
+# DanceTonight Miami recall set, Saturday 2026-11-07 (Miami-Dade only). Built 2026-10-29.
+# start_time is local (America/New_York). Confidence notes per row are in evals/recall/miami/recall-notes.md.
+# NEGATIVE CHECK: Ball & Chain's La Pachanga is NOT on this date. Ball & Chain's own calendar API shows "Closed for a Private Event" from 18:00 on Nov 7, although salsavida and the venue's "every Saturday" page imply a La Pachanga. A good matcher must not output it.
+# Excluded on purpose: boat parties and yacht parties, party buses and club crawls, comedy and burlesque shows, "Under the Desert Moon" (belly-dance performance show, Hialeah), UM watch party (Doral Yard), and Broward rows (Miami Bachata Motion Saturday Social in Hallandale Beach, WE HEART RnB at Kemistry Fort Lauderdale, Salsaholics Wellington edition).
+# For DICE rows source_url is the DICE Miami genre page that lists it, because DICE event links are drawn by JS.
+title,venue,start_time,style,source_url
+Escape Room 1 Year Anniversary: DJ Taj,Floyd Miami,23:00,house/disco,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+808 Life: DJ Assault + DJ Godfather,The Ground Miami,23:00,ghetto tech / electro,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/party
+TBA (Terrace),Club Space Miami,23:00,house/techno,https://www.clubspace.com/shows
+Valentin Huedo,Do Not Sit On The Furniture,22:00,house,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+RESISTANCE Opening Party - Miss Monique,M2 Miami,22:00,techno/house,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+Martin Garrix,LIV Nightclub,23:30,club (EDM),https://www.livnightclub.com/miami/event/EVE112156200020261107/martin-garrix/
+DUSTIN LYNCH AT E11EVEN,E11EVEN,20:00,club (country act),https://speakeasygo.com/E11EVEN/DUSTIN-LYNCH-AT-E11EVEN?eid=EVE-9XGLAG
+"CASA WHISPERS x MTRNM Present: Dia De Los Muertos - Zey Zey, Miami",ZeyZey,19:00,house (Afro/organic),https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/disco
+Salsa Saturdays Wynwood | FREE Classes + After Party with RSVP,150 NW 24th St (Flamingoz),22:00,salsa (class + party),https://www.eventbrite.com/e/salsa-saturdays-wynwood-free-classes-after-party-with-rsvp-tickets-1982403889398
+Saturdays Latin Party | Ace of Spades Saturdays,Cosanostra Miami,19:00,Latin club,https://app.discotech.me/events/38296536-saturdays-latin-party-ace-of-spades-saturdays-at-cosanostra-miami
+CHISPA Saturdays at PIER 5,PIER 5 (401 Biscayne Blvd),21:00,Latin music party,https://www.eventbrite.com/e/chispa-saturdays-at-pier-5-tickets-1986464143728
+"Miami Salsa Party: Lessons, Mojitos, Appetizers & Live Music in South Beach",900 Ocean Dr,19:30,salsa (lesson + club),https://www.eventbrite.com/e/miami-salsa-party-lessons-mojitos-appetizers-live-music-in-south-beach-tickets-1978629001607
+Latin Mix Nights Miami Rooftop,Furia Disco Miami,23:00,Latin club,https://www.eventbrite.com/e/latin-mix-nights-miami-rooftop-tickets-2002084257910
+The People's Pachanga,Taco Time and More,20:00,Latin DJ dance party (mixed: dominoes + karaoke),https://www.eventbrite.com/e/the-peoples-pachanga-tickets-1998915994549
+THE SHRINE . Afrobeats + Caribbean Heat,The Shrine (297 NW 23rd St),21:00,afrobeats / Caribbean,https://www.eventbrite.com/e/the-shrine-afrobeats-caribbean-heat-tickets-1972952025619
+STAMPED Pool Party AYA x Friends  AUG Ed. Amapiano Afrobeats & more,ARLO Wynwood,16:00,amapiano / afrobeats,https://www.eventbrite.com/e/stamped-pool-party-aya-x-friends-aug-ed-amapiano-afrobeats-more-tickets-2002084952989
+ARE N BEE — Miami’s #1 All-R&B Night,Uva Wynwood,21:00,R&B DJ,https://www.eventbrite.com/e/are-n-bee-miamis-1-all-rb-night-tickets-1995902416857
+EXPANSION Ecstatic Dance Miami- Nov 7 DJ Purrriestess,Waterfront Villa in Morningside,16:00,ecstatic dance,https://www.ecstatic-flow.com/event-details/expansion-ecstatic-dance-miami-nov-7-dj-purrriestess
+LGBTQ+ Homecoming Dance,Overtown Performing Arts Center,18:00,DJ dance (community),https://www.eventbrite.com/e/lgbtq-homecoming-dance-tickets-1991496613982
+LOVEisLOVE MIAMI HIP HOP BLOCK PARTY,Normandy Fountain (7802 Rue Vendome),18:00,hip hop block party,https://events.miamibeachfl.gov/event/loveislove-miami-hip-hop-block-party/
+REVENGE SOUTH BEACH HIPHOP SATURDAYS,Revenge Miami,23:00,hip hop club,https://www.eventbrite.com/e/revenge-south-beach-hiphop-saturdays-tickets-2003193965074

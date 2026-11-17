@@ -1,0 +1,1 @@
+ALTER TABLE "events" DROP CONSTRAINT "events_has_a_start_time";

@@ -1,0 +1,1180 @@
+{
+  "_embedded": {
+    "events": [
+      {
+        "name": "Don Omar \"The Last King World Tour\"",
+        "type": "event",
+        "id": "17GZv0G61DlIaN2",
+        "test": false,
+        "url": "https://www.ticketmaster.com/don-omar-the-last-king-world-brooklyn-new-york-10-10-2026/event/300064AEEBA098CF",
+        "locale": "en-us",
+        "images": [
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "height": 115,
+            "fallback": false
+          },
+          {
+            "ratio": "4_3",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_CUSTOM.jpg",
+            "width": 305,
+            "height": 225,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_SOURCE",
+            "width": 2426,
+            "height": 1365,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "height": 203,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "height": 1152,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "height": 56,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "height": 360,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "height": 683,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "height": 427,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "height": 639,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "height": 576,
+            "fallback": false
+          }
+        ],
+        "distance": 4.22,
+        "units": "KILOMETERS",
+        "sales": {
+          "public": {
+            "startDateTime": "2026-05-22T14:00:00Z",
+            "startTBD": false,
+            "startTBA": false,
+            "endDateTime": "2026-10-11T00:00:00Z"
+          },
+          "presales": [
+            {
+              "startDateTime": "2026-05-19T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Kingdom Fandom Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "CMN Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Ticketmaster Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Barclays Center Presale"
+            },
+            {
+              "startDateTime": "2026-05-19T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "VIP Packages Presale"
+            },
+            {
+              "startDateTime": "2026-05-22T14:00:00Z",
+              "endDateTime": "2026-10-03T21:00:00Z",
+              "name": "VIP Packages Onsale"
+            }
+          ]
+        },
+        "dates": {
+          "start": {
+            "localDate": "2026-10-10",
+            "localTime": "20:00:00",
+            "dateTime": "2026-10-11T00:00:00Z",
+            "dateTBD": false,
+            "dateTBA": false,
+            "timeTBA": false,
+            "noSpecificTime": false
+          },
+          "timezone": "America/New_York",
+          "status": { "code": "onsale" },
+          "spanMultipleDays": false
+        },
+        "classifications": [
+          {
+            "primary": true,
+            "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+            "genre": { "id": "KnvZfZ7vAv1", "name": "Hip-Hop/Rap" },
+            "subGenre": { "id": "KZazBEonSMnZfZ7vkdv", "name": "Reggaeton" },
+            "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+            "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+            "family": false
+          }
+        ],
+        "promoter": {
+          "id": "6346",
+          "name": "CMN - CARDENAS MARKETING NETWORK",
+          "description": "CMN - CARDENAS MARKETING NETWORK / NTL / USA"
+        },
+        "promoters": [
+          {
+            "id": "6346",
+            "name": "CMN - CARDENAS MARKETING NETWORK",
+            "description": "CMN - CARDENAS MARKETING NETWORK / NTL / USA"
+          }
+        ],
+        "info": "Tickets are not available at the box office on the first day of the public on sale. Visit Barclays Center's A-Z Info Guide for venue information and frequently asked questions. SHOW: 8:00 PM ALL AGES EVENT BAG POLICY: Drawstring backpacks and any bags measuring 10\" x 6\" x 2\" or smaller are permitted.",
+        "pleaseNote": "Tickets are not available at the box office on the first day of the public on sale. Visit Barclays Center's [A-Z Center Info Guide](https://www.barclayscenter.com/center-info/a-z-guide) for venue information and frequently asked questions.",
+        "products": [
+          {
+            "name": "SPOTHERO BARCLAYS CENTER",
+            "id": "17GZv0G61XioNXr",
+            "url": "https://www.ticketmaster.com/spothero-barclays-center-brooklyn-new-york-10-10-2026/event/300064AFAC463F9E",
+            "type": "Upsell",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7vAva", "name": "Parking" },
+                "subType": { "id": "KZFzBErXgnZfZ7vAFe", "name": "Regular" },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Don Omar VIP Upgrades (No Ticket Included)",
+            "id": "17GZv0G657FOFm7",
+            "url": "https://www.ticketmaster.com/don-omar-vip-upgrades-no-ticket-brooklyn-new-york-10-10-2026/event/300064B108808B84",
+            "type": "VIP",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7v7nJ", "name": "Upsell" },
+                "subType": { "id": "KZFzBErXgnZfZ7v7lv", "name": "Special Entry" },
+                "family": false
+              }
+            ]
+          }
+        ],
+        "seatmap": {
+          "staticUrl": "https://mapsapi.tmol.io/maps/geometry/3/event/300064AEEBA098CF/staticImage?type=png&systemId=HOST"
+        },
+        "accessibility": { "ticketLimit": 4 },
+        "ticketLimit": { "info": "There is an overall 8 ticket limit for this event." },
+        "ageRestrictions": { "legalAgeEnforced": false },
+        "ticketing": { "safeTix": { "enabled": true }, "allInclusivePricing": { "enabled": true } },
+        "nameOrigin": "custom",
+        "ticketTextLines": {
+          "en-us": {
+            "line6": " SAT OCT 10 2026 8:00 PM  ",
+            "line5": "     BARCLAYS CENTER      ",
+            "line4": "                          ",
+            "line3": " THE LAST TOUR WORLD TOUR ",
+            "line2": "         DON OMAR         ",
+            "line1": "       CMN PRESENTS       "
+          }
+        },
+        "linkMoreInfo": {
+          "descriptions": {
+            "en-nz": "Click here to access Barclays Center's A-Z Info Guide",
+            "en-ca": "Click here to access Barclays Center's A-Z Info Guide",
+            "en-us": "Click here to access Barclays Center's A-Z Info Guide",
+            "pt-br": "Click here to access Barclays Center's A-Z Info Guide",
+            "en-au": "Click here to access Barclays Center's A-Z Info Guide",
+            "es-us": "Click here to access Barclays Center's A-Z Info Guide",
+            "es-br": "Click here to access Barclays Center's A-Z Info Guide",
+            "en-mx": "Click here to access Barclays Center's A-Z Info Guide",
+            "es-mx": "Click here to access Barclays Center's A-Z Info Guide",
+            "fr-ca": "Click here to access Barclays Center's A-Z Info Guide"
+          },
+          "url": "https://www.barclayscenter.com/center-info/a-z-guide"
+        },
+        "_links": {
+          "self": { "href": "/discovery/v2/events/17GZv0G61DlIaN2?locale=en-us" },
+          "attractions": [{ "href": "/discovery/v2/attractions/K8vZ9175yK0?locale=en-us" }],
+          "venues": [{ "href": "/discovery/v2/venues/KovZ917AtP3?locale=en-us" }]
+        },
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Barclays Center",
+              "type": "venue",
+              "id": "KovZ917AtP3",
+              "test": false,
+              "url": "https://www.ticketmaster.com/barclays-center-tickets-brooklyn/venue/393376",
+              "locale": "en-us",
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dbimages/22822v.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                }
+              ],
+              "distance": 4.22,
+              "units": "KILOMETERS",
+              "postalCode": "11217",
+              "timezone": "America/New_York",
+              "city": { "name": "Brooklyn" },
+              "state": { "name": "New York", "stateCode": "NY" },
+              "country": { "name": "United States Of America", "countryCode": "US" },
+              "address": { "line1": "620 Atlantic Ave" },
+              "location": { "longitude": "-73.97519000", "latitude": "40.68285000" },
+              "markets": [{ "name": "New York/Tri-State Area", "id": "35" }],
+              "dmas": [{ "id": 345 }],
+              "boxOfficeInfo": {
+                "openHoursDetail": "M-F 12-6pm; Sat 12-4pm; Sun Closed (Hours may differ due to events)",
+                "acceptedPaymentDetail": "American Express, Visa, Mastercard & Discover",
+                "willCallDetail": "No public Will Call"
+              },
+              "parkingDetail": "Parking at Barclays Center is very limited. For more information on parking garages in the area, please go to: https://www.barclayscenter.com/getting-here/parking",
+              "accessibleSeatingDetail": "Subject to availability, tickets for accessible seating may be purchased online for each event through Ticketmaster. Please refer all questions to the Barclays Center Disabled Services A to Z Guide: https://www.barclayscenter.com/center-info/disabled-a-to-z-guide ENTRY: All entrances at Barclays Center are ADA accessible. Re-entry is not permitted. All guests wishing to enter Barclays Center are subject to the established venue/NBA screening guidelines. INTERPRETING SERVICES: Patrons requiring sign language interpretation services for any events at Barclays Center should contact our Guest Services Department at least one week in advance of the event, by emailing guestservices@barclayscenter.com. MOBILITY DEVICE STORAGE & MEDICAL BAGS: Storage is available at Guest Services located at Section 112 on the Main Concourse and Section 212 on the Upper Concourse. SERVICE ANIMALS: Service animals are welcome at Barclays Center. In keeping with ADA regulations. Please contact our Guest Services Department if any accommodations are required, by emailing guestservices@barclayscenter.com.",
+              "generalInfo": {
+                "generalRule": "For a comprehensive guide on all information and policies/rules for attending any Barclays Center event, please go to: https://www.barclayscenter.com/center-info/a-z-guide",
+                "childRule": "For all sporting events and most concerts, children under 2 years old may enter Barclays Center free of charge but must sit on the lap of an accompanying ticketed adult. Any child that has reached their 2nd birthday will require a ticket to enter the arena and must occupy their ticketed seat only. Please note that some shows (especially those intended for children) will have a different policy and may require all children to have a ticket."
+              },
+              "upcomingEvents": { "tmr": 1, "ticketmaster": 214, "_total": 215, "_filtered": 0 },
+              "_links": { "self": { "href": "/discovery/v2/venues/KovZ917AtP3?locale=en-us" } }
+            }
+          ],
+          "attractions": [
+            {
+              "name": "Don Omar",
+              "type": "attraction",
+              "id": "K8vZ9175yK0",
+              "test": false,
+              "url": "https://www.ticketmaster.com/don-omar-tickets/artist/1031846",
+              "locale": "en-us",
+              "externalLinks": { "twitter": [{ "url": "@ORPHANDON" }] },
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_EVENT_DETAIL_PAGE_16_9.jpg",
+                  "width": 205,
+                  "height": 115,
+                  "fallback": false
+                },
+                {
+                  "ratio": "4_3",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_CUSTOM.jpg",
+                  "width": 305,
+                  "height": 225,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_SOURCE",
+                  "width": 2426,
+                  "height": 1365,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_ARTIST_PAGE_3_2.jpg",
+                  "width": 305,
+                  "height": 203,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                  "width": 2048,
+                  "height": 1152,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RECOMENDATION_16_9.jpg",
+                  "width": 100,
+                  "height": 56,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_16_9.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_3_2.jpg",
+                  "width": 1024,
+                  "height": 683,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_3_2.jpg",
+                  "width": 640,
+                  "height": 427,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_LANDSCAPE_16_9.jpg",
+                  "width": 1136,
+                  "height": 639,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_16_9.jpg",
+                  "width": 1024,
+                  "height": 576,
+                  "fallback": false
+                }
+              ],
+              "classifications": [
+                {
+                  "primary": true,
+                  "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+                  "genre": { "id": "KnvZfZ7vAv1", "name": "Hip-Hop/Rap" },
+                  "subGenre": { "id": "KZazBEonSMnZfZ7vkdv", "name": "Reggaeton" },
+                  "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+                  "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+                  "family": false
+                }
+              ],
+              "upcomingEvents": {
+                "tmr": 4,
+                "mfx-nl": 1,
+                "ticketmaster": 32,
+                "mfx-de": 1,
+                "_total": 38,
+                "_filtered": 0
+              },
+              "_links": { "self": { "href": "/discovery/v2/attractions/K8vZ9175yK0?locale=en-us" } }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Reggaetón Y2K (18+)",
+        "type": "event",
+        "id": "k7vGF_3lsh7oM",
+        "test": false,
+        "url": "https://www.ticketmaster.com/reggaeton-y2k-18-new-york-new-york-10-10-2026/event/0000652AF16C4477",
+        "locale": "en-us",
+        "images": [
+          {
+            "ratio": "4_3",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_CUSTOM.jpg",
+            "width": 305,
+            "height": 225,
+            "fallback": true
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "height": 683,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "height": 115,
+            "fallback": true
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "height": 427,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "height": 360,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "height": 1152,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "height": 56,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "height": 639,
+            "fallback": true
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "height": 576,
+            "fallback": true
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "height": 203,
+            "fallback": true
+          }
+        ],
+        "distance": 2.87,
+        "units": "KILOMETERS",
+        "sales": {
+          "public": {
+            "startDateTime": "2026-09-16T17:00:00Z",
+            "startTBD": false,
+            "startTBA": false,
+            "endDateTime": "2026-10-11T03:00:00Z"
+          },
+          "presales": [
+            {
+              "startDateTime": "2026-09-15T17:00:00Z",
+              "endDateTime": "2026-09-16T02:00:00Z",
+              "name": "Reggaetón Y2K Presale"
+            },
+            {
+              "startDateTime": "2026-09-15T15:00:00Z",
+              "endDateTime": "2026-09-16T02:00:00Z",
+              "name": "Citi® Cardmember Presale",
+              "description": "To access the sale, use the first 6 digits of your eligible Citi® credit card or Citibank Debit Card as your presale code. You will also need to use your Citi® card to successfully complete your purchase.",
+              "shortDescription": "Exclusive Presale for Citi® Cardmembers"
+            },
+            {
+              "startDateTime": "2026-09-15T17:00:00Z",
+              "endDateTime": "2026-09-16T02:00:00Z",
+              "name": "LIVE NATION PRESALE",
+              "description": "Live Nation Presales are available exclusively to Live Nation All Access members. It only takes a minute to join and membership is free. Sign into Ticketmaster with the same email address you use for All Access to automatically unlock the presale (no presale codes).",
+              "shortDescription": "Available exclusively to Live Nation All Access members",
+              "linkDescription": "Join for Free to Unlock Presale",
+              "url": "https://www.livenation.com/allaccess"
+            }
+          ]
+        },
+        "dates": {
+          "start": {
+            "localDate": "2026-10-10",
+            "localTime": "21:00:00",
+            "dateTime": "2026-10-11T01:00:00Z",
+            "dateTBD": false,
+            "dateTBA": false,
+            "timeTBA": false,
+            "noSpecificTime": false
+          },
+          "timezone": "America/New_York",
+          "status": { "code": "onsale" },
+          "spanMultipleDays": false
+        },
+        "classifications": [
+          {
+            "primary": true,
+            "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+            "genre": { "id": "KnvZfZ7vAvF", "name": "Dance/Electronic" },
+            "subGenre": { "id": "KZazBEonSMnZfZ7vaEn", "name": "Amapiano" },
+            "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+            "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+            "family": false
+          }
+        ],
+        "promoter": {
+          "id": "653",
+          "name": "LIVE NATION MUSIC",
+          "description": "LIVE NATION MUSIC / NTL / USA"
+        },
+        "promoters": [
+          {
+            "id": "653",
+            "name": "LIVE NATION MUSIC",
+            "description": "LIVE NATION MUSIC / NTL / USA"
+          }
+        ],
+        "info": "Accessible accommodations should purchase a General Admission ticket and will be taken care of at the venue day of event.",
+        "pleaseNote": "Age Restriction: 18+ ONLY. YOU MUST PRESENT A VALID AND PHYSICAL ID TO ENTER THE VENUE Doors open at 9PM All set times and opening acts are subject to change without notice",
+        "products": [
+          {
+            "name": "Coat Check - Reggaetón Y2K - Not a Concert Ticket",
+            "id": "k7vGF_3T14Skx",
+            "url": "https://www.ticketmaster.com/coat-check-reggaeton-y2k-not-a-new-york-new-york-10-10-2026/event/0000652FCA5731A2",
+            "type": "Special Entry",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7v7nJ", "name": "Upsell" },
+                "subType": { "id": "KZFzBErXgnZfZ7vAke", "name": "Merchandise Voucher" },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "PARKWHIZ IRVING PLAZA POWERED BY VERIZON 5G",
+            "id": "k7vGF_3i-sCzg",
+            "url": "https://www.ticketmaster.com/parkwhiz-irving-plaza-powered-by-verizon-new-york-new-york-10-10-2026/event/0000652B21C4EE35",
+            "type": "Upsell",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7vAva", "name": "Parking" },
+                "subType": { "id": "KZFzBErXgnZfZ7vAFe", "name": "Regular" },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Bottomless Soda & Popcorn - Reggaetón Y2K - Not a Concert Ticket",
+            "id": "k7vGF_K9YpxfG",
+            "url": "https://www.ticketmaster.com/bottomless-soda-popcorn-reggaeton-y2k-not-new-york-new-york-10-10-2026/event/00006535F05A250C",
+            "type": "Concession Voucher",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7v7nJ", "name": "Upsell" },
+                "subType": { "id": "KZFzBErXgnZfZ7vAkA", "name": "Concession Voucher" },
+                "family": false
+              }
+            ]
+          }
+        ],
+        "seatmap": {
+          "staticUrl": "https://mapsapi.tmol.io/maps/geometry/3/event/0000652AF16C4477/staticImage?type=png&systemId=HOST"
+        },
+        "accessibility": { "ticketLimit": 4 },
+        "ticketLimit": {
+          "info": "There is a six (6) ticket limit for this event. Table and Hi-Top seats must be purchased at a minimum of two (2) tickets. Table 3 must be purchased at a minimum of four (4) tickets."
+        },
+        "ageRestrictions": { "legalAgeEnforced": false },
+        "ticketing": { "safeTix": { "enabled": true }, "allInclusivePricing": { "enabled": true } },
+        "nameOrigin": "custom",
+        "ticketTextLines": {
+          "en-us": {
+            "line6": "SAT OCT 10 2026 DRS 900PM ",
+            "line5": "   17 IRVING PL, NY, NY   ",
+            "line4": "  POWERED BY VERIZON 5G   ",
+            "line3": "       IRVING PLAZA       ",
+            "line2": "      REGGAETON Y2K       ",
+            "line1": "   LIVE NATION PRESENTS   "
+          }
+        },
+        "_links": {
+          "self": { "href": "/discovery/v2/events/k7vGF_3lsh7oM?locale=en-us" },
+          "attractions": [{ "href": "/discovery/v2/attractions/K8vZ917CNYV?locale=en-us" }],
+          "venues": [{ "href": "/discovery/v2/venues/KovZpaFPje?locale=en-us" }]
+        },
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Irving Plaza Powered By Verizon 5G",
+              "type": "venue",
+              "id": "KovZpaFPje",
+              "test": false,
+              "url": "https://www.ticketmaster.com/irving-plaza-powered-by-verizon-5g-tickets-new-york/venue/47",
+              "locale": "en-us",
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dbimages/23113v.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                }
+              ],
+              "distance": 2.87,
+              "units": "KILOMETERS",
+              "postalCode": "10003",
+              "timezone": "America/New_York",
+              "city": { "name": "New York" },
+              "state": { "name": "New York", "stateCode": "NY" },
+              "country": { "name": "United States Of America", "countryCode": "US" },
+              "address": { "line1": "17 Irving Place" },
+              "location": { "longitude": "-73.98844690", "latitude": "40.73491700" },
+              "markets": [
+                { "name": "New York/Tri-State Area", "id": "35" },
+                { "name": "Northern New Jersey", "id": "55" },
+                { "name": "Connecticut", "id": "124" }
+              ],
+              "dmas": [{ "id": 296 }, { "id": 345 }, { "id": 422 }],
+              "social": { "twitter": { "handle": "@IrvingPlaza" } },
+              "boxOfficeInfo": {
+                "phoneNumberDetail": "a. You can call 212-777-6800 to reach out to the venue directly. Please remember to leave a name and best contact information if we do not answer your call! You can also email us at irvingplaza.sitefb@livenation.com.",
+                "openHoursDetail": "a. The Irving Plaza Box Office is only open on show nights. Please refer to our show calendar and come visit us when we open doors! You may purchase tickets at the box office for any of our upcoming shows (pending availability). Tickets can also be purchased online by visiting either Ticketmaster.com or LiveNation.com.",
+                "acceptedPaymentDetail": "a. We accept cash, all major credit cards (American Express, Mastercard, Discover, & VISA), as well as Apple Pay at the box office, coat check, and bars! If you're looking to buy merchandise from any of the artists or bands you plan on seeing, this may be a little different.",
+                "willCallDetail": "a. If you are picking up your tickets at the box office, please bring make sure to bring a valid form of ID that matches the name you are picking up tickets for."
+              },
+              "parkingDetail": "a. Since we are located in good ol' New York City, street parking comes on a first come, first serve basis. Please make sure to look for street signs, as they will give you more information on where you can park and if you need to pay for parking. There are also multiple parking garages nearby. Please make sure to check pricing and hours of operation if you decide to use one of these.",
+              "accessibleSeatingDetail": "a. Meeting the needs of all our guests at Irving Plaza is one of our highest priorities. For information regarding the accessibility of our venue, please visit: https://www.irvingplaza.com/accessibility. You may purchase a GA ticket and email us at irvingplaza.sitefb@livenation.com if you have any questions at all. We do have an elevator that is accessible from the lobby when you enter the building that goes up to both the main floor (where the stage is) and the balcony. If you need any assistance on the night of the show, please come walk up to any of our staff members and we will be happy to assist!",
+              "generalInfo": {
+                "generalRule": "For more information on our venue policies and FAQ, please visit our website https://www.irvingplaza.com/",
+                "childRule": "a. Please make sure to check the specific event details of the show you plan to attend, as there are certain age restrictions in place on some of our shows. If there is a show that has an age restriction, you MUST bring a physical and valid form of ID to enter the venue. If you plan on drinking, same rules apply and of course, you must be 21+ to drink. Most of our shows at 16+ unless accompanied by legal guardian."
+              },
+              "upcomingEvents": { "universe": 1, "ticketmaster": 69, "_total": 70, "_filtered": 0 },
+              "ada": {
+                "adaPhones": "Order your tickets by phone at 855-682-6736 or request accessible seating tickets online by filling out and submitting the form below. Live Nation aims to process online requests for accessible seating tickets as soon as they are received, but heavy volume can result in delays. So, while you may receive an e-mail from a Live Nation e-care specialist within minutes after you have received the auto-acknowledgement, it could take longer (in rare instances more than an hour) before the e-care specialist contacts you. Once the e-care specialist does contact you, he or she will work with you to process and complete your request (subject, of course, to ticket availability).",
+                "adaCustomCopy": "Live Nation, on behalf of its clients, strives to make it as easy as possible to purchase accessible seating tickets for venues across the country. Most venues offer accessible seating areas to accommodate their guests.  Availability and type of accessible seating tickets will vary based on each venue's policies and/or the type of event taking place. Note: Venues are solely responsible for establishing their own accessible seating ticket policies. Some venues sell all or a portion of their accessible seating tickets only through their box office and not through Live Nation.",
+                "adaHours": "For help with problems or other inquiries, Live Nation customer service representatives are available 8am - 9pm (in each US time zone)."
+              },
+              "_links": { "self": { "href": "/discovery/v2/venues/KovZpaFPje?locale=en-us" } }
+            }
+          ],
+          "attractions": [
+            {
+              "name": "Y2k",
+              "type": "attraction",
+              "id": "K8vZ917CNYV",
+              "test": false,
+              "url": "https://www.ticketmaster.com/y2k-tickets/artist/1602112",
+              "locale": "en-us",
+              "images": [
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_3_2.jpg",
+                  "width": 1024,
+                  "height": 683,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_LANDSCAPE_16_9.jpg",
+                  "width": 1136,
+                  "height": 639,
+                  "fallback": true
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_ARTIST_PAGE_3_2.jpg",
+                  "width": 305,
+                  "height": 203,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                  "width": 2048,
+                  "height": 1152,
+                  "fallback": true
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_3_2.jpg",
+                  "width": 640,
+                  "height": 427,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_16_9.jpg",
+                  "width": 1024,
+                  "height": 576,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_16_9.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_EVENT_DETAIL_PAGE_16_9.jpg",
+                  "width": 205,
+                  "height": 115,
+                  "fallback": true
+                },
+                {
+                  "ratio": "4_3",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_CUSTOM.jpg",
+                  "width": 305,
+                  "height": 225,
+                  "fallback": true
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RECOMENDATION_16_9.jpg",
+                  "width": 100,
+                  "height": 56,
+                  "fallback": true
+                }
+              ],
+              "classifications": [
+                {
+                  "primary": true,
+                  "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+                  "genre": { "id": "KnvZfZ7vAvF", "name": "Dance/Electronic" },
+                  "subGenre": { "id": "KZazBEonSMnZfZ7vAJ1", "name": "Club Dance" },
+                  "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+                  "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+                  "family": false
+                }
+              ],
+              "upcomingEvents": { "ticketmaster": 4, "_total": 4, "_filtered": 0 },
+              "_links": { "self": { "href": "/discovery/v2/attractions/K8vZ917CNYV?locale=en-us" } }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Don Omar \"The Last King World Tour\"",
+        "type": "event",
+        "id": "vvG1FZ_1TkGLsD",
+        "test": false,
+        "url": "https://www.ticketmaster.com/don-omar-the-last-king-world-newark-new-jersey-10-11-2026/event/020064AFC631FC7B",
+        "locale": "en-us",
+        "images": [
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "height": 115,
+            "fallback": false
+          },
+          {
+            "ratio": "4_3",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_CUSTOM.jpg",
+            "width": 305,
+            "height": 225,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_SOURCE",
+            "width": 2426,
+            "height": 1365,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "height": 203,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "height": 1152,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "height": 56,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "height": 360,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "height": 683,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "height": 427,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "height": 639,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "height": 576,
+            "fallback": false
+          }
+        ],
+        "distance": 14.11,
+        "units": "KILOMETERS",
+        "sales": {
+          "public": {
+            "startDateTime": "2026-05-22T14:00:00Z",
+            "startTBD": false,
+            "startTBA": false,
+            "endDateTime": "2026-10-12T01:15:00Z"
+          },
+          "presales": [
+            {
+              "startDateTime": "2026-05-19T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Kingdom Fandom Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "CMN Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Artist Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Ticketmaster Presale"
+            },
+            {
+              "startDateTime": "2026-05-21T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "Venue Presale"
+            },
+            {
+              "startDateTime": "2026-05-19T14:00:00Z",
+              "endDateTime": "2026-05-22T13:45:00Z",
+              "name": "VIP Packages Presale"
+            },
+            {
+              "startDateTime": "2026-05-22T14:00:00Z",
+              "endDateTime": "2026-10-04T21:00:00Z",
+              "name": "VIP Packages Onsale"
+            }
+          ]
+        },
+        "dates": {
+          "start": {
+            "localDate": "2026-10-11",
+            "localTime": "20:00:00",
+            "dateTime": "2026-10-12T00:00:00Z",
+            "dateTBD": false,
+            "dateTBA": false,
+            "timeTBA": false,
+            "noSpecificTime": false
+          },
+          "timezone": "America/New_York",
+          "status": { "code": "onsale" },
+          "spanMultipleDays": false
+        },
+        "classifications": [
+          {
+            "primary": true,
+            "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+            "genre": { "id": "KnvZfZ7vAv1", "name": "Hip-Hop/Rap" },
+            "subGenre": { "id": "KZazBEonSMnZfZ7vkdv", "name": "Reggaeton" },
+            "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+            "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+            "family": false
+          }
+        ],
+        "promoter": {
+          "id": "6346",
+          "name": "CMN - CARDENAS MARKETING NETWORK",
+          "description": "CMN - CARDENAS MARKETING NETWORK / NTL / USA"
+        },
+        "promoters": [
+          {
+            "id": "6346",
+            "name": "CMN - CARDENAS MARKETING NETWORK",
+            "description": "CMN - CARDENAS MARKETING NETWORK / NTL / USA"
+          }
+        ],
+        "info": "To purchase advance parking for this event, please click here: https://prucenter.clickandpark.com/",
+        "products": [
+          {
+            "name": "Don Omar VIP Upgrades (No Ticket Included)",
+            "id": "vvG1FZ_57FOnQ8",
+            "url": "https://www.ticketmaster.com/don-omar-vip-upgrades-no-ticket-newark-new-jersey-10-11-2026/event/020064B10882A690",
+            "type": "VIP",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": { "id": "KZFzniwnSyZfZ7v7n1", "name": "Miscellaneous" },
+                "genre": { "id": "KnvZfZ7v7ll", "name": "Undefined" },
+                "subGenre": { "id": "KZazBEonSMnZfZ7vAv1", "name": "Undefined" },
+                "type": { "id": "KZAyXgnZfZ7v7nJ", "name": "Upsell" },
+                "subType": { "id": "KZFzBErXgnZfZ7v7lv", "name": "Special Entry" },
+                "family": false
+              }
+            ]
+          }
+        ],
+        "seatmap": {
+          "staticUrl": "https://mapsapi.tmol.io/maps/geometry/3/event/020064AFC631FC7B/staticImage?type=png&systemId=HOST"
+        },
+        "accessibility": { "ticketLimit": 4 },
+        "ticketLimit": { "info": "There is an overall 8 ticket limit for this event." },
+        "ageRestrictions": { "legalAgeEnforced": false },
+        "ticketing": { "safeTix": { "enabled": true }, "allInclusivePricing": { "enabled": true } },
+        "nameOrigin": "custom",
+        "ticketTextLines": {
+          "en-us": {
+            "line6": " SUN OCT 11 2026 8:00 PM  ",
+            "line5": "        NEWARK, NJ        ",
+            "line4": "    PRUDENTIAL CENTER     ",
+            "line3": " THE LAST KING WORLD TOUR ",
+            "line2": "         DON OMAR         ",
+            "line1": "       CMN PRESENTS       "
+          }
+        },
+        "linkMoreInfo": {
+          "descriptions": {
+            "en-nz": "The Restaurant at Prudential Center",
+            "en-ca": "The Restaurant at Prudential Center",
+            "en-us": "The Restaurant at Prudential Center",
+            "pt-br": "The Restaurant at Prudential Center",
+            "en-au": "The Restaurant at Prudential Center",
+            "es-us": "The Restaurant at Prudential Center",
+            "es-br": "The Restaurant at Prudential Center",
+            "en-mx": "The Restaurant at Prudential Center",
+            "es-mx": "The Restaurant at Prudential Center",
+            "fr-ca": "The Restaurant at Prudential Center"
+          },
+          "url": "http://www.prucenter.com/restaurant"
+        },
+        "_links": {
+          "self": { "href": "/discovery/v2/events/vvG1FZ_1TkGLsD?locale=en-us" },
+          "attractions": [{ "href": "/discovery/v2/attractions/K8vZ9175yK0?locale=en-us" }],
+          "venues": [{ "href": "/discovery/v2/venues/KovZpZAE7vaA?locale=en-us" }]
+        },
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Prudential Center",
+              "type": "venue",
+              "id": "KovZpZAE7vaA",
+              "test": false,
+              "url": "https://www.ticketmaster.com/prudential-center-tickets-newark/venue/16847",
+              "locale": "en-us",
+              "aliases": ["SUMMIT", "TECH", "MEDIA"],
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dbimages/23093v.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                }
+              ],
+              "distance": 14.11,
+              "units": "KILOMETERS",
+              "postalCode": "07102",
+              "timezone": "America/New_York",
+              "city": { "name": "Newark" },
+              "state": { "name": "New Jersey", "stateCode": "NJ" },
+              "country": { "name": "United States Of America", "countryCode": "US" },
+              "address": { "line1": "25 Lafayette Street" },
+              "location": { "longitude": "-74.17121214", "latitude": "40.73340555" },
+              "markets": [
+                { "name": "New York/Tri-State Area", "id": "35" },
+                { "name": "Northern New Jersey", "id": "55" },
+                { "name": "Connecticut", "id": "124" }
+              ],
+              "dmas": [{ "id": 296 }, { "id": 345 }, { "id": 422 }],
+              "boxOfficeInfo": {
+                "phoneNumberDetail": "(973) 757-6000 The Prudential Center Box Office is located inside the arena near the corner of Mulberry Street and Edison Place. Guests can enter from the corner of Mulberry Street and Edison Place, next to the Investors Bank Tower.",
+                "openHoursDetail": "The Box Office is open Monday through Friday: 11am to 5pm. We are closed each Saturday and Sunday, with the exception of an event on one of those days, in which case we will open at 11am. Please visit www.prucenter.com/box-office for more information, or adjusted hours.",
+                "acceptedPaymentDetail": "American Express, Visa, Mastercard, Discover",
+                "willCallDetail": "Tickets purchased in person at the box office are sent via text message at the windows."
+              },
+              "parkingDetail": "For a list of parking lots available and additional parking information visit prucenter.com/parking. To purchase advance parking, visit prucenter.clickandpark.com.",
+              "accessibleSeatingDetail": "Accessible seating is available through Ticketmaster. Please visit ticketmaster.com to purchase accessible seating.",
+              "generalInfo": {
+                "generalRule": "For some events, small, non-professional cameras without an external flash or extendable lens may be brought into Prudential Center. Please note that for certain events, cameras may not be permitted. Video and audio equipment, GoPros, selfie sticks, professional cameras (with a lens of 2.5 inches or greater) and recording devices are strictly prohibited.",
+                "childRule": "Children over 24 months of age must have a ticket in order to gain entrance to Prudential Center. Children under two years may enter without a ticket but must sit on their parent or guardian lap. Please check the event ticket policies at the time of purchase as ticket policies vary per event."
+              },
+              "upcomingEvents": { "ticketmaster": 92, "_total": 92, "_filtered": 0 },
+              "_links": { "self": { "href": "/discovery/v2/venues/KovZpZAE7vaA?locale=en-us" } }
+            }
+          ],
+          "attractions": [
+            {
+              "name": "Don Omar",
+              "type": "attraction",
+              "id": "K8vZ9175yK0",
+              "test": false,
+              "url": "https://www.ticketmaster.com/don-omar-tickets/artist/1031846",
+              "locale": "en-us",
+              "externalLinks": { "twitter": [{ "url": "@ORPHANDON" }] },
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_EVENT_DETAIL_PAGE_16_9.jpg",
+                  "width": 205,
+                  "height": 115,
+                  "fallback": false
+                },
+                {
+                  "ratio": "4_3",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_CUSTOM.jpg",
+                  "width": 305,
+                  "height": 225,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_SOURCE",
+                  "width": 2426,
+                  "height": 1365,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_ARTIST_PAGE_3_2.jpg",
+                  "width": 305,
+                  "height": 203,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                  "width": 2048,
+                  "height": 1152,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RECOMENDATION_16_9.jpg",
+                  "width": 100,
+                  "height": 56,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_16_9.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_3_2.jpg",
+                  "width": 1024,
+                  "height": 683,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_PORTRAIT_3_2.jpg",
+                  "width": 640,
+                  "height": 427,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_RETINA_LANDSCAPE_16_9.jpg",
+                  "width": 1136,
+                  "height": 639,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/176/29d3d08d-14df-40be-a440-7cbb72a81176_TABLET_LANDSCAPE_16_9.jpg",
+                  "width": 1024,
+                  "height": 576,
+                  "fallback": false
+                }
+              ],
+              "classifications": [
+                {
+                  "primary": true,
+                  "segment": { "id": "KZFzniwnSyZfZ7v7nJ", "name": "Music" },
+                  "genre": { "id": "KnvZfZ7vAv1", "name": "Hip-Hop/Rap" },
+                  "subGenre": { "id": "KZazBEonSMnZfZ7vkdv", "name": "Reggaeton" },
+                  "type": { "id": "KZAyXgnZfZ7v7nI", "name": "Undefined" },
+                  "subType": { "id": "KZFzBErXgnZfZ7v7lJ", "name": "Undefined" },
+                  "family": false
+                }
+              ],
+              "upcomingEvents": {
+                "tmr": 4,
+                "mfx-nl": 1,
+                "ticketmaster": 32,
+                "mfx-de": 1,
+                "_total": 38,
+                "_filtered": 0
+              },
+              "_links": { "self": { "href": "/discovery/v2/attractions/K8vZ9175yK0?locale=en-us" } }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "/discovery/v2/events.json?unit=km&startDateTime=2026-09-29T10%3A00%3A00Z&size=200&latlong=40.7128%2C-74.0060&page=0&sort=date%2Casc&radius=40&endDateTime=2026-10-13T10%3A00%3A00Z&keyword=reggaeton"
+    }
+  },
+  "page": { "size": 200, "totalElements": 3, "totalPages": 1, "number": 0 }
+}

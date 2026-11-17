@@ -1,0 +1,130 @@
+# Builds the site with @opennextjs/cloudflare and deploys it to Cloudflare Workers on every push to
+# main (D-144; the site left Vercel Hobby when its storage filled, D-143).
+#
+# Repository secrets:
+#   CLOUDFLARE_DEPLOY_TOKEN   required; the "Edit Cloudflare Workers" token template. Without it the
+#                             job stops after its first step with a warning, so main stays green.
+#   CLOUDFLARE_ACCOUNT_ID     already set for Workers AI
+#   DATABASE_URL              already set for ingest; copied into the Worker as a secret (fallback)
+#   DIRECT_DATABASE_URL       the Supabase session pooler; the origin of the Hyperdrive config (D-145)
+#   INGEST_DISPATCH_TOKEN     optional; fine-grained token, Actions read and write on this repository.
+#                             Copied into the Worker, whose cron starts the ingest on time (D-158).
+#
+# The token also needs Account > Hyperdrive > Edit and Account > Workers KV Storage > Edit. The config is created once, by name; to point it
+# at a new database, delete "dancetonight-db" in the dashboard and the next deploy recreates it.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+    # D-569: a change the Worker is not built from deploys nothing.
+    paths-ignore: ["docs/**", "**/*.md", "tests/**", "evals/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_DEPLOY_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Check the deploy token
+        id: token
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::warning::Add the CLOUDFLARE_DEPLOY_TOKEN repository secret to deploy to Cloudflare."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.token.outputs.ready == 'true'
+        uses: actions/checkout@v4
+      - if: steps.token.outputs.ready == 'true'
+        uses: pnpm/action-setup@v4
+      - if: steps.token.outputs.ready == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - if: steps.token.outputs.ready == 'true'
+        run: pnpm install --frozen-lockfile
+      - name: Find or create the Hyperdrive config
+        if: steps.token.outputs.ready == 'true'
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+        run: |
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/hyperdrive/configs"
+          find_id() {
+            curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api" \
+              | jq -r '.result[] | select(.name == "dancetonight-db") | .id' | head -1
+          }
+          id=$(find_id)
+          if [ -z "$id" ]; then
+            pnpm exec wrangler hyperdrive create dancetonight-db \
+              --connection-string="$DIRECT_DATABASE_URL" > /dev/null
+            id=$(find_id)
+          fi
+          if [ -z "$id" ]; then echo "::error::No Hyperdrive config named dancetonight-db."; exit 1; fi
+          # The session pooler allows 15 clients in all. Uncapped, Hyperdrive held every one of them
+          # and the ingest could not connect (EMAXCONNSESSION, 2026-10-15). 5 is Hyperdrive's floor.
+          pnpm exec wrangler hyperdrive update "$id" --origin-connection-limit=5 > /dev/null
+          sed -i "s/HYPERDRIVE_ID_SET_BY_DEPLOY/$id/" wrangler.jsonc
+          echo "Hyperdrive config: $id"
+      - name: Find or create the city snapshot KV namespace
+        if: steps.token.outputs.ready == 'true'
+        run: |
+          # Needs Account > Workers KV Storage > Edit on the deploy token.
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces"
+          find_id() {
+            curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api?per_page=100" \
+              | jq -r '.result[] | select(.title == "dancetonight-snapshots") | .id' | head -1
+          }
+          id=$(find_id)
+          if [ -z "$id" ]; then
+            curl -fsS -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              -H "Content-Type: application/json" --data '{"title":"dancetonight-snapshots"}' "$api" > /dev/null
+            id=$(find_id)
+          fi
+          if [ -z "$id" ]; then
+            echo "::error::No KV namespace dancetonight-snapshots. Does the deploy token have Workers KV Storage: Edit?"
+            exit 1
+          fi
+          sed -i "s/SNAPSHOTS_KV_ID_SET_BY_DEPLOY/$id/" wrangler.jsonc
+          echo "Snapshot KV namespace: $id"
+      - name: Build for Workers
+        if: steps.token.outputs.ready == 'true'
+        run: pnpm cf:build
+      - name: Deploy
+        if: steps.token.outputs.ready == 'true'
+        run: pnpm cf:deploy 2>&1 | tee deploy.log
+      - name: Copy the database address and the ingest trigger token into the Worker (never printed)
+        if: steps.token.outputs.ready == 'true'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          INGEST_DISPATCH_TOKEN: ${{ secrets.INGEST_DISPATCH_TOKEN }}
+        run: |
+          node -e 'const e = process.env, s = { DATABASE_URL: e.DATABASE_URL };
+            if (e.INGEST_DISPATCH_TOKEN) s.INGEST_DISPATCH_TOKEN = e.INGEST_DISPATCH_TOKEN;
+            process.stdout.write(JSON.stringify(s))' \
+            | pnpm exec wrangler secret bulk
+      - name: Check the live site
+        if: steps.token.outputs.ready == 'true'
+        run: |
+          url=$(grep -o 'https://[a-z0-9.-]*\.workers\.dev' deploy.log | head -1)
+          if [ -z "$url" ]; then echo "::warning::No workers.dev address in the deploy output."; exit 0; fi
+          echo "Site: $url"
+          sleep 10
+          slug=$(curl -s --max-time 60 "$url/" | grep -o 'href="/e/[^"/?]*' | head -1 | cut -c7- || true)
+          for path in / /bot ${slug:+"$slug"}; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 60 "$url$path" || true)
+            echo "$path $code"
+            if [ "$code" != "200" ]; then echo "::error::$path answered $code"; exit 1; fi
+          done

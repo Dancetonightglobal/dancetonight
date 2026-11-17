@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://laclavenyc.com/robots.txt"
+  },
+  "response": {
+    "url": "https://laclavenyc.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "undefined-origin",
+      "access-control-max-age": "300",
+      "age": "332",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "max-age=16070400",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a4571410cb3ee104-ORD",
+      "content-encoding": "br",
+      "content-type": "text/plain",
+      "date": "Sun, 04 Oct 2026 20:53:50 GMT",
+      "etag": "W/\"687a8757-a3\"",
+      "last-modified": "Fri, 18 Jul 2025 17:41:43 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lQ2NfKx7SIwoWtRKql6OCnSznvQnPRWSchBVn0DTLJwHrHFZmRUJOt2zP7%2FhwOqiYeRUYT1TiKYWko6xXBS5Jn3WHcaKWi5G3Sb4kflHSm0wWVrm4cgD7US2tDVV4NEAZg%3D%3D\"}]}",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "x-cm-fe": "httpfe-2",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block"
+    },
+    "body": "User-agent: TeeGraspBot\nDisallow: /\n\nUser-agent: TeeRaidBot\nDisallow: /\n\nUser-agent: Applebot\nCrawl-delay: 1\n\nUser-agent: *\nAllow: /\n\nUser-agent: *\nCrawl-delay: 1\n"
+  },
+  "note": "recorded 2026-10-04"
+}

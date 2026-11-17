@@ -1,0 +1,411 @@
+@import "tailwindcss";
+
+/*
+ * The design tokens (D-147, look "C", chosen by the owner 2026-10-15; docs/DESIGN.md). D-147
+ * replaces D-036's photocopy look: a calm, quiet page. Warm off-white paper, near-black ink, one
+ * neutral grey for secondary text, hairlines instead of boxes, and each dance family as a coloured
+ * word with a thin bar beside the name, never a filled block.
+ *
+ * The names are kept from D-036 so every screen restyles from here: paper, ink, toner (secondary
+ * text), halftone (hairlines and quiet fills), imprint (control edges), spot (the live accent:
+ * "on now" and the now rule), and stock-<family> (the family's colour, used as text and as the
+ * bar, never as a background). Every text colour clears 4.5:1 on its paper (measured 2026-10-15).
+ * Dark is the same page at night: warm near-black, not navy, with lighter family colours.
+ */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/InterVariable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* While a tapped link loads (PendingBar): a 3px spot bar across the top of the screen. */
+.nav-pending {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  height: 3px;
+  background: var(--color-spot);
+  transform-origin: left;
+  animation: nav-pending 1.2s ease-out infinite;
+}
+@keyframes nav-pending {
+  from {
+    transform: scaleX(0.1);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* The search box has its own "Clear" button; hide the browser's x (audit 2026-11-02). */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Hover, on devices that hover only (audit 2026-11-02): an edged control fills with halftone, an
+   ink control lightens, an underlined link thickens its line. */
+@media (hover: hover) {
+  a.chip-edge:hover,
+  button.chip-edge:hover,
+  summary.chip-edge:hover,
+  a:hover > .chip-edge {
+    background-color: var(--color-halftone);
+  }
+  a.bg-ink:hover,
+  button.bg-ink:hover,
+  summary.bg-ink:hover {
+    opacity: 0.85;
+  }
+  a.underline:hover,
+  button.underline:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+:root {
+  color-scheme: light;
+
+  --color-paper: #fbfaf7;
+  --color-ink: #191919;
+  --color-spot: #b93815;
+  --color-toner: #6b665c;
+  --color-halftone: #e7e4dd;
+  --color-imprint: #d9d5cc;
+
+  /* Filter chips and inputs carry a hairline edge in both themes. */
+  --chip-edge: 1px solid var(--color-imprint);
+
+  --color-stock-salsa: #b5452a;
+  --color-stock-kizomba: #b0306e;
+  --color-stock-swing: #8a6200;
+  --color-stock-tango: #8a3b8f;
+  --color-stock-ballroom: #7a6420;
+  --color-stock-country: #8a5a2b;
+  --color-stock-folk: #3f7a2a;
+  --color-stock-ecstatic: #1f7a70;
+  --color-stock-club: #3f4bb5;
+  --color-stock-hiphop: #2f64a8;
+  --color-stock-kpop: #a23596;
+  --color-stock-silent: #5e5e66;
+  --color-stock-other: #6b665c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: #151412;
+    --color-ink: #f2efe8;
+    --color-spot: #ff8a5b;
+    --color-toner: #a8a398;
+    --color-halftone: #2a2925;
+    --color-imprint: #3a3833;
+    --color-stock-salsa: #f49a7c;
+    --color-stock-kizomba: #f08dbb;
+    --color-stock-swing: #e9bc52;
+    --color-stock-tango: #c9a6e8;
+    --color-stock-ballroom: #dccb8a;
+    --color-stock-country: #d9ae80;
+    --color-stock-folk: #9ccf84;
+    --color-stock-ecstatic: #7fd1c6;
+    --color-stock-club: #9da6f2;
+    --color-stock-hiphop: #8db6ec;
+    --color-stock-kpop: #e59adf;
+    --color-stock-silent: #b8b8c0;
+    --color-stock-other: #a8a398;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #151412;
+  --color-ink: #f2efe8;
+  --color-spot: #ff8a5b;
+  --color-toner: #a8a398;
+  --color-halftone: #2a2925;
+  --color-imprint: #3a3833;
+  --color-stock-salsa: #f49a7c;
+  --color-stock-kizomba: #f08dbb;
+  --color-stock-swing: #e9bc52;
+  --color-stock-tango: #c9a6e8;
+  --color-stock-ballroom: #dccb8a;
+  --color-stock-country: #d9ae80;
+  --color-stock-folk: #9ccf84;
+  --color-stock-ecstatic: #7fd1c6;
+  --color-stock-club: #9da6f2;
+  --color-stock-hiphop: #8db6ec;
+  --color-stock-kpop: #e59adf;
+  --color-stock-silent: #b8b8c0;
+  --color-stock-other: #a8a398;
+}
+
+@theme inline {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-spot: var(--color-spot);
+  --color-toner: var(--color-toner);
+  --color-halftone: var(--color-halftone);
+  --color-imprint: var(--color-imprint);
+
+  --color-stock-salsa: var(--color-stock-salsa);
+  --color-stock-kizomba: var(--color-stock-kizomba);
+  --color-stock-swing: var(--color-stock-swing);
+  --color-stock-tango: var(--color-stock-tango);
+  --color-stock-ballroom: var(--color-stock-ballroom);
+  --color-stock-country: var(--color-stock-country);
+  --color-stock-folk: var(--color-stock-folk);
+  --color-stock-ecstatic: var(--color-stock-ecstatic);
+  --color-stock-club: var(--color-stock-club);
+  --color-stock-hiphop: var(--color-stock-hiphop);
+  --color-stock-kpop: var(--color-stock-kpop);
+  --color-stock-silent: var(--color-stock-silent);
+  --color-stock-other: var(--color-stock-other);
+
+  /* 4px base. The named steps the design uses; 11 is the 44px minimum target. */
+  --spacing: 4px;
+
+  /* Soft corners on controls and the map (D-147); lists stay flat, separated by hairlines. */
+  --radius-none: 0;
+  --radius-control: 12px;
+  --radius-pill: 999px;
+
+  --container-list: 640px;
+  --container-split: 440px;
+
+  /* The least height the phone's map keeps, attribution included, when the selected card's sheet
+     wants room under it: the detail page's 176px map. Without it a landscape phone's map shrank
+     to a 68px strip after one tap (review, 2026-09-28). Used as `min-h-map`. In px, like the
+     map's other measures, which MapLibre reads as device pixels. */
+  --min-height-map: 176px;
+
+  /* The detail page's time rail (DESIGN.md section 7, D-069): its stamps carry am/pm, so the
+     home rail's 5ch is too narrow ("10:30pm" measured 54px against 46px). 4.75rem holds "12:30am"
+     in Inter's type-stamp-sm (4rem was 5px short, D-147), and grows with the visitor's text size. Used as
+     `grid-cols-rail-detail` by the When and Cost lists. */
+  --grid-template-columns-rail-detail: 4.75rem minmax(0, 1fr);
+}
+
+/* The time rail (DESIGN.md section 5): 58px, 5ch at the stamped-time size, so "10:00" and "12:30"
+   fit. Written out because `5ch` in a class resolves against the grid's own 16px body font
+   (46px), which "10:00" at 24px overflows (review, 2026-09-28). */
+@utility grid-cols-rail {
+  grid-template-columns: 3.625rem 1fr;
+}
+
+/* --- The type scale (DESIGN.md section 4, D-147). One family, Inter, at four weights; no
+   condensed widths and no capitals except the small section heads. Sizes are rem, never px: <html> carries no font-size of its own, so one rem is whatever the
+   visitor set in their browser and the whole scale grows with it (WCAG 2.2 1.4.4, resize text).
+   The 4px spacing base below stays in px on purpose -- it pairs with the map's own pixel
+   constants (TOGGLE_HEIGHT_PX, FIT_PADDING_PX), which MapLibre reads as device pixels. --- */
+@utility type-detail-title {
+  font-size: 1.875rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+@utility type-card-name {
+  font-size: 1.0625rem;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+@utility type-stamp {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+@utility type-stamp-sm {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+@utility type-stamp-xs {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+/* Small capitals for section heads and hour markers: the page's quietest voice. */
+@utility type-marker {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+@utility type-status {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+@utility type-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@utility type-secondary {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  font-weight: 400;
+}
+/* A family's name in its colour, above a listing's name. */
+@utility type-label {
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+@utility type-button {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+/* The map strip and the sticky now strip: 44px bars that must hold two lines at 320px with
+   Linux's Inter metrics too (CI wrapped 14px/1.2 to four lines, 2026-10-15). */
+@utility type-strip {
+  font-size: 0.8125rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+/* MapLibre's "use two fingers" notice on the detail page's map, in the page's own paper and ink
+   rather than MapLibre's grey veil and white text. Two classes deep, because MapLibre's own
+   stylesheet arrives later, with the map's code. */
+.maplibregl-map .maplibregl-cooperative-gesture-screen {
+  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  @apply type-body;
+}
+
+/* A filter chip's or input's hairline edge. */
+@utility chip-edge {
+  border: var(--chip-edge);
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* The focus ring is the spot colour, which clears 3:1 against paper in both themes. */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-spot);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The city list (D-183, D-576, D-584): a modal <dialog>, so a tap outside closes it without reaching the
+   page. On phones and tablets it is a sheet that opens just below the headline (or the now strip) over a
+   shaded backdrop (D-584); on desktop (lg) it drops down from the city name where anchor positioning exists,
+   and is centred where it does not. */
+.city-anchor {
+  position: relative;
+}
+/* The button is text in the heading; this widens its touch target to at least 44px tall. */
+.city-anchor::after {
+  content: "";
+  position: absolute;
+  inset: -6px -4px;
+}
+.city-picker {
+  max-width: none;
+  max-height: none;
+  border-radius: var(--radius-control);
+  inset: auto 0 auto 0;
+  top: max(var(--sheet-top, 0px), env(safe-area-inset-top));
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+/* From the now strip: just below the 32px strip, which stays in view. */
+.city-picker[data-from="strip"] {
+  top: calc(env(safe-area-inset-top) + 2rem);
+}
+.city-picker-body {
+  max-height: min(70dvh, calc(100dvh - var(--sheet-top, 0px) - 1rem));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+/* Opening the list focuses the dialog itself (CityPicker.tsx), not its first row: no ring on open. */
+.city-picker:focus,
+.city-picker:focus-visible {
+  outline: none;
+}
+@media (max-width: 63.999rem) and (prefers-reduced-motion: no-preference) {
+  .city-picker[open] {
+    animation: city-sheet-down 180ms ease-out;
+  }
+}
+@keyframes city-sheet-down {
+  from {
+    transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.city-picker::backdrop {
+  background: color-mix(in srgb, var(--color-ink) 40%, transparent);
+}
+@media (min-width: 64rem) {
+  .city-picker {
+    border-radius: var(--radius-control);
+    inset: 0;
+    top: 0;
+    margin: auto;
+    width: calc(var(--spacing) * 72);
+  }
+  .city-picker[data-from="strip"] {
+    top: 0;
+  }
+  .city-picker::backdrop {
+    background: transparent;
+  }
+  @supports (anchor-name: --city) {
+    .city-anchor {
+      anchor-name: --city;
+    }
+    .city-picker[open]:not([data-from="strip"]) {
+      position-anchor: --city;
+      inset: auto;
+      margin: 0;
+      margin-top: calc(var(--spacing) * 2);
+      position-area: bottom span-right;
+      position-try-fallbacks:
+        bottom span-left,
+        bottom;
+    }
+  }
+}

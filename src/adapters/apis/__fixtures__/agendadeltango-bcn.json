@@ -1,0 +1,258 @@
+{
+  "dias": [
+    {
+      "fecha_iso": null,
+      "weekday": null,
+      "dia_num": null,
+      "mes": null,
+      "es_hoy": false,
+      "es_semana": true,
+      "eventos": [],
+      "dias_semana": [
+        {
+          "fecha_iso": "2026-10-29",
+          "weekday": "jueves",
+          "dia_num": 29,
+          "mes": "octubre",
+          "es_hoy": true,
+          "eventos": [
+            {
+              "key": "2026-10-29-concierto-c46",
+              "url": "../conciertos/raiz-chamame-europa-tour-2026-10-29/",
+              "key_antigua": "2026-10-29-concierto-0",
+              "html": "<div class=\"card concierto\">\n  <div class=\"card-head\"><span class=\"type-badge concierto\">Concierto</span><span class=\"hours\">20:00</span></div>\n  <div class=\"card-title\">Raíz Chamamé — Europa Tour</div>\n  <img class=\"card-flyer\" src=\"imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp\" width=\"1080\" height=\"1225\" alt=\"Flyer de Raíz Chamamé — Europa Tour\">\n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Librer%C3%ADa+Byron%2C+Carrer+de+Casanova+32+%28Barcelona%29\" target=\"_blank\" rel=\"noopener\">Librería Byron, Carrer de Casanova 32 (Barcelona)</a></div><div class=\"line\">Organiza: <b>Folklore Vivo Barcelona</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">697 997 908</span></div><div class=\"line\">Actúa: <b>Raíz Chamamé</b></div>\n</div>",
+              "titulo": "Raíz Chamamé — Europa Tour",
+              "meta_descripcion": "Jue 29 oct, 20:00h",
+              "imagen": "imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp",
+              "hora_inicio": "20:00",
+              "wa": "34697997908",
+              "html_listado": "<div class=\"card concierto\">\n  <div class=\"card-head\"><span class=\"type-badge concierto\">Concierto</span><span class=\"hours\">20:00</span></div>\n  <div class=\"card-title\">Raíz Chamamé — Europa Tour</div>\n  <img class=\"card-flyer\" src=\"imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp\" width=\"1080\" height=\"1225\" alt=\"Flyer de Raíz Chamamé — Europa Tour\">\n  <div class=\"line\">Organiza: <b>Folklore Vivo Barcelona</b></div><div class=\"line\">Actúa: <b>Raíz Chamamé</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+            },
+            {
+              "key": "2026-10-29-milonga-m55",
+              "url": null,
+              "key_antigua": "2026-10-29-milonga-0",
+              "html": "<div class=\"card practica\">\n  <div class=\"card-head\"><span class=\"type-badge practica\">Práctica</span><span class=\"hours\">20:30&ndash;22:30</span></div>\n  <div class=\"card-title\">Práctica de Tango</div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Bucs+d%27Assaig+El+Mercat%2C+Pla%C3%A7a+de+Sant+Jordi+s%2Fn+%28Lleida%29\" target=\"_blank\" rel=\"noopener\">Bucs d&#x27;Assaig El Mercat, Plaça de Sant Jordi s/n (Lleida)</a></div><div class=\"line\">Organiza: <b>Associació Lleida Tango</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">+34 661 375 481</span></div>\n  \n</div>",
+              "titulo": "Práctica de Tango",
+              "meta_descripcion": "Jue 29 oct, 20:30h",
+              "imagen": null,
+              "hora_inicio": "20:30",
+              "wa": "34661375481",
+              "html_listado": "<div class=\"card practica\">\n  <div class=\"card-head\"><span class=\"type-badge practica\">Práctica</span><span class=\"hours\">20:30&ndash;22:30</span></div>\n  <div class=\"card-title\">Práctica de Tango</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Associació Lleida Tango</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Lleida</span></div>\n</div>"
+            },
+            {
+              "key": "2026-10-29-milonga-m9",
+              "url": null,
+              "key_antigua": "2026-10-29-milonga-1",
+              "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00&ndash;00:00</span></div>\n  <div class=\"card-title\">Milonga de Blanes</div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Casa+de+Andaluc%C3%ADa+de+Blanes%2C+Josep+Tarradellas%2C+2\" target=\"_blank\" rel=\"noopener\">Casa de Andalucía de Blanes, Josep Tarradellas, 2</a></div><div class=\"line\">Organiza: <b>Javier</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">662 37 21 14</span></div>\n  \n</div>",
+              "titulo": "Milonga de Blanes",
+              "meta_descripcion": "Jue 29 oct, 21:00h",
+              "imagen": null,
+              "hora_inicio": "21:00",
+              "wa": "34662372114",
+              "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00&ndash;00:00</span></div>\n  <div class=\"card-title\">Milonga de Blanes</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Javier</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Blanes (Girona)</span></div>\n</div>"
+            }
+          ]
+        },
+        {
+          "fecha_iso": "2026-10-30",
+          "weekday": "viernes",
+          "dia_num": 30,
+          "mes": "octubre",
+          "es_hoy": false,
+          "eventos": [
+            {
+              "key": "2026-10-30-milonga-e350",
+              "url": "../milongas/la-morocha-milonga/2026-10-30/",
+              "key_antigua": "2026-10-30-milonga-1",
+              "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">La Morocha Milonga</div>\n  \n  <img class=\"card-flyer\" src=\"imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp\" width=\"1280\" height=\"1600\" alt=\"Flyer de La Morocha Milonga\" loading=\"lazy\">\n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Argenfolk%2C+Mexic+3+bis%2C+1%C2%BA+%28Barcelona%29\" target=\"_blank\" rel=\"noopener\">Argenfolk, Mexic 3 bis, 1º (Barcelona)</a></div><div class=\"line\">Organiza: <b>Argenfolk</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">603 847 038</span></div>\n  <ul class=\"timeline\"><li><span class=\"t-time\">20:30</span><span class=\"t-badge clase\">Clase</span> Clase: herramientas para bailar la melodía — Cinthia Diaz</li><li><span class=\"t-time\">22:00</span><span class=\"t-badge milonga\">Milonga</span> TDJ Mariano Garcés Grizy</li></ul>\n</div>",
+              "titulo": "La Morocha Milonga",
+              "meta_descripcion": "TDJ Mariano Garcés Grizy · Vie 30 oct, 22:00h",
+              "imagen": "imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp",
+              "hora_inicio": "22:00",
+              "wa": "34603847038",
+              "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">La Morocha Milonga</div>\n  \n  <img class=\"card-flyer\" src=\"imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp\" width=\"1280\" height=\"1600\" alt=\"Flyer de La Morocha Milonga\" loading=\"lazy\">\n  <div class=\"line\">Organiza: <b>Argenfolk</b></div>\n  \n<div class=\"line\">TDJ: <b>Mariano Garcés Grizy</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha_iso": "2026-10-29",
+      "weekday": "jueves",
+      "dia_num": 29,
+      "mes": "octubre",
+      "es_hoy": true,
+      "eventos": [
+        {
+          "key": "2026-10-29-concierto-c46",
+          "url": "../conciertos/raiz-chamame-europa-tour-2026-10-29/",
+          "key_antigua": "2026-10-29-concierto-0",
+          "html": "<div class=\"card concierto\">\n  <div class=\"card-head\"><span class=\"type-badge concierto\">Concierto</span><span class=\"hours\">20:00</span></div>\n  <div class=\"card-title\">Raíz Chamamé — Europa Tour</div>\n  <img class=\"card-flyer\" src=\"imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp\" width=\"1080\" height=\"1225\" alt=\"Flyer de Raíz Chamamé — Europa Tour\">\n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Librer%C3%ADa+Byron%2C+Carrer+de+Casanova+32+%28Barcelona%29\" target=\"_blank\" rel=\"noopener\">Librería Byron, Carrer de Casanova 32 (Barcelona)</a></div><div class=\"line\">Organiza: <b>Folklore Vivo Barcelona</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">697 997 908</span></div><div class=\"line\">Actúa: <b>Raíz Chamamé</b></div>\n</div>",
+          "titulo": "Raíz Chamamé — Europa Tour",
+          "meta_descripcion": "Jue 29 oct, 20:00h",
+          "imagen": "imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp",
+          "hora_inicio": "20:00",
+          "wa": "34697997908",
+          "html_listado": "<div class=\"card concierto\">\n  <div class=\"card-head\"><span class=\"type-badge concierto\">Concierto</span><span class=\"hours\">20:00</span></div>\n  <div class=\"card-title\">Raíz Chamamé — Europa Tour</div>\n  <img class=\"card-flyer\" src=\"imagenes/raiz-chamame-europa-tour-f7f09d5bb9889069.webp\" width=\"1080\" height=\"1225\" alt=\"Flyer de Raíz Chamamé — Europa Tour\">\n  <div class=\"line\">Organiza: <b>Folklore Vivo Barcelona</b></div><div class=\"line\">Actúa: <b>Raíz Chamamé</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+        },
+        {
+          "key": "2026-10-29-milonga-m55",
+          "url": null,
+          "key_antigua": "2026-10-29-milonga-0",
+          "html": "<div class=\"card practica\">\n  <div class=\"card-head\"><span class=\"type-badge practica\">Práctica</span><span class=\"hours\">20:30&ndash;22:30</span></div>\n  <div class=\"card-title\">Práctica de Tango</div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Bucs+d%27Assaig+El+Mercat%2C+Pla%C3%A7a+de+Sant+Jordi+s%2Fn+%28Lleida%29\" target=\"_blank\" rel=\"noopener\">Bucs d&#x27;Assaig El Mercat, Plaça de Sant Jordi s/n (Lleida)</a></div><div class=\"line\">Organiza: <b>Associació Lleida Tango</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">+34 661 375 481</span></div>\n  \n</div>",
+          "titulo": "Práctica de Tango",
+          "meta_descripcion": "Jue 29 oct, 20:30h",
+          "imagen": null,
+          "hora_inicio": "20:30",
+          "wa": "34661375481",
+          "html_listado": "<div class=\"card practica\">\n  <div class=\"card-head\"><span class=\"type-badge practica\">Práctica</span><span class=\"hours\">20:30&ndash;22:30</span></div>\n  <div class=\"card-title\">Práctica de Tango</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Associació Lleida Tango</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Lleida</span></div>\n</div>"
+        },
+        {
+          "key": "2026-10-29-milonga-m9",
+          "url": null,
+          "key_antigua": "2026-10-29-milonga-1",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00&ndash;00:00</span></div>\n  <div class=\"card-title\">Milonga de Blanes</div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Casa+de+Andaluc%C3%ADa+de+Blanes%2C+Josep+Tarradellas%2C+2\" target=\"_blank\" rel=\"noopener\">Casa de Andalucía de Blanes, Josep Tarradellas, 2</a></div><div class=\"line\">Organiza: <b>Javier</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">662 37 21 14</span></div>\n  \n</div>",
+          "titulo": "Milonga de Blanes",
+          "meta_descripcion": "Jue 29 oct, 21:00h",
+          "imagen": null,
+          "hora_inicio": "21:00",
+          "wa": "34662372114",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00&ndash;00:00</span></div>\n  <div class=\"card-title\">Milonga de Blanes</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Javier</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Blanes (Girona)</span></div>\n</div>"
+        },
+        {
+          "key": "2026-10-29-milonga-e359",
+          "url": "../milongas/milonga-casa-valencia/2026-10-29/",
+          "key_antigua": "2026-10-29-milonga-2",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:30&ndash;01:00</span></div>\n  <div class=\"card-title\">Milonga Casa Valencia</div>\n  \n  \n  <div class=\"line descripcion\">Desde 1999, cada jueves</div><div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Casa+de+Valencia%2C+Carrer+de+C%C3%B2rsega%2C+335%2C+Principal%2C+Gr%C3%A0cia%2C+08037+%28Barcelona%29\" target=\"_blank\" rel=\"noopener\">Casa de Valencia, Carrer de Còrsega, 335, Principal, Gràcia, 08037 (Barcelona)</a></div><div class=\"line\">Organiza: <b>Antonia</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">+34 636 21 38 31</span></div><div class=\"line\">TDJ: <b>Santiago León</b></div>\n  \n</div>",
+          "titulo": "Milonga Casa Valencia",
+          "meta_descripcion": "TDJ Santiago León · Jue 29 oct, 21:30h",
+          "imagen": null,
+          "hora_inicio": "21:30",
+          "wa": "34636213831",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:30&ndash;01:00</span></div>\n  <div class=\"card-title\">Milonga Casa Valencia</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Antonia</b></div><div class=\"line\">TDJ: <b>Santiago León</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+        }
+      ]
+    },
+    {
+      "fecha_iso": "2026-10-30",
+      "weekday": "viernes",
+      "dia_num": 30,
+      "mes": "octubre",
+      "es_hoy": false,
+      "eventos": [
+        {
+          "key": "2026-10-30-milonga-e350",
+          "url": "../milongas/la-morocha-milonga/2026-10-30/",
+          "key_antigua": "2026-10-30-milonga-1",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">La Morocha Milonga</div>\n  \n  <img class=\"card-flyer\" src=\"imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp\" width=\"1280\" height=\"1600\" alt=\"Flyer de La Morocha Milonga\" loading=\"lazy\">\n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Argenfolk%2C+Mexic+3+bis%2C+1%C2%BA+%28Barcelona%29\" target=\"_blank\" rel=\"noopener\">Argenfolk, Mexic 3 bis, 1º (Barcelona)</a></div><div class=\"line\">Organiza: <b>Argenfolk</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">603 847 038</span></div>\n  <ul class=\"timeline\"><li><span class=\"t-time\">20:30</span><span class=\"t-badge clase\">Clase</span> Clase: herramientas para bailar la melodía — Cinthia Diaz</li><li><span class=\"t-time\">22:00</span><span class=\"t-badge milonga\">Milonga</span> TDJ Mariano Garcés Grizy</li></ul>\n</div>",
+          "titulo": "La Morocha Milonga",
+          "meta_descripcion": "TDJ Mariano Garcés Grizy · Vie 30 oct, 22:00h",
+          "imagen": "imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp",
+          "hora_inicio": "22:00",
+          "wa": "34603847038",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">La Morocha Milonga</div>\n  \n  <img class=\"card-flyer\" src=\"imagenes/la-morocha-milonga-8e9be4c9d3e1bfe4.webp\" width=\"1280\" height=\"1600\" alt=\"Flyer de La Morocha Milonga\" loading=\"lazy\">\n  <div class=\"line\">Organiza: <b>Argenfolk</b></div>\n  \n<div class=\"line\">TDJ: <b>Mariano Garcés Grizy</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+        }
+      ]
+    },
+    {
+      "fecha_iso": "2026-10-31",
+      "weekday": "sábado",
+      "dia_num": 31,
+      "mes": "octubre",
+      "es_hoy": false,
+      "eventos": [
+        {
+          "key": "2026-10-31-milonga-m223",
+          "url": null,
+          "key_antigua": "2026-10-31-milonga-5",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">20:00&ndash;23:00</span></div>\n  <div class=\"card-title\">Milonga en Winner Sport Club</div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Winner+Sport+Club%2C+Carrer+Granollers%2C+17+%28Reus%29\" target=\"_blank\" rel=\"noopener\">Winner Sport Club, Carrer Granollers, 17 (Reus)</a></div><div class=\"line\">Organiza: <b>Pablo</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">655 366 876</span></div>\n  <ul class=\"timeline\"><li><span class=\"t-time\">18:30</span><span class=\"t-badge clase\">Clase</span> Clase de tango con Pablo Cabrejos — Pablo Cabrejos</li><li><span class=\"t-time\">20:00</span><span class=\"t-badge milonga\">Milonga</span> TDJR Pablo Cabrejos</li></ul>\n</div>",
+          "titulo": "Milonga en Winner Sport Club",
+          "meta_descripcion": "TDJR Pablo Cabrejos · Sáb 31 oct, 20:00h",
+          "imagen": null,
+          "hora_inicio": "20:00",
+          "wa": "34655366876",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">20:00&ndash;23:00</span></div>\n  <div class=\"card-title\">Milonga en Winner Sport Club</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Pablo</b></div>\n  \n<div class=\"line\">TDJR: <b>Pablo Cabrejos</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Reus (Tarragona)</span></div>\n</div>"
+        },
+        {
+          "key": "2026-10-31-milonga-e362",
+          "url": "../milongas/milonga-brava/2026-10-31/",
+          "key_antigua": "2026-10-31-milonga-6",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00</span></div>\n  <div class=\"card-title\">Milonga Brava — Verbena de inicio de temporada <span class=\"tag-especial\">edición especial</span></div>\n  \n  \n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Local+Milonga+Brava+%28Matadepera%29\" target=\"_blank\" rel=\"noopener\">Local Milonga Brava (Matadepera)</a></div><div class=\"line tel-line\">📞 <span class=\"tel\">636 22 37 43</span></div>\n  <ul class=\"timeline\"><li><span class=\"t-time\">20:00</span><span class=\"t-badge clase\">Clase</span> Clase avanzada — David y Gloria (Milonga Brava de Matadepera)</li><li><span class=\"t-time\">21:00</span><span class=\"t-badge milonga\">Milonga</span> TDJ David Couce</li></ul>\n</div>",
+          "titulo": "Milonga Brava — Verbena de inicio de temporada",
+          "meta_descripcion": "TDJ David Couce · Sáb 31 oct, 21:00h",
+          "imagen": null,
+          "hora_inicio": "21:00",
+          "wa": "34636223743",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:00</span></div>\n  <div class=\"card-title\">Milonga Brava — Verbena de inicio de temporada <span class=\"tag-especial\">edición especial</span></div>\n  \n  \n  \n  \n<div class=\"line\">TDJ: <b>David Couce</b></div>\n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Matadepera (Barcelona)</span></div>\n</div>"
+        },
+        {
+          "key": "2026-10-31-milonga-e361",
+          "url": "../milongas/living-tango-barcelona/2026-10-31/",
+          "key_antigua": "2026-10-31-milonga-8",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">Living Tango Barcelona <span class=\"tag-especial\">edición especial</span></div>\n  <div class=\"card-subtitle\">Noches de Sábados — Halloween</div>\n  <img class=\"card-flyer\" src=\"imagenes/living-tango-barcelona-1d373472149838cb.webp\" width=\"1080\" height=\"1350\" alt=\"Flyer de Living Tango Barcelona\" loading=\"lazy\">\n  <div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Living+Tango+Barcelona%2C+Calle+Pallars+65-71%2C+%C3%81tico+4\" target=\"_blank\" rel=\"noopener\">Living Tango Barcelona, Calle Pallars 65-71, Ático 4</a></div><div class=\"line\">Organiza: <b>Martin</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">+34 699 327 026</span></div><div class=\"line\">TDJ: <b>Duygu Akalin</b></div>\n  \n</div>",
+          "titulo": "Living Tango Barcelona",
+          "meta_descripcion": "TDJ Duygu Akalin · Sáb 31 oct, 22:00h",
+          "imagen": "imagenes/living-tango-barcelona-1d373472149838cb.webp",
+          "hora_inicio": "22:00",
+          "wa": "34699327026",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">22:00&ndash;01:30</span></div>\n  <div class=\"card-title\">Living Tango Barcelona <span class=\"tag-especial\">edición especial</span></div>\n  <div class=\"card-subtitle\">Noches de Sábados — Halloween</div>\n  <img class=\"card-flyer\" src=\"imagenes/living-tango-barcelona-1d373472149838cb.webp\" width=\"1080\" height=\"1350\" alt=\"Flyer de Living Tango Barcelona\" loading=\"lazy\">\n  <div class=\"line\">Organiza: <b>Martin</b></div><div class=\"line\">TDJ: <b>Duygu Akalin</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+        }
+      ]
+    },
+    {
+      "fecha_iso": "2026-11-01",
+      "weekday": "domingo",
+      "dia_num": 1,
+      "mes": "noviembre",
+      "es_hoy": false,
+      "eventos": []
+    },
+    {
+      "fecha_iso": "2026-11-02",
+      "weekday": "lunes",
+      "dia_num": 2,
+      "mes": "noviembre",
+      "es_hoy": false,
+      "eventos": []
+    },
+    {
+      "fecha_iso": "2026-11-03",
+      "weekday": "martes",
+      "dia_num": 3,
+      "mes": "noviembre",
+      "es_hoy": false,
+      "eventos": []
+    },
+    {
+      "fecha_iso": "2026-11-04",
+      "weekday": "miércoles",
+      "dia_num": 4,
+      "mes": "noviembre",
+      "es_hoy": false,
+      "eventos": [
+        {
+          "key": "2026-11-04-milonga-m217",
+          "url": null,
+          "key_antigua": "2026-11-04-milonga-1",
+          "html": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:30&ndash;01:00</span></div>\n  <div class=\"card-title\">La Tanguería</div>\n  \n  \n  <div class=\"line descripcion\">Milonga de los miércoles en Barcelona: pequeña, acogedora, cercana y familiar, sin estrellas invitadas ni shows, para disfrutar entre amigos y amantes del tango. Organiza Varvara Bril.</div><div class=\"line espacio\">📍 <a class=\"maps\" href=\"https://www.google.com/maps/search/?api=1&amp;query=C%2F+Pallars%2C+74+Barcelona\" target=\"_blank\" rel=\"noopener\">C/ Pallars, 74 Barcelona</a></div><div class=\"line\">Organiza: <b>Varvara</b></div><div class=\"line tel-line\">📞 <span class=\"tel\">+34 613 514 147</span></div>\n  \n</div>",
+          "titulo": "La Tanguería",
+          "meta_descripcion": "Mié 4 nov, 21:30h",
+          "imagen": null,
+          "hora_inicio": "21:30",
+          "wa": "34613514147",
+          "html_listado": "<div class=\"card milonga\">\n  <div class=\"card-head\"><span class=\"type-badge milonga\">Milonga</span><span class=\"hours\">21:30&ndash;01:00</span></div>\n  <div class=\"card-title\">La Tanguería</div>\n  \n  \n  <div class=\"line\">Organiza: <b>Varvara</b></div>\n  \n<div class=\"lugar-tags\"><span class=\"lugar-tag\">Barcelona</span></div>\n</div>"
+        }
+      ]
+    },
+    {
+      "fecha_iso": null,
+      "weekday": null,
+      "dia_num": null,
+      "mes": null,
+      "es_hoy": false,
+      "es_extra": true,
+      "eventos": []
+    }
+  ]
+}

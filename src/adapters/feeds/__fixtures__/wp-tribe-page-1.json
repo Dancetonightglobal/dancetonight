@@ -1,0 +1,60 @@
+{
+  "events": [
+    {
+      "id": 412,
+      "global_id": "swing.example?id=412",
+      "status": "publish",
+      "title": "Lindy Hop Social &#8211; Savoy Night",
+      "description": "<p>Beginner lesson at 7:30pm, social dancing from 8:30pm to midnight.</p>",
+      "url": "https://swing.example/event/savoy-night/",
+      "start_date": "2026-09-24 19:30:00",
+      "end_date": "2026-09-25 00:00:00",
+      "timezone": "America/New_York",
+      "all_day": false,
+      "cost": "$18",
+      "cost_details": {
+        "currency_symbol": "$",
+        "currency_code": "USD",
+        "values": ["18"]
+      },
+      "website": "https://swing.example/tickets/412",
+      "categories": [
+        {
+          "name": "Lindy Hop",
+          "slug": "lindy-hop"
+        },
+        {
+          "name": "Social",
+          "slug": "social"
+        }
+      ],
+      "venue": {
+        "id": 7,
+        "venue": "Swing 46",
+        "address": "349 W 46th St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10036",
+        "geo_lat": 40.7603,
+        "geo_lng": -73.9892
+      },
+      "organizer": [
+        {
+          "id": 3,
+          "organizer": "Swing Example NYC",
+          "website": "https://swing.example/"
+        }
+      ]
+    },
+    {
+      "id": 413,
+      "status": "draft",
+      "title": "Draft event",
+      "start_date": "2026-09-25 19:00:00",
+      "timezone": "America/New_York"
+    }
+  ],
+  "total": 3,
+  "total_pages": 2,
+  "next_rest_url": "https://swing.example/wp-json/tribe/events/v1/events?start_date=2026-09-23%2000%3A00%3A00&end_date=2026-10-07%2006%3A00%3A00&per_page=50&page=2"
+}

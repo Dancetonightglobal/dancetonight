@@ -1,0 +1,5 @@
+# Copy to evals/recall/{metro}/{YYYY-MM-DD}.csv: one row per dance night you know is on that night.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+title,venue,start_time,style,source_url
+Frim Fram Jam,You Should Be Dancing,8:30pm,lindy hop,https://frimframjam.com/calendar

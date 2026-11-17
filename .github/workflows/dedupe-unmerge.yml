@@ -1,0 +1,47 @@
+name: dedupe-unmerge
+
+# Undoes dedupe merges in production (D-090, D-255): `pnpm dedupe:unmerge --event <slug>` for each
+# slug given, one after another. Each pair is recorded `manual_distinct`, so no later run merges it
+# again. Never scheduled; the integrator dispatches it with the slugs from a run report's
+# "Merged:" lines (the survivor's slug when one listing was merged into it).
+
+on:
+  workflow_dispatch:
+    inputs:
+      events:
+        description: Event slugs or ids, separated by spaces
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  unmerge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      EVENTS: ${{ inputs.events }}
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Unmerge
+        run: |
+          failed=0
+          for slug in $EVENTS; do
+            case "$slug" in
+              *[!a-z0-9-]*) echo "skipped, not a slug or id: $slug"; failed=1; continue ;;
+            esac
+            echo "::group::$slug"
+            pnpm -s dedupe:unmerge --event "$slug" || failed=1
+            echo "::endgroup::"
+          done
+          exit $failed

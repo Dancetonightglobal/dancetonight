@@ -1,0 +1,1 @@
+ALTER TABLE "event_sources" ADD COLUMN "event_url" text;

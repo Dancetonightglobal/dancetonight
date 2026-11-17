@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://places.googleapis.com/v1/places:searchText",
+    "body": "{\"textQuery\":\"The Rooftop at Pier 17\",\"pageSize\":1,\"locationBias\":{\"rectangle\":{\"low\":{\"latitude\":40.701877444125046,\"longitude\":-74.00975205203774},\"high\":{\"latitude\":40.71086055587496,\"longitude\":-73.99790194796226}}}}"
+  },
+  "response": {
+    "url": "https://places.googleapis.com/v1/places:searchText",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json; charset=UTF-8"
+    },
+    "body": "{\n  \"places\": [\n    {\n      \"id\": \"ChIJBuiltByHandNotPier16\"\n    }\n  ]\n}\n"
+  },
+  "note": "built by hand 2026-09-29: Google's answer to the check question (the name alone, biased towards ±500 m around the venue's point, D-077) is not recorded. The request body is what placeCheckBody sends for the venue at Ticketmaster's point; the id is invented and stands for any place other than Pier 16. The replay test also swaps in an empty answer."
+}

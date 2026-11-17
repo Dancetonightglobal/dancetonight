@@ -1,0 +1,3621 @@
+[
+ {
+  "slug": "a-contra-dance-for-all-2026-10-04-7a7d13",
+  "night": "2026-10-04",
+  "title": "A Contra Dance for All!",
+  "fam": "Folk, contra and ceilidhSocial dance",
+  "when": "4:30pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Brooklyn Contra",
+   "brooklyncontra.org"
+  ],
+  "srcs": [
+   "brooklyncontra.org"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "brooklyncontra.org"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "all-night-milonga-2026-10-10-34d4b5",
+  "night": "2026-10-10",
+  "title": "All Night Milonga",
+  "fam": "TangoSocial dance",
+  "when": "10pmDancing starts / 4amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "All Night Milonga",
+   "startDate": "2026-10-11T02:00:00.000Z",
+   "endDate": "2026-10-11T08:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/all-night-milonga-2026-10-10-34d4b5",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "students",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "bachata-rosa-2026-10-02-8bf40b",
+  "night": "2026-10-02",
+  "title": "Bachata Rosa",
+  "fam": "Salsa and LatinSocial dance",
+  "when": "10pmLesson / 3amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Bachata Rosa",
+   "startDate": "2026-10-03T02:00:00.000Z",
+   "endDate": "2026-10-03T07:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/bachata-rosa-2026-10-02-8bf40b",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 10,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "after 10pm",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "bachata-rosa-2026-10-09-a56653",
+  "night": "2026-10-09",
+  "title": "Bachata Rosa",
+  "fam": "Salsa and LatinSocial dance",
+  "when": "10pmLesson / 3amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Bachata Rosa",
+   "startDate": "2026-10-10T02:00:00.000Z",
+   "endDate": "2026-10-10T07:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/bachata-rosa-2026-10-09-a56653",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 10,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "after 10pm",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "back-room-speakeasy-sessions-2026-10-05-636acc",
+  "night": "2026-10-05",
+  "title": "Back Room Speakeasy Sessions",
+  "fam": "SwingSocial dance",
+  "when": "7:30pmDoors / 9pmDancing starts / 12:30amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "ballroom-and-smooth-practice-2026-09-29-64084e",
+  "night": "2026-09-29",
+  "title": "Ballroom and Smooth Practice",
+  "fam": "Class",
+  "when": "Now 6:43pm / 9:30pmDancing starts / 10:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Maria Jose Sosa"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Ballroom and Smooth Practice",
+   "startDate": "2026-09-30T01:30:00.000Z",
+   "endDate": "2026-09-30T02:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/ballroom-and-smooth-practice-2026-09-29-64084e",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Maria Jose Sosa"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "$15",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "$10",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "ballroom-and-smooth-practice-2026-10-06-764669",
+  "night": "2026-10-06",
+  "title": "Ballroom and Smooth Practice",
+  "fam": "Class",
+  "when": "9:30pmDancing starts / 10:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Maria Jose Sosa"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Ballroom and Smooth Practice",
+   "startDate": "2026-10-07T01:30:00.000Z",
+   "endDate": "2026-10-07T02:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/ballroom-and-smooth-practice-2026-10-06-764669",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Maria Jose Sosa"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "$15",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "$10",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "big-band-swing-concert-2026-10-02-e86b87",
+  "night": "2026-10-02",
+  "title": "Big Band Swing Concert",
+  "fam": "SwingSocial dance",
+  "when": "6pmLesson / 7pmDancing starts / 8pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Forest Park Bandshell",
+   "Forest Park Dr, Woodhaven, NY, 11421"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.6987247467041,
+   -73.85799026489258
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Big Band Swing Concert",
+   "startDate": "2026-10-02T23:00:00.000Z",
+   "endDate": "2026-10-03T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/big-band-swing-concert-2026-10-02-e86b87",
+   "location": {
+    "@type": "Place",
+    "name": "Forest Park Bandshell",
+    "address": "Forest Park Dr, Woodhaven, NY, 11421",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.6987247467041,
+     "longitude": -73.85799026489258
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 30,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "advance",
+     "price": 25,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "bolden-who-you-really-are-tour-2026-2026-10-01-650597",
+  "night": "2026-10-01",
+  "title": "Bolden. Who you really are. Tour 2026.",
+  "fam": "Clubs and DJ nights",
+  "when": "7pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Bowery Ballroom",
+   "6 Delancey St., New York, NY, 10002"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.71792947729543,
+   -73.98550776871294
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Bolden. Who you really are. Tour 2026.",
+   "startDate": "2026-10-01T23:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventCancelled",
+   "url": "https://dancetonight.vercel.app/e/bolden-who-you-really-are-tour-2026-2026-10-01-650597",
+   "location": {
+    "@type": "Place",
+    "name": "Bowery Ballroom",
+    "address": "6 Delancey St., New York, NY, 10002",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.71792947729543,
+     "longitude": -73.98550776871294
+    }
+   }
+  }
+ },
+ {
+  "slug": "boot-scootin-line-dance-party-at-hard-rock-2026-10-08-3acc42",
+  "night": "2026-10-08",
+  "title": "Boot Scootin' Line Dance Party At Hard Rock Cafe",
+  "fam": "Country and line danceSocial dance",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Hard Rock Cafe",
+   "1501 Broadway, New York, NY, 10036"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.7567906,
+   -73.986185
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Boot Scootin' Line Dance Party At Hard Rock Cafe",
+   "startDate": "2026-10-09T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/boot-scootin-line-dance-party-at-hard-rock-2026-10-08-3acc42",
+   "location": {
+    "@type": "Place",
+    "name": "Hard Rock Cafe",
+    "address": "1501 Broadway, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7567906,
+     "longitude": -73.986185
+    }
+   }
+  }
+ },
+ {
+  "slug": "bop-to-the-top-18-2026-10-09-794170",
+  "night": "2026-10-09",
+  "title": "Bop To The Top (18+)",
+  "fam": "Clubs and DJ nights",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Irving Plaza Powered By Verizon 5G",
+   "17 Irving Place, New York, NY, 10003"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.734917,
+   -73.9884469
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Bop To The Top (18+)",
+   "startDate": "2026-10-10T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/bop-to-the-top-18-2026-10-09-794170",
+   "location": {
+    "@type": "Place",
+    "name": "Irving Plaza Powered By Verizon 5G",
+    "address": "17 Irving Place, New York, NY, 10003",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.734917,
+     "longitude": -73.9884469
+    }
+   }
+  }
+ },
+ {
+  "slug": "brooklyn-social-2026-10-11-182eb9",
+  "night": "2026-10-11",
+  "title": "Brooklyn Social",
+  "fam": "Folk, contra and ceilidhSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Royal Scottish Country Dance Society, New York Branch",
+   "rscdsnewyork.org"
+  ],
+  "srcs": [
+   "rscdsnewyork.org"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "rscdsnewyork.org"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "central-park-swings-2026-10-11-2e61cd",
+  "night": "2026-10-11",
+  "title": "Central Park Swings",
+  "fam": "SwingSocial dance",
+  "when": "4pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Central Park Swings",
+   "King Jagiello Plaza"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.7789243,
+   -73.9666796
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Central Park Swings",
+   "startDate": "2026-10-11T20:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/central-park-swings-2026-10-11-2e61cd",
+   "location": {
+    "@type": "Place",
+    "name": "Central Park Swings",
+    "address": "King Jagiello Plaza",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7789243,
+     "longitude": -73.9666796
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 29,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 35,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 39,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "chow-lee-album-release-show-2026-09-29-1e3cb7",
+  "night": "2026-09-29",
+  "title": "Chow Lee Album Release Show",
+  "fam": "Back to tonightShare",
+  "when": "Now 6:43pm / 7pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "class-west-coast-swing-with-jes-ann-nail-2026-09-30-5f5451",
+  "night": "2026-09-30",
+  "title": "Class West Coast Swing with Jes Ann Nail",
+  "fam": "SwingClass",
+  "when": "7pmLesson, beginner friendly / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Danznik Studios",
+   "240 W 37th St 2nd Floor, New York, NY, 10018"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "nycswings.net"
+  ],
+  "geo": [
+   40.75351905822754,
+   -73.9909896850586
+  ],
+  "srcHosts": [
+   "nycswings.net"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Class West Coast Swing with Jes Ann Nail",
+   "startDate": "2026-09-30T23:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/class-west-coast-swing-with-jes-ann-nail-2026-09-30-5f5451",
+   "location": {
+    "@type": "Place",
+    "name": "Danznik Studios",
+    "address": "240 W 37th St 2nd Floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75351905822754,
+     "longitude": -73.9909896850586
+    }
+   }
+  }
+ },
+ {
+  "slug": "contra-connections-2-an-intermediate-contra-dance-workshop-2026-10-04-bc36a0",
+  "night": "2026-10-04",
+  "title": "Contra Connections 2: An Intermediate Contra Dance Workshop",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "12pmLesson / 3pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Brooklyn Contra",
+   "brooklyncontra.org"
+  ],
+  "srcs": [
+   "brooklyncontra.org"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "brooklyncontra.org"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "contra-saturdays-2026-10-03-1915cc",
+  "night": "2026-10-03",
+  "title": "CONTRA - SATURDAYS",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "Country Dance New York",
+   "cdny.org"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "CONTRA - SATURDAYS",
+   "startDate": "2026-10-03",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/contra-saturdays-2026-10-03-1915cc",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Country Dance New York",
+    "url": "https://cdny.org/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "General",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "CDNY/CDSS/FMSNY members",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "contra-saturdays-2026-10-10-60c3a6",
+  "night": "2026-10-10",
+  "title": "CONTRA - SATURDAYS",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "Country Dance New York",
+   "cdny.org"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "CONTRA - SATURDAYS",
+   "startDate": "2026-10-10",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/contra-saturdays-2026-10-10-60c3a6",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Country Dance New York",
+    "url": "https://cdny.org/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "General",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "CDNY/CDSS/FMSNY members",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "cunty-classics-2026-10-01-68182c",
+  "night": "2026-10-01",
+  "title": "Cunty Classics",
+  "fam": "Clubs and DJ nights",
+  "when": "10pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Night Club 101",
+   "101 Avenue A, New York, NY, 10009"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.725911,
+   -73.984043
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Cunty Classics",
+   "startDate": "2026-10-02T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/cunty-classics-2026-10-01-68182c",
+   "location": {
+    "@type": "Place",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY, 10009",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.725911,
+     "longitude": -73.984043
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Tickets",
+     "price": 0,
+     "priceCurrency": "USD",
+     "url": "https://www.ticketweb.com/event/cunty-classics-night-club-101-tickets/14334384"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dancehall-at-9am-2026-10-03-0d3c90",
+  "night": "2026-10-03",
+  "title": "DANCEHALL at 9AM",
+  "fam": "Clubs and DJ nights",
+  "when": "9amDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Manhattan Center Hammerstein Ballroom",
+   "311 West 34th Street, New York, NY, 10001"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.752664,
+   -73.994309
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "DANCEHALL at 9AM",
+   "startDate": "2026-10-03T13:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/dancehall-at-9am-2026-10-03-0d3c90",
+   "location": {
+    "@type": "Place",
+    "name": "Manhattan Center Hammerstein Ballroom",
+    "address": "311 West 34th Street, New York, NY, 10001",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.752664,
+     "longitude": -73.994309
+    }
+   }
+  }
+ },
+ {
+  "slug": "day26-j-howell-2026-10-03-224cf7",
+  "night": "2026-10-03",
+  "title": "DAY26 & J. Howell",
+  "fam": "Back to Sat, Oct 3Share",
+  "when": "6pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "dj-shadow-2026-10-10-16d988",
+  "night": "2026-10-10",
+  "title": "DJ Shadow",
+  "fam": "Clubs and DJ nights",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Terminal 5",
+   "610 W. 56th Street, New York, NY, 10019"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.76971304081633,
+   -73.99229628571429
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "DJ Shadow",
+   "startDate": "2026-10-11T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/dj-shadow-2026-10-10-16d988",
+   "location": {
+    "@type": "Place",
+    "name": "Terminal 5",
+    "address": "610 W. 56th Street, New York, NY, 10019",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.76971304081633,
+     "longitude": -73.99229628571429
+    }
+   }
+  }
+ },
+ {
+  "slug": "do-si-don-tcha-country-line-dancing-2026-09-30-f56021",
+  "night": "2026-09-30",
+  "title": "Do Si Don'tcha: Country Line Dancing",
+  "fam": "Country and line dance",
+  "when": "7pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Brooklyn Bowl",
+   "61 Wythe Ave, Brooklyn, NY, 11249"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.71320728571428,
+   -73.96571171428572
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Do Si Don'tcha: Country Line Dancing",
+   "startDate": "2026-09-30T23:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/do-si-don-tcha-country-line-dancing-2026-09-30-f56021",
+   "location": {
+    "@type": "Place",
+    "name": "Brooklyn Bowl",
+    "address": "61 Wythe Ave, Brooklyn, NY, 11249",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.71320728571428,
+     "longitude": -73.96571171428572
+    }
+   }
+  }
+ },
+ {
+  "slug": "don-omar-the-last-king-world-tour-2026-10-10-e845d1",
+  "night": "2026-10-10",
+  "title": "Don Omar \"The Last King World Tour\"",
+  "fam": "Hip-hop, street and breakingClubs and DJ nights",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "The Vault at Barclays Center",
+   "620 Atlantic Ave, Brooklyn, NY, 11217"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.68301010131836,
+   -73.97587966918945
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Don Omar \"The Last King World Tour\"",
+   "startDate": "2026-10-11T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/don-omar-the-last-king-world-tour-2026-10-10-e845d1",
+   "location": {
+    "@type": "Place",
+    "name": "The Vault at Barclays Center",
+    "address": "620 Atlantic Ave, Brooklyn, NY, 11217",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.68301010131836,
+     "longitude": -73.97587966918945
+    }
+   }
+  }
+ },
+ {
+  "slug": "don-omar-the-last-king-world-tour-2026-10-11-4821ca",
+  "night": "2026-10-11",
+  "title": "Don Omar \"The Last King World Tour\"",
+  "fam": "Hip-hop, street and breakingClubs and DJ nights",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Prudential Center Arena",
+   "744 Broad St, Newark, NJ, 07102-3800"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.73382568359375,
+   -74.17066955566406
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Don Omar \"The Last King World Tour\"",
+   "startDate": "2026-10-12T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/don-omar-the-last-king-world-tour-2026-10-11-4821ca",
+   "location": {
+    "@type": "Place",
+    "name": "Prudential Center Arena",
+    "address": "744 Broad St, Newark, NJ, 07102-3800",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.73382568359375,
+     "longitude": -74.17066955566406
+    }
+   }
+  }
+ },
+ {
+  "slug": "earlybirds-club-ages-21-2026-10-03-f218b5",
+  "night": "2026-10-03",
+  "title": "Earlybirds Club - Ages 21+",
+  "fam": "Clubs and DJ nights",
+  "when": "6pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Webster Hall",
+   "125 East 11th Street, New York, NY, 10003"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.731602,
+   -73.989098
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Earlybirds Club - Ages 21+",
+   "startDate": "2026-10-03T22:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/earlybirds-club-ages-21-2026-10-03-f218b5",
+   "location": {
+    "@type": "Place",
+    "name": "Webster Hall",
+    "address": "125 East 11th Street, New York, NY, 10003",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.731602,
+     "longitude": -73.989098
+    }
+   }
+  }
+ },
+ {
+  "slug": "english-country-dancing-the-church-of-the-village-2026-09-29-2c661b",
+  "night": "2026-09-29",
+  "title": "English Country Dancing @ The Church of The Village",
+  "fam": "Folk, contra and ceilidh",
+  "when": "Now 6:43pm / 7pmDoors / 10pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "CDNY",
+   "eventbrite.com"
+  ],
+  "srcs": [
+   "eventbrite.com"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "eventbrite.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "English Country Dancing @ The Church of The Village",
+   "startDate": "2026-09-29T23:00:00.000Z",
+   "endDate": "2026-09-30T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/english-country-dancing-the-church-of-the-village-2026-09-29-2c661b",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "CDNY",
+    "url": "https://www.eventbrite.com/o/cdny-115478120751"
+   }
+  }
+ },
+ {
+  "slug": "english-country-dancing-the-church-of-the-village-2026-10-06-f589e8",
+  "night": "2026-10-06",
+  "title": "English Country Dancing @ The Church of The Village",
+  "fam": "Folk, contra and ceilidh",
+  "when": "7pmDoors / 10pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "CDNY",
+   "eventbrite.com"
+  ],
+  "srcs": [
+   "eventbrite.com"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "eventbrite.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "English Country Dancing @ The Church of The Village",
+   "startDate": "2026-10-06T23:00:00.000Z",
+   "endDate": "2026-10-07T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/english-country-dancing-the-church-of-the-village-2026-10-06-f589e8",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "CDNY",
+    "url": "https://www.eventbrite.com/o/cdny-115478120751"
+   }
+  }
+ },
+ {
+  "slug": "english-tuesdays-2026-09-29-f26f62",
+  "night": "2026-09-29",
+  "title": "English - Tuesdays",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "Country Dance New York",
+   "cdny.org"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "English - Tuesdays",
+   "startDate": "2026-09-29",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/english-tuesdays-2026-09-29-f26f62",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Country Dance New York",
+    "url": "https://cdny.org/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "General",
+     "price": 25,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "CDNY/CDSS/FMSNY members",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "english-tuesdays-2026-10-06-1eb050",
+  "night": "2026-10-06",
+  "title": "English - Tuesdays",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "Country Dance New York",
+   "cdny.org"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "English - Tuesdays",
+   "startDate": "2026-10-06",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/english-tuesdays-2026-10-06-1eb050",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Country Dance New York",
+    "url": "https://cdny.org/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "General",
+     "price": 25,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "CDNY/CDSS/FMSNY members",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "esa-milonga-2026-10-02-aa944b",
+  "night": "2026-10-02",
+  "title": "Esa! Milonga",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "The Ukrainian Private Ballroom",
+   "140 2nd Ave"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.7288929,
+   -73.9871544
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Esa! Milonga",
+   "startDate": "2026-10-02",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/esa-milonga-2026-10-02-aa944b",
+   "location": {
+    "@type": "Place",
+    "name": "The Ukrainian Private Ballroom",
+    "address": "140 2nd Ave",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7288929,
+     "longitude": -73.9871544
+    }
+   }
+  }
+ },
+ {
+  "slug": "fall-fling-double-dance-2026-10-10-9eef1a",
+  "night": "2026-10-10",
+  "title": "Fall Fling Double Dance",
+  "fam": "Folk, contra and ceilidh",
+  "when": "3:15pmDoors / 10:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "CDNY",
+   "eventbrite.com"
+  ],
+  "srcs": [
+   "eventbrite.com"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "eventbrite.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Fall Fling Double Dance",
+   "startDate": "2026-10-10T19:15:00.000Z",
+   "endDate": "2026-10-11T02:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/fall-fling-double-dance-2026-10-10-9eef1a",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "CDNY",
+    "url": "https://www.eventbrite.com/o/cdny-115478120751"
+   }
+  }
+ },
+ {
+  "slug": "friday-night-fever-2026-10-02-e76b4c",
+  "night": "2026-10-02",
+  "title": "Friday Night Fever",
+  "fam": "Ballroom and Latin ballroomSocial danceSalsa and Latin",
+  "when": "8:30pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Friday Night Fever",
+   "startDate": "2026-10-03T00:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/friday-night-fever-2026-10-02-e76b4c",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "advance",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "frim-fram-jam-2026-10-01-bc556e",
+  "night": "2026-10-01",
+  "title": "Frim Fram Jam",
+  "fam": "SwingJam",
+  "when": "7pmDoors / 7:30pmDancing starts / 10:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Frim Fram Jam",
+   "frimframjam.com"
+  ],
+  "srcs": [
+   "frimframjam.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "frimframjam.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "frim-fram-jam-2026-10-08-9e517c",
+  "night": "2026-10-08",
+  "title": "Frim Fram Jam",
+  "fam": "SwingSocial dance",
+  "when": "8:30pmLesson / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "YSBD",
+   "37 W 26th St, 2nd floor, NYC"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.744505,
+   -73.9904434
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Frim Fram Jam",
+   "startDate": "2026-10-09T00:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/frim-fram-jam-2026-10-08-9e517c",
+   "location": {
+    "@type": "Place",
+    "name": "YSBD",
+    "address": "37 W 26th St, 2nd floor, NYC",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.744505,
+     "longitude": -73.9904434
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "glenn-crytzer-quintet-at-jaywalker-2026-10-04-037dca",
+  "night": "2026-10-04",
+  "title": "Glenn Crytzer Quintet at Jaywalker",
+  "fam": "SwingSocial dance",
+  "when": "6pmDancing starts / 9pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Jaywalker",
+   "573 Johnson Avenue, Brooklyn"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.709089285714285,
+   -73.924549
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Glenn Crytzer Quintet at Jaywalker",
+   "startDate": "2026-10-04T22:00:00.000Z",
+   "endDate": "2026-10-05T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/glenn-crytzer-quintet-at-jaywalker-2026-10-04-037dca",
+   "location": {
+    "@type": "Place",
+    "name": "Jaywalker",
+    "address": "573 Johnson Avenue, Brooklyn",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.709089285714285,
+     "longitude": -73.924549
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 25,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "gotham-jazz-2026-10-07-dccef8",
+  "night": "2026-10-07",
+  "title": "Gotham Jazz",
+  "fam": "SwingSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "hell-gate-battle-of-journalist-bands-2026-10-06-c64779",
+  "night": "2026-10-06",
+  "title": "Hell Gate Battle of Journalist Bands",
+  "fam": "Hip-hop, street and breaking",
+  "when": "7:30pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Night Club 101",
+   "101 Avenue A, New York, NY, 10009"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.725911,
+   -73.984043
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Hell Gate Battle of Journalist Bands",
+   "startDate": "2026-10-06T23:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/hell-gate-battle-of-journalist-bands-2026-10-06-c64779",
+   "location": {
+    "@type": "Place",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY, 10009",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.725911,
+     "longitude": -73.984043
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Tickets",
+     "price": 27.22,
+     "priceCurrency": "USD",
+     "url": "https://www.ticketweb.com/event/hell-gate-battle-of-journalist-night-club-101-tickets/14320424"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "hustle-competition-workshop-teaching-judging-shay-dixon-s-2026-10-05-d30ae3",
+  "night": "2026-10-05",
+  "title": "Hustle Competition & Workshop - Teaching & Judging | Shay Dixon's LA Hustle Congress",
+  "fam": "Ballroom and Latin ballroomClass",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Paul Pellicoro's DanceSport, LLC",
+   "dancesport.com"
+  ],
+  "srcs": [
+   "dancesport.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "dancesport.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "it-s-a-2000-s-party-2026-10-02-7c71b9",
+  "night": "2026-10-02",
+  "title": "It's A 2000's Party!",
+  "fam": "Clubs and DJ nights",
+  "when": "9pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Williams Center - Black Box - Rutherford",
+   "15 Sylvan Street, Rutherford, NJ, 07070"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.82711,
+   -74.10333
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "It's A 2000's Party!",
+   "startDate": "2026-10-03T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/it-s-a-2000-s-party-2026-10-02-7c71b9",
+   "location": {
+    "@type": "Place",
+    "name": "Williams Center - Black Box - Rutherford",
+    "address": "15 Sylvan Street, Rutherford, NJ, 07070",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.82711,
+     "longitude": -74.10333
+    }
+   }
+  }
+ },
+ {
+  "slug": "jigitz-2026-10-02-7b3d09",
+  "night": "2026-10-02",
+  "title": "jigitz",
+  "fam": "Clubs and DJ nights",
+  "when": "8pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Brooklyn Paramount",
+   "385 Flatbush Ave. Extension, Brooklyn, NY, 11201"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.690036790697675,
+   -73.9817296860465
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "jigitz",
+   "startDate": "2026-10-03T00:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/jigitz-2026-10-02-7b3d09",
+   "location": {
+    "@type": "Place",
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave. Extension, Brooklyn, NY, 11201",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.690036790697675,
+     "longitude": -73.9817296860465
+    }
+   }
+  }
+ },
+ {
+  "slug": "jimmy-anton-salsa-social-2026-10-04-7a0aea",
+  "night": "2026-10-04",
+  "title": "Jimmy Anton Salsa Social",
+  "fam": "Salsa and LatinSocial dance",
+  "when": "6pmDancing starts / 10pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Jimmy Anton"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Jimmy Anton Salsa Social",
+   "startDate": "2026-10-04T22:00:00.000Z",
+   "endDate": "2026-10-05T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/jimmy-anton-salsa-social-2026-10-04-7a0aea",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Jimmy Anton"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "$15",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "josh-lee-and-the-extended-family-2026-09-30-52b4eb",
+  "night": "2026-09-30",
+  "title": "Josh Lee and the Extended Family",
+  "fam": "SwingClass",
+  "when": "5pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "la-vieja-guardia-salsa-2026-10-11-09b535",
+  "night": "2026-10-11",
+  "title": "La Vieja Guardia Salsa",
+  "fam": "Salsa and LatinSocial dance",
+  "when": "6pmDancing starts / 10pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "La Vieja Guardia Salsa",
+   "startDate": "2026-10-11T22:00:00.000Z",
+   "endDate": "2026-10-12T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/la-vieja-guardia-salsa-2026-10-11-09b535",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "lindy-lab-2026-10-03-06bb34",
+  "night": "2026-10-03",
+  "title": "Lindy Lab",
+  "fam": "SwingClass",
+  "when": "5pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "lindyland-dance-party-2026-10-10-46c27e",
+  "night": "2026-10-10",
+  "title": "Lindyland Dance Party",
+  "fam": "SwingSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "The DL",
+   "95 Delancey St 3rd Floor, New York, NY, 10002"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.71870422363281,
+   -73.98922348022461
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Lindyland Dance Party",
+   "startDate": "2026-10-10",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventCancelled",
+   "url": "https://dancetonight.vercel.app/e/lindyland-dance-party-2026-10-10-46c27e",
+   "location": {
+    "@type": "Place",
+    "name": "The DL",
+    "address": "95 Delancey St 3rd Floor, New York, NY, 10002",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.71870422363281,
+     "longitude": -73.98922348022461
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 29,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 35,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "INDIVIDUAL TICKETS",
+     "price": 39,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "los-tres-amigos-milonga-2026-09-29-6691aa",
+  "night": "2026-09-29",
+  "title": "Los Tres Amigos Milonga",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Ripley-Grier Studios",
+   "520 8th Ave 16th floor, New York, NY, 10018"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.75377655029297,
+   -73.99217987060547
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Los Tres Amigos Milonga",
+   "startDate": "2026-09-29",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/los-tres-amigos-milonga-2026-09-29-6691aa",
+   "location": {
+    "@type": "Place",
+    "name": "Ripley-Grier Studios",
+    "address": "520 8th Ave 16th floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75377655029297,
+     "longitude": -73.99217987060547
+    }
+   }
+  }
+ },
+ {
+  "slug": "midtown-swings-2026-09-29-94bf0b",
+  "night": "2026-09-29",
+  "title": "Midtown Swings",
+  "fam": "SwingSocial dance",
+  "when": "Now 6:44pm / 9pmLesson / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Danznik Studios",
+   "240 W 37th St 2nd Floor, New York, NY, 10018"
+  ],
+  "who": [
+   "Midtown Swings",
+   "thisweekinswingnyc.com"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.75351905822754,
+   -73.9909896850586
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Midtown Swings",
+   "startDate": "2026-09-30T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/midtown-swings-2026-09-29-94bf0b",
+   "location": {
+    "@type": "Place",
+    "name": "Danznik Studios",
+    "address": "240 W 37th St 2nd Floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75351905822754,
+     "longitude": -73.9909896850586
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Midtown Swings",
+    "url": "https://thisweekinswingnyc.com/author/eileen/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "General",
+     "price": 25,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Danznik Members",
+     "price": 20,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Verified College Students",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "midtown-swings-2026-10-06-333ab1",
+  "night": "2026-10-06",
+  "title": "Midtown Swings",
+  "fam": "SwingSocial dance",
+  "when": "9pmLesson / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Danznik Studios",
+   "240 W 37th St 2nd Floor, New York, NY, 10018"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.75351905822754,
+   -73.9909896850586
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Midtown Swings",
+   "startDate": "2026-10-07T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/midtown-swings-2026-10-06-333ab1",
+   "location": {
+    "@type": "Place",
+    "name": "Danznik Studios",
+    "address": "240 W 37th St 2nd Floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75351905822754,
+     "longitude": -73.9909896850586
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 25,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "advance",
+     "price": 20,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "students",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "mind-enterprises-16-and-over-2026-10-10-b2dcc0",
+  "night": "2026-10-10",
+  "title": "Mind Enterprises (16 and Over)",
+  "fam": "Clubs and DJ nights",
+  "when": "9pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Brooklyn Steel",
+   "319 Frost St, Brooklyn, NY, 11222"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.7192769,
+   -73.9386922
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Mind Enterprises (16 and Over)",
+   "startDate": "2026-10-11T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/mind-enterprises-16-and-over-2026-10-10-b2dcc0",
+   "location": {
+    "@type": "Place",
+    "name": "Brooklyn Steel",
+    "address": "319 Frost St, Brooklyn, NY, 11222",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7192769,
+     "longitude": -73.9386922
+    }
+   }
+  }
+ },
+ {
+  "slug": "new-york-lindy-exchange-2026-10-10-da5737",
+  "night": "2026-10-10",
+  "title": "New York Lindy Exchange",
+  "fam": "SwingSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "new-york-lindy-exchange-2026-nylx-2026-10-09-a0187c",
+  "night": "2026-10-09",
+  "title": "New York Lindy Exchange 2026 (NYLX)",
+  "fam": "SwingClass",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "New York Lindy Exchange",
+   "nylindy.com"
+  ],
+  "srcs": [
+   "nylindy.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "nylindy.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "nyc-zouk-festival-2026-brazilian-zouk-in-the-2026-10-01-04dde0",
+  "night": "2026-10-01",
+  "title": "NYC ZOUK FESTIVAL 2026 | Brazilian Zouk in the Heart of Manhattan",
+  "fam": "Kizomba, zouk and Afro-LatinFestival session",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "events.zoukology.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "events.zoukology.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "nylx-2026-10-09-669cb4",
+  "night": "2026-10-09",
+  "title": "NYLX",
+  "fam": "SwingSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "YSBD",
+   "37 W 26th St, 2nd floor, NYC"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": [
+   40.744505,
+   -73.9904434
+  ],
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "NYLX",
+   "startDate": "2026-10-09",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/nylx-2026-10-09-669cb4",
+   "location": {
+    "@type": "Place",
+    "name": "YSBD",
+    "address": "37 W 26th St, 2nd floor, NYC",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.744505,
+     "longitude": -73.9904434
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "early bird",
+     "price": 25,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "advance",
+     "price": 30,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "at the door",
+     "price": 35,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "nylx-warmup-w-djs-tj-savino-claire-lorman-2026-10-08-526aad",
+  "night": "2026-10-08",
+  "title": "NYLX Warmup w/ DJs TJ Savino & Claire Lorman",
+  "fam": "SwingSocial dance",
+  "when": "9pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "37 W 26th St, 2nd floor, NYC",
+   "37 W 26th St, 2nd floor, NYC"
+  ],
+  "who": [
+   "Frim Fram Jam",
+   "frimframjam.com"
+  ],
+  "srcs": [
+   "frimframjam.com"
+  ],
+  "geo": [
+   40.744505,
+   -73.9904434
+  ],
+  "srcHosts": [
+   "frimframjam.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "NYLX Warmup w/ DJs TJ Savino & Claire Lorman",
+   "startDate": "2026-10-09T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/nylx-warmup-w-djs-tj-savino-claire-lorman-2026-10-08-526aad",
+   "location": {
+    "@type": "Place",
+    "name": "37 W 26th St, 2nd floor, NYC",
+    "address": "37 W 26th St, 2nd floor, NYC",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.744505,
+     "longitude": -73.9904434
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Frim Fram Jam",
+    "url": "https://frimframjam.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "$15",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "$10 w/ student ID",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "paciencia-milonga-2026-09-29-c61a3c",
+  "night": "2026-09-29",
+  "title": "Paciencia Milonga",
+  "fam": "TangoSocial dance",
+  "when": "Now 6:44pm / 9:30pmDancing starts / 1:30amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Paciencia Milonga",
+   "startDate": "2026-09-30T01:30:00.000Z",
+   "endDate": "2026-09-30T05:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/paciencia-milonga-2026-09-29-c61a3c",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "paciencia-milonga-2026-10-06-9435a6",
+  "night": "2026-10-06",
+  "title": "Paciencia Milonga",
+  "fam": "TangoSocial dance",
+  "when": "9:30pmDancing starts / 1:30amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Paciencia Milonga",
+   "startDate": "2026-10-07T01:30:00.000Z",
+   "endDate": "2026-10-07T05:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/paciencia-milonga-2026-10-06-9435a6",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "pasion-milonguera-2026-10-02-15c8fa",
+  "night": "2026-10-02",
+  "title": "Pasion Milonguera",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Church of Saint Paul and Saint Andrew",
+   "263 W 86th St"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.7889381,
+   -73.977291
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Pasion Milonguera",
+   "startDate": "2026-10-02",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/pasion-milonguera-2026-10-02-15c8fa",
+   "location": {
+    "@type": "Place",
+    "name": "Church of Saint Paul and Saint Andrew",
+    "address": "263 W 86th St",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7889381,
+     "longitude": -73.977291
+    }
+   }
+  }
+ },
+ {
+  "slug": "polenta-2026-10-02-01c94a",
+  "night": "2026-10-02",
+  "title": "POLENTA",
+  "fam": "Back to Fri, Oct 2Share",
+  "when": "11pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "positively-swingin-2026-10-07-6d04c2",
+  "night": "2026-10-07",
+  "title": "Positively Swingin",
+  "fam": "SwingSocial dance",
+  "when": "7:30pmLesson / 10pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "project-91-presents-dj-pauly-d-2026-10-09-154d12",
+  "night": "2026-10-09",
+  "title": "Project 91 Presents DJ Pauly D",
+  "fam": "Clubs and DJ nights",
+  "when": "6pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "The Rooftop at Pier 17",
+   "89 South Street, New York, NY, 10038"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.706369,
+   -74.003827
+  ],
+  "srcHosts": [
+   "axs.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Project 91 Presents DJ Pauly D",
+   "startDate": "2026-10-09T22:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/project-91-presents-dj-pauly-d-2026-10-09-154d12",
+   "location": {
+    "@type": "Place",
+    "name": "The Rooftop at Pier 17",
+    "address": "89 South Street, New York, NY, 10038",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.706369,
+     "longitude": -74.003827
+    }
+   }
+  }
+ },
+ {
+  "slug": "reggaeton-y2k-18-2026-10-10-9959e9",
+  "night": "2026-10-10",
+  "title": "Reggaet\u00f3n Y2K (18+)",
+  "fam": "Clubs and DJ nights",
+  "when": "9pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Irving Plaza Powered By Verizon 5G",
+   "17 Irving Place, New York, NY, 10003"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "ticketmaster.com"
+  ],
+  "geo": [
+   40.734917,
+   -73.9884469
+  ],
+  "srcHosts": [
+   "ticketmaster.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Reggaet\u00f3n Y2K (18+)",
+   "startDate": "2026-10-11T01:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/reggaeton-y2k-18-2026-10-10-9959e9",
+   "location": {
+    "@type": "Place",
+    "name": "Irving Plaza Powered By Verizon 5G",
+    "address": "17 Irving Place, New York, NY, 10003",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.734917,
+     "longitude": -73.9884469
+    }
+   }
+  }
+ },
+ {
+  "slug": "robins-argentine-tango-practica-2026-10-01-35ed3c",
+  "night": "2026-10-01",
+  "title": "Robins Argentine Tango Practica",
+  "fam": "TangoPr\u00e1ctica",
+  "when": "9:30pmDancing starts / 11:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Robins Argentine Tango Practica",
+   "startDate": "2026-10-02T01:30:00.000Z",
+   "endDate": "2026-10-02T03:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/robins-argentine-tango-practica-2026-10-01-35ed3c",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "robins-argentine-tango-practica-2026-10-08-debe20",
+  "night": "2026-10-08",
+  "title": "Robins Argentine Tango Practica",
+  "fam": "TangoPr\u00e1ctica",
+  "when": "9:30pmDancing starts / 11:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Robins Argentine Tango Practica",
+   "startDate": "2026-10-09T01:30:00.000Z",
+   "endDate": "2026-10-09T03:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/robins-argentine-tango-practica-2026-10-08-debe20",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "salsa-groove-dance-class-happy-hour-2026-10-02-15d580",
+  "night": "2026-10-02",
+  "title": "Salsa Groove: Dance Class & Happy Hour",
+  "fam": "Salsa and LatinClass",
+  "when": "6pmLesson / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "san-holo-presents-true-love-in-a-made-2026-10-10-aed107",
+  "night": "2026-10-10",
+  "title": "San Holo presents TRUE LOVE IN A MADE UP WORLD",
+  "fam": "Clubs and DJ nights",
+  "when": "7pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "The Rooftop at Pier 17",
+   "89 South Street, New York, NY, 10038"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.706369,
+   -74.003827
+  ],
+  "srcHosts": [
+   "axs.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "San Holo presents TRUE LOVE IN A MADE UP WORLD",
+   "startDate": "2026-10-10T23:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/san-holo-presents-true-love-in-a-made-2026-10-10-aed107",
+   "location": {
+    "@type": "Place",
+    "name": "The Rooftop at Pier 17",
+    "address": "89 South Street, New York, NY, 10038",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.706369,
+     "longitude": -74.003827
+    }
+   }
+  }
+ },
+ {
+  "slug": "send-it-up-2026-10-09-7595e4",
+  "night": "2026-10-09",
+  "title": "Send It Up",
+  "fam": "Clubs and DJ nights",
+  "when": "10pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Night Club 101",
+   "101 Avenue A, New York, NY, 10009"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.725911,
+   -73.984043
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Send It Up",
+   "startDate": "2026-10-10T02:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/send-it-up-2026-10-09-7595e4",
+   "location": {
+    "@type": "Place",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY, 10009",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.725911,
+     "longitude": -73.984043
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Tickets",
+     "price": 0,
+     "priceCurrency": "USD",
+     "url": "https://www.ticketweb.com/event/send-it-up-night-club-101-tickets/14336754"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "sounds-of-bollywood-desi-saturdays-2026-10-03-488292",
+  "night": "2026-10-03",
+  "title": "Sounds of Bollywood: Desi Saturdays",
+  "fam": "Other social dancingClub or DJ night",
+  "when": "11pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "special-double-contra-dance-2026-10-10-0f182e",
+  "night": "2026-10-10",
+  "title": "Special Double Contra Dance",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "The Church of the Village",
+   "201 West 13th Street, New York, NY 10011"
+  ],
+  "who": [
+   "Country Dance New York",
+   "cdny.org"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": [
+   40.7381373,
+   -74.0003114
+  ],
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Special Double Contra Dance",
+   "startDate": "2026-10-10",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/special-double-contra-dance-2026-10-10-0f182e",
+   "location": {
+    "@type": "Place",
+    "name": "The Church of the Village",
+    "address": "201 West 13th Street, New York, NY 10011",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7381373,
+     "longitude": -74.0003114
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Country Dance New York",
+    "url": "https://cdny.org/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Members",
+     "price": 15,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Non-members",
+     "price": 20,
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Full-time Students",
+     "price": 10,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "students-young-adults-16-18-must-show-id-2026-09-29-7813db",
+  "night": "2026-09-29",
+  "title": "Students & Young Adults 16\u201318 ( Must Show ID) \u2013 $10",
+  "fam": "Folk, contra and ceilidhClass",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "CDNY",
+   "eventbrite.com"
+  ],
+  "srcs": [
+   "cdny.org"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "cdny.org"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "supertall-2026-10-03-01cb57",
+  "night": "2026-10-03",
+  "title": "SUPERTALL",
+  "fam": "Clubs and DJ nights",
+  "when": "11pmDoors / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Night Club 101",
+   "101 Avenue A, New York, NY, 10009"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.725911,
+   -73.984043
+  ],
+  "srcHosts": [
+   "ticketweb.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "SUPERTALL",
+   "startDate": "2026-10-04T03:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/supertall-2026-10-03-01cb57",
+   "location": {
+    "@type": "Place",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY, 10009",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.725911,
+     "longitude": -73.984043
+    }
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Tickets",
+     "price": 0,
+     "priceCurrency": "USD",
+     "url": "https://www.ticketweb.com/event/supertall-night-club-101-tickets/14297724"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "swing-remix-2026-10-03-46ff79",
+  "night": "2026-10-03",
+  "title": "Swing Remix",
+  "fam": "SwingSocial dance",
+  "when": "7:45pmDoors / 8pmLesson / 8:30pmDancing starts / 11:30pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "thisweekinswingnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "thisweekinswingnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "tango-cafe-2026-09-30-ac9076",
+  "night": "2026-09-30",
+  "title": "Tango Cafe",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "You Should Be Dancing...!",
+   "37 W 26th St, New York, NY, 10010"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.74459648132324,
+   -73.99042892456055
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Tango Cafe",
+   "startDate": "2026-09-30",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/tango-cafe-2026-09-30-ac9076",
+   "location": {
+    "@type": "Place",
+    "name": "You Should Be Dancing...!",
+    "address": "37 W 26th St, New York, NY, 10010",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.74459648132324,
+     "longitude": -73.99042892456055
+    }
+   }
+  }
+ },
+ {
+  "slug": "tango-la-nacional-2026-10-01-f718f6",
+  "night": "2026-10-01",
+  "title": "Tango la Nacional",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "La Nacional",
+   "239 W 14th St"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.7394534,
+   -74.001168
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Tango la Nacional",
+   "startDate": "2026-10-01",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/tango-la-nacional-2026-10-01-f718f6",
+   "location": {
+    "@type": "Place",
+    "name": "La Nacional",
+    "address": "239 W 14th St",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.7394534,
+     "longitude": -74.001168
+    }
+   }
+  }
+ },
+ {
+  "slug": "tango-y-te-2026-10-04-92d14e",
+  "night": "2026-10-04",
+  "title": "Tango Y Te",
+  "fam": "TangoClass",
+  "when": "3pmDancing starts / 6pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Tango Y Te",
+   "startDate": "2026-10-04T19:00:00.000Z",
+   "endDate": "2026-10-04T22:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/tango-y-te-2026-10-04-92d14e",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "tango-y-te-2026-10-11-792220",
+  "night": "2026-10-11",
+  "title": "Tango Y Te",
+  "fam": "TangoClass",
+  "when": "3pmDancing starts / 6pmEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Tango Y Te",
+   "startDate": "2026-10-11T19:00:00.000Z",
+   "endDate": "2026-10-11T22:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/tango-y-te-2026-10-11-792220",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 20,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "the-art-of-muzic-2026-09-30-9af0e0",
+  "night": "2026-09-30",
+  "title": "The Art of Muzic",
+  "fam": "Back to tomorrowShare",
+  "when": "6:30pmDancing starts / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": null,
+  "srcHosts": [
+   "sobs.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "the-brooks-prumo-orchestra-2026-10-03-5fe42a",
+  "night": "2026-10-03",
+  "title": "The Brooks Prumo Orchestra",
+  "fam": "TangoSocial dance",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [
+   "swingremixnyc.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "swingremixnyc.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "toda-la-noche-salsa-social-2026-10-03-c7d857",
+  "night": "2026-10-03",
+  "title": "Toda La Noche, Salsa Social",
+  "fam": "Salsa and LatinSocial dance",
+  "when": "10pmDancing starts / 3amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Nicholas Messina"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Toda La Noche, Salsa Social",
+   "startDate": "2026-10-04T02:00:00.000Z",
+   "endDate": "2026-10-04T07:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/toda-la-noche-salsa-social-2026-10-03-c7d857",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Nicholas Messina"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "$15",
+     "price": 15,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "victoria-s-practica-2026-10-03-76eddf",
+  "night": "2026-10-03",
+  "title": "Victoria's Practica",
+  "fam": "TangoSocial dance",
+  "when": "2:30pmLesson / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Ripley-Grier Studios",
+   "520 8th Ave 16th floor, New York, NY, 10018"
+  ],
+  "who": [
+   "Not listed"
+  ],
+  "srcs": [],
+  "geo": [
+   40.75377655029297,
+   -73.99217987060547
+  ],
+  "srcHosts": [
+   "theronda.us"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Victoria's Practica",
+   "startDate": "2026-10-03T18:30:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/victoria-s-practica-2026-10-03-76eddf",
+   "location": {
+    "@type": "Place",
+    "name": "Ripley-Grier Studios",
+    "address": "520 8th Ave 16th floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75377655029297,
+     "longitude": -73.99217987060547
+    }
+   }
+  }
+ },
+ {
+  "slug": "warsaw-brasil-festival-2026-2026-10-02-f77490",
+  "night": "2026-10-02",
+  "title": "Warsaw Brasil Festival 2026",
+  "fam": "Kizomba, zouk and Afro-LatinFestival session",
+  "when": "Time not listed",
+  "where": [
+   "Location not listed"
+  ],
+  "who": [
+   "Zoukology",
+   "events.zoukology.com"
+  ],
+  "srcs": [
+   "events.zoukology.com"
+  ],
+  "geo": null,
+  "srcHosts": [
+   "events.zoukology.com"
+  ],
+  "ld": null
+ },
+ {
+  "slug": "west-coast-swing-with-jes-ann-nail-2026-09-30-134b60",
+  "night": "2026-09-30",
+  "title": "West Coast Swing with Jes Ann Nail",
+  "fam": "SwingClass",
+  "when": "7pmLesson, beginner friendly / End not listed / Times are in Eastern Daylight Time",
+  "where": [
+   "Danznik Studios",
+   "240 W 37th St 2nd Floor, New York, NY, 10018"
+  ],
+  "who": [
+   "NYC Swings",
+   "nycswings.net"
+  ],
+  "srcs": [
+   "nycswings.net"
+  ],
+  "geo": [
+   40.75351905822754,
+   -73.9909896850586
+  ],
+  "srcHosts": [
+   "nycswings.net"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "West Coast Swing with Jes Ann Nail",
+   "startDate": "2026-09-30T23:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/west-coast-swing-with-jes-ann-nail-2026-09-30-134b60",
+   "location": {
+    "@type": "Place",
+    "name": "Danznik Studios",
+    "address": "240 W 37th St 2nd Floor, New York, NY, 10018",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.75351905822754,
+     "longitude": -73.9909896850586
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "NYC Swings",
+    "url": "https://www.nycswings.net/"
+   }
+  }
+ },
+ {
+  "slug": "zen-zouk-2026-09-30-702c6d",
+  "night": "2026-09-30",
+  "title": "Zen Zouk",
+  "fam": "Kizomba, zouk and Afro-LatinSocial dance",
+  "when": "9:30pmDancing starts / 1amEnds / Times are in Eastern Daylight Time",
+  "where": [
+   "Stepping Out Studios",
+   "617 W 46th St, New York, NY, 10036"
+  ],
+  "who": [
+   "Stepping Out Studios",
+   "steppingoutstudios.com"
+  ],
+  "srcs": [
+   "steppingoutstudios.com"
+  ],
+  "geo": [
+   40.763912200927734,
+   -73.99735260009766
+  ],
+  "srcHosts": [
+   "steppingoutstudios.com"
+  ],
+  "ld": {
+   "@context": "https://schema.org",
+   "@type": "Event",
+   "name": "Zen Zouk",
+   "startDate": "2026-10-01T01:30:00.000Z",
+   "endDate": "2026-10-01T05:00:00.000Z",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "url": "https://dancetonight.vercel.app/e/zen-zouk-2026-09-30-702c6d",
+   "location": {
+    "@type": "Place",
+    "name": "Stepping Out Studios",
+    "address": "617 W 46th St, New York, NY, 10036",
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 40.763912200927734,
+     "longitude": -73.99735260009766
+    }
+   },
+   "organizer": {
+    "@type": "Organization",
+    "name": "Stepping Out Studios",
+    "url": "http://www.steppingoutstudios.com/"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "door",
+     "price": 11,
+     "priceCurrency": "USD"
+    }
+   ]
+  }
+ }
+]

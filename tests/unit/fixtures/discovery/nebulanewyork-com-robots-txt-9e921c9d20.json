@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://nebulanewyork.com/robots.txt"
+  },
+  "response": {
+    "url": "https://www.nebulanewyork.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "age": "336",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a45714912c0b0256-ORD",
+      "content-encoding": "gzip",
+      "content-type": "text/plain; charset=utf-8",
+      "date": "Sun, 04 Oct 2026 20:54:11 GMT",
+      "last-modified": "Sun, 04 Oct 2026 20:48:34 GMT",
+      "server": "cloudflare",
+      "set-cookie": "_cfuvid=rYnCUocGjz3igy_wTSuZt4y3FLxNQnwx2A7m1N65y5A-1791147251.3910484-1.0.1.1-5jY1KA_8vrjb_lNb2.7Ko08gXVGcr0PJf3O08AmDPBo; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.nebulanewyork.com",
+      "strict-transport-security": "max-age=31536000",
+      "surrogate-control": "max-age=43200",
+      "surrogate-key": "www.nebulanewyork.com 69143e190954d0b860f5aca3",
+      "transfer-encoding": "chunked",
+      "vary": "accept-encoding",
+      "x-robots-tag": "noindex",
+      "x-wf-region": "us-east-1"
+    },
+    "body": "Sitemap: https://www.nebulanewyork.com/sitemap.xml"
+  },
+  "note": "recorded 2026-10-04"
+}

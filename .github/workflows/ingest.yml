@@ -1,0 +1,279 @@
+name: ingest
+
+# Runs twice a day for New York, a full read of every source each time, so the site is fresh by
+# 10am and 3pm New York time (the owner's instruction of 2026-10-05, D-089), and by hand from the
+# Actions tab (D-043 question 3). The morning run looks for new venue websites first, in the same
+# job (D-120). A dispatch without "full_read" reads only the sources that are due
+# (config/refresh.ts, D-088) inside an 8-minute time box. It prepares the database, re-seeds
+# venues from the latest Overture release on the 1st of the month or on dispatch (D-141), runs
+# `pnpm ingest` for one metro, and puts the report on the run's summary page. London (D-201) has no
+# GitHub schedule: the Worker's cron dispatches it once a day (src/edge/ingest-trigger.ts). So are Philadelphia, Miami and New Orleans, from the 13:27 UTC cron (D-300). Keys come from the repository's Actions secrets; a missing key turns its adapter
+# off with a note in the report, it does not fail the run.
+
+on:
+  # 9:27am and 2:27pm New York time; a full read takes about 30 minutes. GitHub keeps New York time
+  # through daylight saving (`timezone`), and runs off the hour, because scheduled runs on the hour
+  # are the ones GitHub delays most (D-051). A scheduled run has no inputs, so each input below
+  # falls back to its default through `env`; `github.event.schedule` names which run this is.
+  schedule:
+    - cron: "27 9 * * *"
+      timezone: "America/New_York"
+    - cron: "27 14 * * *"
+      timezone: "America/New_York"
+  workflow_dispatch:
+    inputs:
+      metro:
+        description: Metro to ingest
+        default: nyc
+        required: true
+      seed_venues:
+        description: Re-seed venues from the latest Overture release first (takes about a minute)
+        type: boolean
+        default: false
+      overture_release:
+        description: "Overture release to seed from (blank: the latest release)"
+        default: ""
+      full_read:
+        description: Read every source now, due or not, with no 8-minute time box (takes about 30 minutes)
+        type: boolean
+        default: false
+      discover:
+        description: Look for new venue websites first, as the morning run does (250 sites)
+        type: boolean
+        default: false
+
+concurrency:
+  group: ingest-${{ inputs.metro || 'nyc' }}
+  cancel-in-progress: false
+
+jobs:
+  # GitHub starts scheduled runs 3-6 hours late (2026-10-05..19). The Worker's cron dispatches each
+  # run on time (src/edge/ingest-trigger.ts, D-158); the schedule above stays as a backup and skips
+  # when a dispatched run started in the last 7 hours (one slot) is running or succeeded. If the
+  # check cannot answer, the backup runs.
+  backup-check:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '7 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          n=$(gh api "repos/${{ github.repository }}/actions/workflows/ingest.yml/runs?event=workflow_dispatch&created=>=$since" \
+            --jq '[.workflow_runs[] | select(.status != "completed" or .conclusion == "success")] | length' || echo 0)
+          if [ "${n:-0}" -gt 0 ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "A dispatched run since $since covers this slot; the late scheduled run skips."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "No dispatched run since $since; the scheduled run goes ahead."
+          fi
+
+  ingest:
+    needs: backup-check
+    if: ${{ always() && (needs.backup-check.result != 'success' || needs.backup-check.outputs.run == 'true') }}
+    # The repository variable INGEST_RUNS_ON picks the machine (D-881): unset, GitHub's ubuntu-latest;
+    # '["self-hosted","dt-ingest"]', the owner's Mac runner, whose minutes are free. Set it back to
+    # unset when the Mac is off: a run waiting for an absent runner reads nothing.
+    # New York (twice a day, 30-60 minutes, and every scheduled backup run) stays on ubuntu-latest: on the one Mac
+    # runner its read held the other metros' 30-minute slots in the queue behind it (2026-11-13, D-882). Every
+    # Worker dispatch is a full read, so the metro, not full_read, picks the machine.
+    runs-on: ${{ fromJSON(((github.event_name == 'schedule' || (inputs.metro || 'nyc') == 'nyc') && '"ubuntu-latest"') || vars.INGEST_RUNS_ON || '"ubuntu-latest"') }}
+    # A scheduled run and a dispatched full read read every source: 120 minutes (an uncached re-read
+    # after a prompt change ran past 60, 2026-10-17; 90 ran out while harvesting on 2026-10-18). A dispatched
+    # due-only run is its 8-minute time box and the steps after it: 20 minutes stops a hung run from
+    # billing an hour (D-088).
+    timeout-minutes: ${{ (github.event_name == 'schedule' || inputs.full_read) && 120 || 20 }}
+    env:
+      METRO: ${{ inputs.metro || 'nyc' }}
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+      BOT_CONTACT_EMAIL: ${{ vars.BOT_CONTACT_EMAIL }}
+      TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+      SKIDDLE_API_KEY: ${{ secrets.SKIDDLE_API_KEY }}
+      SABAKI_API_KEY: ${{ secrets.SABAKI_API_KEY }}
+      EVENTBRITE_PRIVATE_TOKEN: ${{ secrets.EVENTBRITE_PRIVATE_TOKEN }}
+      GEOAPIFY_API_KEY: ${{ secrets.GEOAPIFY_API_KEY }}
+      # Places API (New), place IDs only (D-066); the lookup is skipped when it is unset.
+      GOOGLE_MAPS_SERVER_KEY: ${{ secrets.GOOGLE_MAPS_SERVER_KEY }}
+      # Public Google Calendars through the Calendar API (D-130); without it the reader is "not configured".
+      GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+      # Workers Paid since 2026-09-28 (D-052, D-058): 50,000 neurons a day, half of it for one metro.
+      # A repository variable of the same name overrides either figure without a code change.
+      AI_DAILY_NEURON_BUDGET: ${{ vars.AI_DAILY_NEURON_BUDGET || '50000' }}
+      AI_METRO_NEURON_CAP: ${{ vars.AI_METRO_NEURON_CAP || '25000' }}
+      # Without it the ledger holds Cloudflare to the free plan's 10,000 whatever the budget says.
+      CLOUDFLARE_WORKERS_PAID: ${{ vars.CLOUDFLARE_WORKERS_PAID || 'true' }}
+      # Paid DeepSeek V3.2 on Amazon Bedrock first for every job, the free chain behind it (D-142).
+      # Keys of a dedicated IAM user that may only invoke that model; without them Bedrock is skipped.
+      BEDROCK_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      BEDROCK_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      # This project's tagged inference profile (AWS bills calls to its tags); empty: the bare model.
+      BEDROCK_INFERENCE_PROFILE_ARN: ${{ vars.BEDROCK_INFERENCE_PROFILE_ARN }}
+      AI_ENABLE_PAID: ${{ vars.AI_ENABLE_PAID || 'true' }}
+      AI_PROVIDER_ORDER: ${{ vars.AI_PROVIDER_ORDER || 'bedrock,gemini,groq,openrouter,cloudflare' }}
+      # $1 a day across both runs. New York may use all of it while it is the only metro; lower
+      # AI_METRO_USD_CAP (a repository variable) when a second metro starts. London: $1 a day, the
+      # owner's choice of 2026-10-27 (D-201).
+      AI_DAILY_USD_CAP: ${{ vars.AI_DAILY_USD_CAP || '1' }}
+      # Philadelphia, Miami, New Orleans, the six wave-1 metros and the wave-2 metros (Raleigh, Medellin, Istanbul, Mumbai, Hong Kong): $1 a day
+      # each (D-300); AI_DAILY_USD_CAP (a repository variable) is $15 since 2026-10-29 so New York's $3 and the $1 metros fit.
+      AI_METRO_USD_CAP: ${{ contains(fromJSON('["london","philadelphia","miami","new-orleans","barcelona","lisbon","rio-de-janeiro","buenos-aires","mexico-city","san-juan","mumbai","delhi","raleigh","medellin","istanbul","hong-kong","dubai","beirut","paris","berlin","pune","tulum","los-angeles","nashville","tokyo","austin","marrakesh"]'), inputs.metro) && '1' || vars.AI_METRO_USD_CAP || '1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          # The Mac runner keeps its pnpm store between jobs; restoring GitHub's cache there took 80 s (D-882).
+          cache: ${{ runner.environment == 'github-hosted' && 'pnpm' || '' }}
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check the database secrets are set
+        run: |
+          if [ -z "$DATABASE_URL" ] || [ -z "$DIRECT_DATABASE_URL" ]; then
+            echo "::error::Set DATABASE_URL and DIRECT_DATABASE_URL in Settings > Secrets and variables > Actions"
+            exit 1
+          fi
+
+      - name: Check the database addresses (never prints the password)
+        run: pnpm db:check
+      # A wrong AI key is reported here in plain words; it does not stop the deterministic ingest.
+      - name: Check the AI keys (one tiny call each; never prints a key)
+        continue-on-error: true
+        run: pnpm ai:check
+      - name: Apply migrations
+        run: pnpm db:migrate
+      - name: Make sure the metro exists (no demo listings)
+        run: pnpm db:seed --metro "$METRO" --metro-only
+
+      # Venues are re-seeded from the newest Overture release on the first morning run of each
+      # month, or when a dispatch asks for it (D-141). The release catalog names the newest one; if
+      # it cannot be read, the last pinned release is used.
+      - name: Decide the venue re-seed
+        id: seed
+        env:
+          ASKED: ${{ inputs.seed_venues }}
+          RELEASE: ${{ inputs.overture_release }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          run=false
+          if [ "$ASKED" = "true" ]; then run=true; fi
+          if [ "$SCHEDULE" = "27 9 * * *" ] && [ "$(TZ=America/New_York date +%d)" = "01" ]; then run=true; fi
+          if [ -z "$RELEASE" ]; then
+            RELEASE=$(curl -fsS --max-time 20 https://stac.overturemaps.org/catalog.json \
+              | python3 -c 'import json,sys; print(json.load(sys.stdin)["latest"])' 2>/dev/null || true)
+          fi
+          if ! printf '%s' "$RELEASE" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]+$'; then
+            RELEASE=2026-09-23.0
+          fi
+          # Each metro's Overture box (west,south,east,north); London's holds Greater London (D-201).
+          case "$METRO" in
+            london) BBOX=-0.52,51.28,0.34,51.70 ;;
+            # The City of Philadelphia, Miami-Dade County, Orleans Parish: Census outlines with water (D-300).
+            # Philadelphia's box is its D-511 outline (city + near suburbs, config/metro-bounds/philadelphia.json:
+            # -75.602,39.802,-74.956,40.151) plus 0.01 degrees.
+            philadelphia) BBOX=-75.61,39.79,-74.94,40.16 ;;
+            miami) BBOX=-80.88,25.13,-80.06,25.98 ;;
+            new-orleans) BBOX=-90.141,29.866,-89.625,30.199 ;;
+            # Wave 1 (each city's lead gave its box; San Juan is San Juan, Carolina, Guaynabo, Bayamon and Catano).
+            barcelona) BBOX=2.08,41.32,2.28,41.50 ;;
+            lisbon) BBOX=-9.51,38.40,-8.49,39.07 ;;
+            rio-de-janeiro) BBOX=-43.80,-23.09,-42.95,-22.74 ;;
+            buenos-aires) BBOX=-58.54,-34.71,-58.30,-34.50 ;;
+            mexico-city) BBOX=-99.37,19.04,-98.94,19.60 ;;
+            san-juan) BBOX=-66.214,18.259,-65.902,18.524 ;;
+            mumbai) BBOX=72.771,18.837,72.988,19.274 ;;
+            # Delhi: NCT Delhi + Gurugram + Gautam Buddh Nagar (Noida) outline's box (D-1140).
+            delhi) BBOX=76.65,28.07,77.77,28.88 ;;
+            # Wave 2 (each city's lead gave its box).
+            raleigh) BBOX=-79.00,35.51,-78.25,36.08 ;;
+            medellin) BBOX=-75.719,5.978,-75.217,6.513 ;;
+            istanbul) BBOX=27.96,40.79,29.93,41.60 ;;
+            hong-kong) BBOX=113.81,22.13,114.51,22.57 ;;
+            # Wave 3. Dubai: the whole emirate with the Hatta exclave; seed-venues keeps only places inside the
+            # outline (D-755), so Sharjah and Ajman inside the box drop out (D-1060).
+            dubai) BBOX=54.64,24.59,56.21,25.36 ;;
+            # Wave 4. Pune: Pune, Pimpri-Chinchwad and Hinjewadi (the outline's bounds; D-1120).
+            pune) BBOX=73.690,18.428,73.967,18.720 ;;
+            beirut) BBOX=35.46,33.81,35.62,33.96 ;;
+            tokyo) BBOX=138.94,35.50,139.92,35.90 ;;
+            marrakesh) BBOX=-8.43,31.36,-7.73,32.08 ;;
+            # Paris: the Metropole du Grand Paris (130 communes, D-1040).
+            paris) BBOX=2.14,48.64,2.62,49.02 ;;
+            berlin) BBOX=13.08,52.33,13.77,52.69 ;;
+            # Wave 4. Tulum: the Tulum and Solidaridad municipios (D-1080).
+            tulum) BBOX=-88.00,19.76,-86.90,20.82 ;;
+            # Los Angeles: LA County mainland and Catalina (D-1160).
+            los-angeles) BBOX=-118.96,33.24,-117.64,34.83 ;;
+            # Nashville: Davidson County (D-1200).
+            nashville) BBOX=-87.06,35.96,-86.51,36.41 ;;
+            # Austin: Travis County plus the City of Austin (D-1180); seed-venues keeps only places inside the outline.
+            austin) BBOX=-98.18,30.02,-97.36,30.63 ;;
+            *) BBOX=-74.60,40.30,-73.40,41.10 ;;
+          esac
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "release=$RELEASE" >> "$GITHUB_OUTPUT"
+          echo "bbox=$BBOX" >> "$GITHUB_OUTPUT"
+          echo "Venue re-seed: $run (Overture release $RELEASE)"
+
+      - name: Pull Overture places
+        if: ${{ steps.seed.outputs.run == 'true' }}
+        run: |
+          # A venv: a Mac runner's system Python refuses a global pip install (D-881).
+          python3 -m venv "$RUNNER_TEMP/overture-venv"
+          "$RUNNER_TEMP/overture-venv/bin/pip" install --quiet pyarrow
+          "$RUNNER_TEMP/overture-venv/bin/python" scripts/overture_places.py \
+            --release "${{ steps.seed.outputs.release }}" \
+            --bbox=${{ steps.seed.outputs.bbox }} \
+            --categories "$(pnpm -s seed:venues --print-categories)" \
+            --out places.ndjson
+      - name: Seed venues
+        if: ${{ steps.seed.outputs.run == 'true' }}
+        run: pnpm seed:venues --metro "$METRO" --file places.ndjson
+
+      # The morning run first looks for new venue websites (D-120), so a calendar found today is read
+      # in the same run. Discovery calls no model (D-040); if it fails, the refresh still runs.
+      - name: Discover venue websites (morning run)
+        if: ${{ github.event.schedule == '27 9 * * *' || inputs.discover }}
+        continue-on-error: true
+        # 250 sites a run (the owner, 2026-10-16: clear the backlog in about two days).
+        run: pnpm discover --metro "$METRO" --limit 250 --report discover-report.txt
+
+      - name: Ingest
+        run: pnpm ingest --metro "$METRO" ${{ (github.event_name == 'schedule' || inputs.full_read) && '--full' || '' }} --record fixtures --report ingest-report.txt
+
+      - name: Report
+        if: always()
+        run: |
+          if [ -f ingest-report.txt ]; then
+            { echo '```'; cat ingest-report.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f discover-report.txt ]; then
+            { echo '```'; cat discover-report.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Recorded responses, keys masked, for re-recording the adapters' fixtures (D-043).
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ingest-${{ env.METRO }}-${{ github.run_id }}
+          path: |
+            ingest-report.txt
+            ingest-report.json
+            fixtures/
+          if-no-files-found: ignore
+          retention-days: 14

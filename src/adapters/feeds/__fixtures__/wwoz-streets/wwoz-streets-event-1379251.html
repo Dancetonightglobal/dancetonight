@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ef610f51b2",applicationID:"23596624",browserID:"23596879"};;/*! For license information please see nr-loader-rum-1.324.1.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zuv39xzZ8AH/HwpVrtkixvcBuOFo2ydcFzMtXjx+3Iwr5g++inX+6YDH7J/8fOCAtBetz8aDyaYCRkGy2nnG/w=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/favicons-bw/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/sites/default/files/favicons-bw/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/sites/default/files/favicons-bw/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/sites/default/files/favicons-bw/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/sites/default/files/favicons-bw/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/sites/default/files/favicons-bw/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/sites/default/files/favicons-bw/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/sites/default/files/favicons-bw/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/sites/default/files/favicons-bw/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/sites/default/files/favicons-bw/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons-bw/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons-bw/android-chrome-192x192.png" sizes="192x192"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons-bw/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons-bw/favicon-16x16.png" sizes="16x16"/>
+<link rel="manifest" href="/sites/default/files/favicons-bw/manifest.json"/>
+<link rel="mask-icon" href="/sites/default/files/favicons-bw/safari-pinned-tab.svg" color="#5bbad5"/>
+<meta name="msapplication-TileColor" content="#da532c"/>
+<meta name="msapplication-TileImage" content="/sites/default/files/favicons-bw/mstile-144x144.png"/>
+<meta name="msapplication-config" content="/browserconfig.xml"/>
+<meta name="theme-color" content="#ffffff"/>
+<meta name="msapplication-square70x70logo" content="tile-tiny.png"/>
+<meta name="msapplication-square150x150logo" content="tile-square.png"/>
+<meta name="msapplication-wide310x150logo" content="tile-wide.png"/>
+<meta name="msapplication-square310x310logo" content="tile-large.png"/>
+<meta name="description" content="Start: Verret&#039;s Lounge &amp; Bar 1738 Washington Ave Proceed down Baronne St. to Louisiana Ave make a right on Louisiana Ave. To Danneel St. make a left on Danneel Stto Foucher St make a left on Foucher St to Dryades St left on Dryades St Stop: Marsh Hotel 1901 Delachaise St. - C.I.A." />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.wwoz.org/events/1379251" />
+<link rel="shortlink" href="https://www.wwoz.org/node/1379251" />
+<meta property="og:site_name" content="WWOZ New Orleans 90.7 FM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wwoz.org/events/1379251" />
+<meta property="og:title" content="We Are One Second Line Parade" />
+<meta property="og:description" content="Start: Verret&#039;s Lounge &amp; Bar 1738 Washington Ave Proceed down Baronne St. to Louisiana Ave make a right on Louisiana Ave. To Danneel St. make a left on Danneel Stto Foucher St make a left on Foucher St to Dryades St left on Dryades St Stop: Marsh Hotel 1901 Delachaise St. - C.I.A." />
+<meta property="og:updated_time" content="2026-10-27T13:21:53-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="We Are One Second Line Parade" />
+<meta name="twitter:description" content="Start: Verret&#039;s Lounge &amp; Bar 1738 Washington Ave Proceed down Baronne St. to Louisiana Ave make a right on Louisiana Ave. To Danneel St. make a left on Danneel Stto Foucher St make a left on Foucher" />
+<meta property="article:published_time" content="2026-08-20T09:03:19-05:00" />
+<meta property="article:modified_time" content="2026-10-27T13:21:53-05:00" />
+
+
+  <title>
+    We Are One Second Line Parade | WWOZ New Orleans 90.7 FM  </title>
+
+
+  <link type="text/css" rel="stylesheet" href="https://www.wwoz.org/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.wwoz.org/sites/default/files/css/css_yqbCZNjd-rsBF6CJBs8TP3_Xq8pvs3UZNrQ7XgRkI0E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.wwoz.org/sites/default/files/css/css_QEEj9V_Wrrdefn3oRbvVTw44gAIfQQ1PvGrZpVG2LWU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.wwoz.org/sites/default/files/css/css_mfvPkfsnSQGmG-ojjUgPgQBF8GSrL9YzwECQE-o9bEU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:700,regular|Patua+One:regular&amp;subset=latin" media="all" />
+
+
+    <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]><script src="https://www.wwoz.org/sites/all/themes/custom/wwozui/bower_components/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
+
+
+  <script src="https://www.wwoz.org/sites/default/files/js/js_6UR8aB1w5-y_vdUUdWDWlX2QhWu_qIXlEGEV48YgV-c.js"></script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script src="https://www.wwoz.org/sites/default/files/js/js_waP91NpgGpectm_6Y2XDEauLJ8WCSCBKmmA87unpp2E.js"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-76C11D5729"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-76C11D5729", {"":"anonymous user","groups":"default"});</script>
+<script src="https://www.wwoz.org/sites/default/files/js/js_daRCj4qfK2oUeM-C28VpepgMOlbiH_9QZdpCLIIbfi0.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"wwozui","theme_token":"wTl8VOlgoOnp2ehgEtNgNMhL3Ny1Knl0O_7ssPpUITg","js":{"sites\/all\/themes\/contrib\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/2.2\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_browser.js":1,"https:\/\/ws.sharethis.com\/button\/buttons.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-76C11D5729":1,"0":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap\/js\/button.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap\/js\/carousel.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap\/js\/collapse.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap\/js\/dropdown.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap\/js\/tab.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap-grid-columns-clearing\/js\/ie-row-fix.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/hammerjs\/hammer.min.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/transparency\/dist\/transparency.js":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/trunk8\/trunk8.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/boot.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/utilities\/timer.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/utilities\/touch.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/utilities\/truncate.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/utilities\/window.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/components\/base.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/components\/accordion.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/components\/dropdown.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/components\/carousel\/outside-indicators.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/c4\/components\/yamm.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/custom\/events\/tabs.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/custom\/promos\/carousel.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/custom\/station\/listen-now.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/custom\/station\/on-air.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/compiled\/custom\/main.js":1,"sites\/all\/themes\/custom\/wwozui\/js\/colorbox.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/entity_embed\/css\/entity_embed.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/addressfield\/addressfield.css":1,"sites\/all\/themes\/custom\/wwozui\/css\/style.css":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/bootstrap-grid-columns-clearing\/css\/multi-columns-row.css":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/fontawesome\/css\/font-awesome.css":1,"sites\/all\/themes\/custom\/wwozui\/bower_components\/yamm3\/yamm\/yamm.css":1,"https:\/\/fonts.googleapis.com\/css?family=Oxygen:700,regular|Patua+One:regular\u0026subset=latin":1}},"googleanalytics":{"account":["G-76C11D5729"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1379251 node-type-event" >
+  <div class="container-fluid">
+      </div>
+
+  <div class="container">
+    <div class="row relative">
+  <div class="col-md-10 main-body-container">
+      <div class="region region-header">
+    <div class="oz-header">
+  <nav class="navbar navbar-default navbar-static-top hidden-xs header-top"
+     role="navigation">
+
+  <div class="navbar-header">
+    <a href="/"
+       class="navbar-brand">
+
+      <img class="visible-sm header-logo"
+           src="/sites/all/themes/custom/wwozui/images/wwoz-header-sm.png"
+           alt="WWOZ"/>
+
+      <img class="visible-md header-logo"
+           src="/sites/all/themes/custom/wwozui/images/wwoz-header-sm.png"
+           alt="WWOZ"/>
+
+      <img class="visible-md header-tagline"
+           src="/sites/all/themes/custom/wwozui/images/wwoz-header-tagline-bw.png"
+           alt="WWOZ"/>
+
+      <img class="visible-lg header-logo"
+           src="/sites/all/themes/custom/wwozui/images/wwoz-header-lg.png"
+           alt="WWOZ"/>
+    </a>
+  </div>
+
+  <ul class="nav navbar-nav listen-on-air">
+    <li class="hidden-sm">
+
+    </li>
+
+    <li>
+      <button data-stream="one"
+        class="btn btn-default navbar-btn launch-player listen-now-btn">
+  Listen Now
+
+  <i class="play-arrow">
+    <img src="/sites/all/themes/custom/wwozui/images/listen-arrow.png"
+         alt="Listen Now" />
+  </i>
+</button>
+    </li>
+
+    <li class="on-air-text">
+      
+<p class="navbar-text on-air"
+  data-stream="one">
+
+      <span class="text-uppercase bold">
+      On Air:
+    </span>
+
+    <span class="song-artist">
+      <a href="/programs/soul-power-with-soul-sister"
+         class="text-capitalize"
+         data-bind="title-link">
+        Soul Power with Soul Sister      </a>
+    </span>
+  </p>
+    </li>
+
+    <li class="visible-sm support-dropdown">
+      
+  <div class="c4-dropdown">
+    <button
+
+     type="button"
+     class="btn btn-primary support-btn navbar-btn dropdown-toggle"
+     data-toggle="dropdown"
+     aria-expanded="false">
+    <span class="support-padding">Support </span>
+    <span class="caret support"></span>
+
+  </button>
+
+  <div class="dropdown-menu support-dropdown" role="menu">
+    <a class="join-renew-btn-link btn btn-default navbar-btn join-renew-btn" href="/donate">
+       Join/Renew Now
+    </a>
+    <div class="row">
+      <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/get-involved"
+         target="">
+        Get Involved at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/wwoz-membership"
+         target="">
+        WWOZ Membership      </a>
+    </li>
+          <li>
+      <a href="http://wwoz.plannedgiving.org/"
+         target="">
+        Planned Giving      </a>
+    </li>
+          <li>
+      <a href="/member-discounts"
+         target="">
+        Member Discounts      </a>
+    </li>
+          <li>
+      <a href="/member-thank-you-gifts"
+         target="">
+        Thank You Gifts      </a>
+    </li>
+          <li>
+      <a href="/http%3A//www.wwoz.org/support/join%2Bwwoz/membership%2Bfaq"
+         target="">
+        Membership FAQ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Pass Basics      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-pickup-info"
+         target="">
+        Brass Pass Pickup      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-details"
+         target="">
+        Using a Brass Pass      </a>
+    </li>
+          <li>
+      <a href="/support/car-donations"
+         target="">
+        Car Donation      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/wwoz-volunteers"
+         target="">
+        Volunteer at WWOZ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/sponsor-wwoz"
+         target="">
+        Sponsor WWOZ      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-benefits"
+         target="">
+        Sponsorship Benefits      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-opportunities"
+         target="">
+        Sponsorship Opportunities      </a>
+    </li>
+          <li>
+      <a href="/our-sponsors"
+         target="">
+        Our Sponsors      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-guidelines"
+         target="">
+        Sponsorship Guidelines      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+      <div class="col-md-3 oz-tiles hidden-xs nav-col">
+        
+<div class="dropdown-ad">
+
+  <h3>Sign up now</h3>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <img class="img-responsive"
+         src="/sites/all/themes/custom/wwozui/images/OZone-email.png"
+         alt="Get the 'OZone monthly newsletter" />
+  </a>
+
+  <p>Get the 'OZone monthly email newsletter</p>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <button class="btn btn-default">
+      Subscribe
+    </button>
+  </a>
+
+</div>      </div>
+    </div>
+  </div>
+
+  </div>
+
+    </li>
+  </ul>
+
+  <img class="nojhf-logo visible-lg"
+       src="/sites/all/themes/custom/wwozui/images/NOJHF-logo.png"
+       alt="WWOZ"/>
+</nav>
+  <nav class="navbar yamm navbar-default navbar-static-top margin-bottom-none visible-xs"
+     role="navigation">
+
+  <ul class="nav">
+    <li>
+      <a href="/"
+         class="navbar-brand">
+
+        <img alt="WWOZ"
+             src="/sites/all/themes/custom/wwozui/images/wwoz-header-sm.png"
+             class="header-logo" />
+      </a>
+
+      <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <div class="btn-group" role="group" aria-label="...">
+          <button data-stream="one"
+        class="btn btn-default navbar-btn launch-player listen-now-btn">
+  Listen Now
+
+  <i class="play-arrow">
+    <img src="/sites/all/themes/custom/wwozui/images/listen-arrow.png"
+         alt="Listen Now" />
+  </i>
+</button>
+        </div>
+
+        <div class="btn-group dropdown">
+          
+  <div class="c4-dropdown">
+    <button
+
+     type="button"
+     class="btn btn-primary support-btn navbar-btn dropdown-toggle"
+     data-toggle="dropdown"
+     aria-expanded="false">
+    <span class="support-padding">Support </span>
+    <span class="caret support"></span>
+
+  </button>
+
+  <div class="dropdown-menu support-dropdown" role="menu">
+    <a class="join-renew-btn-link btn btn-default navbar-btn join-renew-btn" href="/donate">
+       Join/Renew Now
+    </a>
+    <div class="row">
+      <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/get-involved"
+         target="">
+        Get Involved at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/wwoz-membership"
+         target="">
+        WWOZ Membership      </a>
+    </li>
+          <li>
+      <a href="http://wwoz.plannedgiving.org/"
+         target="">
+        Planned Giving      </a>
+    </li>
+          <li>
+      <a href="/member-discounts"
+         target="">
+        Member Discounts      </a>
+    </li>
+          <li>
+      <a href="/member-thank-you-gifts"
+         target="">
+        Thank You Gifts      </a>
+    </li>
+          <li>
+      <a href="/http%3A//www.wwoz.org/support/join%2Bwwoz/membership%2Bfaq"
+         target="">
+        Membership FAQ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Pass Basics      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-pickup-info"
+         target="">
+        Brass Pass Pickup      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-details"
+         target="">
+        Using a Brass Pass      </a>
+    </li>
+          <li>
+      <a href="/support/car-donations"
+         target="">
+        Car Donation      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/wwoz-volunteers"
+         target="">
+        Volunteer at WWOZ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/sponsor-wwoz"
+         target="">
+        Sponsor WWOZ      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-benefits"
+         target="">
+        Sponsorship Benefits      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-opportunities"
+         target="">
+        Sponsorship Opportunities      </a>
+    </li>
+          <li>
+      <a href="/our-sponsors"
+         target="">
+        Our Sponsors      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-guidelines"
+         target="">
+        Sponsorship Guidelines      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+      <div class="col-md-3 oz-tiles hidden-xs nav-col">
+        
+<div class="dropdown-ad">
+
+  <h3>Sign up now</h3>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <img class="img-responsive"
+         src="/sites/all/themes/custom/wwozui/images/OZone-email.png"
+         alt="Get the 'OZone monthly newsletter" />
+  </a>
+
+  <p>Get the 'OZone monthly email newsletter</p>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <button class="btn btn-default">
+      Subscribe
+    </button>
+  </a>
+
+</div>      </div>
+    </div>
+  </div>
+
+  </div>
+
+        </div>
+
+        <div class="btn-group dropdown mobile-menu">
+  <button type="button"
+          class="btn btn-default navbar-btn dropdown-toggle mobile-menu-btn"
+          data-toggle="dropdown"
+          aria-expanded="false">
+
+    <i class="fa fa-bars"></i>
+    Menu
+    <span class="caret"></span>
+  </button>
+
+
+  <div class="dropdown-menu"
+       role="menu">
+
+    <div id="mobile-menu-accordion"
+         class="panel-group accordion-group">
+
+      <div class="panel panel-default cursor-pointer">
+        <div class="panel-heading"
+             data-toggle="collapse"
+             data-target="#mobile-menu-programs">
+
+          <h4 class="panel-title">
+            <a>Programs</a>
+          </h4>
+
+          <div id="mobile-menu-programs"
+               class="panel-collapse collapse">
+
+            <div class="panel-body">
+              <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/schedule"
+         target="">
+        Program Schedule      </a>
+    </li>
+          <li>
+      <a href="/programs/show-hosts"
+         target="">
+        Show Hosts      </a>
+    </li>
+          <li>
+      <a href="/song-history"
+         target="">
+        Song History      </a>
+    </li>
+          <li>
+      <a href="/programs/playlists"
+         target="">
+        Most Recent 100 Spins      </a>
+    </li>
+          <li>
+      <a href="/calendar/live-broadcast"
+         target="">
+        Live Event Broadcasts      </a>
+    </li>
+          <li>
+      <a href="http://www.wwoz.org/listen/archive/"
+         target="">
+        Two Week Archive      </a>
+    </li>
+          <li>
+      <a href="https://www.youtube.com/user/wwozneworleans/featured"
+         target="">
+        WWOZ Video on YouTube      </a>
+    </li>
+          <li>
+      <a href="/762-wwozs-live-video-stream"
+         target="_blank">
+        Live Video Stream      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/printable-program-schedule"
+         target="">
+        Printable Program Schedule      </a>
+    </li>
+          <li>
+      <a href="https://player.streamguys.com/wwoz/sgplayer/player.php"
+         target="">
+        HLS Stream      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/groovapedia/"
+         target="">
+        Groovapedia      </a>
+    </li>
+          <li>
+      <a href="/programs/streams"
+         target="">
+        Streaming Help      </a>
+    </li>
+          <li>
+      <a href="/topics/school-groove"
+         target="">
+        School Groove      </a>
+    </li>
+          <li>
+      <a href="/programs/new-orleans-calling"
+         target="">
+        New Orleans Calling      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="http://www.wwoz.org/wwoz-programs-programming#retiredshows"
+         target="">
+        Retired Programs      </a>
+    </li>
+          <li>
+      <a href="/user"
+         target="">
+        User Login      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 oz-tiles programs-tile hidden-xs nav-col">
+  
+<div class="tile-header">
+  <h3>
+    Listen Now  </h3>
+</div>
+
+<div class="tile-image">
+  <a href="/listen/player/"
+    class="launch-player"
+      >
+
+    <img class="img-responsive"
+         src="/sites/all/themes/custom/wwozui/images/photos/two-week-stream.jpg"
+         alt="WWOZ"/>
+
+  </a>
+
+  <div class="tile-caption">
+    <div class="row">
+
+      <a href="/listen/player/"
+         class="launch-player"
+              >
+
+        Tune in live to 'OZ's primary stream
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<ul class="list-group">
+    <li class="list-group-item clearfix">
+    <div class="truncate tile-link" data-truncate-lines="2">
+
+      <a href="/listen/player/?stream=two"
+         class="launch-player"
+              >
+
+        Or tune in to Radio's second stream
+      </a>
+
+    </div>
+  </li>
+    <li class="list-group-item clearfix">
+    <div class="truncate tile-link" data-truncate-lines="2">
+
+      <a href="/listen/archive/"
+         class=""
+              >
+
+        Listen to the 2-week stream archive
+      </a>
+
+    </div>
+  </li>
+  </ul>
+</div>            </div>
+          </div>  
+        </div>
+      </div>
+
+
+      <div class="panel panel-default cursor-pointer">
+        <div class="panel-heading"
+             data-toggle="collapse"
+             data-target="#mobile-menu-new-orleans">
+
+          <h4 class="panel-title">
+            <a>New Orleans</a>
+          </h4>
+
+          <div id="mobile-menu-new-orleans"
+               class="panel-collapse collapse">
+
+            <div class="panel-body">
+              <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Livewire Music Calendar      </a>
+    </li>
+          <li>
+      <a href="/calendar/community"
+         target="">
+        Community Events      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="/blog"
+         target="">
+        Show Host Blog      </a>
+    </li>
+          <li>
+      <a href="/venues"
+         target="">
+        Music Venues      </a>
+    </li>
+          <li>
+      <a href="https://acloserwalknola.com/"
+         target="">
+        A Closer Walk music map      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/piano-night-2026"
+         target="">
+        Piano Night      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Passes for Jazz Fest      </a>
+    </li>
+          <li>
+      <a href="/topics/mardi-gras"
+         target="">
+        Mardi Gras      </a>
+    </li>
+          <li>
+      <a href="/musician-resources"
+         target="">
+        Musician Resources      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="/station-content-types/ozone-newsletter-archive"
+         target="">
+        'OZone Newsletter Archive      </a>
+    </li>
+          <li>
+      <a href="https://secure3.convio.net/wwoz/site/SPageServer/;jsessionid=00000000.app314a?NONCE_TOKEN=D7A87CE163F68D03DA01D887C353E38A&autologin=true&pagename=Register"
+         target="">
+        Subscribe to the 'OZone      </a>
+    </li>
+          <li>
+      <a href="/topics/food"
+         target="">
+        Food      </a>
+    </li>
+          <li>
+      <a href="/topics/recipes"
+         target="">
+        Recipes      </a>
+    </li>
+          <li>
+      <a href="/topics/memoriam"
+         target="">
+        In Memoriam      </a>
+    </li>
+  </ul>
+</div>            </div>
+          </div>  
+        </div>
+      </div>
+
+
+      <div class="panel panel-default cursor-pointer">
+        <div class="panel-heading"
+             data-toggle="collapse"
+             data-parent="#mobile-menu-accordion"
+             data-target="#mobile-menu-events">
+
+          <h4 class="panel-title">
+            <a>Events</a>
+          </h4>
+
+          <div id="mobile-menu-events"
+               class="panel-collapse collapse">
+
+            <div class="panel-body">
+              <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Livewire Music Calendar®      </a>
+    </li>
+          <li>
+      <a href="/calendar/live-broadcast"
+         target="">
+        Live Event Broadcasts      </a>
+    </li>
+          <li>
+      <a href="/calendar/community"
+         target="">
+        Community Events      </a>
+    </li>
+          <li>
+      <a href="/submitting-community-events"
+         target="">
+        Submitting Events to WWOZ.ORG      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/events/1355991"
+         target="">
+        WWOZ Groove Gala      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/piano-night-2027"
+         target="">
+        WWOZ Piano Night      </a>
+    </li>
+  </ul>
+</div>            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default cursor-pointer">
+        <div class="panel-heading"
+             data-toggle="collapse"
+             data-parent="#mobile-menu-accordion"
+             data-target="#mobile-menu-explore">
+
+          <h4 class="panel-title">
+            <a>Explore</a>
+          </h4>
+
+          <div id="mobile-menu-explore"
+               class="panel-collapse collapse">
+
+            <div class="panel-body">
+              <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/wwoz-volunteers"
+         target="">
+        Volunteer      </a>
+    </li>
+          <li>
+      <a href="/about-wwoz"
+         target="">
+        About WWOZ      </a>
+    </li>
+          <li>
+      <a href="/history-wwoz"
+         target="">
+        WWOZ History      </a>
+    </li>
+          <li>
+      <a href="/wwoz-staff"
+         target="">
+        Staff      </a>
+    </li>
+          <li>
+      <a href="/wwozs-board-directors"
+         target="">
+        Board of Directors      </a>
+    </li>
+          <li>
+      <a href="/wwoz-community-advisory-board"
+         target="">
+        Community Advisory Board      </a>
+    </li>
+          <li>
+      <a href="/jobs-wwoz"
+         target="">
+        Jobs at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="/schedule"
+         target="">
+        Program Schedule      </a>
+    </li>
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Live Music Calendar      </a>
+    </li>
+          <li>
+      <a href="/programs/new-orleans-calling"
+         target="">
+        New Orleans Calling      </a>
+    </li>
+          <li>
+      <a href="/news"
+         target="">
+        WWOZ Latest      </a>
+    </li>
+          <li>
+      <a href="https://publicfiles.fcc.gov/fm-profile/wwoz"
+         target="">
+        FCC Public File      </a>
+    </li>
+          <li>
+      <a href="https://wwoz.org/blog/1284391"
+         target="">
+        2025 Local Content & Service Report      </a>
+    </li>
+          <li>
+      <a href="https://acloserwalknola.com/"
+         target="">
+        Music History: A Closer Walk NOLA      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/groovapedia/"
+         target="">
+        Groovapedia      </a>
+    </li>
+          <li>
+      <a href="https://www.flickr.com/photos/wwoz/albums"
+         target="_blank">
+        Photos on Flickr      </a>
+    </li>
+          <li>
+      <a href="https://www.youtube.com/user/wwozneworleans/featured"
+         target="">
+        WWOZ on YouTube      </a>
+    </li>
+          <li>
+      <a href="/programs/wwoz-podcasts"
+         target="">
+        Podcasts      </a>
+    </li>
+          <li>
+      <a href="/blog"
+         target="">
+        Show Host Blog      </a>
+    </li>
+          <li>
+      <a href="/topics/food"
+         target="">
+        Food      </a>
+    </li>
+  </ul>
+</div>            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default cursor-pointer">
+        <div class="panel-heading accordion-support"
+             data-toggle="collapse"
+             data-parent="#mobile-menu-accordion"
+             data-target="#mobile-menu-support">
+
+          <h4 class="panel-title">
+            <a>Support 'OZ</a>
+          </h4>
+
+          <div id="mobile-menu-support"
+               class="panel-collapse collapse">
+
+            <div class="panel-body">
+              <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/get-involved"
+         target="">
+        Get Involved at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/wwoz-membership"
+         target="">
+        WWOZ Membership      </a>
+    </li>
+          <li>
+      <a href="http://wwoz.plannedgiving.org/"
+         target="">
+        Planned Giving      </a>
+    </li>
+          <li>
+      <a href="/member-discounts"
+         target="">
+        Member Discounts      </a>
+    </li>
+          <li>
+      <a href="/member-thank-you-gifts"
+         target="">
+        Thank You Gifts      </a>
+    </li>
+          <li>
+      <a href="/http%3A//www.wwoz.org/support/join%2Bwwoz/membership%2Bfaq"
+         target="">
+        Membership FAQ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Pass Basics      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-pickup-info"
+         target="">
+        Brass Pass Pickup      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-details"
+         target="">
+        Using a Brass Pass      </a>
+    </li>
+          <li>
+      <a href="/support/car-donations"
+         target="">
+        Car Donation      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/wwoz-volunteers"
+         target="">
+        Volunteer at WWOZ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/sponsor-wwoz"
+         target="">
+        Sponsor WWOZ      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-benefits"
+         target="">
+        Sponsorship Benefits      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-opportunities"
+         target="">
+        Sponsorship Opportunities      </a>
+    </li>
+          <li>
+      <a href="/our-sponsors"
+         target="">
+        Our Sponsors      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-guidelines"
+         target="">
+        Sponsorship Guidelines      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+<a class="join-renew-btn-link btn btn-default navbar-btn join-renew-btn" href="/donate">
+  Join/Renew Now
+</a>            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dropdown-listen-now">
+        <button data-stream="one"
+        class="btn btn-default navbar-btn launch-player listen-now-btn">
+  Listen Now
+
+  <i class="play-arrow">
+    <img src="/sites/all/themes/custom/wwozui/images/listen-arrow.png"
+         alt="Listen Now" />
+  </i>
+</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+      </div>
+    </li>
+  </ul>
+  <span class="listen-on-air">
+    <span class="on-air-text">
+      
+<p class="navbar-text on-air"
+  data-stream="one">
+
+      <span class="text-uppercase bold">
+      On Air:
+    </span>
+
+    <span class="song-artist">
+      <a href="/programs/soul-power-with-soul-sister"
+         class="text-capitalize"
+         data-bind="title-link">
+        Soul Power with Soul Sister      </a>
+    </span>
+  </p>
+    </span>
+  </span>
+</nav>
+  <nav class="navbar yamm navbar-inverse navbar-static-top oz-navigation hidden-xs">
+  <div class="col-md-12 top-nav">
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="/"
+           class="navbar-brand">
+          <img
+            src="/sites/all/themes/custom/wwozui/images/shotgun-home.png"
+            alt="WWOZ"
+            class="home-link" />
+        </a>
+      </li>
+
+
+      <li class="dropdown c4-dropdown">
+        <a href="#"
+           class="dropdown-toggle"
+           data-toggle="dropdown"
+           role="button"
+           aria-expanded="false">
+          Programs
+          <span class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-listen-now">
+            <button data-stream="one"
+        class="btn btn-default navbar-btn launch-player listen-now-btn">
+  Listen Now
+
+  <i class="play-arrow">
+    <img src="/sites/all/themes/custom/wwozui/images/listen-arrow.png"
+         alt="Listen Now" />
+  </i>
+</button>
+          </div>
+          <div class="row">
+            <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/schedule"
+         target="">
+        Program Schedule      </a>
+    </li>
+          <li>
+      <a href="/programs/show-hosts"
+         target="">
+        Show Hosts      </a>
+    </li>
+          <li>
+      <a href="/song-history"
+         target="">
+        Song History      </a>
+    </li>
+          <li>
+      <a href="/programs/playlists"
+         target="">
+        Most Recent 100 Spins      </a>
+    </li>
+          <li>
+      <a href="/calendar/live-broadcast"
+         target="">
+        Live Event Broadcasts      </a>
+    </li>
+          <li>
+      <a href="http://www.wwoz.org/listen/archive/"
+         target="">
+        Two Week Archive      </a>
+    </li>
+          <li>
+      <a href="https://www.youtube.com/user/wwozneworleans/featured"
+         target="">
+        WWOZ Video on YouTube      </a>
+    </li>
+          <li>
+      <a href="/762-wwozs-live-video-stream"
+         target="_blank">
+        Live Video Stream      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/printable-program-schedule"
+         target="">
+        Printable Program Schedule      </a>
+    </li>
+          <li>
+      <a href="https://player.streamguys.com/wwoz/sgplayer/player.php"
+         target="">
+        HLS Stream      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/groovapedia/"
+         target="">
+        Groovapedia      </a>
+    </li>
+          <li>
+      <a href="/programs/streams"
+         target="">
+        Streaming Help      </a>
+    </li>
+          <li>
+      <a href="/topics/school-groove"
+         target="">
+        School Groove      </a>
+    </li>
+          <li>
+      <a href="/programs/new-orleans-calling"
+         target="">
+        New Orleans Calling      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="http://www.wwoz.org/wwoz-programs-programming#retiredshows"
+         target="">
+        Retired Programs      </a>
+    </li>
+          <li>
+      <a href="/user"
+         target="">
+        User Login      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 oz-tiles programs-tile hidden-xs nav-col">
+  
+<div class="tile-header">
+  <h3>
+    Listen Now  </h3>
+</div>
+
+<div class="tile-image">
+  <a href="/listen/player/"
+    class="launch-player"
+      >
+
+    <img class="img-responsive"
+         src="/sites/all/themes/custom/wwozui/images/photos/two-week-stream.jpg"
+         alt="WWOZ"/>
+
+  </a>
+
+  <div class="tile-caption">
+    <div class="row">
+
+      <a href="/listen/player/"
+         class="launch-player"
+              >
+
+        Tune in live to 'OZ's primary stream
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<ul class="list-group">
+    <li class="list-group-item clearfix">
+    <div class="truncate tile-link" data-truncate-lines="2">
+
+      <a href="/listen/player/?stream=two"
+         class="launch-player"
+              >
+
+        Or tune in to Radio's second stream
+      </a>
+
+    </div>
+  </li>
+    <li class="list-group-item clearfix">
+    <div class="truncate tile-link" data-truncate-lines="2">
+
+      <a href="/listen/archive/"
+         class=""
+              >
+
+        Listen to the 2-week stream archive
+      </a>
+
+    </div>
+  </li>
+  </ul>
+</div>          </div>
+        </div>
+      </li>
+
+
+      <li class="dropdown c4-dropdown">
+        <a href="#"
+           class="dropdown-toggle"
+           data-toggle="dropdown"
+           role="button"
+           aria-expanded="false">
+          New Orleans
+          <span class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu" role="menu">
+          <div class="row">
+            <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Livewire Music Calendar      </a>
+    </li>
+          <li>
+      <a href="/calendar/community"
+         target="">
+        Community Events      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="/blog"
+         target="">
+        Show Host Blog      </a>
+    </li>
+          <li>
+      <a href="/venues"
+         target="">
+        Music Venues      </a>
+    </li>
+          <li>
+      <a href="https://acloserwalknola.com/"
+         target="">
+        A Closer Walk music map      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/piano-night-2026"
+         target="">
+        Piano Night      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Passes for Jazz Fest      </a>
+    </li>
+          <li>
+      <a href="/topics/mardi-gras"
+         target="">
+        Mardi Gras      </a>
+    </li>
+          <li>
+      <a href="/musician-resources"
+         target="">
+        Musician Resources      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="/station-content-types/ozone-newsletter-archive"
+         target="">
+        'OZone Newsletter Archive      </a>
+    </li>
+          <li>
+      <a href="https://secure3.convio.net/wwoz/site/SPageServer/;jsessionid=00000000.app314a?NONCE_TOKEN=D7A87CE163F68D03DA01D887C353E38A&autologin=true&pagename=Register"
+         target="">
+        Subscribe to the 'OZone      </a>
+    </li>
+          <li>
+      <a href="/topics/food"
+         target="">
+        Food      </a>
+    </li>
+          <li>
+      <a href="/topics/recipes"
+         target="">
+        Recipes      </a>
+    </li>
+          <li>
+      <a href="/topics/memoriam"
+         target="">
+        In Memoriam      </a>
+    </li>
+  </ul>
+</div>          </div>
+        </div>
+      </li>
+
+
+      <li class="dropdown c4-dropdown">
+        <a href="#"
+           class="dropdown-toggle"
+           data-toggle="dropdown"
+           role="button"
+           aria-expanded="false">
+          Events
+          <span class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu" role="menu">
+          <div class="row">
+            <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Livewire Music Calendar®      </a>
+    </li>
+          <li>
+      <a href="/calendar/live-broadcast"
+         target="">
+        Live Event Broadcasts      </a>
+    </li>
+          <li>
+      <a href="/calendar/community"
+         target="">
+        Community Events      </a>
+    </li>
+          <li>
+      <a href="/submitting-community-events"
+         target="">
+        Submitting Events to WWOZ.ORG      </a>
+    </li>
+          <li>
+      <a href="/programs/inthestreet"
+         target="">
+        Takin' It to the Streets      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/events/1355991"
+         target="">
+        WWOZ Groove Gala      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/piano-night-2027"
+         target="">
+        WWOZ Piano Night      </a>
+    </li>
+  </ul>
+</div>          </div>
+        </div>
+      </li>
+
+
+      <li class="dropdown c4-dropdown">
+        <a href="#"
+           class="dropdown-toggle"
+           data-toggle="dropdown"
+           role="button"
+           aria-expanded="false">
+          Explore
+          <span class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu" role="menu">
+          <div class="row">
+            <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/wwoz-volunteers"
+         target="">
+        Volunteer      </a>
+    </li>
+          <li>
+      <a href="/about-wwoz"
+         target="">
+        About WWOZ      </a>
+    </li>
+          <li>
+      <a href="/history-wwoz"
+         target="">
+        WWOZ History      </a>
+    </li>
+          <li>
+      <a href="/wwoz-staff"
+         target="">
+        Staff      </a>
+    </li>
+          <li>
+      <a href="/wwozs-board-directors"
+         target="">
+        Board of Directors      </a>
+    </li>
+          <li>
+      <a href="/wwoz-community-advisory-board"
+         target="">
+        Community Advisory Board      </a>
+    </li>
+          <li>
+      <a href="/jobs-wwoz"
+         target="">
+        Jobs at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="/schedule"
+         target="">
+        Program Schedule      </a>
+    </li>
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Live Music Calendar      </a>
+    </li>
+          <li>
+      <a href="/programs/new-orleans-calling"
+         target="">
+        New Orleans Calling      </a>
+    </li>
+          <li>
+      <a href="/news"
+         target="">
+        WWOZ Latest      </a>
+    </li>
+          <li>
+      <a href="https://publicfiles.fcc.gov/fm-profile/wwoz"
+         target="">
+        FCC Public File      </a>
+    </li>
+          <li>
+      <a href="https://wwoz.org/blog/1284391"
+         target="">
+        2025 Local Content & Service Report      </a>
+    </li>
+          <li>
+      <a href="https://acloserwalknola.com/"
+         target="">
+        Music History: A Closer Walk NOLA      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/groovapedia/"
+         target="">
+        Groovapedia      </a>
+    </li>
+          <li>
+      <a href="https://www.flickr.com/photos/wwoz/albums"
+         target="_blank">
+        Photos on Flickr      </a>
+    </li>
+          <li>
+      <a href="https://www.youtube.com/user/wwozneworleans/featured"
+         target="">
+        WWOZ on YouTube      </a>
+    </li>
+          <li>
+      <a href="/programs/wwoz-podcasts"
+         target="">
+        Podcasts      </a>
+    </li>
+          <li>
+      <a href="/blog"
+         target="">
+        Show Host Blog      </a>
+    </li>
+          <li>
+      <a href="/topics/food"
+         target="">
+        Food      </a>
+    </li>
+  </ul>
+</div>          </div>
+        </div>
+      </li>
+
+
+      
+  <li class="dropdown c4-dropdown hidden-sm">
+    <a href=""
+
+     type="button"
+     class="btn btn-primary support-btn  dropdown-toggle"
+     data-toggle="dropdown"
+     aria-expanded="false">
+    <span class="support-padding">Support </span>
+    <span class="caret support"></span>
+
+  </a>
+
+  <div class="dropdown-menu support-dropdown" role="menu">
+    <a class="join-renew-btn-link btn btn-default navbar-btn join-renew-btn" href="/donate">
+       Join/Renew Now
+    </a>
+    <div class="row">
+      <div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/get-involved"
+         target="">
+        Get Involved at 'OZ      </a>
+    </li>
+          <li>
+      <a href="/wwoz-membership"
+         target="">
+        WWOZ Membership      </a>
+    </li>
+          <li>
+      <a href="http://wwoz.plannedgiving.org/"
+         target="">
+        Planned Giving      </a>
+    </li>
+          <li>
+      <a href="/member-discounts"
+         target="">
+        Member Discounts      </a>
+    </li>
+          <li>
+      <a href="/member-thank-you-gifts"
+         target="">
+        Thank You Gifts      </a>
+    </li>
+          <li>
+      <a href="/http%3A//www.wwoz.org/support/join%2Bwwoz/membership%2Bfaq"
+         target="">
+        Membership FAQ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Pass Basics      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-pickup-info"
+         target="">
+        Brass Pass Pickup      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/brass-pass-details"
+         target="">
+        Using a Brass Pass      </a>
+    </li>
+          <li>
+      <a href="/support/car-donations"
+         target="">
+        Car Donation      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/wwoz-volunteers"
+         target="">
+        Volunteer at WWOZ      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-md-3 nav-col">
+  <ul class="main-links">
+          <li>
+      <a href="/sponsor-wwoz"
+         target="">
+        Sponsor WWOZ      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-benefits"
+         target="">
+        Sponsorship Benefits      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-opportunities"
+         target="">
+        Sponsorship Opportunities      </a>
+    </li>
+          <li>
+      <a href="/our-sponsors"
+         target="">
+        Our Sponsors      </a>
+    </li>
+          <li>
+      <a href="/sponsorship-guidelines"
+         target="">
+        Sponsorship Guidelines      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact Us      </a>
+    </li>
+  </ul>
+</div>
+      <div class="col-md-3 oz-tiles hidden-xs nav-col">
+        
+<div class="dropdown-ad">
+
+  <h3>Sign up now</h3>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <img class="img-responsive"
+         src="/sites/all/themes/custom/wwozui/images/OZone-email.png"
+         alt="Get the 'OZone monthly newsletter" />
+  </a>
+
+  <p>Get the 'OZone monthly email newsletter</p>
+
+  <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true">
+    <button class="btn btn-default">
+      Subscribe
+    </button>
+  </a>
+
+</div>      </div>
+    </div>
+  </div>
+
+  </li>
+
+    </ul>
+  </div>
+</nav>
+</div>
+  </div>
+
+    <div id="page-bg">
+      
+      
+      <div class="row relative margin-horizontal-none">
+
+        <div class="inner-bg col-lg-10">
+
+                    
+                                
+          
+          <h2 class="page-title">
+            We Are One Second Line Parade          </h2>
+
+            <div class="region region-content">
+    <section id="block-system-main"
+     class="block block-system clearfix">
+
+        <h2 class="block-title">
+          </h2>
+    
+  <div id="node-1379251"
+     class="node node-event clearfix">
+
+        
+
+  
+
+  <div class="content">
+    
+    <div class="node-images">
+      <div class="field field-name-field-lead-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><div id="file-49566" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/file/906-we-are-one-photo-ryan-hodgson-rigsbee-0">906 We Are One [Photo by Ryan Hodgson-Rigsbee]</a></h2>
+    
+  
+  <div class="content">
+    <img src="https://www.wwoz.org/sites/default/files/styles/default_lead_1x/public/teaser/promo/th_we_are_one_rhr906.jpg?itok=K3ZbXEuI"
+     alt="We Are One [Photo by Ryan Hodgson-Rigsbee]"/>
+<div class="field field-name-field-caption field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">We Are One [Photo by Ryan Hodgson-Rigsbee]</div></div></div>  </div>
+
+  
+<ul class="nav list-inline links">
+  </ul>
+
+</div>
+</div></div></div>    </div>
+    
+    <div class="field field-name-field-event-date field-type-datestamp field-label-hidden"><div class="field-items"><div class="field-item even"><span  class="date-display-single">Sunday, November 1, 2026 - <span  class="date-display-range"><span  class="date-display-start">12:30pm</span> to <span  class="date-display-end">4:30pm</span></span></span></div></div></div><div class="field field-name-field-location field-type-addressfield field-label-hidden"><div class="field-items"><div class="field-item even"></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Start: Verret's Lounge &amp; Bar 1738 Washington Ave</p>
+
+<p>Proceed down Baronne St. to Louisiana Ave make a right on Louisiana Ave. To Danneel St. make a left on Danneel Stto Foucher St make a left on Foucher St to Dryades St left on Dryades St</p>
+
+<p>Stop: Marsh Hotel 1901 Delachaise St. - C.I.A. Ladies</p>
+
+<p>Proceed down Dryades to Louisiana Ave make a left on Louisiana Ave proceed down</p>
+
+<p>Louisiana Ave to Louisiana Parkway make a left on Louisiana Parkway Stop: Big Man's Lounge 2916 Louisiana Ave - The Sista's Birthday Crew</p>
+
+<p>Proceed to Claiborne Ave make a right on Claiborne Ave to Washington Ave make a right on Washington Ave down Washington to Lasalle. Make a left on Lasalle proceed down Lasalle to Simon Bolivar proceed down Simon Bolivar to Clio St. right on Clio St.</p>
+
+<p>Stop: Gladys' Bar 1233 S. Saratoga St. - NKRUMAH Better Boys S &amp; P</p>
+
+<p>Proceed down South Saratoga to Martin Luther King Jr. Bld left on Martin Luther King Jr. Bld to Oretha Castle Haley Blyd make a right on Oretha Castle Haley Bld proceed down Oretha Castle Haley Bld to Jackson Ave. left on Jackson Ave. proceed down Jackson Ave. to Brainard right on Brainard to Baronne St. down Baronne St. to Second St. make a right on Second St.</p>
+
+<p>Stop: Sportsman's Corner 2433 Dryades St - Rocc Nation King DSG XXVI</p>
+
+<p>Proceed down Second St. to Danneel St. left on Danneel proceed down Danneel St. to Washington Ave. left on Washington Ave. proceed down Washington Ave.</p>
+
+<p>Disband: Verret's Lounge &amp;Bar 1738 Washington Ave</p>
+</div></div></div><div class="field field-name-field-files field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="/file/302606/download?token=9IX_XgSi" type="application/pdf; length=645339">Download we_are_one_2026_route_sheet.pdf</a> <span class="file-size">(630.21 KB)</span></span></div></div></div><div class="field field-name-field-topic-tags field-type-taxonomy-term-reference field-label-inline clearfix"><div class="field-label">Topic tags:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="textformatter-list"><a href="/topics/social-aid-pleasure-clubs">Social Aid &amp; Pleasure Clubs</a></span></div></div></div>
+  </div>
+
+
+  
+<ul class="nav list-inline links">
+  </ul>
+  </div>
+</section>
+  </div>
+
+        </div>
+
+        <div class="inner-sidebar col-lg-2">
+            <div class="region region-sidebar">
+    <section id="block-radio-station-sidebar-ad-top"
+     class="block block-radio-station clearfix">
+
+        <h2 class="block-title">
+          </h2>
+    
+    <div class="visible-lg revive-sidebar image-responsive image-center-block margin-bottom">
+    <ins data-revive-zoneid="113 (condor)"
+     data-revive-id="e801b5ac8dc98ae1d11ea2c260a0ff0f"></ins>
+<script async src="//treehouse.wwoz.org/www/delivery/asyncjs.php"></script>
+  </div>
+
+
+  <div class="hidden-lg revive-sidebar image-responsive image-center-block margin-bottom">
+    <ins data-revive-zoneid="112 (condor)"
+     data-revive-id="e801b5ac8dc98ae1d11ea2c260a0ff0f"></ins>
+<script async src="//treehouse.wwoz.org/www/delivery/asyncjs.php"></script>
+  </div>
+</section>
+<section id="block-block-10"
+     class="block block-block clearfix">
+
+        <h2 class="block-title">
+          </h2>
+    
+  <div class="oz-fundraising">
+<div class="multi-columns-row">
+<div class="visible-lg&#10;            bg-primary&#10;            clip-bg&#10;            margin-bottom&#10;            fundraising-tile">
+<div class="fundraising-tile-image"><a href="http://join.wwoz.org/site/PageServer?pagename=Register&amp;autologin=true" target="_blank" title="Get the 'OZone monthly newsletter"><img alt="WWOZ" class="img-responsive" src="/sites/all/themes/custom/wwozui/images/OZone-email.png" /></a></div>
+
+<div class="fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Get the 'OZone monthly newsletter</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default" href="http://join.wwoz.org/site/PageServer?pagename=Register&amp;autologin=true" title="Get the 'OZone monthly newsletter">Follow 'OZ</a></div>
+</div>
+</div>
+
+<div class="hidden-lg&#10;            col-sm-6&#10;            bg-primary&#10;            clip-bg&#10;            margin-top&#10;            fundraising-tile">
+<div class="row">
+<div class="col-xs-6 fundraising-tile-image"><a href="http://join.wwoz.org/site/PageServer?pagename=Register&amp;autologin=true" target="_blank" title="Get the 'OZone monthly newsletter"><img alt="WWOZ" class="img-responsive" src="/sites/all/themes/custom/wwozui/images/OZone-email.png" /></a></div>
+
+<div class="col-xs-6 fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Get the 'OZone monthly newsletter</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default pull-right" href="http://join.wwoz.org/site/PageServer?pagename=Register&amp;autologin=true" title="Get the 'OZone monthly newsletter">Subscribe</a></div>
+</div>
+</div>
+</div>
+
+<div class="visible-lg&#10;            bg-primary&#10;            clip-bg&#10;            margin-bottom&#10;            fundraising-tile">
+<div class="fundraising-tile-image"><a href="https://www.facebook.com/wwozneworleans/" title="Facebook"><img alt="facebook logo" class="img-responsive" src="/sites/default/files/facebook-logo-90x90.png" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Like us on Facebook</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default" href="https://www.facebook.com/wwozneworleans/" style="background-image: none;" title="Facebook">Learn More</a></div>
+</div>
+</div>
+
+<div class="hidden-lg&#10;            col-sm-6&#10;            bg-primary&#10;            clip-bg&#10;            margin-top&#10;            fundraising-tile">
+<div class="row">
+<div class="col-xs-6 fundraising-tile-image"><a href="https://www.facebook.com/wwozneworleans/" title="Facebook"><img alt="Facebook logo" class="img-responsive" src="/sites/default/files/facebook-logo-90x90.png" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="col-xs-6 fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Like us on Facebook</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default pull-right" href="https://www.facebook.com/wwozneworleans/" title="Facebook">Follow 'OZ</a></div>
+</div>
+</div>
+</div>
+
+<div class="visible-lg&#10;            bg-primary&#10;            clip-bg&#10;            margin-bottom&#10;            fundraising-tile">
+<div class="fundraising-tile-image"><a href="/wwoz-volunteers" target="_blank" title="Navy Guardians Tee"><img alt="Volunteer" class="img-responsive" src="/sites/default/files/volunteers-sidebar-90x90.jpg" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Volunteer at WWOZ</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default" href="/wwoz-volunteers" target="_blank" title="Volunteer">More</a></div>
+</div>
+</div>
+
+<div class="hidden-lg&#10;            col-sm-6&#10;            bg-primary&#10;            clip-bg&#10;            margin-top&#10;            fundraising-tile">
+<div class="row">
+<div class="col-xs-6 fundraising-tile-image"><a href="/wwoz-volunteers" target="_blank" title="Volunteer"><img alt="Volunteer" class="img-responsive" src="/sites/default/files/volunteers-sidebar-90x90.jpg" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="col-xs-6 fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Volunteer at WWOZ</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default pull-right" href="/wwoz-volunteers" target="_blank" title="Volunteer">Learn More</a></div>
+</div>
+</div>
+</div>
+
+<div class="visible-lg&#10;            bg-primary&#10;            clip-bg&#10;            margin-bottom&#10;            fundraising-tile">
+<div class="fundraising-tile-image"><a href="/listen/player/" target="_blank" title="Listen Live"><img alt="WWOZ" class="img-responsive" src="/sites/default/files/headphones-90x90.jpg" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Hear it here!</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default" href="/listen/player/" target="_blank" title="Listen Live">Listen</a></div>
+</div>
+</div>
+
+<div class="hidden-lg&#10;            col-sm-6&#10;            bg-primary&#10;            clip-bg&#10;            margin-top&#10;            fundraising-tile">
+<div class="row">
+<div class="col-xs-6 fundraising-tile-image"><a href="/listen/player/" target="_blank" title="Listen Live"><img alt="WWOZ" class="img-responsive" src="/sites/default/files/headphones-90x90.jpg" style="width: 90px; height: 90px;" /></a></div>
+
+<div class="col-xs-6 fundraising-tile-text ">
+<div class="margin-bottom-xs margin-right-xs">Listen Live!</div>
+
+<div class="row margin-horizontal-none"><a class="col-xs-9 btn btn-default pull-right" href="/listen/player/" target="_blank" title="Listen Live">Hear us here</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="block-radio-station-sidebar-ad-bottom"
+     class="block block-radio-station clearfix">
+
+        <h2 class="block-title">
+          </h2>
+    
+    <div class="visible-lg revive-sidebar image-responsive image-center-block margin-bottom">
+    <ins data-revive-zoneid="116"
+     data-revive-id="e801b5ac8dc98ae1d11ea2c260a0ff0f"></ins>
+<script async src="//treehouse.wwoz.org/www/delivery/asyncjs.php"></script>
+  </div>
+
+
+  <div class="hidden-lg revive-sidebar image-responsive image-center-block margin-bottom">
+    <ins data-revive-zoneid="117"
+     data-revive-id="e801b5ac8dc98ae1d11ea2c260a0ff0f"></ins>
+<script async src="//treehouse.wwoz.org/www/delivery/asyncjs.php"></script>
+  </div>
+</section>
+  </div>
+        </div>
+      
+      </div>  
+
+      <div class="clear"></div>
+
+    </div>
+
+    <div class="region region-footer">
+    <div class="footer visible-md visible-lg">
+  <div class="row margin-bottom">
+  <div class="col-md-4 padding-right-none">
+    <hr/>
+  </div>
+
+  <div class="col-md-4 text-center social-icons padding-horizontal-none">
+    <a target="_blank" href="https://www.facebook.com/wwozneworleans" class="padding-left-none">
+      <img src="/sites/all/themes/custom/wwozui/images/social/facebook.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="https://twitter.com/wwoz_neworleans">
+      <img src="/sites/all/themes/custom/wwozui/images/social/twitter.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="http://www.flickr.com/photos/wwoz">
+      <img src="/sites/all/themes/custom/wwozui/images/social/flickr.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="https://www.instagram.com/wwoz_neworleans">
+      <img src="/sites/all/themes/custom/wwozui/images/social/instagram.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="http://pinterest.com/wwoz">
+      <img src="/sites/all/themes/custom/wwozui/images/social/pinterest.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="http://www.youtube.com/user/wwozneworleans">
+      <img src="/sites/all/themes/custom/wwozui/images/social/you-tube.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="https://vimeo.com/wwoz">
+      <img src="/sites/all/themes/custom/wwozui/images/social/vimeo.png"
+           alt="WWOZ"/>
+    </a>
+
+    <a target="_blank" href="http://join.wwoz.org/site/PageServer?pagename=Register&autologin=true" class="padding-right-none">
+      <img src="/sites/all/themes/custom/wwozui/images/social/email.png"
+           alt="WWOZ"/>
+    </a>
+  </div>
+
+  <div class="col-md-4 padding-left-none">
+    <hr/>
+  </div>
+</div>
+  <div class="row text-capitalize footer-links">
+  <div class="col-md-3 footer-col-1">
+    <button data-stream="one"
+       class="btn btn-info launch-player listen-now-btn margin-bottom">
+      Listen Now
+
+      <i class="play-arrow">
+        <img src="/sites/all/themes/custom/wwozui/images/listen-arrow.png"
+             alt="Listen Now"/>
+      </i>
+    </button>
+
+    <ul class="">
+          <li>
+      <a href="/"
+         target="">
+        Home      </a>
+    </li>
+          <li>
+      <a href="/schedule"
+         target="">
+        Program Schedule      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/printable-program-schedule"
+         target="">
+        Printable Program Schedule      </a>
+    </li>
+          <li>
+      <a href="/programs/playlists"
+         target="">
+        Most Recent 100 Songs      </a>
+    </li>
+          <li>
+      <a href="/programs/show-hosts"
+         target="">
+        Show Hosts      </a>
+    </li>
+          <li>
+      <a href="/calendar/live-broadcast"
+         target="">
+        Live Event Broadcasts      </a>
+    </li>
+          <li>
+      <a href="/programs/school-groove"
+         target="">
+        School Groove      </a>
+    </li>
+          <li>
+      <a href="https://www.youtube.com/user/wwozneworleans/featured"
+         target="">
+        WWOZ Video      </a>
+    </li>
+          <li>
+      <a href="/762-wwozs-live-video-stream"
+         target="_blank">
+        Live Video Stream      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/groovapedia/"
+         target="">
+        Groovapedia      </a>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="col-md-3 footer-col-2">
+    <ul class="">
+          <li>
+      <a href="/calendar/livewire-music"
+         target="">
+        Livewire Music Calendar      </a>
+    </li>
+          <li>
+      <a href="/brass-pass-details"
+         target="">
+        Brass Passes for Jazz Fest      </a>
+    </li>
+          <li>
+      <a href="https://www.wwoz.org/station-content-types/ozone-newsletterr-archive"
+         target="">
+        'OZone Newsletter Archive      </a>
+    </li>
+          <li>
+      <a href="https://secure3.convio.net/wwoz/site/SPageServer/;jsessionid=00000000.app314a?NONCE_TOKEN=D7A87CE163F68D03DA01D887C353E38A&autologin=true&pagename=Register"
+         target="">
+        Subscribe to the 'OZone      </a>
+    </li>
+          <li>
+      <a href="/musician-resources"
+         target="">
+        Musician Resources      </a>
+    </li>
+          <li>
+      <a href="/programs/streams"
+         target="">
+        Streaming Help      </a>
+    </li>
+          <li>
+      <a href="/contact-wwoz"
+         target="">
+        Contact      </a>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="col-md-3 footer-col-3">
+    <ul class="">
+          <li>
+      <a href="https://publicfiles.fcc.gov/fm-profile/WWOZ"
+         target="">
+        FCC Public File      </a>
+    </li>
+          <li>
+      <a href="https://wwoz.org/blog/1284391"
+         target="">
+        2025 Local Content & Service Report      </a>
+    </li>
+          <li>
+      <a href="/copyright-infringement-policy"
+         target="">
+        Copyright Infringement Policy      </a>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="col-md-3 support clip-bg">
+    <ul class="">
+          <li>
+      <a href="https://www.wwoz.org/donate.php?src=footer"
+         target="">
+        Donate Now!      </a>
+    </li>
+          <li>
+      <a href="/brass-pass-how-we-do-jazz-fest"
+         target="">
+        Brass Pass      </a>
+    </li>
+          <li>
+      <a href="/brass-pass-pickup-info"
+         target="">
+        Brass Pass Pickup      </a>
+    </li>
+          <li>
+      <a href="/sponsor-wwoz"
+         target="">
+        Sponsor      </a>
+    </li>
+          <li>
+      <a href="/wwoz-volunteers"
+         target="">
+        Volunteer      </a>
+    </li>
+  </ul>
+  </div>
+</div>
+  <a href="http://www.jazzandheritage.org" target="_blank">
+<img class="center-block margin-bottom-sm presented-by"
+     src="/sites/all/themes/custom/wwozui/images/presented-by.png"
+     alt="WWOZ"/>
+</a>  <div class="text-center text-capitalize margin-bottom-sm">
+  <a href="/programs/streams">
+  help listening</a>
+
+  |
+
+  <a href="/about-wwoz">About WWOZ</a>
+  |
+
+  <a href="/contact-wwoz">Contact WWOZ</a>
+  |
+
+  <a href="/wwozorg-site-terms">Site Terms</a>
+  |
+
+  <a href="/wwozorg-privacy-policy">Privacy Policy</a>
+  |
+
+  <a href="/jobs-wwoz">Jobs</a></div>
+  <p class="text-center copyright">
+  All user-submitted content owned by the Poster.
+  Everything else is (C) 2001-2026 WWOZ New Orleans 90.7 FM.
+  All rights reserved.
+</p></div>
+  </div>
+
+  </div>
+  <div class="col-md-2 padding-horizontal-none oz-menu-container">
+      <div class="region region-menu">
+    
+<div class="oz-menu">
+  <ul class="nav
+           text-center-xs
+           text-center-sm
+           list-inline-xs
+           list-inline-sm
+           list-unstyled-md
+           list-unstyled-lg">
+      <li class="row hidden-xs hidden-sm ">
+  <a href="/calendar/livewire-music">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Calendar"
+               title="WWOZ Calendar"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/calendar.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Calendar        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg ">
+  <a href="/calendar/livewire-music">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Calendar"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/calendar.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm ">
+  <a href="/playlist">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Playlist"
+               title="WWOZ Playlist"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/playlist.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Playlist        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg ">
+  <a href="/playlist">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Playlist"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/playlist.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm ">
+  <a href="/donate">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Donate"
+               title="WWOZ Donate"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/donate.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Donate        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg ">
+  <a href="/donate">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Donate"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/donate.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm ">
+  <a href="#">
+    <span class="st_sharethis_custom">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Share"
+               title="WWOZ Share"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/share.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Share        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg ">
+  <a href="#">
+    <i class="toolbar-icon">
+      <span class="st_sharethis_custom">
+        <img alt="WWOZ Share"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/share.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm ">
+  <a href="/search">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Search"
+               title="WWOZ Search"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/search.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Search        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg ">
+  <a href="/search">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Search"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/search.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm loggedout">
+  <a href="/user">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Login"
+               title="WWOZ Login"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/login.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Login        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg loggedout">
+  <a href="/user">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Login"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/login.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm loggedin">
+  <a href="/user">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Profile"
+               title="WWOZ Profile"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/login.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Profile        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg loggedin">
+  <a href="/user">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Profile"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/login.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+      <li class="row hidden-xs hidden-sm loggedin">
+  <a href="/user/logout">
+    <span class="">
+      <div class="col-md-4">
+        <i class="toolbar-icon">
+          <img alt="WWOZ Log out"
+               title="WWOZ Log out"
+               src="/sites/all/themes/custom/wwozui/images/toolbar/logout.png"
+               class=""/>
+        </i>
+      </div>
+
+      <div class="col-md-8 menu-toolbar-text">
+        <span class="toolbar-text">
+          Log out        </span>
+      </div>
+    </span>
+  </a>
+</li>
+
+
+<li class="hidden-md hidden-lg loggedin">
+  <a href="/user/logout">
+    <i class="toolbar-icon">
+      <span class="">
+        <img alt="WWOZ Log out"
+             src="/sites/all/themes/custom/wwozui/images/toolbar/logout.png"
+             class=""/>
+      </span>
+    </i>
+  </a>
+</li>
+  </ul>
+</div>
+  </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <script src="https://www.wwoz.org/sites/default/files/js/js_MRdvkC2u4oGsp5wVxBG1pGV5NrCPW3mssHxIn6G9tGE.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ef610f51b2","applicationID":"23596624","transactionName":"ZgdWbUtZVhIDV0ZbWl9NdVpNUVcPTVpdVlBuElVeXGdOCAdD","queueTime":734,"applicationTime":713,"atts":"SkBVGwNDRRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+
+</html>

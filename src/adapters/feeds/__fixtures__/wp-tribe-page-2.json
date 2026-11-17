@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": 420,
+      "title": "Balboa &amp; Blues Late Night",
+      "url": "https://swing.example/event/bal-blues/",
+      "start_date": "2026-09-26 22:00:00",
+      "end_date": "2026-09-27 02:00:00",
+      "timezone": "America/New_York",
+      "all_day": false,
+      "cost": "Free",
+      "categories": [
+        {
+          "name": "Balboa"
+        }
+      ],
+      "venue": {
+        "venue": "Dance Space",
+        "address": "451 Broadway",
+        "city": "New York",
+        "state": "NY"
+      },
+      "organizer": []
+    }
+  ],
+  "total": 3,
+  "total_pages": 2
+}

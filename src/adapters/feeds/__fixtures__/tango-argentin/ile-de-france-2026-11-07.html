@@ -1,0 +1,645 @@
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Agenda Tango Argentin - agenda@tango-argentin.fr">
+
+  
+  
+  
+<meta name="description" content="Milongas et pratiques de tango argentin en Ile de france. Agenda complet vérifié quotidiennement.">
+<meta property="og:title" content="Tango en Ile de france | Milongas et Pratiques" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://tango-argentin.fr/ile-de-france" />
+<meta property="og:description" content="Milongas et pratiques de tango argentin en Ile de france. Agenda complet vérifié quotidiennement." />
+
+
+
+<link rel="canonical" href="https://tango-argentin.fr/ile-de-france" />
+
+<link rel="stylesheet" href="https://tango-argentin.fr/css/hero.css">
+
+  
+  <link rel="alternate" hreflang="fr" href="https://tango-argentin.fr/ile-de-france" />
+<link rel="alternate" hreflang="en" href="https://tango-argentin.fr/en/ile-de-france" />
+<link rel="alternate" hreflang="x-default" href="https://tango-argentin.fr/ile-de-france" />
+
+
+  <link rel="icon" href="../../../../favicon.ico" />
+  <title>Tango en Ile de france | Milongas et Pratiques
+</title>
+
+  
+<!-- Google Analytics -->
+
+<!-- Google tag (gtag.js) -->
+
+
+
+
+<!-- End Google Analytics -->
+
+
+  
+  
+
+  
+  
+  <meta name="google-site-verification" content="sF6Dq8TSAEpOz0DYr74-zkX95tQyRkZk9JGrSarRAfU" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" media="all" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  
+  <link rel="stylesheet" href="/resources/css/leaflet.awesome-markers.css">
+  <link rel="stylesheet" href="/resources/css/ta-styles.css?v=1.6">
+  
+  <link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/resources/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  
+    
+      <style>
+        /* Navbar Desktop - Style léger inspiré hoy-milonga */
+        .navbar-light .navbar-nav .nav-link {
+            color: #0f4c81;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link:focus {
+            color: #0a335a;
+        }
+
+        .navbar-light .navbar-brand {
+            color: #0f4c81;
+        }
+
+        .navbar-light .navbar-toggler {
+            border-color: #0f4c81;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(15, 76, 129, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-light .navbar-nav .active > .nav-link,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show > .nav-link {
+            color: #0a335a;
+        }
+
+        .dropdown-menu {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .dropdown-item {
+            color: #0f4c81;
+            font-size: 0.9rem;
+            padding: 0.4rem 1rem;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar plus compacte */
+        .navbar {
+            padding-top: 0.3rem !important;
+            padding-bottom: 0.3rem !important;
+            align-items: flex-start;
+        }
+
+        .navbar-nav {
+            align-items: flex-start;
+        }
+
+        /* Espacements uniformes entre items */
+        .navbar-nav .nav-item {
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+        }
+
+        /* Alignement du brand et search */
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .navbar p {
+            margin-bottom: 0;
+        }
+
+        .search-input-compact {
+            margin-top: 0;
+        }
+
+        .form-inline {
+            padding-top: 0.4rem;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+      <div id="consent" class="alert alert-warning alert-dismissible fade show" role="alert" style="margin:0">
+    <i>Tango-argentin.fr</i> utilise des cookies et des technologies de géolocalisation. Acceptez-vous?
+    <button type="button" class="alert-warning" onClick="var cookieDate = new Date; cookieDate.setFullYear(cookieDate.getFullYear() +1);document.cookie = 'ta_consent=yes; expires=' + cookieDate.toGMTString() + '; path=/; SameSite=Lax'; $('#consent').alert('close')">OUI</button>
+    <button type="button" class="alert-warning" onClick="var cookieDate = new Date; cookieDate.setFullYear(cookieDate.getFullYear() +1);document.cookie = 'ta_consent=no; expires=' + cookieDate.toGMTString() + '; path=/; SameSite=Lax'; $('#consent').alert('close')">NON</button>
+    <a href="/faq.php" style="color:#0f4c81;"><u>En savoir plus</u></a>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true" style="color:#0f4c81;">&times;</span> </button>
+  </div>
+    
+  <nav class="navbar navbar-expand-xl sticky-top justify-content-between navbar-light navbar-compact" style="background-color:#e9ecef;">
+        <a class="navbar-brand" href="/" style="margin-bottom: 0;"><span class="h5" style="font-size:1.5rem">Tango-argentin.fr</span></a>
+
+    <!-- Language selector + toggler: visible on mobile, flags always visible -->
+    <div style="display: flex; align-items: center; order: 3;">
+        <div style="display: flex; gap: 0.5rem; margin-right: 1rem; align-items: center;">
+            
+                                                <a href="https://tango-argentin.fr/ile-de-france"
+                       class="language-switcher"
+                       data-locale="fr"
+                       style="text-decoration: none; opacity: 1; transition: opacity 0.2s;"
+                       title="Français">
+                        <svg width="28" height="20" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="900" height="600" fill="#ED2939"/>
+                            <rect width="600" height="600" fill="#fff"/>
+                            <rect width="300" height="600" fill="#002395"/>
+                        </svg>
+                    </a>
+                                                                <a href="https://tango-argentin.fr/en/ile-de-france"
+                       class="language-switcher"
+                       data-locale="en"
+                       style="text-decoration: none; opacity: 0.5; transition: opacity 0.2s;"
+                       title="English">
+                        <svg width="28" height="20" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                            <clipPath id="t"><path d="M30,15 h30 v15 z v-30 h-30 z h-30 v15 z v-30 h30 z"/></clipPath>
+                            <g clip-path="url(#s)">
+                                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                            </g>
+                        </svg>
+                    </a>
+                                    </div>
+        <button class="navbar-toggler border-dark text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="align-middle"></span> <i class="fa fa-bars fa-1x text-dark align-middle"></i>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="padding:0;">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item dropdown d-xl-none">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-map-marker fa-1x"></i> Régions</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-capitalize" href="/auvergne-rhone-alpes">Auvergne rhone alpes</a>
+            <a class="dropdown-item text-capitalize" href="/bourgogne-franche-comte">Bourgogne franche comte</a>
+            <a class="dropdown-item text-capitalize" href="/bretagne">Bretagne</a>
+            <a class="dropdown-item text-capitalize" href="/centre-val-de-loire">Centre val de loire</a>
+            <a class="dropdown-item text-capitalize" href="/corse">Corse</a>
+            <a class="dropdown-item text-capitalize" href="/grand-est">Grand est</a>
+            <a class="dropdown-item text-capitalize" href="/hauts-de-france">Hauts de france</a>
+            <a class="dropdown-item text-capitalize" href="/ile-de-france">Ile de france</a>
+            <a class="dropdown-item text-capitalize" href="/normandie">Normandie</a>
+            <a class="dropdown-item text-capitalize" href="/nouvelle-aquitaine">Nouvelle aquitaine</a>
+            <a class="dropdown-item text-capitalize" href="/occitanie">Occitanie</a>
+            <a class="dropdown-item text-capitalize" href="/pays-de-la-loire">Pays de la loire</a>
+            <a class="dropdown-item text-capitalize" href="/provence-alpes-cote-d-azur">Provence alpes cote d azur</a>
+         </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-plus"></i> Publier</a>
+          <div class="dropdown-menu">
+                          <a class="dropdown-item" href="/form-milongas">Ajouter une milonga</a>
+              <a class="dropdown-item" href="/form-annonces">Ajouter une annonce</a>
+                        <a class="dropdown-item" href="/annuaire/create">Ajouter une entrée d&#039;annuaire</a>
+         </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/cours" id="navbardrop">Cours</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/stage" id="navbardrop">Stages</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/autres" id="navbardrop">Autres Rdv</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/annuaire/cours" id="navbardrop">
+                Annuaires
+                <span class="badge badge-danger align-middle" style="font-size: 0.65rem;">NEW</span>
+            </a>
+        </li>
+          <li class="nav-item">
+            <form class="form-inline active-primary-3 active-primary-4" role="search" action="/results">
+                <input class="form-control form-control-sm ml-3 w-75 search-input-compact" type="text" placeholder="Recherche" aria-label="Search" name="q">
+            </form>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/faq.php" id="navbardrop">
+            <i class="fa fa-question-circle fa-1x"></i> FAQ
+                      </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-hashtag fa-1x"></i> Réseaux</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=webviewgold.tangoargentin"><i class="fa fa-android"></i> Appli Android</a>
+            <a class="dropdown-item" href="https://apps.apple.com/app/agenda-tango-argentin-fr/id6444917336?platform=iphone"><i class="fa fa-apple"></i> Appli iPhone</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.facebook.com/tangoargentin.fr"><i class="fa fa-facebook-square fa-1x"></i> Facebook</a>
+            <a class="dropdown-item" href="https://www.instagram.com/tangoargentinfr"><i class="fa fa-instagram fa-1x"></i> Instagram</a>
+              <a class="dropdown-item" href="https://twitter.com/tangoargentin"><i class="fa fa-twitter-square fa-1x"></i> Twitter</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://feedburner.google.com/fb/a/mailverify?uri=agenda-tango&loc=fr_FR"><i class="fa fa-newspaper-o fa-1x"></i> Newsletter</a>
+            <a class="dropdown-item" href="https://feeds.feedburner.com/tango-argentin/xmLmLFnn2m5?format=html"><i class="fa fa-rss fa-1x"></i>Bals à Paris</a>
+            <a class="dropdown-item" href="https://feeds.feedburner.com/agenda-tango?format=html#"><i class="fa fa-rss fa-1x"></i> RSS</a>
+
+         </div>
+        </li>
+        <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Connexion</a>
+                   <div class="dropdown-menu">
+                     <a class="dropdown-item" href="https://tango-argentin.fr/login">Se connecter</a>
+                        <a class="dropdown-item" href="https://tango-argentin.fr/register">Créer un compte organisateur</a>
+                             </div>
+        </li>
+      </ul>
+   </div>
+  </nav>
+
+
+
+  <div class="container-fluid">
+
+    
+<!-- Hero Section -->
+<section class="hero-tagline hero-geo">
+    <div class="hero-content">
+        <h1 class="hero-title">Tango argentin en Ile de france</h1>
+        <p class="hero-subtitle">
+            Découvrez toutes les milongas, pratiques et événements de tango dans votre région
+        </p>
+    </div>
+</section>
+
+    <div class="row">
+      <div class="col-md-6 bg-white">
+          <h6 class="text-center text-dark" style="padding:0.5rem;">
+                                   <span class="text-capitalize  ta-red">L&#039;agenda du tango </span>
+                    <a href="#" style="color:#0f4c81;">Ile de france</a>
+          </h6>
+                  <!-- MAPS & MARKERS -->
+          <div id="mapid" class="img-fluid border border-secondary" style="width:100%; height:400px; margin-bottom:0.5rem;"></div>
+        
+
+
+          <div class="table-responsive-sm bg-white" style="padding-top:1rem;">
+          <h5 class="text-center ta-blue">Milongas et Pratiques en </h5>
+              <h2 class="ta-red text-center text-uppercase" style="font-weight: 500;font-size:1.4rem">Ile de france</h2>
+                      <h6 class="ta-red text-center alert-secondary text-dark" style="padding:0.2rem;">samedi 7 novembre 2026</h6>
+    <table class="table table-hover border-top border-bottom" style="color:#000000;">
+            <tbody>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">14h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/sensation-milonga.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Sensation Milonga</span> <span style="font-size:0.8rem">105 rue de Tolbiac 75013 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 14h00 à 19h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> Milonga 10 euros Milonga + cours 23 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Dario Miraball</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">15h00</span>
+                    <img src="/resources/img/pleinair.png" title="Tango en plein air" style="margin-left: 10px;">                </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/quais-de-seine.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Quais de Seine</span> <span style="font-size:0.8rem">Jardin Tino Rossi 75005 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 15h00 à 23h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> Au chapeau</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Pierre B (Tangofloral)de 15h à 19h puis Kastrat de 19h à 23h</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">17h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-canal-tango.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga Canal Tango</span> <span style="font-size:0.8rem">Ecole Feeling Dance 26 Quai de l Aisne 93055 Pantin
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 17h00 à 21h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10  euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : DJ VINCENT EL GOUZZI</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/nogent-sur-marne/tango-lassoce-nogent.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Tango Lassoce Nogent</span> <span style="font-size:0.8rem">28 RUE EMILE ZOLA 94310 Nogent Sur Marne
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h30 à 22h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 5 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : DJ RAMON MOREIRA</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/lognes/tango-lognes.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Tango Lognes</span> <span style="font-size:0.8rem">23 rue de la Tour D Auvergne 77185 Lognes
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h30 à 21h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Ricardo</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">19h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/practica-tango-clasico.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Practica Tango Clasico</span> <span style="font-size:0.8rem">5 rue Leon Schwartzenberg 75010 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 19h00 à 23h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 4</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Yannick   Ben   Sylvain  Leila</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">19h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/bal-caminito.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Bal Caminito</span> <span style="font-size:0.8rem">1 ter rue deguerry 75011 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 19h00 à 01h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 7 euros</span>
+                                    </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-milonga-du-chat.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >la Milonga du Chat</span> <span style="font-size:0.8rem">56 Avenue Laplace 94110 Arcueil
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h00 à 02h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 e / 15 e bal + Atelier Maestros : Adriel &amp; Sole</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : PASKAL</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/chatou/milonga-des-impressionnistes.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga Des Impressionnistes</span> <span style="font-size:0.8rem">5 avenue d Epremesnil 78400 Chatou
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h00 à 23h55 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Nathalie</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/neolonga.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Neolonga</span> <span style="font-size:0.8rem">64 rue Orfila 75020 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h30 à 02h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Raffaella</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">21h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-la-sincopa.html?d=2026-11-07'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga la Sincopa</span> <span style="font-size:0.8rem">28 rue Julien Henard 75012 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 21h00 à 03h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 15 euros / tarif reduit a 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Max</span>                 </td>
+                </td>
+                              </tr>
+                    </tbody>
+          </table>
+                <h6 class="ta-red text-center alert-secondary text-dark" style="padding:0.2rem;">dimanche 8 novembre 2026</h6>
+    <table class="table table-hover border-top border-bottom" style="color:#000000;">
+            <tbody>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">13h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/palaiseau/la-bienveillante.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Bienveillante</span> <span style="font-size:0.8rem">4 RUE LEON BLUM 91120 Palaiseau
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 13h30 à 19h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12  euros</span>
+                                    </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">15h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-danse-avec-moi.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga Danse avec moi</span> <span style="font-size:0.8rem">17 avenue Pierre de Coubertin 75013 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 15h00 à 20h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros </span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Olivier Varlet</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">15h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-mono-bicicleta-maurice-ravel.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Mono Bicicleta Maurice Ravel</span> <span style="font-size:0.8rem">6 avenue Maurice Ravel 75012 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 15h00 à 20h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 5 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Yacha</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">16h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/almacen.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Almacen</span> <span style="font-size:0.8rem">20 rue du Temple 75004 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 16h00 à 21h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                                    </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">16h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/quais-de-seine.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Quais de Seine</span> <span style="font-size:0.8rem">Jardin Tino Rossi 75005 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 16h00 à 19h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> Au chapeau</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Kastrat de 16h à 19h</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">17h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/combs-la-ville/farolito.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Farolito</span> <span style="font-size:0.8rem">Chemin des aufrais 91480 Varennes Jarcy
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 17h00 à 20h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 5 euros et adhésion 5 euros annuel </span>
+                                    </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">17h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/pratique-de-la-sourdiere.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Pratique de la Sourdiere</span> <span style="font-size:0.8rem">CEASC 23 rue de la Sourdiere 75001 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 17h00 à 19h45 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 5 euros / 8 si orchestre</span>
+                                    </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">17h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-la-dolce-vita.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga la Dolce Vita</span> <span style="font-size:0.8rem">16a bd de Reuilly 75012 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 17h30 à 23h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : JOSE PELUAGA</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-piscine-de-la-star.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga Piscine de La Star</span> <span style="font-size:0.8rem">9 Rue Alphonse Baudin 75011 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h00 à 21h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> au chapeau</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : DJ  LA STAR</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/chelles/milonga-el-marne.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga el Marne</span> <span style="font-size:0.8rem">90 Avenue de Claye 77500 Chelles
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h00 à 21h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Tango DJ - &quot;EL PRIMO&quot;</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/chelles/milonga-el-marne.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga el Marne</span> <span style="font-size:0.8rem">90 Avenue de Claye 77500 Chelles
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h00 à 20h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Emanuel Orlando</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">18h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/chelles/el-marne.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >el Marne</span> <span style="font-size:0.8rem">90 Avenue de Claye 77500 Chelles
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 18h00 à 20h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : DJ el Primo</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">19h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-gioia-au-bateau-concorde.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Gioia au Bateau Concorde</span> <span style="font-size:0.8rem">Bateau Concorde Atlantique 23 quai Anatole France 75007 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 19h00 à 02h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 euros  /  5 euros pour les jeunes étudiants</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Roxane</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">19h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/el-baile-de-los-domingos.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >El Baile de Los Domingos</span> <span style="font-size:0.8rem">46 rue des Rigoles (face au 55) 75020 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 19h30 à 00h07 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 13 euros avec une consommation </span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : MIGUEL GABIS</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/alternativa-paris.html?d=2026-11-08'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Alternativa Paris</span> <span style="font-size:0.8rem">6 rue Lechapelais 75017 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h00 à 00h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : DJ Yannick Tango Sensation et DJ invité</span>                 </td>
+                </td>
+                              </tr>
+                    </tbody>
+          </table>
+                <h6 class="ta-red text-center alert-secondary text-dark" style="padding:0.2rem;">lundi 9 novembre 2026</h6>
+    <table class="table table-hover border-top border-bottom" style="color:#000000;">
+            <tbody>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/sensation-milonga.html?d=2026-11-09'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Sensation Milonga</span> <span style="font-size:0.8rem">105 rue de Tolbiac 75013 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h00 à 00h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i>  cours+ milonga 23 euros, milonga 10 euros </span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Claudio Coppola</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-parisiana-beaubourg.html?d=2026-11-09'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Parisiana Beaubourg</span> <span style="font-size:0.8rem">141 Rue St Martin 75004 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h30 à 00h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros (Cours de Milonga avec Tiziana &amp; Jorge 19h30)</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Suryanah</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-comuna.html?d=2026-11-09'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Comuna</span> <span style="font-size:0.8rem">158 rue Oberkampf 75011 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h30 à 01h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 avec une boisson offerte</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Joaquin Martinez</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-tangoteka-in-paris.html?d=2026-11-09'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Tangoteka in Paris</span> <span style="font-size:0.8rem">11 Rue Saint Luc 75018 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h30 à 00h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros Auberge Espagnole</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Nikel [El Mago]</span>                 </td>
+                </td>
+                              </tr>
+                    </tbody>
+          </table>
+                <h6 class="ta-red text-center alert-secondary text-dark" style="padding:0.2rem;">mardi 10 novembre 2026</h6>
+    <table class="table table-hover border-top border-bottom" style="color:#000000;">
+            <tbody>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">12h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/pratique-de-la-sablonniere.html?d=2026-11-10'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Pratique de la Sablonniere</span> <span style="font-size:0.8rem">62 rue Cambronne 75015 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 12h00 à 13h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 6  euros</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Michel</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">16h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/quais-de-seine.html?d=2026-11-10'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Quais de Seine</span> <span style="font-size:0.8rem">Jardin Tino Rossi 75005 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 16h00 à 19h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> Au chapeau</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Kastrat de 16h à 19h</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">19h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-cosy-du-15eme.html?d=2026-11-10'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Cosy du 15eme</span> <span style="font-size:0.8rem">136 rue de Lourmel 75015 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 19h30 à 23h45 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 / 10 euros (concert inclus; tarif jeunes)</span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : Olivier Varlet</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h00</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/milonga-oxygene.html?d=2026-11-10'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >Milonga Oxygene</span> <span style="font-size:0.8rem">4 impasse Cordon Boussard au niveau du 247 rue des Pyrenees 75020 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h00 à 01h00 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 12 euros et 8 euros pour les étudiants </span>
+                    <br><span class="badge badge-light" style="color:#0f4c81;white-space: inherit; font-weight:400"><i class="fa fa-headphones"></i> DJ : El Tano</span>                 </td>
+                </td>
+                              </tr>
+                      <tr >
+                <td class="text-left" style="max-width:4rem; padding-right:0.5rem;">
+                    <span class="ta-red" style="font-size:0.9rem;">20h30</span>
+                                    </td>
+                <td class=" text-left" style="line-height:1.4rem;" style="width:100%"> <span  onclick="location.href='/paris/la-parisiana-beaubourg.html?d=2026-11-10'"  style="cursor:pointer;color:#0f4c81;font-weight:400;" >La Parisiana Beaubourg</span> <span style="font-size:0.8rem">141 Rue St Martin 75004 Paris
+                    <i class="fa fa-clock-o align-baseline" style="color:grey;"></i> de 20h30 à 00h30 <i class="fa fa-eur align-baseline" style="color:grey;"></i> 10 euros Cours Intermédiaire avec Quoc &amp; Katya 19h30</span>
+                                    </td>
+                </td>
+                              </tr>
+                    </tbody>
+          </table>
+                
+</div></body></html>

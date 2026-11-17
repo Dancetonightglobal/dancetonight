@@ -1,0 +1,578 @@
+{
+  "data": {
+    "events": [
+      {
+        "url": "https://www.ticketfairy.com/event/gypsy-disco-special-edition-20nov-2026",
+        "displayName": "GYPSY DISCO SPECIAL EDITION",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "GYPSY DISCO – SPECIAL EDITION\nNOVEMBER 20TH AT GITANO JUNGLE TULUM\n\nJoin us at GITANO JUNGLE TULUM on Friday, November 20th for a special edition of Gypsy Disco\n\n— a night where music, movement, and m",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "290.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-20T18:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-21T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-09-25 03:49:36",
+        "updatedAt": "2026-11-06 09:25:19",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/las-gitanas-19nov2026",
+        "displayName": "LAS GITANAS",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nLAS GITANAS | NOVEMBER 19TH\n\nDINNER & JUNGLE VIBES\n\nJoin us at GITANO JUNGLE TULUM on Thursday, November 19th, for LAS GITANAS, an evening to gather around the table, enjoy delicious food, an",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": null,
+        "startDate": "2026-11-19T19:30:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-20T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-15 08:15:17",
+        "updatedAt": "2026-11-06 09:24:45",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/mera-room-x-gitano-beach-19nov2026",
+        "displayName": "MERA ROOM X GITANO BEACH",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nMERA ROOM · TULUM BEACH PARTY EXPERIENCE\n\nNOVEMBER 19TH, 2026 · GITANO BEACH\n\nFrom sunset into late night, the energy takes over.\n\nFor one special night in Tulum, MERA ROOM arrives at GITANO ",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "190.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-19T18:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-20T03:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-11-03 07:59:15",
+        "updatedAt": "2026-11-06 01:30:23",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "Gitano Beach Tulum",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJT3lFfVnRT48RhkzQW5FxTOk",
+          "latitude": "20.1319677",
+          "longitude": "-87.4640416",
+          "postalCode": "77780",
+          "street": "Avenida Boca Paila",
+          "streetNumber": "KM 9.5"
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/papaya-playa-project-presents-starlight-14nov2026",
+        "displayName": "PAPAYA PLAYA PROJECT Presents • STARLIGHT •",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "PAPAYA PLAYA PROJECT\n\nPRESENTS\n\nSTARLIGHT\n\nNOVEMBER 14TH | Tulum, Mexico\n\nðï¸ DOORS OPEN AT 8:00 PM\n\nðï¸ LAST ENTRY 12:50 AM\n\nðï¸ THE EVENT ENDS AT 3:00 AM\n\nA NIGHT TO BEGIN AGAIN. â¨\n\nUn",
+        "eventTypes": ["privateEvent", "outdoorEvent", "concert", "festival", "communityEvent"],
+        "tags": [
+          "PAPAYAPLAYAPROJECT",
+          "TULUM",
+          "tulumnightlife",
+          "CELEBRATION",
+          "FULLMOON",
+          "FULLMOONPARTY",
+          "Fullmoonpartytulum",
+          "Satoshitomiie"
+        ],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": "#papayaplayaproject #ppp",
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "1430.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-14T21:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-15T03:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-02 11:14:30",
+        "updatedAt": "2026-10-23 06:39:52",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "Papaya Playa Project",
+          "url": "https://www.ticketfairy.com/events/papaya-playa-project"
+        },
+        "venue": {
+          "name": "Papaya Playa Project",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJ6c8lMEvXT48RE0bKA7BKweA",
+          "latitude": "20.1817029",
+          "longitude": "-87.4446606",
+          "postalCode": "77780",
+          "street": "Carretera Tulum-Boca Paila",
+          "streetNumber": "Km 4.5"
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/ceremonia-gitano-beach-14nov2026",
+        "displayName": "CEREMONIA GITANO BEACH",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "ENGLISH\n\nCEREMONIA\n\nTHE RITUAL RETURNS\n\nEVERY SATURDAY | 6 PM – LATE\n\nGITANO'S SIGNATURE SATURDAY RITUAL RETURNS IN A NEW SETTING, PRESERVING THE ESSENCE THAT MADE IT ONE OF TULUM'S MOST BELOVED MUSIC",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "140.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-14T18:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-15T03:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-11-06 08:35:35",
+        "updatedAt": "2026-11-06 08:57:39",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "Gitano Beach Tulum",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJT3lFfVnRT48RhkzQW5FxTOk",
+          "latitude": "20.1319677",
+          "longitude": "-87.4640416",
+          "postalCode": "77780",
+          "street": "Avenida Boca Paila",
+          "streetNumber": "KM 9.5"
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/gypsy-disco-13nov-2026",
+        "displayName": "GYPSY DISCO",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nGYPSY DISCO – EVERY FRIDAY AT GITANO JUNGLE TULUM\n\nJoin us every Friday at GITANO JUNGLE TULUM for Gypsy Disco — a weekly night where music, movement, and magic come together in the heart of ",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "290.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-13T18:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-14T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-09-25 03:48:24",
+        "updatedAt": "2026-11-06 09:23:51",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/las-gitanas-12nov2026",
+        "displayName": "LAS GITANAS",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nLAS GITANAS | NOVEMBER 12TH\n\nDINNER & JUNGLE VIBES\n\nJoin us at GITANO JUNGLE TULUM on Thursday, November 12th, for LAS GITANAS, an evening to gather around the table, enjoy delicious food, an",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": null,
+        "startDate": "2026-11-12T19:30:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-13T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-15 08:13:54",
+        "updatedAt": "2026-11-06 09:23:31",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/papaya-playa-project-presents-the-new-moon-7nov2026",
+        "displayName": "PAPAYA PLAYA PROJECT Presents • THE NEW MOON •",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "PAPAYA PLAYA PROJECT\n\nPRESENTS\n\nTHE NEW MOON\n\nNOVEMBER 7TH | Tulum, Mexico\n\nðï¸ DOORS OPEN AT 8:00 PM\n\nðï¸ LAST ENTRY 12:50 AM\n\nðï¸ THE EVENT ENDS AT 3:00 AM\n\nTHE NEW MOON\n\nA night of new ",
+        "eventTypes": ["festival", "privateEvent", "concert", "outdoorEvent"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": null,
+        "startDate": "2026-11-07T21:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-08T03:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-09-16 07:51:20",
+        "updatedAt": "2026-11-06 02:09:13",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "Papaya Playa Project",
+          "url": "https://www.ticketfairy.com/events/papaya-playa-project"
+        },
+        "venue": {
+          "name": "Papaya Playa Project",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJ6c8lMEvXT48RE0bKA7BKweA",
+          "latitude": "20.1817029",
+          "longitude": "-87.4446606",
+          "postalCode": "77780",
+          "street": "Carretera Tulum-Boca Paila",
+          "streetNumber": "Km 4.5"
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/la-noche-jungle-7nov2026",
+        "displayName": "LA NOCHE",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nLA NOCHE! | NOVEMBER 7TH AT GITANO JUNGLE TULUM\n\nLATIN BEATS + AFRO HOUSE\n\nJoin us at GITANO JUNGLE TULUM on Saturday, November 7th for LA NOCHE!, a vibrant night where Latin rhythms, Afro Ho",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "440.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-07T19:30:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-08T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-15 10:47:50",
+        "updatedAt": "2026-11-06 09:22:55",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/ceremonia-beach-7nov2026",
+        "displayName": "CEREMONIA GITANO BEACH",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "ENGLISH\n\nCEREMONIA\n\nTHE RITUAL RETURNS\n\nEVERY SATURDAY | 6 PM – LATE\n\nGITANO'S SIGNATURE SATURDAY RITUAL RETURNS IN A NEW SETTING, PRESERVING THE ESSENCE THAT MADE IT ONE OF TULUM'S MOST BELOVED MUSIC",
+        "eventTypes": ["privateEvent", "concert", "clubShow", "festival", "outdoorEvent"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "140.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-07T18:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-08T01:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-15 08:21:51",
+        "updatedAt": "2026-11-07 03:19:34",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "Gitano Beach",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJT3lFfVnRT48RhkzQW5FxTOk",
+          "latitude": "20.1319677",
+          "longitude": "-87.4640416",
+          "postalCode": "77780",
+          "street": "Av Boca Paila",
+          "streetNumber": "KM 9.5"
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/fixture-cancun-party-15nov2026",
+        "displayName": "FIXTURE CANCUN PARTY",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "GYPSY DISCO – SPECIAL EDITION\nNOVEMBER 20TH AT GITANO JUNGLE TULUM\n\nJoin us at GITANO JUNGLE TULUM on Friday, November 20th for a special edition of Gypsy Disco\n\n— a night where music, movement, and m",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": {
+          "amount": "290.00",
+          "currency": "MXN"
+        },
+        "startDate": "2026-11-15T22:00:00-05:00",
+        "hideDate": false,
+        "endDate": "2026-11-16T04:00:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-09-25 03:49:36",
+        "updatedAt": "2026-11-06 09:25:19",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "Fixture Club Cancun",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Cancún",
+          "hidden": false,
+          "googlePlaceId": null,
+          "latitude": "21.1350",
+          "longitude": "-86.7460",
+          "postalCode": "77500",
+          "street": null,
+          "streetNumber": null
+        }
+      },
+      {
+        "url": "https://www.ticketfairy.com/event/fixture-hidden-date-16nov2026",
+        "displayName": "FIXTURE HIDDEN DATE",
+        "subtitle": null,
+        "description": null,
+        "shortDescription": "English\n\nLAS GITANAS | NOVEMBER 19TH\n\nDINNER & JUNGLE VIBES\n\nJoin us at GITANO JUNGLE TULUM on Thursday, November 19th, for LAS GITANAS, an evening to gather around the table, enjoy delicious food, an",
+        "eventTypes": ["festival"],
+        "tags": [],
+        "minimumAge": "18",
+        "facebookEvent": null,
+        "twitterHashtag": null,
+        "currency": {
+          "currency": "MXN",
+          "decimal_places": 2,
+          "symbol": "Mex$"
+        },
+        "startingPrice": null,
+        "startDate": "2026-11-19T19:30:00-05:00",
+        "hideDate": true,
+        "endDate": "2026-11-20T03:30:00-05:00",
+        "timezone": "America/Cancun",
+        "createdAt": "2026-10-15 08:15:17",
+        "updatedAt": "2026-11-06 09:24:45",
+        "imageURL": null,
+        "thumbnailURL": null,
+        "backgroundURL": null,
+        "brand": {
+          "name": "GITANO TULUM",
+          "url": "https://www.ticketfairy.com/events/gitano-tulum"
+        },
+        "venue": {
+          "name": "GITANO",
+          "country": "mx",
+          "state": "Quintana Roo",
+          "city": "Tulum",
+          "hidden": false,
+          "googlePlaceId": "ChIJFUqUFcvQT48RH3UeRnz6hx0",
+          "latitude": "20.1500881",
+          "longitude": "-87.4591118",
+          "postalCode": "77710",
+          "street": null,
+          "streetNumber": null
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "size": 100,
+      "totalCount": 12,
+      "totalPages": 1,
+      "nextCursor": null
+    }
+  },
+  "success": true,
+  "error": false,
+  "message": "Events successfully fetched.",
+  "status": 200
+}

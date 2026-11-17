@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://thecopanyc.com/robots.txt"
+  },
+  "response": {
+    "url": "https://thecopanyc.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
+      "content-encoding": "gzip",
+      "content-length": "172",
+      "content-type": "text/plain; charset=utf-8",
+      "date": "Sun, 04 Oct 2026 20:55:05 GMT",
+      "link": "<https://thecopanyc.com/wp-json/>; rel=\"https://api.w.org/\"",
+      "server": "LiteSpeed",
+      "vary": "Accept-Encoding",
+      "x-et-api-origin": "https://thecopanyc.com",
+      "x-et-api-root": "https://thecopanyc.com/wp-json/tribe/tickets/v1/",
+      "x-et-api-version": "v1",
+      "x-tec-api-origin": "https://thecopanyc.com",
+      "x-tec-api-root": "https://thecopanyc.com/wp-json/tribe/events/v1/",
+      "x-tec-api-version": "v1"
+    },
+    "body": "User-agent: *\nDisallow: /wp-content/uploads/wc-logs/\nDisallow: /wp-content/uploads/woocommerce_transient_files/\nDisallow: /wp-content/uploads/woocommerce_uploads/\nDisallow: /*?add-to-cart=\nDisallow: /*?*add-to-cart=\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://thecopanyc.com/wp-sitemap.xml\n"
+  },
+  "note": "recorded 2026-10-04"
+}

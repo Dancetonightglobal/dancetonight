@@ -1,0 +1,83 @@
+{
+  "items": [
+    {
+      "eventId": "ev1",
+      "eventUrl": "https://sabaki.dance/event/ev1?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Salsa Social Night at Hoy Como Ayer",
+      "organizerName": "Latin Fever",
+      "description": "A fun salsa night",
+      "eventType": "party",
+      "startDateTime": "2026-10-30T21:00:00-04:00",
+      "endDateTime": "2026-10-31T01:00:00-04:00",
+      "locationName": "Hoy Como Ayer",
+      "locationAddress": "123 Calle Ocho",
+      "locationCity": "Miami",
+      "locationCountry": "US",
+      "latitude": 25.7617,
+      "longitude": -80.1918,
+      "imageUrl": "https://example.com/image.jpg",
+      "ticketUrl": "https://tickets.example.com/ev1",
+      "websiteUrl": "https://example.com",
+      "danceStyles": ["Salsa"],
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-02T00:00:00Z"
+    },
+    {
+      "eventId": "ev2",
+      "eventUrl": "https://sabaki.dance/event/ev2?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Bachata Tuesdays",
+      "organizerName": "Bachata Lovers",
+      "eventType": "party",
+      "startDateTime": "2026-10-31T22:00:00-04:00",
+      "endDateTime": null,
+      "locationName": "Some Club",
+      "locationAddress": "456 Ocean Drive",
+      "locationCity": "Miami",
+      "locationCountry": "US",
+      "latitude": 0,
+      "longitude": 0,
+      "danceStyles": ["Bachata"],
+      "ticketUrl": "https://tickets.example.com/ev2"
+    },
+    {
+      "eventId": "ev3",
+      "eventUrl": "https://sabaki.dance/event/ev3?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Kizomba Night",
+      "eventType": "party",
+      "startDateTime": "2026-11-20T21:00:00-05:00",
+      "danceStyles": ["Kizomba"]
+    },
+    {
+      "eventId": "ev4",
+      "eventUrl": "https://sabaki.dance/event/ev4?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Beginner Salsa Course",
+      "eventType": "Course",
+      "startDateTime": "2026-10-30T19:00:00-04:00",
+      "danceStyles": ["Salsa"]
+    },
+    {
+      "eventId": "ev5",
+      "eventUrl": "https://sabaki.dance/event/ev5?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Mystery Night",
+      "eventType": "party",
+      "startDateTime": "2026-10-29T20:00:00-04:00",
+      "danceStyles": []
+    },
+    {
+      "eventId": "ev6",
+      "title": "Salsa Night",
+      "eventType": "party",
+      "startDateTime": "2026-10-30T22:00:00-04:00",
+      "danceStyles": ["Salsa"]
+    },
+    {
+      "eventId": "ev1",
+      "eventUrl": "https://sabaki.dance/event/ev1?utm_source=partner&utm_medium=api&utm_campaign=dancetonight",
+      "title": "Salsa Social Night at Hoy Como Ayer",
+      "eventType": "party",
+      "startDateTime": "2026-10-30T21:00:00-04:00",
+      "danceStyles": ["Salsa"]
+    }
+  ],
+  "nextCursor": null
+}

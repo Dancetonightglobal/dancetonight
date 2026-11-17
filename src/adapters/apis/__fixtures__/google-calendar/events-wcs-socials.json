@@ -1,0 +1,91 @@
+{
+  "note": "Built from the documented events.list response shape (developers.google.com/workspace/calendar/api/v3/reference/events/list, read 2026-10-04); no key existed yet. Re-record from the first keyed run's fixtures artifact and replace.",
+  "kind": "calendar#events",
+  "etag": "\"p32c9b1kq0abcd0o\"",
+  "summary": "WCS Socials - Example Host",
+  "description": "",
+  "updated": "2026-10-01T14:02:11.000Z",
+  "timeZone": "America/New_York",
+  "accessRole": "reader",
+  "defaultReminders": [],
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"3450001\"",
+      "id": "4abc123def456_20261009T000000Z",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NGFiYzEyM2RlZjQ1Nl8yMDI2MTAwOVQwMDAwMDBaIGV4YW1wbGU",
+      "created": "2025-01-10T15:00:00.000Z",
+      "updated": "2026-09-30T12:00:00.000Z",
+      "summary": "THURSDAY NIGHT WCS SOCIAL",
+      "description": "Lesson 8pm, social dancing 9pm to midnight.<br>Admission $15, students $10.<br><a href=\"https://wcs.example/thursdays\">wcs.example/thursdays</a>",
+      "location": "Dance Studio Example, 123 W 30th St, New York, NY 10001, USA",
+      "creator": {
+        "email": "host@example.com"
+      },
+      "organizer": {
+        "email": "abc@group.calendar.google.com",
+        "displayName": "WCS Socials - Example Host",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-08T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-10-09T00:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "recurringEventId": "4abc123def456",
+      "originalStartTime": {
+        "dateTime": "2026-10-08T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "iCalUID": "4abc123def456@google.com",
+      "sequence": 0,
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "7xyz789_20261011",
+      "status": "confirmed",
+      "summary": "Fall WCS weekend (all day)",
+      "start": {
+        "date": "2026-10-11"
+      },
+      "end": {
+        "date": "2026-10-12"
+      },
+      "iCalUID": "7xyz789@google.com",
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "9late0001",
+      "status": "confirmed",
+      "summary": "LATE NIGHT WCS PRACTICE",
+      "location": "Studio B, 200 E 14th St, New York, NY",
+      "start": {
+        "dateTime": "2026-10-10T00:30:00-04:00"
+      },
+      "end": {
+        "dateTime": "2026-10-10T02:00:00-04:00"
+      },
+      "iCalUID": "9late0001@google.com",
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "busyonly0001",
+      "status": "confirmed",
+      "start": {
+        "dateTime": "2026-10-06T19:00:00-04:00"
+      },
+      "end": {
+        "dateTime": "2026-10-06T21:00:00-04:00"
+      },
+      "iCalUID": "busyonly0001@google.com",
+      "eventType": "default"
+    }
+  ]
+}

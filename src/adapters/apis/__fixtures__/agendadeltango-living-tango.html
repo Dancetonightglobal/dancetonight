@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es" data-seccion="milongas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- [Añadido 3/10/2026] Iconos del sitio (ficheros en la raíz de agendadeltango.com) -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#071D2B" />
+    <meta name="robots" content="index, follow" />
+    <script>
+      (function () {
+        try {
+          var r = document.referrer ? new URL(document.referrer) : null;
+          if (r && r.host === location.host && /\/barcelona\//.test(r.pathname)) {
+            document.documentElement.setAttribute("data-seccion", "barcelona");
+            // [29/9/2026, a petición del usuario] Viniendo de /barcelona/, la cabecera dice "Tango en
+            // Barcelona" (igual que /barcelona/) y la miga de pan pasa por Barcelona en vez de Milongas.
+            var bcn = r.pathname.replace(/(\/barcelona\/).*$/, "$1");
+            document.addEventListener("DOMContentLoaded", function () {
+              var p = document.querySelector("header.hoy-header p");
+              if (p) p.textContent = "Agenda de Milongas y conciertos en Barcelona/Catalunya"; // [14/10/2026] mismo subtítulo que /barcelona/
+              // [2/10/2026] Con la cabecera nueva (título + botones), viniendo de /barcelona/ el título dice
+              // "Tango Barcelona" y se oculta el botón "Tango Barcelona" (sería un enlace a sí misma).
+              var t = document.querySelector("header.hoy-header .cab-titulo");
+              if (t) t.textContent = "Tango Barcelona";
+              // [14/10/2026, a petición del usuario] Viniendo de /barcelona/, la MISMA cabecera que /barcelona/,
+              // ahora CON sus pastillas Festivales / Milongas / Anuncios (antes, 10/10/2026, se ocultaban).
+              // El prefijo relativo se saca del enlace de Festivales que ya trae la página.
+              var b = document.querySelector("header.hoy-header .cab-botones");
+              var fe = b && b.querySelector("a.btn-festivales");
+              if (b && fe) {
+                var pre = fe.getAttribute("href").replace(/festivales\/$/, "");
+                b.innerHTML =
+                  '<a class="btn-festivales" href="' +
+                  pre +
+                  'festivales/">Festivales</a>' +
+                  '<a class="btn-milongas" href="' +
+                  pre +
+                  'milongas/">Milongas</a>' +
+                  '<a class="btn-anuncios" href="' +
+                  pre +
+                  'anuncios/">Anuncios</a>';
+              }
+              var a = document.querySelector("nav.breadcrumb a[data-seccion-link]");
+              if (a) {
+                a.textContent = "Barcelona";
+                a.setAttribute("href", bcn);
+              }
+              // [15/10/2026] Viniendo de /barcelona/ la miga no pasa por comunidad/provincia.
+              document.querySelectorAll("nav.breadcrumb .miga-zona").forEach(function (z) {
+                z.parentNode.removeChild(z);
+              });
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>Living Tango Barcelona - TDJ Duygu Akalin — 31/10/2026 | Agenda del Tango</title>
+    <meta
+      name="description"
+      content="TDJ Duygu Akalin · Sáb 31 oct, 22:00–01:30 · Living Tango Barcelona, Calle Pallars 65-71, Ático 4"
+    />
+    <link
+      rel="canonical"
+      href="https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/"
+    />
+    <script
+      data-goatcounter="https://agendadeltango.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Agenda del Tango" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Living Tango Barcelona - TDJ Duygu Akalin — 31/10/2026" />
+    <meta
+      property="og:description"
+      content="TDJ Duygu Akalin · Sáb 31 oct, 22:00–01:30 · Living Tango Barcelona, Calle Pallars 65-71, Ático 4"
+    />
+    <meta
+      property="og:url"
+      content="https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/"
+    />
+    <meta
+      property="og:image"
+      content="https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/og/flyer-de-living-tango-barcelona-1d373472149838cb.jpg?v=8e5825e5af"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/og/flyer-de-living-tango-barcelona-1d373472149838cb.jpg?v=8e5825e5af"
+    />
+    <meta name="twitter:title" content="Living Tango Barcelona - TDJ Duygu Akalin — 31/10/2026" />
+    <meta
+      name="twitter:description"
+      content="TDJ Duygu Akalin · Sáb 31 oct, 22:00–01:30 · Living Tango Barcelona, Calle Pallars 65-71, Ático 4"
+    />
+    <link rel="stylesheet" href="../../style.css?v=ffcb9eb2" />
+    <script type="application/ld+json">
+      {
+        "@type": "Event",
+        "name": "Living Tango Barcelona — 31/10/2026",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Living Tango Barcelona",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle Pallars 65-71, Ático 4",
+            "addressLocality": "Barcelona",
+            "addressRegion": "Catalunya",
+            "addressCountry": "ES"
+          }
+        },
+        "url": "https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/",
+        "startDate": "2026-10-31T22:00:00+02:00",
+        "endDate": "2026-11-01T01:30:00+02:00",
+        "@context": "https://schema.org",
+        "description": "TDJ Duygu Akalin · Sáb 31 oct, 22:00–01:30 · Living Tango Barcelona, Calle Pallars 65-71, Ático 4",
+        "image": "https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/og/flyer-de-living-tango-barcelona-1d373472149838cb.jpg"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://agendadeltango.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Milongas",
+            "item": "https://agendadeltango.com/milongas/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Catalunya",
+            "item": "https://agendadeltango.com/milongas/catalunya/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Barcelona",
+            "item": "https://agendadeltango.com/milongas/catalunya/barcelona/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Living Tango Barcelona",
+            "item": "https://agendadeltango.com/milongas/living-tango-barcelona/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "31/10/2026",
+            "item": "https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="hoy-header">
+      <a class="logo-link" href="../../../"
+        ><img
+          class="site-logo"
+          src="../../logo.webp?v=e51d8e2670"
+          alt="Agenda del Tango"
+          width="96"
+          height="96"
+      /></a>
+      <h1>
+        <a class="cab-titulo-enlace" href="../../" style="color: inherit; text-decoration: none"
+          ><span class="cab-titulo">Milongas España</span></a
+        ><span class="cab-botones"
+          ><a class="btn-tango-bcn" href="../../../barcelona/">Tango Barcelona</a
+          ><a class="btn-festivales" href="../../../festivales/">Festivales</a
+          ><a class="btn-anuncios" href="../../../anuncios/">Anuncios</a></span
+        >
+      </h1>
+      <p>Milongas de tango argentino en España</p>
+    </header>
+    <nav class="breadcrumb" aria-label="Miga de pan">
+      <a href="https://agendadeltango.com/">Inicio</a><span class="sep">›</span
+      ><a href="../../" data-seccion-link>Milongas</a><span class="sep">›</span
+      ><span class="miga-zona"
+        ><a href="../../catalunya/">Catalunya</a><span class="sep">›</span></span
+      ><span class="miga-zona"
+        ><a href="../../catalunya/barcelona/">Barcelona</a><span class="sep">›</span></span
+      ><a href="../">Living Tango Barcelona</a><span class="sep">›</span>31/10/2026
+    </nav>
+    <main class="ficha-wrap">
+      <a
+        href="../"
+        class="ficha-volver"
+        onclick="
+          if (
+            document.referrer &&
+            document.referrer.indexOf(location.host) !== -1 &&
+            history.length > 1
+          ) {
+            history.back();
+            return false;
+          }
+        "
+        >← Atrás</a
+      >
+      <div class="ficha-dia-label">Sábado 31 octubre</div>
+      <div class="card milonga">
+        <div class="card-head">
+          <span class="type-badge milonga">Milonga</span
+          ><span class="hours">22:00&ndash;01:30</span>
+        </div>
+        <div class="card-title">
+          Living Tango Barcelona <span class="tag-especial">edición especial</span>
+        </div>
+        <div class="card-subtitle">Noches de Sábados — Halloween</div>
+        <img
+          class="card-flyer"
+          src="imagenes/flyer-de-living-tango-barcelona-1d373472149838cb.webp?v=32a43adf8e"
+          width="1080"
+          height="1350"
+          alt="Flyer de Living Tango Barcelona"
+          loading="lazy"
+        />
+        <div class="line espacio">
+          📍
+          <a
+            class="maps"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Living+Tango+Barcelona%2C+Calle+Pallars+65-71%2C+%C3%81tico+4"
+            target="_blank"
+            rel="noopener"
+            >Living Tango Barcelona, Calle Pallars 65-71, Ático 4</a
+          >
+        </div>
+        <div class="line">Organiza: <b>Martin</b></div>
+        <div class="line tel-line">
+          📞 <a class="tel" href="tel:+34699327026">+34 699 327 026</a>
+        </div>
+        <div class="line">TDJ: <b>Duygu Akalin</b></div>
+      </div>
+      <div class="ficha-compartir ficha-organizador" id="ficha-organizador">
+        <span class="compartir-label">¿Alguna consulta?</span>
+        <a
+          class="compartir-btn compartir-whatsapp compartir-organizador"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/34699327026?text=Hola%2C%20he%20visto%20%C2%ABLiving%20Tango%20Barcelona%20%E2%80%93%2031%2F10%2F2026%C2%BB%20en%20la%20Agenda%20del%20Tango%20y%20quer%C3%ADa%20hacer%20una%20consulta%3A%0Ahttps%3A%2F%2Fagendadeltango.com%2Fmilongas%2Fliving-tango-barcelona%2F2026-10-31%2F"
+          data-goatcounter-click="salida/milongas/whatsapp-organizador/living-tango-barcelona/2026-10-31"
+          data-goatcounter-title="WhatsApp al organizador: Living Tango Barcelona - TDJ Duygu Akalin"
+          >WhatsApp al organizador</a
+        >
+      </div>
+      <div class="ficha-compartir" id="ficha-compartir">
+        <span class="compartir-label">Compartir:</span>
+        <a
+          class="compartir-btn compartir-whatsapp"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/?text=https%3A%2F%2Fagendadeltango.com%2Fmilongas%2Fliving-tango-barcelona%2F2026-10-31%2F"
+          >WhatsApp</a
+        >
+        <button
+          type="button"
+          class="compartir-btn compartir-nativo"
+          id="compartir-nativo-btn"
+          style="display: none"
+        >
+          Compartir…
+        </button>
+      </div>
+      <div class="ficha-compartir ficha-actualizar" id="ficha-actualizar">
+        <span class="compartir-label">¿Algo que corregir?</span>
+        <a
+          class="compartir-btn compartir-comentario"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/34661303113?text=Hola%21%20Tengo%20un%20comentario%20o%20una%20actualizaci%C3%B3n%20sobre%20esta%20actividad%3A%20Living%20Tango%20Barcelona%20-%20TDJ%20Duygu%20Akalin%0Ahttps%3A%2F%2Fagendadeltango.com%2Fmilongas%2Fliving-tango-barcelona%2F2026-10-31%2F"
+          >Comentarios o Actualización</a
+        >
+      </div>
+      <script>
+        (function () {
+          var b = document.getElementById("compartir-nativo-btn");
+          if (b && navigator.share) {
+            b.style.display = "";
+            b.addEventListener("click", function () {
+              navigator
+                .share({
+                  title: "Living Tango Barcelona - TDJ Duygu Akalin",
+                  url: "https://agendadeltango.com/milongas/living-tango-barcelona/2026-10-31/",
+                })
+                .catch(function () {});
+            });
+          }
+        })();
+      </script>
+      <section
+        id="bloque-anuncios"
+        aria-label="Anuncios"
+        data-escena="5"
+        data-milonga="31"
+      ></section>
+      <script src="../../../anuncios/bloque-anuncios.js?v=93eaefbbbf" defer></script>
+    </main>
+    <footer class="hoy-footer">
+      Contacto: Mario · <a href="tel:+34661303113">661 30 31 13</a> ·
+      <a href="mailto:mario@agendadeltango.com">mario@agendadeltango.com</a> ·
+      <a href="https://agendadeltango.com/" target="_blank" rel="noopener">agendadeltango.com</a>
+    </footer>
+    <footer class="legal-footer">
+      <a href="https://agendadeltango.com/aviso-legal/" target="_blank" rel="noopener"
+        >Aviso Legal y Términos de Uso</a
+      ><span class="legal-sep">·</span
+      ><a href="https://agendadeltango.com/politica-de-cookies/" target="_blank" rel="noopener"
+        >Política de Cookies</a
+      ><span class="legal-sep">·</span
+      ><a href="https://agendadeltango.com/politica-de-privacidad/" target="_blank" rel="noopener"
+        >Política de Privacidad</a
+      >
+    </footer>
+
+    <div id="img-lightbox-overlay" class="img-lightbox-overlay" onclick="cerrarImagenCompleta()">
+      <button
+        type="button"
+        class="img-lightbox-close"
+        aria-label="Cerrar"
+        onclick="
+          event.stopPropagation();
+          cerrarImagenCompleta();
+        "
+      >
+        ×
+      </button>
+      <img id="img-lightbox-img" src="" alt="" />
+    </div>
+    <script>
+      function abrirImagenCompleta(src) {
+        if (!src) return;
+        document.getElementById("img-lightbox-img").src = src;
+        document.getElementById("img-lightbox-overlay").classList.add("active");
+      }
+      function cerrarImagenCompleta() {
+        document.getElementById("img-lightbox-overlay").classList.remove("active");
+        document.getElementById("img-lightbox-img").src = "";
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") cerrarImagenCompleta();
+      });
+      document
+        .querySelectorAll("main img.card-flyer, main img.milonga-imagen-principal")
+        .forEach(function (img) {
+          img.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            ev.stopPropagation();
+            abrirImagenCompleta(img.currentSrc || img.src);
+          });
+        });
+    </script>
+  </body>
+</html>

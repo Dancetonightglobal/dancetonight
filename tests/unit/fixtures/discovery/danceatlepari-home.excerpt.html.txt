@@ -1,0 +1,6 @@
+<!-- Excerpt of https://danceatlepari.com/ as fetched on 2026-10-04 (robots.txt allows /): the opening tags and the Events Manager stylesheet tag, verbatim. -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel='stylesheet' id='events-manager-css' href='https://danceatlepari.com/wp-content/plugins/events-manager/includes/css/events-manager.min.css?ver=7.4.6' media='all' />
+</head><body></body></html>

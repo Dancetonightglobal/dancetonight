@@ -1,0 +1,10 @@
+# Drafted by us from public listings (D-048 Q3): biased toward what we already find.
+# DanceTonight Raleigh recall set, Thursday 2026-11-19 (Wake County only). Built 2026-10-31. start_time is local (America/New_York).
+# Thursday in Wake County is thin: searches (Salsa Vida, Visit Raleigh, Walter magazine, Eventbrite) found no
+# Thursday salsa, swing or ballroom night. Excluded on purpose: Durham and Chapel Hill nights (outside the metro:
+# Mystic Farm line dance, Movimiento at Namu's Beer Hall 1st/3rd Thursdays).
+# Whiskey Rose is Instagram-only (no source we may read), so a miss there is no_source_known by design.
+title,venue,start_time,style,source_url
+Line Dancing Boot Camp,PBR Cowboy Bar Cary,7pm,line dance,https://pbrcowboybar.com/cary/
+Thursday line dancing,Whiskey Rose,7pm,line dance,https://waltermagazine.com/explore/raleigh-steps-out-where-to-line-dance/
+No Section Thursdays,HALCYON Bar + Lounge,10pm,dj night,https://www.eventbrite.com/o/mel-entertainment-34180469083

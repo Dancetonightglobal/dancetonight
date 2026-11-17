@@ -1,0 +1,13 @@
+# DanceTonight Marrakesh recall set, Saturday 2026-11-14 (Prefecture of Marrakech). Built 2026-11-07. start_time is local (Africa/Casablanca).
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Drafted by us from public listings (D-048 Q3): biased toward what we already find. Rows come from the venues' own
+# pages (Theatro, Babouchka, Comptoir Darna), Tidar and Hello Beldi as listed on 2026-11-07, before the first read.
+# Independent searches (salsa, bachata, kizomba, tango, Afro, nightlife guides) found no other dated night for it.
+# Not listed: clubs that publish no nights (555 Famous Club, Secret Room, Le Silver: opening hours on Clubbable only).
+title,venue,start_time,style,source_url
+Scandalicious,Theatro,11:30pm,club,https://www.theatromarrakech.com/
+Revolution,Babouchka,12am,club,https://babouchka-marrakech.com/events
+Souktronic club at Comptoir Darna,Comptoir Darna,12am,club,https://www.comptoirmarrakech.com/art-show
+Raíces Marrakech,M Rooftop by Medina Heritage,4:30pm,salsa,https://www.hellobeldi.com/raices
+Back To House - Underground Series Vol 3,Les Asnouss,,house,https://buy.tidar.ma/event/back-to-house-underground-series-vol-3

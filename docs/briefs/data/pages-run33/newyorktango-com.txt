@@ -1,0 +1,3 @@
+Loading events
+
+Building the calendar and latest event details.

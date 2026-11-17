@@ -1,0 +1,52 @@
+name: link-check
+
+# The daily check of each card's own link (D-768, the owner 2026-11-06 "flag, keep card"): a link that
+# 404s, or does not answer twice in a row, flags its card "Link not working"; nothing is hidden.
+# A 10-minute box (the owner 2026-11-06, Actions minutes): the oldest checks go first. Each run writes a
+# job_runs row per city, so the city snapshots rebuild with the flags.
+
+on:
+  schedule:
+    - cron: "41 19 * * *"
+  workflow_dispatch:
+    inputs:
+      metro:
+        description: One city slug (e.g. london), or empty for every city
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      METRO: ${{ inputs.metro }}
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+      BOT_CONTACT_EMAIL: ${{ vars.BOT_CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Apply migrations
+        run: pnpm db:migrate
+      - name: Check the links
+        run: |
+          if [ -n "$METRO" ]; then
+            if ! printf '%s' "$METRO" | grep -Eq '^[a-z0-9-]+$'; then echo "::error::Bad metro: $METRO"; exit 1; fi
+            pnpm -s link:check --metro "$METRO"
+          else
+            pnpm -s link:check
+          fi

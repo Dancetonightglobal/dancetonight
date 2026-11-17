@@ -1,0 +1,19 @@
+# Philadelphia (City of Philadelphia) known nights for 2026-11-07, researched from the public web on 2026-10-29.
+# A list we drafted is biased toward what we already find (D-048 Q3); the owner corrected it on 2026-10-29 (Gayborhood nights added).
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+title,venue,start_time,style,source_url
+Salsasational Saturdays at Brasil's Nightclub,Brasil's Nightclub (112 Chestnut St 19106),20:30,salsa bachata,https://www.salsavida.com/guides/pennsylvania/philadelphia/
+Cuba Libre Nights,Cuba Libre Restaurant & Rum Bar (10 S 2nd St 19106),23:00,salsa latin,https://www.salsavida.com/guides/pennsylvania/philadelphia/
+Descontrol Latino,National Mechanics (22 S 3rd St 19106),21:00,latin reggaeton,https://www.eventbrite.com/o/120626298488
+2000's Night,National Mechanics (22 S 3rd St 19106),22:00,dj night,https://www.eventbrite.com/d/pa--philadelphia/dance-party/
+DJ Flakka,Concourse Dance Bar (1635 Market St 19103),21:00,dj night,https://www.concoursedancebar.com/events
+EMANCIPATOR,The Ave Live,,electronic,https://theavelive.com/events
+GIMME GIMME DISCO,Ground Floor (901 N Delaware Ave 19123),21:00,disco,https://www.eventbrite.com/d/pa--philadelphia/dance-party/
+Secret Rivalry Rave,Roar Nightclub (939 N Delaware Ave 19123),21:00,club edm,https://www.eventbrite.com/d/pa--philadelphia/dj-party/
+Reggae Bash World: Philadelphia,NOTO Philadelphia (1209 Vine St 19107),22:00,reggae dancehall,https://www.eventbrite.com/o/34493092233
+REGGAE MEETS SOCA PHILLY,Voix (2825 Cottman Ave),22:00,reggae soca,https://www.eventbrite.com/o/7627176099
+Day of the Dead Perreo Hasta La Muerte,"401 S Christopher Columbus Blvd 19106 (Moshulu, moored)",22:00,reggaeton,https://www.eventbrite.com/o/30806397764
+R&B ONLY LIVE,Franklin Music Hall (421 N 7th St 19123),20:00,r&b dance party,https://www.eventbrite.com/d/pa--philadelphia/dj-party/
+WKND Pt. 2,Woody's (202 S 13th St 19107),19:00,dj night queer,https://outxout.com/events/philadelphia-pa
+Weekends at Voyeur,Voyeur Nightclub (1221 St James St 19107),23:00,dj night queer,https://outxout.com/events/philadelphia-pa

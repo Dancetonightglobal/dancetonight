@@ -1,0 +1,137 @@
+name: ci
+
+# Actions minutes are the binding constraint in a private repository (D-088). A change to docs or
+# Markdown alone runs nothing; any other change runs the check; the browser suite runs only when
+# the check passes and something the interface is built from changed (`ui` below).
+# Pull requests only (D-162): every change reaches main through one, and `foreman ship` merges only
+# when its checks pass, so a second run on main checked the same tree again. Run it by hand on main
+# with workflow_dispatch. Every night the whole suite and the browser suite run on main (D-569).
+on:
+  pull_request:
+    paths-ignore: ["docs/**", "**/*.md"]
+  workflow_dispatch:
+  # D-569: a pull request runs only the tests its change reaches; the whole suite and the browser
+  # suite run every night on main (and by hand with workflow_dispatch).
+  schedule:
+    - cron: "17 4 * * *"
+
+# A newer push to a pull request cancels the run it supersedes. Several chats push in parallel
+# (docs/WORKSTREAMS.md), and a private repository's Actions minutes are limited. Pushes to main are
+# never cancelled.
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      ui: ${{ steps.changes.outputs.ui }}
+    env:
+      DANCETONIGHT_MODE: mock
+      # The write-path tests run against a real Postgres with PostGIS (tests/unit/db-harness.ts);
+      # with CI set they fail rather than skip when this is missing.
+      TEST_DATABASE_URL: postgres://postgres:postgres@localhost:5432/dancetonight_test
+    services:
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: dancetonight_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The parent too: a pull request's merge commit, or main's merge, diffs against it.
+          fetch-depth: 2
+      # Whether the browser suite needs to run: true when any changed file is one the interface is
+      # built from, and true whenever the diff cannot be read, so a doubt runs the suite.
+      - id: changes
+        env:
+          BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }}
+        run: |
+          base=HEAD^1
+          if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+            git fetch --quiet --depth=1 origin "$BEFORE" && base="$BEFORE" || base=""
+          fi
+          if [ -n "$base" ] && files=$(git diff --name-only "$base" HEAD); then
+            echo "$files"
+            # D-569: a change to what every test runs on (packages, the test setup, the schema, this
+            # file) runs the whole suite; anything else runs the tests its files reach.
+            if echo "$files" | grep -qE '^(package\.json$|pnpm-lock\.yaml$|vitest\.config\.|tests/unit/db-harness|src/db/schema/|src/db/migrations/|drizzle/|\.github/workflows/ci\.yml$)'; then
+              echo "full=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "full=false" >> "$GITHUB_OUTPUT"
+            fi
+            # D-881: the browser suite runs when a changed file is part of the site: a build or site
+            # path, or a file the imports of app/ and src/ui/ reach (33 of 40 PRs ran it for city
+            # configs and pipeline rules the site never loads). A script error runs it.
+            ui=$(echo "$files" | node scripts/ci-ui-changed.mjs 2>/dev/null || echo true)
+            if [ "$ui" = "false" ]; then
+              echo "ui=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "ui=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "ui=true" >> "$GITHUB_OUTPUT"
+            echo "full=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm format:check
+      # A pull request: the tests whose imports reach a changed file (vitest --changed against the
+      # base, HEAD^1 of the merge commit). The nightly run, a run by hand, and a change to what every
+      # test runs on: the whole suite (D-569).
+      - if: github.event_name == 'pull_request' && steps.changes.outputs.full != 'true'
+        run: pnpm exec vitest run --changed HEAD^1 --passWithNoTests
+      - if: github.event_name != 'pull_request' || steps.changes.outputs.full == 'true'
+        run: pnpm test
+      - run: pnpm build
+
+  # The Phase 1 proof (SPEC section 11): open it on a phone, filter by style, open a detail page,
+  # use the map, change location. It is a separate job because it needs a browser, and a job that
+  # only the interface can break should not slow the typecheck down. Mock mode serves the New York
+  # seed from memory, so this needs no database, no keys and no network (the tile hosts are
+  # stubbed in the specs themselves).
+  #
+  # It runs after the check, and only when the check found an interface change (D-088): a skipped
+  # job bills no minutes, and a red check no longer pays for a browser run too.
+  e2e:
+    needs: check
+    if: needs.check.outputs.ui == 'true' || github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DANCETONIGHT_MODE: mock
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # Chromium only: the suite runs one project, a Pixel 7 viewport.
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm exec playwright test
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7

@@ -1,0 +1,27 @@
+# Drafted by us from public listings (D-048 Q3), accepted by the owner 2026-10-29 (D-321): biased toward what we already find.
+# DanceTonight Miami recall set, Friday 2026-11-06 (Miami-Dade only). Built 2026-10-29.
+# start_time is local (America/New_York). Confidence notes per row are in evals/recall/miami/recall-notes.md.
+# Excluded on purpose: boat parties and booze cruises, bar crawls and party buses, karaoke, bingo/trivia, kids' events, seated shows (Tributo a Fonseca, burlesque, drag and comedy shows, male revues), and Broward rows (Bachata Overdose Social in Hallandale Beach, Kompa Afrobeats Friday in Lauderhill).
+# For DICE rows source_url is the DICE Miami genre page that lists it, because DICE event links are drawn by JS.
+title,venue,start_time,style,source_url
+Miami Boheme,Ball & Chain,20:00,salsa (live band),https://ballandchainmiami.com/event/miami-boheme-11-06-26/
+Latin Fever Fridays,Hoy Como Ayer,21:00,salsa / Latin,https://ma.to/venue/hoycomoayer.miami
+Giralda Live: Feel the Rhythm with Pamir y La Pachanguísima!,Giralda Plaza (141 Giralda Ave),19:00,salsa (outdoor live band),https://www.eventbrite.com/e/giralda-live-feel-the-rhythm-with-pamir-y-la-pachanguisima-tickets-2003776872566
+"Miami Salsa Party: Lessons, Mojitos, Appetizers & Live Music in South Beach",900 Ocean Dr,19:30,salsa (lesson + club),https://www.eventbrite.com/e/miami-salsa-party-lessons-mojitos-appetizers-live-music-in-south-beach-tickets-1978629000604
+The Hottest Latin Party in Miami – The Mojito Room at Mango’s South Beach,Mango's Tropical Cafe South Beach,22:00,Latin club (salsa/reggaeton),https://www.eventbrite.com/e/the-hottest-latin-party-in-miami-the-mojito-room-at-mangos-south-beach-tickets-1985166573661
+Miami’s Hottest Nightclub Party at Mango’s South Beach,Mango's Tropical Cafe South Beach,22:00,club/DJ,https://www.eventbrite.com/e/miamis-hottest-nightclub-party-at-mangos-south-beach-tickets-2001673311759
+Latin Mix Nights Miami Rooftop,Furia Disco Miami,23:00,Latin club,https://www.eventbrite.com/e/latin-mix-nights-miami-rooftop-tickets-2002084253898
+Dennis Cruz + Moodymann b2b Carl Craig,Club Space Miami,23:00,house/techno,https://www.clubspace.com/shows
+Paige Tomlinson + Lammer + Stüm,The Ground Miami,23:00,house/techno,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+Nico Morano,Do Not Sit On The Furniture,22:00,house,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+BASHKKA,Jolene Sound Room Miami,22:00,house/disco DJ,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+LAURE CROFT & UFO95 Live,Domicile Miami,22:00,electronic club,https://dice.fm/browse/miami-5e3bf1b0fe75488ec46cdf9f/music/dj/techno
+Jason Derulo,LIV Nightclub,23:30,club (big room / hip hop),https://www.livnightclub.com/miami/event/EVE112156200020261106/jason-derulo/
+FLO RIDA AT E11EVEN,E11EVEN,20:00,club (hip hop),https://speakeasygo.com/E11EVEN/FLO-RIDA-AT-E11EVEN?eid=EVE-33XTNB
+ECLECTIC VIBES - AFRO HOUSE  FRIDAYS (AFRO PULSE),Savage Labs Wynwood,19:00,afro house,https://www.eventbrite.com/e/eclectic-vibes-afro-house-fridays-afro-pulse-tickets-1984506872477
+Thank You! A weekly night of RnB + more,299 NW 23rd St,22:00,R&B / hip hop DJ,https://www.eventbrite.com/e/thank-you-a-weekly-night-of-rnb-more-tickets-1989055188613
+REVENGE SOUTH BEACH HIPHOP FRIDAYS,Revenge Miami,23:00,hip hop club,https://www.eventbrite.com/e/revenge-south-beach-hiphop-fridays-tickets-2003193715327
+PRIVE FRIDAYS,Saucy Boodah,22:00,club/DJ,https://www.eventbrite.com/e/prive-fridays-tickets-1256800687689
+DIWALI IN MIAMI - BOLLYWOOD X LATIN X PUNJABI,Smoke Wynwood,22:00,Bollywood / Latin club,https://www.eventbrite.com/e/diwali-in-miami-bollywood-x-latin-x-punjabi-tickets-2003579276551
+Te.Ta.Ma 18.0 DIWALI in MIAMI – A NEW ERA OF SOUTH INDIAN NIGHTLIFE,Club M2 Miami,22:00,South Indian / Bollywood club,https://www.eventbrite.com/e/tetama-180-diwali-in-miami-a-new-era-of-south-indian-nightlife-tickets-2003619280203
+Master Salsa and Bachata at MDC,Miami Dance Center (North Miami Beach),19:00,salsa/bachata (class),https://www.eventbrite.com/e/master-salsa-and-bachata-at-mdc-tickets-1996304989964

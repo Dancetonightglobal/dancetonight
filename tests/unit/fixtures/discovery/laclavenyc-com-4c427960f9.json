@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://LaClaveNYC.com/"
+  },
+  "response": {
+    "url": "https://www.clkmg.com/err/?u=&l=&s=&e=410",
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "undefined-origin",
+      "access-control-max-age": "300",
+      "content-encoding": "gzip",
+      "content-length": "541",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sun, 04 Oct 2026 20:53:56 GMT",
+      "p3p": "CP=\"This is not a P3P policy! See http://www.clkmg.com for more info.\"",
+      "server": "nginx",
+      "vary": "Accept-Encoding",
+      "x-cm-fe": "httpfe-2",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block"
+    },
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Error - Bad Smart Link Domain</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//cdn.clkmg.com/misc/css/style.css\">\n</head>\n\n<body style=\"background-color: #ffffff\"><center><br>\n\n<table width=760 border=0 cellpadding=0 cellspacing=0><tr><td>\n\n    <a href=\"https://www.clickmagick.com\"><img src=\"//cdn.clickmagick.com/images/logo.gif\" border=0></a><br><br>\n\n\t<font class=headline>Sorry &mdash; that domain is no longer hosted here</font><br><br>\n\n\t<b>The link you just clicked resides on a domain that is pointed here, but\n\tthis customer's domain is no longer hosted on this platform.</b><br><br>\n\n\tMost likely this domain was used by one of our previous customers who has forgotten \n    to update their domain, so it still points to our system.<br><br>\n\n\tIf you have any questions, please contact the owner of the link you just clicked.\n\n</td></tr></table><br>\n\n</center>\n</body>\n</html>\n"
+  },
+  "note": "recorded 2026-10-04"
+}

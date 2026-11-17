@@ -1,0 +1,1 @@
+ALTER TABLE "venues" ADD COLUMN "google_place_checked_at" timestamp with time zone;

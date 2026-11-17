@@ -1,0 +1,8 @@
+# Hong Kong known nights for 2026-11-11, researched from the public web on 2026-10-31.
+# A list we drafted is biased toward what we already find (D-048 Q3). Sat 2026-11-14 was tried first and dropped: no organiser page we could load named a night on it.
+# Not loaded on 10-31 (connection reset): agozar.com, hongkongswings.com; ra.co answered 403.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+title,venue,start_time,style,source_url
+Wednesday Social at K-97,K 97 (G/F 11 Lan Kwai Fong Central),21:30,salsa,https://www.salsavida.com/event/china/hong-kong/wednesday-social-at-k-97/
+November Weekly Swing Dance Social,Fringe Dairy (Fringe Club 2 Lower Albert Road Central),20:00,swing,https://www.hkfringeclub.com/en/whatson/2777-November+Weekly+Swing+Dance+Social.html

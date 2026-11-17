@@ -1,0 +1,70 @@
+venueId,name,addressLine,addressLine2,city,state,zipCode,address,doorCode,doorCodeExpiresOn,nextDoorCode,nextDoorCodeExpiresOn,neighborhood,venueArea,website,tags,latitude,longitude
+solas,Solas,232 East 9th St,,New York,NY,10003,"232 East 9th St, New York, NY, 10003",,,,,East Village,NYC,,,40.7298,-73.9865
+pier-45-at-hudson-river-park,Pier 45 at Hudson River Park,Pier 45 at Hudson River Park,,New York,NY,10014,"Pier 45 at Hudson River Park, New York, NY, 10014",,,,,West Village,NYC,,Outdoor,40.7331,-74.0117
+mytangobody,MyTangoBody,134 W 29th St,Suite 608,New York,NY,10001,"134 W 29th St, Suite 608, New York, NY, 10001",,,,,Chelsea,NYC,,,40.7475,-73.9910
+spotlight-dance-studio,Spotlight Dance Studio,245-24 Horace Harding Expwy,,Little Neck,NY,11362,"245-24 Horace Harding Expwy, Little Neck, NY, 11362",,,,,Little Neck,NYC,,,40.7609,-73.7376
+riverside-south-park,Riverside South Park,W 68th St & Riverside Blvd Pier,,New York,NY,10069,"W 68th St & Riverside Blvd Pier, New York, NY, 10069",,,,,Upper West Side,NYC,,Outdoor,40.7792,-73.9889
+ukrainian-private-ballroom,Ukrainian Private Ballroom,140 2nd Ave,,New York,NY,10003,"140 2nd Ave, New York, NY, 10003",,,,,East Village,NYC,,,40.7287,-73.9870
+353-studios,353 Studios,353 W 48th St,2nd Fl,New York,NY,10036,"353 W 48th St, 2nd Fl, New York, NY, 10036",,,,,Midtown West,NYC,,,40.7619,-73.9887
+ripley-grier-studios,Ripley Grier Studios - Midtown,520 8th Ave,17th fl,New York,NY,10018,"520 8th Ave, 17th fl, New York, NY, 10018",,,,,Garment District,NYC,,,40.7532,-73.9927
+andy-s-rehearsal-studios,Andy's Rehearsal Studios,353 W 48th St,3rd fl,New York,NY,10036,"353 W 48th St, 3rd fl, New York, NY, 10036",,,,,Midtown West,NYC,,,40.7619,-73.9887
+ripley-grier-studios-2,Ripley Grier Studios - Midtown,520 8th Ave,,New York,NY,10018,"520 8th Ave, New York, NY, 10018",,,,,Garment District,NYC,,,40.7532,-73.9927
+412-8th-ave-4th-fl,"412 8th Ave, 4th Fl",412 8th Ave,4th Fl,New York,NY,10001,"412 8th Ave, 4th Fl, New York, NY, 10001",,,,,Garment District,NYC,,,40.7503,-73.9940
+ripley-grier-studios-3,Ripley Grier Studios - Columbus Circle,939 8th Ave,room 2B,New York,NY,10019,"939 8th Ave, room 2B, New York, NY, 10019",,,,,Columbus Circle,NYC,,,40.7650,-73.9849
+andy-s-rehearsal-studios-2,Andy's Rehearsal Studios,353 W. 48th St,,New York,NY,10036,"353 W. 48th St, New York, NY, 10036",,,,,Midtown West,NYC,,,40.7619,-73.9887
+you-should-be-dancing,You Should Be Dancing,37W 26th St,2nd Fl,New York,NY,10010,"37W 26th St, 2nd Fl, New York, NY, 10010",,,,,NoMad,NYC,,,40.7444,-73.9903
+connolly-s,Connolly's,121 West 45th St,,New York,NY,10036,"121 West 45th St, New York, NY, 10036",,,,,Times Square,NYC,,,40.7570,-73.9841
+studio-353,Studio 353,353 48th St,2nd Fl,New York,NY,10036,"353 48th St, 2nd Fl, New York, NY, 10036",,,,,Midtown West,NYC,,,40.7619,-73.9887
+la-nacional,La Nacional,239 W 14th St,,New York,NY,10011,"239 W 14th St, New York, NY, 10011",,,,,Chelsea,NYC,,,40.7391,-74.0003
+el-barrio-s-artspace,El Barrio's Artspace,215 E 99 St,,New York,NY,10029,"215 E 99 St, New York, NY, 10029",,,,,East Harlem,NYC,,,40.7879,-73.9466
+studio-contro,Studio Contro,623 Bergen St,,Brooklyn,NY,11238,"623 Bergen St, Brooklyn, NY, 11238",,,,,Prospect Heights,NYC,,,40.6801,-73.9687
+adelante-studios,Adelante Studios,25W 31 St,2nd Fl,New York,NY,10001,"25W 31 St, 2nd Fl, New York, NY, 10001",,,,,NoMad,NYC,,,40.7472,-73.9867
+1138-eastern-parkway,1138 Eastern Parkway,1138 Eastern Parkway,,Brooklyn,NY,11213,"1138 Eastern Parkway, Brooklyn, NY, 11213",,,,,Crown Heights,NYC,,,40.6689,-73.9353
+hungarian-house,Hungarian House,213 E. 82nd St,,New York,NY,10028,"213 E. 82nd St, New York, NY, 10028",,,,,Upper East Side,NYC,,,40.7761,-73.9545
+emmanuel-pierre-antoine-dance-studio,Emmanuel Pierre-Antoine Dance Studio,320 W. 37th St.,2nd Fl.,New York,NY,10018,"320 W. 37th St., 2nd Fl., New York, NY, 10018",,,,,Garment District,NYC,,,40.7542,-73.9935
+ripley-grier-studios-4,Ripley Grier Studios - Midtown,520 8th Ave,studio 17U,New York,NY,10018,"520 8th Ave, studio 17U, New York, NY, 10018",,,,,Garment District,NYC,,,40.7532,-73.9927
+confidance-center,ConfiDance Center,32 Gibraltar Dr,,Morris Plains,NJ,07950,"32 Gibraltar Dr, Morris Plains, NJ, 07950",,,,,Morris Plains,NJ & Metro,,,40.8343,-74.4787
+anthony-reckless-estate,Anthony Reckless Estate,164 Broad St,,Red Bank,NJ,07701,"164 Broad St, Red Bank, NJ, 07701",,,,,Red Bank,NJ & Metro,,,40.3480,-74.0643
+isabels-school-of-dance,Isabel's School of Dance,36A West Fort Lee Rd.,,Bogota,NJ,07603,"36A West Fort Lee Rd., Bogota, NJ, 07603",,,,,Bogota,NJ & Metro,,,40.8762,-74.0308
+986-river-rd-ste-2-edgewater-nj-07020,"986 River Rd STE 2, Edgewater, NJ 07020",986 River Rd,STE 2,Edgewater,NJ,07020,"986 River Rd, STE 2, Edgewater, NJ 07020",,,,,Edgewater,NJ & Metro,,,40.8258,-73.9768
+firehouse-co-4,Firehouse Co #4,54 South Farview Ave,,Paramus,NJ,07652,"54 South Farview Ave, Paramus, NJ, 07652",,,,,Paramus,NJ & Metro,,,40.9444,-74.0704
+paramus-firehouse,Paramus Firehouse,54 S Fairview Ave,,Paramus,NJ,07652,"54 S Fairview Ave, Paramus, NJ, 07652",,,,,Paramus,NJ & Metro,,,40.9444,-74.0704
+118-ridge-avenue-park-ridge-nj-07656,"118 Ridge Avenue, Park Ridge, NJ 07656",118 Ridge Avenue,,Park Ridge,NJ,07656,"118 Ridge Avenue, Park Ridge, NJ 07656",,,,,Park Ridge,NJ & Metro,,,41.0358,-74.0421
+45-stockton-street-princeton-nj,"45 Stockton Street, Princeton, NJ",45 Stockton Street,,Princeton,NJ,08540,"45 Stockton Street, Princeton, NJ, 08540",,,,,Princeton,NJ & Metro,,,40.3480,-74.6652
+euphoria-dance-club,Euphoria Dance Club,105 E Northfield Rd,,Livingston,NJ,07039,"105 E Northfield Rd, Livingston, NJ, 07039",,,,,Livingston,NJ & Metro,https://euphoriadanceclub.com,,40.7739,-74.3178
+im-gallery,IM Gallery,233 Raritan Ave.,,Highland Park,NJ,08904,"233 Raritan Ave., Highland Park, NJ, 08904",,,,,Highland Park,NJ & Metro,,,40.4999,-74.4274
+allied-performing-arts-center,Allied Performing Arts Center,Allied Performing Arts Center Edgeboro Rd,,East Brunswick,NJ,08816,"Allied Performing Arts Center Edgeboro Rd, East Brunswick, NJ 08816",,,,,East Brunswick,NJ & Metro,,,40.4317,-74.4044
+paramus-fire-house-co-no-4,Paramus Fire House Co No 4,54 S. Farview Ave,,Paramus,NJ,07652,"54 S. Farview Ave, Paramus, NJ, 07652",,,,,Paramus,NJ & Metro,,,40.9444,-74.0704
+rogers-dance-center,Rogers Dance Center,216 Passaic Ave,,Fairfield,NJ,07004,"216 Passaic Ave, Fairfield, NJ, 07004",,,,,Fairfield,NJ & Metro,,,40.8839,-74.2958
+starlight-dance-center,Starlight Dance Center,7 High Street,,Nutley,NJ,07110,"7 High Street, Nutley, NJ, 07110",,,,,Nutley,NJ & Metro,,,40.8164,-74.1582
+prototype-237,Prototype 237,237 River St.,,Paterson,NJ,07505,"237 River St., Paterson, NJ, 07505",,,,,Paterson,NJ & Metro,,,40.9192,-74.1718
+171a-chrystie-st,171A Chrystie St,171A Chrystie St,,New York,NY,10002,"171A Chrystie St, New York, NY, 10002",,,,,Lower East Side,NYC,,,40.7212,-73.9923
+pinky-swear,Pinky Swear,171A Chrystie St,,New York,NY,10002,"171A Chrystie St, New York, NY, 10002",,,,,Lower East Side,NYC,,,40.7212,-73.9923
+shakespeare-statue-in-central-park,Shakespeare Statue in Central Park,Shakespeare Statue in Central Park,,New York,NY,10153,"Shakespeare Statue in Central Park, New York, NY, 10153",,,,,Central Park,NYC,,Outdoor,40.7724,-73.9716
+hartford-ballroom,Hartford Ballroom,34 Arbor St,,Hartford,CT,06106,"34 Arbor St, Hartford, CT 06106",,,,,Hartford,NJ & Metro,,,41.7595,-72.7033
+milford-center,Milford Center for the Arts,40 Railroad Ave S,,Milford,CT,06460,"40 Railroad Ave S, Milford, CT, 06460",,,,,Milford,NJ & Metro,http://www.tangosueno.com,,41.2228,-73.0590
+branford-vaca-santos,Vaca Santos Studio,45 NE Industrial,,Branford,CT,06405,"45 NE Industrial, Branford, CT, 06405",,,,,Branford,NJ & Metro,,,41.3008,-72.7673
+norwalk-dance-dimensions,Dance Dimensions,15 Cross Street,,Norwalk,CT,06851,"15 Cross Street, Norwalk, CT, 06851",,,,,Norwalk,NJ & Metro,,,41.1199,-73.4141
+stamford-1231-washington,Stamford Ballroom,1231 Washington Blvd,,Stamford,CT,06902,"1231 Washington Blvd, Stamford, CT 06902",,,,,Stamford,NJ & Metro,,,41.0568,-73.5423
+westhaven-544-campbell,West Haven Studio,544 Campbell Ave,,West Haven,CT,06516,"544 Campbell Ave, West Haven, CT, 06516",,,,,West Haven,NJ & Metro,,,41.2731,-72.9508
+cafe-buenos-aires-huntington,Cafe Buenos Aires,23 Wall St,,Huntington,NY,11743,"23 Wall St, Huntington, NY, 11743",,,,,Huntington,NJ & Metro,,,40.8719,-73.4278
+stony-brook-practice,Stony Brook Practice,1095 N Country Rd,,Stony Brook,NY,11790,"1095 N Country Rd, Stony Brook, NY 11790",,,,,Stony Brook,NJ & Metro,,,40.9203,-73.1293
+flatiron-ballroom-test-aug-20,Flatiron Ballroom Test Aug 20,1123 Broadway,,New York,NY,10010,"1123 Broadway, New York, NY 10010",,,,,Chelsea,NYC,,,40.7433,-73.9893
+church-of-st-paul-st-andrew,Church of St Paul & St Andrew,263 West 86th St,,New York,NY,10024,"263 West 86th St, New York, NY, 10024",,,,,Upper West Side,NYC,,,40.78879,-73.97726
+sanger-hall,Sanger Hall,48-20 Skillman Ave,,Sunnyside,NY,11104,"48-20 Skillman Ave, Sunnyside, NY 11104",,,,,Queens,NYC,,,40.7441,-73.9180
+salmagundi-club,Salmagundi Club,47 5th Ave,,New York,NY,10003,"47 5th Ave, New York, NY, 10003",,,,,Greenwich Village,NYC,,,40.7343,-73.9945
+gibney-dance,Gibney Dance,280 Broadway,53A Chambers St 2nd Fl,New York,NY,10007,"280 Broadway, 53A Chambers St 2nd Fl, New York, NY, 10007",,,,,Lower Manhattan,NYC,,,40.71417,-74.00583
+balance-arts-center,Balance Arts Center,151 W 30th St,,New York,NY,,"151 W 30th St, New York, NY",,,,,Chelsea,NYC,,,40.7475,-73.9904
+brooklyn-peace-center,Brooklyn Peace Center,23 Marcus Garvey Blvd,,Brooklyn,NY,11206,"23 Marcus Garvey Blvd, Brooklyn, NY, 11206",,,,,Brooklyn,NYC,,,40.6990,-73.9409
+centro-espa-ol-de-queens,Centro Español de Queens,41-01 Broadway,,Astoria,NY,11103,"41-01 Broadway, Astoria, NY, 11103",,,,,Astoria,NYC,,,40.754714,-73.9189
+essex-market,Essex Market,88 Essex St,,New York,NY,10002,"88 Essex St, New York, NY, 10002",,,,,Lower East Side,NYC,,,40.71894,-73.9878
+la-capilla-del-tango,La Capilla del Tango,543 Main Street,,New York,NY,10044,"543 Main Street, New York, NY, 10044",,,,,Roosevelt Island,NYC,,,40.7617,-73.9506
+ktown-dance-studio,KTown Dance Studio,38 W 32nd St,,New York,NY,10001,"38 W 32nd St, New York, NY, 10001",,,,,NoMad,NYC,,,40.7478,-73.9873
+the-ginger-man,The Ginger Man,11 E 36th St,,New York,NY,10016,"11 E 36th St, New York, NY, 10016",,,,,Midtown,NYC,,,40.7491,-73.9823
+pearl-studios,Pearl Studios,500 8th Ave,,New York,NY,10018,"500 8th Ave, New York, NY, 10018",,,,,Garment District,NYC,,,40.7528,-73.9926
+princeton-university-fields-center,Princeton University Fields Center,58 Prospect Ave,,Princeton,NJ,08540,"58 Prospect Ave, Princeton, NJ, 08540",,,,,,NJ & Metro,,,40.34915,-74.65175
+atlantic-highlands-art-council,Atlantic Highlands Art Council,54 First Ave,,Atlantic Highlands,NJ,07716,"54 First Ave, Atlantic Highlands, NJ, 07716",,,,,Atlantic Highlands,NJ & Metro,,,40.4128,-74.0373
+paris-koh-gallery,Paris Koh Gallery,509 West 23rd St,,New York,NY,10011,"509 West 23rd St, New York, NY, 10011",,,,,Chelsea,NYC,,,40.7491,-74.0033
+elks-club,Elks Club,40 W Front St,,Red Bank,NJ,07701,"40 W Front St, Red Bank, NJ, 07701",,,,,Red Bank,NJ & Metro,,,40.352041,-74.067008
+mirelle-s,Mirelle's,170 Post Avenue,,Westbury,NY,11590,"170 Post Avenue, Westbury, NY, 11590",,,,,Westbury,NJ & Metro,,,40.75514,-73.58746
+kings-dance-studio,Kings Dance Studio,1207 Quentin Road,,Brooklyn,NY,11229,"1207 Quentin Road, Brooklyn, NY, 11229",,,,,Brooklyn,NYC,,,40.60813,-73.96048

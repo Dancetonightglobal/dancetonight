@@ -1,0 +1,706 @@
+{
+  "about": "The 14 pages the link matcher's rules were tuned on (scratch prototype, 2026-09-28), as cleanPageText wrote them, each case hand-checked. expect is the listing's own link or null; alt is a link also accepted. Flow Fridays is relabelled null after the critic's check (D-073).",
+  "pages": {
+    "bigappleranch-com": "https://www.bigappleranch.com/",
+    "brooklyncontra-org": "https://www.brooklyncontra.org/",
+    "cdny-org": "https://cdny.org/",
+    "frimframjam-com": "https://frimframjam.com/",
+    "nycswings-net": "https://www.nycswings.net/",
+    "nylindy-com": "https://www.nylindy.com/",
+    "rscdsnewyork-org": "https://www.rscdsnewyork.org/",
+    "salsanewyork-com": "https://salsanewyork.com/",
+    "sobs-com-calendar": "https://sobs.com/calendar/",
+    "steppingoutstudios-com-social-events1": "https://www.steppingoutstudios.com/social-events1",
+    "swingremixnyc-com": "https://swingremixnyc.com/",
+    "theronda-us-nyc": "https://www.theronda.us/nyc",
+    "thisweekinswingnyc-com": "https://thisweekinswingnyc.com/",
+    "zoukology-com": "https://events.zoukology.com/"
+  },
+  "cases": [
+    {
+      "page": "theronda-us-nyc",
+      "title": "Los Tres Amigos Milonga",
+      "date": "2026-09-29",
+      "expect": "https://www.theronda.us/event/los-tres-amigos-milonga-2026-09-29-63084ee6"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Tango Cafe",
+      "date": "2026-09-30",
+      "expect": "https://www.theronda.us/event/tango-cafe-2026-09-30-74420121"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Tango la Nacional",
+      "date": "2026-10-01",
+      "expect": "https://www.theronda.us/event/tango-la-nacional-2026-10-01-d7f214bd"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Pasion Milonguera",
+      "date": "2026-10-02",
+      "expect": "https://www.theronda.us/event/pasion-milonguera-2026-10-02-167ec255"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Esa! Milonga",
+      "date": "2026-10-02",
+      "expect": "https://www.theronda.us/event/esa-milonga-2026-10-02-40eee78f"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Victoria's Practica",
+      "date": "2026-10-03",
+      "expect": "https://www.theronda.us/event/victoria-s-practica-2026-10-03-b8384ec8"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Milonga Bienvenida",
+      "date": "2026-09-28",
+      "expect": null,
+      "note": "not on today's page"
+    },
+    {
+      "page": "theronda-us-nyc",
+      "title": "Mondays Milongueros",
+      "date": "2026-09-28",
+      "expect": null,
+      "note": "not on today's page"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "West Coast Swing with Jes Ann Nail",
+      "date": "2026-09-30",
+      "expect": "https://www.nycswings.net/e/wcs-jes-ann-nail/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Social Dance Flow Fridays",
+      "date": "2026-10-02",
+      "expect": null,
+      "note": "the block says Fri, Oct 30 and the event page lists Oct 30 onward: no link for Oct 2 (critic; B1)"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Lindy Hop Guided Practice with Midtown Swings",
+      "date": "2026-09-29",
+      "expect": "https://www.nycswings.net/e/lindy-hop-practice/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Lindy Hop – Swing Dance Classes with Gaby Cook & AJ Howard",
+      "date": "2026-09-29",
+      "expect": "https://www.nycswings.net/e/lindy-hop-midtown-swings/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Intro to Lindy Hop: Beginner Class at Midtown Swings",
+      "date": "2026-09-29",
+      "expect": "https://www.nycswings.net/e/intro-to-lindy-hop/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Midtown Swings – Weekly Swing Dance Party",
+      "date": "2026-09-29",
+      "expect": "https://www.nycswings.net/e/midtown-swings-social/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "West Coast Swing Competitor Training with Dimitri Hector",
+      "date": "2026-09-30",
+      "expect": "https://www.nycswings.net/e/wsdc-competitor-training-with-dimitri-hector/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "West Coast Swing: Progressive Learning with Jes Ann & Dimitri",
+      "date": "2026-09-30",
+      "expect": "https://www.nycswings.net/e/next-level-west-coast-swing/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Intro to West Coast Swing: Beginner Class at House of West",
+      "date": "2026-09-30",
+      "expect": "https://www.nycswings.net/e/west-coast-swing-intro/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "House of West – NYC's Weekly West Coast Swing Party",
+      "date": "2026-09-30",
+      "expect": "https://www.nycswings.net/e/house-of-west/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Beginner West Coast Swing with Jes Ann Nail",
+      "date": "2026-10-01",
+      "expect": "https://www.nycswings.net/e/beginner-west-coast-swing/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "West Coast Swing with Swingiversity",
+      "date": "2026-10-02",
+      "expect": "https://www.nycswings.net/e/swingiversity/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "West Coast Swing Beginner Boot Camp",
+      "date": "2026-10-11",
+      "expect": "https://www.nycswings.net/e/wcs-beginner-bootcamp/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Soul Sunday: West Coast Swing Social",
+      "date": "2026-10-11",
+      "expect": "https://www.nycswings.net/e/soul-sunday/"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "Midtown Swings",
+      "date": null,
+      "expect": null,
+      "alt": "https://www.nycswings.net/e/midtown-swings-social/",
+      "note": "short title inside 3 other titles; acceptable: midtown-swings-social"
+    },
+    {
+      "page": "nycswings-net",
+      "title": "House of West",
+      "date": null,
+      "expect": null,
+      "alt": "https://www.nycswings.net/e/house-of-west/",
+      "note": "inside the intro-class title; acceptable: house-of-west"
+    },
+    {
+      "page": "sobs-com-calendar",
+      "title": "Salsa Groove: Dance Class & Happy Hour",
+      "date": "2026-10-02",
+      "expect": "https://sobs.com/events/salsa-groove-dance-class-happy-hour-10-2-26/"
+    },
+    {
+      "page": "sobs-com-calendar",
+      "title": "Sounds of Bollywood: Desi Saturdays",
+      "date": "2026-10-03",
+      "expect": "https://sobs.com/events/sounds-of-bollywood-desi-saturdays-10-3-26/"
+    },
+    {
+      "page": "sobs-com-calendar",
+      "title": "Sounds of Bollywood: Desi Saturdays",
+      "date": null,
+      "expect": null,
+      "note": "rule: every link is one night's"
+    },
+    {
+      "page": "sobs-com-calendar",
+      "title": "Chow Lee Album Release Show",
+      "date": "2026-09-29",
+      "expect": "https://sobs.com/events/chow-lee-album-release-show/"
+    },
+    {
+      "page": "frimframjam-com",
+      "title": "Oct 1 - DJs Tomo Tanaka & Heather Flock",
+      "date": "2026-10-01",
+      "expect": "https://frimframjam.com/calendar/20261001"
+    },
+    {
+      "page": "frimframjam-com",
+      "title": "Oct 8- NYLX Warmup w/ DJs TJ Savino & Claire Lorman",
+      "date": "2026-10-08",
+      "expect": "https://frimframjam.com/calendar/20261008"
+    },
+    {
+      "page": "frimframjam-com",
+      "title": "Frim Fram Jam",
+      "date": null,
+      "expect": null,
+      "note": "rule; prose links (Code of Conduct) must not match"
+    },
+    {
+      "page": "rscdsnewyork-org",
+      "title": "Brooklyn Social",
+      "date": "2026-10-11",
+      "expect": "https://www.rscdsnewyork.org/all-events/brooklynsocial2026october"
+    },
+    {
+      "page": "rscdsnewyork-org",
+      "title": "Brooklyn Social",
+      "date": null,
+      "expect": null,
+      "note": "rule: five dated links"
+    },
+    {
+      "page": "brooklyncontra-org",
+      "title": "Contra Connections 2: An Intermediate Contra Dance Workshop",
+      "date": "2026-10-04",
+      "expect": "https://www.brooklyncontra.org/events/contra-connections2"
+    },
+    {
+      "page": "brooklyncontra-org",
+      "title": "A Contra Dance for All!",
+      "date": "2026-10-04",
+      "expect": "https://www.brooklyncontra.org/events/2026-07-25-jwff8-pe62l-dn66s-wpj3r",
+      "note": "slug carries an old date"
+    },
+    {
+      "page": "zoukology-com",
+      "title": "NYC ZOUK FESTIVAL 2026",
+      "date": "2026-10-02",
+      "expect": "https://events.zoukology.com/event/nyc-zouk-festival-2026-brazilian-zouk-in-the-heart-of-manhattan-oct-1st-5th-2026"
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Bachata Rosa",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Ballroom and Smooth Practice",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Friday Night Fever",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Paciencia Milonga",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Robins Argentine Tango Practica",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Toda La Noche, Salsa Social",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "All Night Milonga",
+      "date": null,
+      "expect": null,
+      "note": "links the site's home page"
+    },
+    {
+      "page": "steppingoutstudios-com-social-events1",
+      "title": "Zen Zouk",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-09-28",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-09-29",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "White Heat",
+      "date": "2026-09-29",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Josh Lee and the Extended Family",
+      "date": "2026-09-30",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Gotham Jazz",
+      "date": "2026-09-30",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-10-01",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Big Band Swing Concert",
+      "date": "2026-10-02",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Swing Remix",
+      "date": "2026-10-03",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Glenn Crytzer Quintet at Jaywalker",
+      "date": "2026-10-04",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Central Park Swings",
+      "date": "2026-10-04",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Sock Hop Sundays",
+      "date": "2026-10-04",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-10-05",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-10-06",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Positively Swingin",
+      "date": "2026-10-07",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Gotham Jazz",
+      "date": "2026-10-07",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-10-08",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "NYLX",
+      "date": "2026-10-09",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "New York Lindy Exchange",
+      "date": "2026-10-10",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Lindyland Dance Party",
+      "date": "2026-10-10",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "New York Lindy Exchange",
+      "date": "2026-10-11",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Central Park Swings",
+      "date": "2026-10-11",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-10-12",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-10-13",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Swing Night at Pangea",
+      "date": "2026-10-13",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Gotham Jazz",
+      "date": "2026-10-14",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-10-15",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Street Dance! FREE Lesson and Dance Social",
+      "date": "2026-10-17",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Terra Blues Meet-up",
+      "date": "2026-10-19",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-10-19",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-10-20",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Swing ance / Practice Session",
+      "date": "2026-10-20",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Dancing at Young Ethels",
+      "date": "2026-10-21",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Gotham Jazz",
+      "date": "2026-10-21",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-10-22",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "American Lindy Hop Championships",
+      "date": "2026-10-23",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "American Lindy Hop Championships – Friday Night Dance",
+      "date": "2026-10-23",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "American Lindy Hop Championships – Battle of the Swing Bands",
+      "date": "2026-10-24",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "The Victorian Séance — Shanghai Mermaid",
+      "date": "2026-10-24",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Estonian House, 243 E. 34th St., New York, NY",
+      "date": "2026-10-24",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Java Street Community Garden",
+      "date": "2026-10-25",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Spooky Swing Dance with Live Music by the Queer Jazz Collective",
+      "date": "2026-10-25",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-10-26",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-10-27",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "White Heat",
+      "date": "2026-10-27",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Gotham Jazz",
+      "date": "2026-10-28",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-10-29",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Friday Night Blues",
+      "date": "2026-10-30",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Jazz & Gin: Speakeasy Soiree",
+      "date": "2026-10-30",
+      "expect": "https://www.eventbrite.com/e/spooky-jazz-gin-a-speakeasy-soiree-oct-30th-tickets-1996645978871?aff=oddtdtcreator"
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "The Salon: Halloween Stomp 2026",
+      "date": "2026-10-31",
+      "expect": "https://www.eventbrite.com/e/the-salon-halloween-stomp-2026-oct-31st-tickets-1999416584828?aff=oddtdtcreator"
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "7:30pm to 12:30am",
+      "date": "2026-10-31",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy Sessions",
+      "date": "2026-11-02",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-11-03",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Positively Swingin",
+      "date": "2026-11-04",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-11-05",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Swing Remix Presents",
+      "date": "2026-11-07",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Small Dog Jazz Society",
+      "date": "2026-11-07",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Sock Hop Sundays",
+      "date": "2026-11-08",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Back Room Speakeasy",
+      "date": "2026-11-09",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Midtown Swings",
+      "date": "2026-11-10",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Frim Fram Jam",
+      "date": "2026-11-12",
+      "expect": null
+    },
+    {
+      "page": "thisweekinswingnyc-com",
+      "title": "Subway Swing: A Boogie for the Ages",
+      "date": "2026-11-13",
+      "expect": null
+    },
+    {
+      "page": "cdny-org",
+      "title": "English - Tuesdays",
+      "date": "2026-09-29",
+      "expect": null
+    },
+    {
+      "page": "cdny-org",
+      "title": "CONTRA - SATURDAYS",
+      "date": "2026-10-03",
+      "expect": null
+    },
+    {
+      "page": "nylindy-com",
+      "title": "Nylon Lindy Hop",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "swingremixnyc-com",
+      "title": "Salsa Social",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "swingremixnyc-com",
+      "title": "The Brooks Prumo Orchestra",
+      "date": "2026-10-03",
+      "expect": null,
+      "note": "only the /events collection"
+    },
+    {
+      "page": "salsanewyork-com",
+      "title": "Social Dancing",
+      "date": null,
+      "expect": null
+    },
+    {
+      "page": "bigappleranch-com",
+      "title": "October 24, 2026 Ranch",
+      "date": "2026-10-24",
+      "expect": "https://www.bigappleranch.com/event-details-registration/october-24-2026-ranch"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://www.retroclubnyc.com/robots.txt"
+  },
+  "response": {
+    "url": "https://retroclubnyc.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "age": "19690",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "max-age=86400",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a457169f9fc26193-ORD",
+      "content-encoding": "br",
+      "content-type": "text/plain; charset=utf-8",
+      "date": "Sun, 04 Oct 2026 20:55:35 GMT",
+      "expires": "Mon, 05 Oct 2026 15:27:25 GMT",
+      "last-modified": "Sun, 04 Oct 2026 17:20:53 GMT",
+      "link": "<https://retroclubnyc.com/wp-json/>; rel=\"https://api.w.org/\"",
+      "server": "cloudflare",
+      "set-cookie": "__cf_bm=SX7Ohb5mApUMK7TVOb2zasFKBMLLUbf6QEwfPQL_T50-1791147335.6198096-1.0.1.1-6uqLX0LhRy02S7GMePAjV5N7HT6jw24qrkuEB6UXQKV32RYc7QNBLDdsYpMh521.mtHp8d.Mr97NnaDBZ9yEzlmYc.XncS4yCRfWYew.2NMoLMMHbEg5p3.XLw0zxFgP; HttpOnly; SameSite=None; Secure; Path=/; Domain=retroclubnyc.com; Expires=Sun, 04 Oct 2026 21:25:35 GMT",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-robots-tag": "noindex, follow",
+      "x-tec-api-origin": "https://retroclubnyc.com",
+      "x-tec-api-root": "https://retroclubnyc.com/wp-json/tribe/events/v1/",
+      "x-tec-api-version": "v1"
+    },
+    "body": "\n\n\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://retroclubnyc.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+  },
+  "note": "recorded 2026-10-04"
+}

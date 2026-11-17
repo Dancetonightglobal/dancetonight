@@ -1,0 +1,19 @@
+# Mexico City (CDMX, 16 alcaldias only; Estado de Mexico excluded) known dance nights for Thursday 2026-11-05, researched from the public web on 2026-10-29.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Evidence per row (D = page names 2026-11-05; W = weekly night with recent dated evidence; V = venue's own standing hours):
+#  La Flor del Son, Gran Salon El Incomparable, Sensual Room (Barra Indigo), Bachata Feeling (Be Bops Roma), Mama Rumba,
+#   San Luis Club: D (salsavida Mexico City calendar lists each on Thu 2026-11-05; event pages show weekly recurrence, next 2026-10-29)
+#  Despapaye x Funk D (technoairlines CDMX Nov 2026 listing, an RA mirror; RA itself not fetched)
+#  HIGHEST at Bar Oriente D (Eventbrite public page, Thu Nov 5 22:00)
+#  Left out: El Rincon de la Salsa (Cuautitlan Izcalli), Blue Mojito (Nezahualcoyotl) = Edomex; Somos Casineros (no venue);
+#   Salsa Candela monthly party (date of month unknown); La Maraka Nov 5 = Erick Brian pop concert.
+title,venue,start_time,style,source_url
+Son Cubano Nights at La Flor del Son,"La Flor del Son, Puebla 52, Roma Norte, Cuauhtémoc",18:00,son,https://www.salsavida.com/event/mexico/mexico-city/son-cubano-nights-at-la-flor-del-son/
+Weekly Latin Nights (Thursday live orchestras),"Gran Salón El Incomparable, Av. Congreso de la Unión 122, Col. El Parque, Venustiano Carranza",17:00,salsa cumbia,https://www.salsavida.com/event/mexico/mexico-city/weekly-latin-nights-at-gran-salon-el-incomparable/
+Sensual Room - Bachata & Kizomba,"Barra Indigo, Casas Grandes 245, Narvarte Poniente, Benito Juárez",20:00,bachata kizomba,https://www.salsavida.com/event/mexico/mexico-city/sensual-room-bachata-kizomba-at-barra-indigo/
+Bachata Feeling,"Be Bops Roma, Medellín 188, Roma Norte, Cuauhtémoc",19:30,bachata,https://www.salsavida.com/event/mexico/mexico-city/bachata-feeling-at-be-bops-roma/
+Mama Rumba Salsa Nights,"Mama Rumba, Querétaro 230, Roma Norte, Cuauhtémoc",21:00,salsa,https://www.salsavida.com/event/mexico/mexico-city/salsa-nights-at-mama-rumba/
+Salsa en Vivo,"San Luis Club, Roma Norte, Cuauhtémoc",20:00,salsa,https://www.salsavida.com/event/mexico/mexico-city/salsa-en-vivo-at-san-luis-club/
+Despapaye x Fünk,"Fünk, Mexico City",22:00,techno,https://www.technoairlines.com/event/despapaye-x-funk-funk-2026-11-05
+HÏGHÊŠT,"Bar Oriente, Mexico City",22:00,dj_night,https://www.eventbrite.com.mx/e/highest-bar-oriente-tickets-2003376496029

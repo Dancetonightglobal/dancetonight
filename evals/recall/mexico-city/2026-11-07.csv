@@ -1,0 +1,28 @@
+# Mexico City (CDMX, 16 alcaldias only; Estado de Mexico excluded) known dance nights for Saturday 2026-11-07, researched from the public web on 2026-10-29.
+# Only title is required. start_time is local: 21:00, 9pm or 9:30pm; after midnight belongs to the night before.
+# source_url: the event's own page if you have it, else the organiser's site. Lines starting with # are skipped.
+# Evidence per row (D = page names 2026-11-07; W = weekly night with recent dated evidence; V = venue's own standing hours):
+#  La Flor del Son, Gran Salon El Incomparable (Super Sabados), Salon Cubania, Mama Rumba, San Luis Club: D (salsavida Mexico
+#   City calendar lists each on Sat 2026-11-07; event pages show weekly recurrence, next 2026-10-29/31)
+#  Orange Lamp, House Late Night, Ofrenda Montelobos, Colombia No Te Olvido, DOSE.003, AEREA, Nutroween x Montes,
+#   Mutek Mx x Funk, Panic Room x Brutal Mx, Yu Yu Cine Club MUTEK: D (technoairlines CDMX Nov 2026 listing, an RA mirror;
+#   RA itself not fetched). Venue alcaldia not checked for Club Rumores, Brutal Mx, Outline.
+#  LEFT OUT: Ultra Mexico, a stadium festival the site drops by design (technoairlines festival listing Sat 7 - Sun 8 Nov; publimetro 2026-07-28 says Estadio Banorte)
+#  Left out: Rincon de la Salsa, Mambocafe Gustavo Baz, Gran Salon Victoria (Tlalnepantla/Izcalli), Salsa Salvaje, Blue Mojito,
+#   Candela y Rumba (Nezahualcoyotl) = Edomex; Yoyaku World Tour (Guadalajara); Somos Casineros (no venue); Salsa Candela (monthly).
+title,venue,start_time,style,source_url
+Son Cubano Nights at La Flor del Son,"La Flor del Son, Puebla 52, Roma Norte, Cuauhtémoc",18:00,son,https://www.salsavida.com/event/mexico/mexico-city/son-cubano-nights-at-la-flor-del-son/
+Super Sábados (Weekly Latin Nights),"Gran Salón El Incomparable, Av. Congreso de la Unión 122, Col. El Parque, Venustiano Carranza",17:00,salsa cumbia,https://www.salsavida.com/event/mexico/mexico-city/weekly-latin-nights-at-gran-salon-el-incomparable/
+Sábado de Salsa,"Salón Cubanía, Acoxpa 550, Ex-Hacienda Coapa, Tlalpan",20:00,salsa,https://www.salsavida.com/event/mexico/mexico-city/sabado-de-salsa-at-salon-cubania/
+Mama Rumba Salsa Nights,"Mama Rumba, Querétaro 230, Roma Norte, Cuauhtémoc",21:00,salsa,https://www.salsavida.com/event/mexico/mexico-city/salsa-nights-at-mama-rumba/
+Salsa en Vivo,"San Luis Club, Roma Norte, Cuauhtémoc",20:00,salsa,https://www.salsavida.com/event/mexico/mexico-city/salsa-en-vivo-at-san-luis-club/
+Orange Lamp Vol. IV,"Caleta, Dr. Atl 62, Santa María la Ribera",16:00,house,https://www.technoairlines.com/event/orange-lamp-vol-iv-tba-caleta-dr-atl-62-2026-11-07
+House Late Night,Bardo Speakeasy,19:00,house,https://www.technoairlines.com/event/house-late-night-bardo-speakeasy-2026-11-07
+Ofrenda Montelobos (Satori; SG Lewis; Hardt Antoine),"Frontón Bucareli, Cuauhtémoc",20:00,house,https://www.technoairlines.com/event/ofrenda-montelobos-fronton-bucareli-2026-11-07
+COLOMBIA NO TE OLVIDO,Outline,20:00,house,https://www.technoairlines.com/event/colombia-no-te-olvido-outline-2026-11-07
+DOSE.003,Club Rumores,21:00,techno,https://www.technoairlines.com/event/dose-003-club-rumores-2026-11-07
+AEREA (live),Bar Oriente,22:00,electronic,https://www.technoairlines.com/event/aerea-live-bar-oriente-2026-11-07
+NUTROWEEN X MONTES,"Foro Roma, Roma",22:00,dj_night,https://www.technoairlines.com/event/nutroween-x-montes-foro-roma-2026-11-07
+Mutek Mx x Fünk: Maayan Nidam + Phanta,Fünk,23:00,techno,https://www.technoairlines.com/event/mutek-mx-x-funk-maayan-nidam-priori-phanta-funk-2026-11-07
+Panic Room x Brutal Mx: Ultra morning party,Brutal Mx,23:00,techno,https://www.technoairlines.com/event/panic-room-x-brutal-mx-ultra-morning-party-brutal-mx-2026-11-07
+Yu Yu Cine Club: MUTEK presenta Super Special Guest,Yu Yu Cine Club,23:00,electronic,https://www.technoairlines.com/event/yu-yu-cine-club-mutek-presenta-super-special-guest-yu-yu-cine-club-2026-11-07

@@ -1,0 +1,7013 @@
+{
+  "recorded": "2026-09-29 (ingest run 33), keys masked",
+  "events": [
+    {
+      "name": "Don Omar \"The Last King World Tour\"",
+      "type": "event",
+      "id": "17GZv0G61DlIaN2",
+      "url": "https://www.ticketmaster.com/don-omar-the-last-king-world-brooklyn-new-york-10-10-2026/event/300064AEEBA098CF",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-11T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAv1",
+            "name": "Hip-Hop/Rap"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vkdv",
+            "name": "Reggaeton"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Barclays Center",
+            "id": "KovZ917AtP3",
+            "postalCode": "11217",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "620 Atlantic Ave"
+            },
+            "location": {
+              "longitude": "-73.97519000",
+              "latitude": "40.68285000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Don Omar",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAv1",
+                  "name": "Hip-Hop/Rap"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkdv",
+                  "name": "Reggaeton"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reggaet\u00f3n Y2K (18+)",
+      "type": "event",
+      "id": "k7vGF_3lsh7oM",
+      "url": "https://www.ticketmaster.com/reggaeton-y2k-18-new-york-new-york-10-10-2026/event/0000652AF16C4477",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "21:00:00",
+          "dateTime": "2026-10-11T01:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Irving Plaza Powered By Verizon 5G",
+            "id": "KovZpaFPje",
+            "postalCode": "10003",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "17 Irving Place"
+            },
+            "location": {
+              "longitude": "-73.98844690",
+              "latitude": "40.73491700"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Y2k",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Don Omar \"The Last King World Tour\"",
+      "type": "event",
+      "id": "vvG1FZ_1TkGLsD",
+      "url": "https://www.ticketmaster.com/don-omar-the-last-king-world-newark-new-jersey-10-11-2026/event/020064AFC631FC7B",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-11",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-12T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAv1",
+            "name": "Hip-Hop/Rap"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vkdv",
+            "name": "Reggaeton"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Prudential Center",
+            "id": "KovZpZAE7vaA",
+            "postalCode": "07102",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Newark"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "25 Lafayette Street"
+            },
+            "location": {
+              "longitude": "-74.17121214",
+              "latitude": "40.73340555"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Don Omar",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAv1",
+                  "name": "Hip-Hop/Rap"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkdv",
+                  "name": "Reggaeton"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "It's A 2000's Party!",
+      "type": "event",
+      "id": "rZ7HnEZ1AfJf4S",
+      "url": "https://www.ticketweb.com/event/its-a-2000s-party-williams-center-black-tickets/14994573",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-03T01:00:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "21:00:00",
+          "dateTime": "2026-10-03T01:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 27.46,
+          "max": 70.72
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Williams Center - Black Box - Rutherford",
+            "id": "rZ7HnEZ17_SFS",
+            "postalCode": "07070",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Rutherford"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "15 Sylvan Street"
+            },
+            "location": {
+              "longitude": "-74.103330",
+              "latitude": "40.827110"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "Boot Scootin' Line Dance Party At Hard Rock Cafe",
+      "type": "event",
+      "id": "1Ae0Z_3GkDULvLQ",
+      "url": "https://www.ticketweb.com/event/boot-scootin-line-dance-party-hard-rock-cafe-times-square-tickets/14319434?REFERRAL_ID=tmfeed",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-08",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-09T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7n1",
+            "name": "Miscellaneous"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAAE",
+            "name": "Community/Civic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vFlv",
+            "name": "Community/Civic"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Hard Rock Cafe",
+            "id": "KovZpZAdnE1A",
+            "postalCode": "10036",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "1501 Broadway"
+            },
+            "location": {
+              "longitude": "-73.98618500",
+              "latitude": "40.75679060"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "Do Si Don'tcha: Country Line Dancing ",
+      "type": "event",
+      "id": "k7vGF_3BMKQUt",
+      "url": "https://www.ticketmaster.com/do-si-dontcha-country-line-dancing-brooklyn-new-york-09-30-2026/event/0000652EB74DADA9",
+      "dates": {
+        "start": {
+          "localDate": "2026-09-30",
+          "localTime": "19:00:00",
+          "dateTime": "2026-09-30T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAv6",
+            "name": "Country"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAFa",
+            "name": "Country"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Bowl",
+            "id": "KovZpZAIetFA",
+            "postalCode": "11249",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "61 Wythe Ave"
+            },
+            "location": {
+              "longitude": "-73.95734600",
+              "latitude": "40.72192600"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Do Si Don'tcha",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAv6",
+                  "name": "Country"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAFa",
+                  "name": "Country"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bebe Stockwell",
+      "type": "event",
+      "id": "k7vGF_1MYsu-W",
+      "url": "https://www.ticketmaster.com/bebe-stockwell-new-york-new-york-09-29-2026/event/000064ADF0C4D87D",
+      "dates": {
+        "start": {
+          "localDate": "2026-09-29",
+          "localTime": "19:00:00",
+          "dateTime": "2026-09-29T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Bebe Stockwell",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEk",
+                  "name": "Indie Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "gabrielle hope",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAva",
+                  "name": "Folk"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAn7",
+                  "name": "Folk"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seasick Steve",
+      "type": "event",
+      "id": "k7vGF_o1yOxlx",
+      "url": "https://www.ticketmaster.com/seasick-steve-new-york-new-york-09-30-2026/event/00006512B9822AE2",
+      "dates": {
+        "start": {
+          "localDate": "2026-09-30",
+          "localTime": "19:00:00",
+          "dateTime": "2026-09-30T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Seasick Steve",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Josh Okeefe",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAva",
+                  "name": "Folk"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAn7",
+                  "name": "Folk"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Eric Bibb",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvd",
+                  "name": "Blues"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAAd",
+                  "name": "Blues"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bolden. Who you really are. Tour 2026.",
+      "type": "event",
+      "id": "k7vGF_aDy3F4y",
+      "url": "https://www.ticketmaster.com/bolden-who-you-really-are-tour-new-york-new-york-10-01-2026/event/0000649EF9488579",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-01",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-01T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "cancelled"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Bolden.",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAIJ",
+                  "name": "Jazz-House"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "When Chai Met Toast: Joy of Little Things Tour",
+      "type": "event",
+      "id": "k7vGFbwmhE-vi",
+      "url": "https://www.ticketmaster.com/when-chai-met-toast-joy-of-new-york-new-york-10-02-2026/event/0000632B9B9E106C",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-02T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "When Chai Met Toast",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEk",
+                  "name": "Indie Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snail Mail w/ Soccer Mommy",
+      "type": "event",
+      "id": "Z7r9jZ1A7PkG7",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PkG7",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-02T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Starland Ballroom",
+            "id": "ZFr9jZ7eF1",
+            "postalCode": "08872",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Sayreville"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "570 Jernee Mill Road",
+              "line2": "Sayreville, NJ"
+            },
+            "location": {
+              "longitude": "-74.344902000",
+              "latitude": "40.461800000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Snail Mail",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAde",
+                  "name": "Indie Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Soccer Mommy",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAdv",
+                  "name": "Indie Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Brennan Wedl",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nl",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DANCEHALL at 9AM",
+      "type": "event",
+      "id": "k7vGF_3XpqIao",
+      "url": "https://www.ticketmaster.com/dancehall-at-9am-new-york-new-york-10-03-2026/event/0000652F96768251",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "09:00:00",
+          "dateTime": "2026-10-03T13:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7n1",
+            "name": "Miscellaneous"
+          },
+          "genre": {
+            "id": "KnvZfZ7v7ll",
+            "name": "Undefined"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAv1",
+            "name": "Undefined"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7lt",
+            "name": "Event Style"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7vAkl",
+            "name": "Party/Gala"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Manhattan Center Hammerstein Ballroom",
+            "id": "KovZpZAEAE6A",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "311 West 34th Street"
+            },
+            "location": {
+              "longitude": "-73.99430900",
+              "latitude": "40.75266400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "9AM Banger",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7n1",
+                  "name": "Miscellaneous"
+                },
+                "genre": {
+                  "id": "KnvZfZ7v7ll",
+                  "name": "Undefined"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAv1",
+                  "name": "Undefined"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAkl",
+                  "name": "Party/Gala"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "JJerome87",
+      "type": "event",
+      "id": "k7vGF_55ffTCc",
+      "url": "https://www.ticketmaster.com/jjerome87-new-york-new-york-10-03-2026/event/000064B2D453F3AD",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-03T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "cancelled"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6dt",
+            "name": "Alternative Rock"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "JJerome87",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAde",
+                  "name": "Indie Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "The Rikkies with summerclub & Natalie Wilson",
+      "type": "event",
+      "id": "k7vGF_oJhkX9Y",
+      "url": "https://www.ticketmaster.com/the-rikkies-with-summerclub-natalie-wilson-new-york-new-york-10-03-2026/event/000065199B1BE5F0",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-04T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6dt",
+            "name": "Alternative Rock"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "The Rikkies",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAvn",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "summerclub",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAvn",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Natalie Wilson",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEk",
+                  "name": "Indie Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wildlife Wednesday Reunion ft Manny The Greek, Kirk Lopez & DJ Unique (21 and Over)",
+      "type": "event",
+      "id": "Z7r9jZ1A70Axb",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70Axb",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-04T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nl",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Starland Ballroom",
+            "id": "ZFr9jZ7eF1",
+            "postalCode": "08872",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Sayreville"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "570 Jernee Mill Road",
+              "line2": "Sayreville, NJ"
+            },
+            "location": {
+              "longitude": "-74.344902000",
+              "latitude": "40.461800000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Manny The Greek",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nl",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Kirk Lopez",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nl",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "GIRL NOISE Music Festival",
+      "type": "event",
+      "id": "k7vGF_oXNB5Ox",
+      "url": "https://www.ticketmaster.com/girl-noise-music-festival-new-york-new-york-10-04-2026/event/0000651FA3E8B822",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-04",
+          "localTime": "18:00:00",
+          "dateTime": "2026-10-04T22:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6dt",
+            "name": "Alternative Rock"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "girlpuppy",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvv",
+                  "name": "Alternative"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAde",
+                  "name": "Indie Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "DOUBLE STANDARD",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6Fn",
+                  "name": "Post-Punk"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Sabrina Song",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Screenager",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Simone",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Asha Banks: something inbetween tour",
+      "type": "event",
+      "id": "k7vGF_uklfv8H",
+      "url": "https://www.ticketmaster.com/asha-banks-something-inbetween-tour-new-york-new-york-10-05-2026/event/000064D1AB50143C",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-05",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-05T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Asha Banks",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Alfie Jukes",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Avery Cochrane: Weapons Of Iridescence Tour",
+      "type": "event",
+      "id": "k7vGF_8RW2rur",
+      "url": "https://www.ticketmaster.com/avery-cochrane-weapons-of-iridescence-tour-new-york-new-york-10-07-2026/event/0000650BFD3DE35E",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-07",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-07T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Avery Cochrane",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEk",
+                  "name": "Indie Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Alexa Cappelli",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wynonna Judd: The Hard Truth Live",
+      "type": "event",
+      "id": "k7vGF_2KvZ3zq",
+      "url": "https://www.ticketmaster.com/wynonna-judd-the-hard-truth-live-new-york-new-york-10-08-2026/event/000064F4C1012E1D",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-08",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-08T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAv6",
+            "name": "Country"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAFa",
+            "name": "Country"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Wynonna Judd",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAv6",
+                  "name": "Country"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAFa",
+                  "name": "Country"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Face to Face w/ The Movielife",
+      "type": "event",
+      "id": "Z7r9jZ1AAZ8oE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZ8oE",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-09T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvn",
+            "name": "Alternative Rock"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Starland Ballroom",
+            "id": "ZFr9jZ7eF1",
+            "postalCode": "08872",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Sayreville"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "570 Jernee Mill Road",
+              "line2": "Sayreville, NJ"
+            },
+            "location": {
+              "longitude": "-74.344902000",
+              "latitude": "40.461800000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Face To Face",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "The Movielife",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Deadguy",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nl",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Arlo",
+      "type": "event",
+      "id": "k7vGF_GwgQ8WM",
+      "url": "https://www.ticketmaster.com/arlo-new-york-new-york-10-09-2026/event/000064CCB5690F77",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-10T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Arlo",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAde",
+                  "name": "Singer/Vocalist"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Mayv",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAE7",
+                  "name": "Dub Electronica"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAaE",
+                  "name": "DJ"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Faux Real",
+      "type": "event",
+      "id": "k7vGF_55pgROV",
+      "url": "https://www.ticketmaster.com/faux-real-new-york-new-york-10-10-2026/event/000064B2D6D6F834",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-11T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Faux Real",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Babe America",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Bryce Xavier",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAdn",
+                  "name": "Artist"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "AFI",
+      "type": "event",
+      "id": "Z7r9jZ1A70pfs",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70pfs",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-11T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvn",
+            "name": "Alternative Rock"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Starland Ballroom",
+            "id": "ZFr9jZ7eF1",
+            "postalCode": "08872",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Sayreville"
+            },
+            "state": {
+              "name": "New Jersey",
+              "stateCode": "NJ"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "570 Jernee Mill Road",
+              "line2": "Sayreville, NJ"
+            },
+            "location": {
+              "longitude": "-74.344902000",
+              "latitude": "40.461800000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "AFI",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Robert Lester Folsom",
+      "type": "event",
+      "id": "k7vGF_5K_UAkF",
+      "url": "https://www.ticketmaster.com/robert-lester-folsom-new-york-new-york-10-11-2026/event/000064B4D9D85188",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-11",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-11T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Robert Lester Folsom",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Liz Cooper",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v66A",
+                  "name": "Indie Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wesley Joseph",
+      "type": "event",
+      "id": "k7vGF_FNi_wYu",
+      "url": "https://www.ticketmaster.com/wesley-joseph-new-york-new-york-10-12-2026/event/00006488EC672C0D",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-12",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-12T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAv1",
+            "name": "Hip-Hop/Rap"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEI",
+            "name": "Trap"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Bowery Ballroom",
+            "id": "KovZpZA7dkJA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "6 Delancey St."
+            },
+            "location": {
+              "longitude": "-73.99354200",
+              "latitude": "40.72036400"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Wesley Joseph",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAv1",
+                  "name": "Hip-Hop/Rap"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkvl",
+                  "name": "Hip-Hop/Rap"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAel",
+                  "name": "Individual"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAqI1d",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-09-30-2026/event/3B00643505768283",
+      "dates": {
+        "start": {
+          "localDate": "2026-09-30",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-01T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kruder & Dorfmeister (16 and Over)",
+      "type": "event",
+      "id": "Z7r9jZ1A7-YAv",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-YAv",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-01",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-02T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Steel",
+            "id": "Z7r9jZad7c",
+            "postalCode": "11222",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "319 Frost St"
+            },
+            "location": {
+              "longitude": "-73.945602000",
+              "latitude": "40.727200000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Kruder & Dorfmeister",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cunty Classics",
+      "type": "event",
+      "id": "rZ7HnEZ1AfGVC7",
+      "url": "https://www.ticketweb.com/event/cunty-classics-night-club-101-tickets/14334384",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-02T02:00:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-01",
+          "localTime": "22:00:00",
+          "dateTime": "2026-10-02T02:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 0.0,
+          "max": 0.0
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Night Club 101",
+            "id": "rZ7HnEZ17QkQd",
+            "postalCode": "10009",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "101 Avenue A"
+            },
+            "location": {
+              "longitude": "-73.984043",
+              "latitude": "40.725911"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "The Strokes w/ Beach House",
+      "type": "event",
+      "id": "Z7r9jZ1A7PPvE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PPvE",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "16:00:00",
+          "dateTime": "2026-10-02T20:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvn",
+            "name": "Alternative Rock"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Flushing Meadows Corona Park",
+            "id": "Z7r9jZadPd",
+            "postalCode": "11367",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Flushing"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "Queens, NY"
+            },
+            "location": {
+              "longitude": "-73.823700000",
+              "latitude": "40.729099000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "The Strokes",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Beach House",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "TV On The Radio",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Fcukers",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "jigitz",
+      "type": "event",
+      "id": "k7vGF_5M8BBIM",
+      "url": "https://www.ticketmaster.com/jigitz-brooklyn-new-york-10-02-2026/event/000064BDD0EBAA37",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-03T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Paramount",
+            "id": "KovZpZA77ldA",
+            "postalCode": "11201",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "385 Flatbush Ave. Extension"
+            },
+            "location": {
+              "longitude": "-73.98124051",
+              "latitude": "40.69137302"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "jigitz",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Killen.",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAI6",
+                  "name": "House"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAdn",
+                  "name": "Artist"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAxF14",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-02-2026/event/3B00643505888295",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-03T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dusky - 21+",
+      "type": "event",
+      "id": "Z7r9jZ1A7PU4M",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PU4M",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-02",
+          "localTime": "22:30:00",
+          "dateTime": "2026-10-03T02:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Elsewhere",
+            "id": "Z7r9jZadKA",
+            "postalCode": "11237",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "599 Johnson Ave., Brooklyn, NY 11237"
+            },
+            "location": {
+              "longitude": "-73.921204000",
+              "latitude": "40.704399000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Dusky",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dom Dolla w/ Peggy Gou",
+      "type": "event",
+      "id": "Z7r9jZ1A70_P9",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70_P9",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "15:00:00",
+          "dateTime": "2026-10-03T19:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Flushing Meadows Corona Park",
+            "id": "Z7r9jZadPd",
+            "postalCode": "11367",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Flushing"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "Queens, NY"
+            },
+            "location": {
+              "longitude": "-73.823700000",
+              "latitude": "40.729099000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Dom Dolla",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Peggy Gou",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvl",
+                  "name": "Other"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1I",
+                  "name": "Other"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Basement Jaxx - DJ Set",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvl",
+                  "name": "Other"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1I",
+                  "name": "Other"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Not Without Friends",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAI6",
+                  "name": "House"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Earlybirds Club - Ages 21+",
+      "type": "event",
+      "id": "Z7r9jZ1AAv8at",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAv8at",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "18:00:00",
+          "dateTime": "2026-10-03T22:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAJ1",
+            "name": "Club Dance"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Webster Hall",
+            "id": "ZFr9jZ7v7k",
+            "postalCode": "10003",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "125 East 11th Street"
+            },
+            "location": {
+              "longitude": "-73.989098000",
+              "latitude": "40.731602000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Earlybirds Club",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6E",
+                  "name": "Festival"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "For The Love Of Freestyle",
+      "type": "event",
+      "id": "k7vGF_10_HNeq",
+      "url": "https://www.ticketmaster.com/for-the-love-of-freestyle-westbury-new-york-10-03-2026/event/000064A919F2309D",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "19:30:00",
+          "dateTime": "2026-10-03T23:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAee",
+            "name": "R&B"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vkIt",
+            "name": "R&B"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Flagstar at Westbury Music Fair",
+            "id": "KovZpZAEAEaA",
+            "postalCode": "11590",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Westbury"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "960 Brush Hollow Road"
+            },
+            "location": {
+              "longitude": "-73.56055321",
+              "latitude": "40.77517125"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Lisa Lisa",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAee",
+                  "name": "R&B"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkIt",
+                  "name": "R&B"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "George Lamond",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeF",
+                  "name": "World"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vFdJ",
+                  "name": "Latin"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Judy Torres",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Cynthia",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Sweet Sensation",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAee",
+                  "name": "R&B"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkIt",
+                  "name": "R&B"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Coro",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Soave",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "The Cover Girls",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAee",
+                  "name": "R&B"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkIt",
+                  "name": "R&B"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "C-Bank",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAee",
+                  "name": "R&B"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkIt",
+                  "name": "R&B"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAJF1J",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-03-2026/event/3B006435059882A6",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-04T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ninajirachi w/ MGNA Crrrta",
+      "type": "event",
+      "id": "Z7r9jZ1A70oAf",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70oAf",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "20:30:00",
+          "dateTime": "2026-10-04T00:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nl",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Steel",
+            "id": "Z7r9jZad7c",
+            "postalCode": "11222",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "319 Frost St"
+            },
+            "location": {
+              "longitude": "-73.945602000",
+              "latitude": "40.727200000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Ninajirachi",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nl",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "MGNA Crrrta",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA76",
+                  "name": "Group"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "SUPERTALL",
+      "type": "event",
+      "id": "rZ7HnEZ1Af19j0",
+      "url": "https://www.ticketweb.com/event/supertall-night-club-101-tickets/14297724",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-04T03:00:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-03",
+          "localTime": "23:00:00",
+          "dateTime": "2026-10-04T03:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 0.0,
+          "max": 0.0
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Night Club 101",
+            "id": "rZ7HnEZ17QkQd",
+            "postalCode": "10009",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "101 Avenue A"
+            },
+            "location": {
+              "longitude": "-73.984043",
+              "latitude": "40.725911"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "Bombargo",
+      "type": "event",
+      "id": "k7vGF_GK0yCiO",
+      "url": "https://www.ticketmaster.com/bombargo-brooklyn-new-york-10-04-2026/event/000064C4E4E4EB20",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-04",
+          "localTime": "19:30:00",
+          "dateTime": "2026-10-04T23:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Bowl",
+            "id": "KovZpZAIetFA",
+            "postalCode": "11249",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "61 Wythe Ave"
+            },
+            "location": {
+              "longitude": "-73.95734600",
+              "latitude": "40.72192600"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Bombargo",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "The Slim Kings",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6dt",
+                  "name": "Alternative Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Fudge",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Operator, Silas Five, lionheart 5000",
+      "type": "event",
+      "id": "rZ7HnEZ1AfGPZf",
+      "url": "https://www.ticketweb.com/event/operator-silas-five-lionheart-5000-night-club-101-tickets/14325014",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-05T01:30:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-04",
+          "localTime": "22:00:00",
+          "dateTime": "2026-10-05T02:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v66A",
+            "name": "Indie Rock"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAJe",
+            "name": "Ambient"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 20.01,
+          "max": 20.01
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Night Club 101",
+            "id": "rZ7HnEZ17QkQd",
+            "postalCode": "10009",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "101 Avenue A"
+            },
+            "location": {
+              "longitude": "-73.984043",
+              "latitude": "40.725911"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "Hell Gate Battle of Journalist Bands",
+      "type": "event",
+      "id": "rZ7HnEZ1AfGO80",
+      "url": "https://www.ticketweb.com/event/hell-gate-battle-of-journalist-night-club-101-tickets/14320424",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-06T23:00:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-06",
+          "localTime": "19:30:00",
+          "dateTime": "2026-10-06T23:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvJ",
+            "name": "Alternative"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvJ",
+            "name": "Alternative"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAeA",
+            "name": "Rock"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7v6F1",
+            "name": "Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvv",
+            "name": "Alternative"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAvJ",
+            "name": "Alternative"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        },
+        {
+          "primary": false,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAE6",
+            "name": "Electronica Mainstream"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 27.22,
+          "max": 27.22
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Night Club 101",
+            "id": "rZ7HnEZ17QkQd",
+            "postalCode": "10009",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "101 Avenue A"
+            },
+            "location": {
+              "longitude": "-73.984043",
+              "latitude": "40.725911"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Lost Dog",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAeA",
+                  "name": "Rock"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7v6F1",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAnI1y",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-07-2026/event/3B00643505AA82B9",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-07",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-08T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Project 91 Presents DJ Pauly D",
+      "type": "event",
+      "id": "Z7r9jZ1A7Pefk",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Pefk",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "18:00:00",
+          "dateTime": "2026-10-09T22:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "The Rooftop at Pier 17",
+            "id": "Z7r9jZadrI",
+            "postalCode": "10038",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "89 South Street"
+            },
+            "location": {
+              "longitude": "-74.002899000",
+              "latitude": "40.708801000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "DJ Pauly D",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Project 91 Presents DJ Pauly D",
+      "type": "event",
+      "id": "k7vGF_5HQD5QD",
+      "url": "https://www.axs.com/events/1438481/dj-pauly-d-tickets?skin=therooftopatpier17",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "18:00:00",
+          "dateTime": "2026-10-09T22:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "The Rooftop at Pier 17",
+            "id": "KovZpZAatEFA",
+            "postalCode": "10038",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "89 South Street"
+            },
+            "location": {
+              "longitude": "-74.00382700",
+              "latitude": "40.70636900"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "DJ Pauly D",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bop To The Top (18+)",
+      "type": "event",
+      "id": "k7vGF_KOQXo2p",
+      "url": "https://www.ticketmaster.com/bop-to-the-top-18-new-york-new-york-10-09-2026/event/000065381AF913D6",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-10T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Irving Plaza Powered By Verizon 5G",
+            "id": "KovZpaFPje",
+            "postalCode": "10003",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "17 Irving Place"
+            },
+            "location": {
+              "longitude": "-73.98844690",
+              "latitude": "40.73491700"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Bop To The Top",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAAv",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAcz51",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-09-2026/event/3B00643505B782CA",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-10T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dadi Freyr (16 and Over)",
+      "type": "event",
+      "id": "Z7r9jZ1A7-V4S",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-V4S",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-10T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Steel",
+            "id": "Z7r9jZad7c",
+            "postalCode": "11222",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "319 Frost St"
+            },
+            "location": {
+              "longitude": "-73.945602000",
+              "latitude": "40.727200000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Da\u00f0i Freyr",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJJ",
+                  "name": "Dance Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Send It Up",
+      "type": "event",
+      "id": "rZ7HnEZ1AfGUqf",
+      "url": "https://www.ticketweb.com/event/send-it-up-night-club-101-tickets/14336754",
+      "dates": {
+        "access": {
+          "startDateTime": "2026-10-10T02:00:00Z",
+          "startApproximate": false,
+          "endApproximate": false
+        },
+        "start": {
+          "localDate": "2026-10-09",
+          "localTime": "22:00:00",
+          "dateTime": "2026-10-10T02:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "end": {
+          "approximate": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vA1E",
+            "name": "Dance/Electronic"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "priceRanges": [
+        {
+          "type": "standard",
+          "currency": "USD",
+          "min": 0.0,
+          "max": 0.0
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Night Club 101",
+            "id": "rZ7HnEZ17QkQd",
+            "postalCode": "10009",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "101 Avenue A"
+            },
+            "location": {
+              "longitude": "-73.984043",
+              "latitude": "40.725911"
+            }
+          }
+        ],
+        "attractions": []
+      }
+    },
+    {
+      "name": "San Holo presents TRUE LOVE IN A MADE UP WORLD",
+      "type": "event",
+      "id": "Z7r9jZ1A7xZfE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xZfE",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-10T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "The Rooftop at Pier 17",
+            "id": "Z7r9jZadrI",
+            "postalCode": "10038",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "89 South Street"
+            },
+            "location": {
+              "longitude": "-74.002899000",
+              "latitude": "40.708801000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "San Holo",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "San Holo presents TRUE LOVE IN A MADE UP WORLD",
+      "type": "event",
+      "id": "k7vGF_6WVQ3wn",
+      "url": "https://www.axs.com/events/1391326/san-holo-tickets?skin=therooftopatpier17",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "19:00:00",
+          "dateTime": "2026-10-10T23:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEn",
+            "name": "Amapiano"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "The Rooftop at Pier 17",
+            "id": "KovZpZAatEFA",
+            "postalCode": "10038",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "89 South Street"
+            },
+            "location": {
+              "longitude": "-74.00382700",
+              "latitude": "40.70636900"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "San Holo",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "NOTD (16 and Over)",
+      "type": "event",
+      "id": "Z7r9jZ1AAZox7",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZox7",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "19:30:00",
+          "dateTime": "2026-10-10T23:30:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvl",
+            "name": "Other"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vk1I",
+            "name": "Other"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Webster Hall",
+            "id": "ZFr9jZ7v7k",
+            "postalCode": "10003",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "125 East 11th Street"
+            },
+            "location": {
+              "longitude": "-73.989098000",
+              "latitude": "40.731602000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "NOTD",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7l1",
+                  "name": "Group"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA71",
+                  "name": "Band"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry Styles: Together, Together",
+      "type": "event",
+      "id": "G5diZ_dfAVb5L",
+      "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-10-2026/event/3B00643505D182DF",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-11T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Madison Square Garden",
+            "id": "KovZpZA7AAEA",
+            "postalCode": "10001",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "7th Ave & 32nd Street"
+            },
+            "location": {
+              "longitude": "-73.99160060",
+              "latitude": "40.74970620"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Harry Styles",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vkEl",
+                  "name": "Pop Rock"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7lt",
+                  "name": "Event Style"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vA6J",
+                  "name": "Concert"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "Jamie xx",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DJ Shadow",
+      "type": "event",
+      "id": "Z7r9jZ1A70o7Z",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70o7Z",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "20:00:00",
+          "dateTime": "2026-10-11T00:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vA1E",
+            "name": "Dance/Electronic"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Terminal 5",
+            "id": "ZFr9jZk7ke",
+            "postalCode": "10019",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "610 W. 56th Street"
+            },
+            "location": {
+              "longitude": "-73.985298000",
+              "latitude": "40.765202000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "DJ Shadow",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJ1",
+                  "name": "Club Dance"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7nI",
+                  "name": "Undefined"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7v7lJ",
+                  "name": "Undefined"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mind Enterprises (16 and Over)",
+      "type": "event",
+      "id": "Z7r9jZ1A7P8Gd",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8Gd",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-10",
+          "localTime": "21:00:00",
+          "dateTime": "2026-10-11T01:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAvF",
+            "name": "Dance/Electronic"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vAJJ",
+            "name": "Dance Pop"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Brooklyn Steel",
+            "id": "Z7r9jZad7c",
+            "postalCode": "11222",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "Brooklyn"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "319 Frost St"
+            },
+            "location": {
+              "longitude": "-73.945602000",
+              "latitude": "40.727200000"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Mind Enterprises",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vAJJ",
+                  "name": "Dance Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "FiFi Zhang w/ gum.mp3\u00a0+ more TBA",
+      "type": "event",
+      "id": "k7vGF_3N7BrUx",
+      "url": "https://www.ticketmaster.com/fifi-zhang-w-gummp3-more-tba-new-york-new-york-10-11-2026/event/00006528C4E9EDA2",
+      "dates": {
+        "start": {
+          "localDate": "2026-10-11",
+          "localTime": "18:00:00",
+          "dateTime": "2026-10-11T22:00:00Z",
+          "dateTBD": false,
+          "dateTBA": false,
+          "timeTBA": false,
+          "noSpecificTime": false
+        },
+        "timezone": "America/New_York",
+        "status": {
+          "code": "onsale"
+        },
+        "spanMultipleDays": false
+      },
+      "classifications": [
+        {
+          "primary": true,
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7nJ",
+            "name": "Music"
+          },
+          "genre": {
+            "id": "KnvZfZ7vAev",
+            "name": "Pop"
+          },
+          "subGenre": {
+            "id": "KZazBEonSMnZfZ7vaEl",
+            "name": "Electro Pop"
+          },
+          "type": {
+            "id": "KZAyXgnZfZ7v7nI",
+            "name": "Undefined"
+          },
+          "subType": {
+            "id": "KZFzBErXgnZfZ7v7lJ",
+            "name": "Undefined"
+          },
+          "family": false
+        }
+      ],
+      "_embedded": {
+        "venues": [
+          {
+            "name": "Mercury Lounge",
+            "id": "KovZpZAJAkAA",
+            "postalCode": "10002",
+            "timezone": "America/New_York",
+            "city": {
+              "name": "New York"
+            },
+            "state": {
+              "name": "New York",
+              "stateCode": "NY"
+            },
+            "country": {
+              "name": "United States Of America",
+              "countryCode": "US"
+            },
+            "address": {
+              "line1": "217 East Houston St."
+            },
+            "location": {
+              "longitude": "-73.98680600",
+              "latitude": "40.72203600"
+            }
+          }
+        ],
+        "attractions": [
+          {
+            "name": "FiFi Zhang",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAev",
+                  "name": "Pop"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vk1t",
+                  "name": "Pop"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          },
+          {
+            "name": "gum.mp3",
+            "classifications": [
+              {
+                "primary": true,
+                "segment": {
+                  "id": "KZFzniwnSyZfZ7v7nJ",
+                  "name": "Music"
+                },
+                "genre": {
+                  "id": "KnvZfZ7vAvF",
+                  "name": "Dance/Electronic"
+                },
+                "subGenre": {
+                  "id": "KZazBEonSMnZfZ7vA1E",
+                  "name": "Dance/Electronic"
+                },
+                "type": {
+                  "id": "KZAyXgnZfZ7v7la",
+                  "name": "Individual"
+                },
+                "subType": {
+                  "id": "KZFzBErXgnZfZ7vAd7",
+                  "name": "Musician"
+                },
+                "family": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

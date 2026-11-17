@@ -1,0 +1,51 @@
+// Cloudflare Workers, through @opennextjs/cloudflare (D-144). Deployed by .github/workflows/deploy.yml.
+// The site reaches Supabase through Hyperdrive (D-145); the deploy workflow finds or creates the
+// "dancetonight-db" config and writes its id over the placeholder below. localConnectionString is
+// only for `wrangler dev` against a local Postgres. DATABASE_URL stays as a Worker secret (fallback).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dancetonight",
+  "main": "worker.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "vars": {
+    "DANCETONIGHT_MODE": "production",
+    "PUBLIC_BASE_URL": "https://dancetonightglobal.com",
+  },
+  "observability": { "enabled": true },
+  // The deployed version's id, part of every page-cache key (src/edge/page-cache.ts, D-579).
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
+  // The site's address is https://dancetonightglobal.com (owner, 2026-10-29). The other three hosts
+  // are attached only to 301 to it (src/edge/canonical-host.ts). workers.dev stays on as a fallback.
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "dancetonightglobal.com", "custom_domain": true },
+    { "pattern": "www.dancetonightglobal.com", "custom_domain": true },
+    { "pattern": "dancetonight.app", "custom_domain": true },
+    { "pattern": "www.dancetonight.app", "custom_domain": true },
+  ],
+  // The ingest's on-time start (src/edge/ingest-trigger.ts, D-158): UTC, two per New York slot because of
+  // daylight saving; only the one at 9:27am or 2:27pm New York time dispatches. London's one run is
+  // 07:27 UTC (7:27am GMT, 8:27am BST; D-201). Daily metros each have their own start minute,
+  // 30 minutes apart, never on New York's or London's minutes (D-566, 2026-11-01 outage).
+  // Keep equal to INGEST_CRONS.
+  "triggers": {
+    "crons": ["27 * * * *", "57 * * * *"],
+  },
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "HYPERDRIVE_ID_SET_BY_DEPLOY",
+      "localConnectionString": "postgres://postgres:postgres@127.0.0.1:5432/postgres",
+    },
+  ],
+  // City snapshots (src/edge/snapshot-store.ts): one JSON per city under city/<slug>, built when its
+  // read finishes, kept until its next read. The deploy workflow finds or creates the namespace
+  // "dancetonight-snapshots" and writes its id over the placeholder below.
+  "kv_namespaces": [{ "binding": "SNAPSHOTS", "id": "SNAPSHOTS_KV_ID_SET_BY_DEPLOY" }],
+  // Per-IP limit on uncached renders (src/edge/render-limit.ts, D-153). 60 is RENDER_LIMIT_PER_MINUTE.
+  "ratelimits": [
+    { "name": "RENDER_LIMITER", "namespace_id": "1001", "simple": { "limit": 60, "period": 60 } },
+  ],
+}

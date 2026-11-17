@@ -1,0 +1,855 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Tango Mango</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TangoMango">
+<meta property="og:title" content="TangoMango">
+<meta property="og:description" content="The Argentine tango calendar: milongas, classes and practicas near you.">
+<meta property="og:image" content="https://tangomango.org/media/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TangoMango">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Lets users record their screen from your site -->
+<meta name="jam:team" content="01fe1a1b-d260-455b-8b71-48d159a62823" />
+<script type="module" src="https://js.jam.dev/recorder.js"></script>
+
+<!-- Captures user events and developer logs -->
+<script type="module" src="https://js.jam.dev/capture.js"></script>
+<script src="lib/script.js?v=20260121"></script>
+<link href="media/stylesheet.css?v=20260121" rel=stylesheet type=text/css>
+<link href="media/win.css?1" rel=stylesheet type=text/css>
+<style>
+.printmargins {padding:0px 20px}
+.rel {position:relative}
+/* "only" button on area filters: hidden until the row is hovered (like Google Flights) */
+.filterrow {display:flex; align-items:center; white-space:nowrap;}
+.filterrow .filterrow-text {cursor:pointer; margin-left: 2px}
+.onlybtn {visibility:hidden; margin-left:auto; padding:0 4px; background:none; border:none; cursor:pointer;
+  color:#ffd700; font-size: 85%}
+.onlybtn:hover {text-decoration:underline}
+.filterrow:hover .onlybtn {visibility:visible}
+</style>
+<link href="media/print.css?1" rel=stylesheet type=text/css media=print>
+
+<script type="text/javascript">
+var sessionParam='';
+litlink=false;
+ei=false;
+date='';
+var nudgeCanAppearAfterHighlight = false;
+
+function overcal(e,i) {
+        if(e.className.substr(0,6)=='callit') return;
+        if(favs[i]) e.className='cal favo';
+        else if(especials[i]) e.className='cal specialo';
+        else e.className='cal normo';
+        }
+function outcal(e,i) {
+        if(e.className.substr(0,6)=='callit') return;
+        if(favs[i]) e.className='cal fav';
+        else if(especials[i]) e.className='cal special';
+        else e.className='cal norm';
+        }
+
+function closeevent() {
+        setstyle('eventpopup','hide');
+        date='';
+        }
+
+function loadevent(e,date1,eventid1,mouse) {
+        if(autosave) {
+                clearTimeout(autosave);  // don't let autosave interrupt event loading
+                autosave=false;
+                resave=true;  // flag to save after event loaded
+                }
+        if(e) ei=e.id.substr(1,99);  // needed for update
+        if(date) setstyle('eventpopup','hide');
+        date=date1;
+        eventid=eventid1;
+            if(litlink) {
+                if(favs[liti]) litlink.className='cal fav';
+                else if(especials[liti]) litlink.className='cal special';
+                else litlink.className='cal norm';
+                }
+            if(e && e.className!='hide') {  // hilite on calendar (unless hidden from pre-select)
+                if(favs[ei]) e.className='callit fav';
+                else if(especials[ei]) e.className='callit special';
+                else e.className='callit norm';
+                }
+        litlink=e;
+        liti=ei;
+        window.dataframe.location='lib/loadevent.php?date='+date+'&eventid='+eventid+sessionParam;
+        setspan('info','Loading...');
+        if(mouse) {
+                var it=document.getElementById('eventpopup');
+                var s=(navigator.userAgent.indexOf('WebKit')!=-1)? document.body.scrollTop : document.documentElement.scrollTop;
+                var w=document.documentElement.clientWidth;
+                        var x=mouse.pageX;
+                        it.style.top=(Math.max(120,s+20))+'px';
+                if(x>w-300) {  // close to right edge
+                        it.style.right=(Math.max(20,w-x-160))+'px';
+                        it.style.left='';
+                        }
+                else {
+                        it.style.left=(Math.max(20,x-160))+'px';
+                        it.style.right='';
+                        }
+                }
+        setstyle('eventpopup','');
+        }
+
+function eventloaded() {  // uses innerHTML because form values change &lt; to < etc.
+        var eventdoc=window.dataframe.document;
+        var eventinfo=eventdoc.getElementById('info');
+        if(!eventinfo) return;
+        setspan('info',eventinfo.innerHTML);
+        var shortdatenode=eventdoc.getElementById('shortdate');
+        var datecountnode=eventdoc.getElementById('datecount');
+        var editablenode=eventdoc.getElementById('editable');
+        if(shortdatenode) shortdate=shortdatenode.innerHTML;
+        if(datecountnode) datecount=datecountnode.innerHTML;
+        if(editablenode) editable=editablenode.innerHTML-0;
+        setstyle('subtext','hide');
+        if(resave) saveprefs();  // this was postponed for event to load
+        }
+
+function changeweeks() {
+        document.form1.target='_self';
+            document.form1.action='index.php';
+            document.form1.submit();
+        }
+
+</script>
+<meta http-equiv="Cache-Control" content="private, must-revalidate, max-age=0">
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KT7XB0S4G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3KT7XB0S4G');
+</script>
+<script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   gtag('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+window._qevents = window._qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol === "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+window._qevents.push({
+qacct:"p-McV_gp2vST-2-",
+uid:"bayareatango@yahoo.com"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-McV_gp2vST-2-.gif" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- PostHog START -->
+<!-- PostHog -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags identify setPersonProperties group resetGroups reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init("phc_u3JxCsfhtQCgLvxrrdCbqqpEDDiFPwkf9FZ9AT8d4AnX", {
+        api_host: "https:\/\/us.i.posthog.com",
+        person_profiles: 'identified_only',  // anonymous visitors don't create person profiles
+        // Nothing stored in the browser: no ph_* cookie or localStorage, so
+        // analytics needs no consent banner anywhere (issue #210). Each page
+        // load is a new anonymous visitor; events are counted all the same.
+        persistence: 'memory',
+        // Track only the events we capture explicitly below.
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        disable_session_recording: true
+    });
+    // Any element tagged data-posthog-id="..." sends an event named after the tag,
+    // e.g. header-menu-mycal (header.php), event-popup-highlight-date
+    // (lib/getevent.php), with its other data-posthog-<name> attributes and the
+    // page (from) as properties.  Capture phase, so it fires before handlers
+    // navigate; a link opening in this tab unloads the page at once, so its
+    // event goes out immediately by beacon instead of in the next batch.
+    document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest ? e.target.closest('[data-posthog-id]') : null;
+        if (!el) return;
+        var props = { from: location.pathname };
+        for (var i = 0; i < el.attributes.length; i++) {
+            var a = el.attributes[i];
+            if (a.name.indexOf('data-posthog-') === 0 && a.name !== 'data-posthog-id') props[a.name.slice(13)] = a.value;
+        }
+        var leaving = el.tagName === 'A' && el.target !== '_blank';
+        posthog.capture(el.getAttribute('data-posthog-id'), props,
+            leaving ? { transport: 'sendBeacon', send_instantly: true } : undefined);
+    }, true);
+</script>
+<!-- PostHog END --><form name=form1 action="index.php" method=post onSubmit="return false">
+
+<!-- POP UP -->
+<div id=eventpopup class=hide style="position:absolute; top:120px; left:400px;">
+<table class="dark border" width=320 cellpadding=0 cellspacing=0>
+        <tr>
+                <td style="padding:12px 12px 12px 20px" width=320>
+<div id=info>Loading...</div>
+<div id=prompt></div>
+                </td>
+        </tr>
+</table>
+</div>
+
+<!-- two column layout -->
+<table width=100% height=100% border=0 cellpadding=0 cellspacing=0>
+        <tr class=noprint>
+                <td colspan=2 valign=top>
+
+            
+<!--<h1>-->
+<!--    <a href="--><!--">Donate to keep TangoMango running.</a>-->
+<!--</h1>-->
+<div id="horz_ad_bar" style="text-align:center;">
+    <div style="display:inline-flex; gap:8px; align-items:center; justify-content:center;">
+                    <a class="image" href="https://zcu.ge/tangomango">
+            <img src="/media/xtr/BTFM2026AdStatic.png"
+                 width="728"
+                 height="90"
+                 style="display:block; object-fit:cover;"
+                 alt="Bay Tango Festival &amp; Marathon 2026">
+        </a>
+        </div>
+</div>
+
+
+<table width=100% style="background-image:url(/media/bigbar.gif); background-repeat:repeat-x; margin-bottom:8px" border=0 cellpadding=0 cellspacing=0>
+        <tr>
+                <td height=75>
+                        <img src="/media/tango.gif" alt="TangoMango Logo" width=285 height=75 onclick="location='/index.php'">
+                </td>
+                <td align=right valign=top>
+                        <table id=navtabs height=66 width=392 style="background-image:url(/media/nav_mycal.gif); background-repeat:no-repeat;" border=0 cellpadding=0 cellspacing=0>
+                                <tr>
+                                        <td align=right valign=top colspan=7 height=42 style="padding:4px 20px 0px 0px">
+                                                                                                <a class=link href="/login.php">Login</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td width=48 height=24></td>
+                                        <td width=65 >&nbsp;</td>
+                                        <td width=21></td>
+                                        <td width=124 data-posthog-id=header-menu-mycal onmouseover="overtab('mycal')" onmouseout="outtab()" onclick="location='/mycal.php'">&nbsp;</td>
+                                        <td width=17></td>
+                                        <td width=97 onmouseover="overtab('res')" onmouseout="outtab()" onclick="location='/resources.php'">&nbsp;</td>
+                                        <td width=18></td>
+                                </tr>
+                        </table>
+                </td>
+        </tr>
+</table>
+
+<script>
+
+var tabImages = {
+        events: '/media/nav_events_mycal.gif',
+        mycal:  '/media/nav_mycal.gif',
+        res:    '/media/nav_mycal_res.gif'
+};
+function overtab(tab) {
+        if (tabImages[tab]) document.getElementById('navtabs').style.backgroundImage = 'url(' + tabImages[tab] + ')';
+}
+
+function outtab() {
+        document.getElementById('navtabs').style.backgroundImage='url(/media/nav_mycal.gif)';
+        }
+
+</script>
+
+                </td>
+        </tr>
+        <!-- <tr class=noprint> -->
+        <!--         <td colspan=2 valign=top style="text-align:center; font-size:30px;"> -->
+        <!--    <a href="media/ft-raffle.php" style="text-align:center; font-size:30px;">Click <span class=button>Here</Span> to win Forever Tango Tickets</a></br> -->
+        <!--    </td> -->
+        <!-- </tr> -->
+        <tr valign=top>
+                <td nowrap width=1% height=100% class=noprint style="padding: 0px 0px 0px 20px">
+
+<!-- WEEKS -->
+
+<select name=showweeks onChange="changeweeks()">
+        <option value=-4 >Past month        <option value=2 >2 weeks        <option value=3 >3 weeks        <option value=4 selected>4 weeks        <option value=6 >6 weeks        <option value=9 >2 months        <option value=13 >3 months        <option value=26 >6 months</select><br>
+
+            
+<!-- CATEGORIES (data-driven from EventCategories table, with legacy fallback) -->
+<br>
+<div class=styled2>
+<input class=checkbox type=checkbox name="milonga" value=1 onClick="update()" checked><span onClick="clickcheck('milonga')">&nbsp;Milonga / Dance Party</span><br>
+<input class=checkbox type=checkbox name="practica" value=1 onClick="update()" checked><span onClick="clickcheck('practica')">&nbsp;Practica</span><br>
+<input class=checkbox type=checkbox name="dropin" value=1 onClick="update()" checked><span onClick="clickcheck('dropin')">&nbsp;Drop-in Classes</span><br>
+<input class=checkbox type=checkbox name="series" value=1 onClick="update()" checked><span onClick="clickcheck('series')">&nbsp;Series Classes / Workshop</span><br>
+<input class=checkbox type=checkbox name="livemusic" value=1 onClick="update()" checked><span onClick="clickcheck('livemusic')">&nbsp;Live Music</span><br>
+<input class=checkbox type=checkbox name="performance" value=1 onClick="update()" checked><span onClick="clickcheck('performance')">&nbsp;Stage Performance</span><br>
+<input class=checkbox type=checkbox name="other" value=1 onClick="update()" checked><span onClick="clickcheck('other')">&nbsp;Other</span><br>
+<input class=checkbox type=checkbox name="private" value=1 onClick="update()" checked><span onClick="clickcheck('private')">&nbsp;Private</span><br>
+<br>
+
+<!-- AREAS -->
+<div class="filterrow styled2"><input class=checkbox type=checkbox name=area0 value=1 onclick="update()" checked><span class="filterrow-text" onclick="clickcheck('area0')"> Miami-Dade</span><button type=button class=onlybtn onclick="onlyarea('area0')" title="Show only Miami-Dade">ONLY</button></div>
+<input type=hidden name=areas value="US:FL:Miami-Dade">
+</div>
+<br>
+<a href="choosearea.php">Other cities</a><br>
+<a href="editevent.php?show=Miami-Dade,FL&hide=">Add a new event</a><br><br>
+
+        <!-- /VERTICAL BANNER -->
+         <div style="text-align: left;">
+             <a href="/donations.php"><img src="/media/paypal_btn_donateCC_LG.webp" alt="Donations"/></a>
+                     </div>
+         <div>
+          <hr style="color: orange;border-width: thick;height: 15px "/>
+          <div id="vert_ad_bar" style="display:flex; flex-direction:column; gap:8px; align-items:stretch;">
+    <a href="/advertise.php"><b>Your ad here</b></a>
+</div>
+        </div>
+                            </td>
+                <td width=99% class=printmargins>
+
+
+<!-- CALENDAR -->
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+        <tr valign=bottom>
+                <td nowrap width=14% height=22 class="colorbar styled">Sun</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Mon</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Tue</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Wed</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Thu</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Fri</td>
+                <td nowrap width=14% height=22 class="colorbar styled">Sat</td>
+        </tr>
+    
+        <tr valign=top>
+                <td class=cal height=60>
+                        <div class="styled caldate">10/25</div>
+<div id=e1 class=hide onclick="loadevent(this,'2026-10-25',30711,event)" onmouseover="overcal(this,1)" onmouseout="outcal(this,1)">Diego Santana Private Lessons</div>
+<div id=e2 class=hide onclick="loadevent(this,'2026-10-25',30002,event)" onmouseover="overcal(this,2)" onmouseout="outcal(this,2)">Exclusive Tango Private Sessions with Los Villagra</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">26</div>
+<div id=e3 class=hide onclick="loadevent(this,'2026-10-26',30711,event)" onmouseover="overcal(this,3)" onmouseout="outcal(this,3)">Diego Santana Private Lessons</div>
+<div id=e4 class=hide onclick="loadevent(this,'2026-10-26',30002,event)" onmouseover="overcal(this,4)" onmouseout="outcal(this,4)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e5 class=hide onclick="loadevent(this,'2026-10-26',30316,event)" onmouseover="overcal(this,5)" onmouseout="outcal(this,5)">Lily Chenlo Private Lessons</div>
+<div id=e6 class=hide onclick="loadevent(this,'2026-10-26',30108,event)" onmouseover="overcal(this,6)" onmouseout="outcal(this,6)">Tango Times Dance Studio</div>
+<div id=e7 class=hide onclick="loadevent(this,'2026-10-26',30109,event)" onmouseover="overcal(this,7)" onmouseout="outcal(this,7)">TangoTimes dance Studio</div>
+<div id=e8 class=hide onclick="loadevent(this,'2026-10-26',30120,event)" onmouseover="overcal(this,8)" onmouseout="outcal(this,8)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">27</div>
+<div id=e9 class=hide onclick="loadevent(this,'2026-10-27',30711,event)" onmouseover="overcal(this,9)" onmouseout="outcal(this,9)">Diego Santana Private Lessons</div>
+<div id=e10 class=hide onclick="loadevent(this,'2026-10-27',30821,event)" onmouseover="overcal(this,10)" onmouseout="outcal(this,10)">Milonga del Pecado</div>
+<div id=e11 class=hide onclick="loadevent(this,'2026-10-27',30002,event)" onmouseover="overcal(this,11)" onmouseout="outcal(this,11)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e12 class=hide onclick="loadevent(this,'2026-10-27',29368,event)" onmouseover="overcal(this,12)" onmouseout="outcal(this,12)">Los Villagra Tango Lessons & Practica</div>
+<div id=e13 class=hide onclick="loadevent(this,'2026-10-27',30316,event)" onmouseover="overcal(this,13)" onmouseout="outcal(this,13)">Lily Chenlo Private Lessons</div>
+<div id=e14 class=hide onclick="loadevent(this,'2026-10-27',30108,event)" onmouseover="overcal(this,14)" onmouseout="outcal(this,14)">Tango Times Dance Studio</div>
+<div id=e15 class=hide onclick="loadevent(this,'2026-10-27',30109,event)" onmouseover="overcal(this,15)" onmouseout="outcal(this,15)">TangoTimes dance Studio</div>
+<div id=e16 class=hide onclick="loadevent(this,'2026-10-27',30120,event)" onmouseover="overcal(this,16)" onmouseout="outcal(this,16)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">28</div>
+<div id=e17 class=hide onclick="loadevent(this,'2026-10-28',22434,event)" onmouseover="overcal(this,17)" onmouseout="outcal(this,17)">Diego's Milonga Hallowen Party</div>
+<div id=e18 class=hide onclick="loadevent(this,'2026-10-28',30711,event)" onmouseover="overcal(this,18)" onmouseout="outcal(this,18)">Diego Santana Private Lessons</div>
+<div id=e19 class=hide onclick="loadevent(this,'2026-10-28',30002,event)" onmouseover="overcal(this,19)" onmouseout="outcal(this,19)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e20 class=hide onclick="loadevent(this,'2026-10-28',30316,event)" onmouseover="overcal(this,20)" onmouseout="outcal(this,20)">Lily Chenlo Private Lessons</div>
+<div id=e21 class=hide onclick="loadevent(this,'2026-10-28',30652,event)" onmouseover="overcal(this,21)" onmouseout="outcal(this,21)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e22 class=hide onclick="loadevent(this,'2026-10-28',29556,event)" onmouseover="overcal(this,22)" onmouseout="outcal(this,22)">Alma de Tango Group Classes</div>
+<div id=e23 class=hide onclick="loadevent(this,'2026-10-28',30108,event)" onmouseover="overcal(this,23)" onmouseout="outcal(this,23)">Tango Times Dance Studio</div>
+<div id=e24 class=hide onclick="loadevent(this,'2026-10-28',30109,event)" onmouseover="overcal(this,24)" onmouseout="outcal(this,24)">TangoTimes dance Studio</div>
+<div id=e25 class=hide onclick="loadevent(this,'2026-10-28',30120,event)" onmouseover="overcal(this,25)" onmouseout="outcal(this,25)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">29</div>
+<div id=e26 class=hide onclick="loadevent(this,'2026-10-29',30711,event)" onmouseover="overcal(this,26)" onmouseout="outcal(this,26)">Diego Santana Private Lessons</div>
+<div id=e27 class=hide onclick="loadevent(this,'2026-10-29',30002,event)" onmouseover="overcal(this,27)" onmouseout="outcal(this,27)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e28 class=hide onclick="loadevent(this,'2026-10-29',30749,event)" onmouseover="overcal(this,28)" onmouseout="outcal(this,28)">Class And Practilonga With Alex And Martina</div>
+<div id=e29 class=hide onclick="loadevent(this,'2026-10-29',30316,event)" onmouseover="overcal(this,29)" onmouseout="outcal(this,29)">Lily Chenlo Private Lessons</div>
+<div id=e30 class=hide onclick="loadevent(this,'2026-10-29',30648,event)" onmouseover="overcal(this,30)" onmouseout="outcal(this,30)">Adrian & Alejandra Tangopro School N Miami Beach</div>
+<div id=e31 class=hide onclick="loadevent(this,'2026-10-29',30652,event)" onmouseover="overcal(this,31)" onmouseout="outcal(this,31)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e32 class=hide onclick="loadevent(this,'2026-10-29',30108,event)" onmouseover="overcal(this,32)" onmouseout="outcal(this,32)">Tango Times Dance Studio</div>
+<div id=e33 class=hide onclick="loadevent(this,'2026-10-29',30109,event)" onmouseover="overcal(this,33)" onmouseout="outcal(this,33)">TangoTimes dance Studio</div>
+<div id=e34 class=hide onclick="loadevent(this,'2026-10-29',30120,event)" onmouseover="overcal(this,34)" onmouseout="outcal(this,34)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class="cal calglow" height=60>
+                        <div class="styled caldate">30</div>
+<div id=e35 class=hide onclick="loadevent(this,'2026-10-30',30711,event)" onmouseover="overcal(this,35)" onmouseout="outcal(this,35)">Diego Santana Private Lessons</div>
+<div id=e36 class=hide onclick="loadevent(this,'2026-10-30',30623,event)" onmouseover="overcal(this,36)" onmouseout="outcal(this,36)">Alma de Tango Masquerade Ball</div>
+<div id=e37 class=hide onclick="loadevent(this,'2026-10-30',30002,event)" onmouseover="overcal(this,37)" onmouseout="outcal(this,37)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e38 class=hide onclick="loadevent(this,'2026-10-30',30316,event)" onmouseover="overcal(this,38)" onmouseout="outcal(this,38)">Lily Chenlo Private Lessons</div>
+<div id=e39 class=hide onclick="loadevent(this,'2026-10-30',30108,event)" onmouseover="overcal(this,39)" onmouseout="outcal(this,39)">Tango Times Dance Studio</div>
+<div id=e40 class=hide onclick="loadevent(this,'2026-10-30',30109,event)" onmouseover="overcal(this,40)" onmouseout="outcal(this,40)">TangoTimes dance Studio</div>
+<div id=e41 class=hide onclick="loadevent(this,'2026-10-30',30120,event)" onmouseover="overcal(this,41)" onmouseout="outcal(this,41)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">31</div>
+<div id=e42 class=hide onclick="loadevent(this,'2026-10-31',30711,event)" onmouseover="overcal(this,42)" onmouseout="outcal(this,42)">Diego Santana Private Lessons</div>
+<div id=e43 class=hide onclick="loadevent(this,'2026-10-31',30002,event)" onmouseover="overcal(this,43)" onmouseout="outcal(this,43)">Exclusive Tango Private Sessions with Los Villagra</div>
+<div id=e44 class=hide onclick="loadevent(this,'2026-10-31',30316,event)" onmouseover="overcal(this,44)" onmouseout="outcal(this,44)">Lily Chenlo Private Lessons</div>
+<div id=e45 class=hide onclick="loadevent(this,'2026-10-31',30825,event)" onmouseover="overcal(this,45)" onmouseout="outcal(this,45)">Argentine Tango Course On Calle 8</div>
+<div id=e46 class=hide onclick="loadevent(this,'2026-10-31',30120,event)" onmouseover="overcal(this,46)" onmouseout="outcal(this,46)">Tango Times Private Lessons</div>
+
+                </td>
+        </tr>
+        <tr></tr>
+
+        <tr valign=top>
+                <td class=cal height=60>
+                        <div class="styled caldate">11/1</div>
+<div id=e47 class=hide onclick="loadevent(this,'2026-11-01',30711,event)" onmouseover="overcal(this,47)" onmouseout="outcal(this,47)">Diego Santana Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">2</div>
+<div id=e48 class=hide onclick="loadevent(this,'2026-11-02',30711,event)" onmouseover="overcal(this,48)" onmouseout="outcal(this,48)">Diego Santana Private Lessons</div>
+<div id=e49 class=hide onclick="loadevent(this,'2026-11-02',30316,event)" onmouseover="overcal(this,49)" onmouseout="outcal(this,49)">Lily Chenlo Private Lessons</div>
+<div id=e50 class=hide onclick="loadevent(this,'2026-11-02',29556,event)" onmouseover="overcal(this,50)" onmouseout="outcal(this,50)">Alma de Tango Group Classes</div>
+<div id=e51 class=hide onclick="loadevent(this,'2026-11-02',30108,event)" onmouseover="overcal(this,51)" onmouseout="outcal(this,51)">Tango Times Dance Studio</div>
+<div id=e52 class=hide onclick="loadevent(this,'2026-11-02',30109,event)" onmouseover="overcal(this,52)" onmouseout="outcal(this,52)">TangoTimes dance Studio</div>
+<div id=e53 class=hide onclick="loadevent(this,'2026-11-02',30120,event)" onmouseover="overcal(this,53)" onmouseout="outcal(this,53)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">3</div>
+<div id=e54 class=hide onclick="loadevent(this,'2026-11-03',30711,event)" onmouseover="overcal(this,54)" onmouseout="outcal(this,54)">Diego Santana Private Lessons</div>
+<div id=e55 class=hide onclick="loadevent(this,'2026-11-03',30821,event)" onmouseover="overcal(this,55)" onmouseout="outcal(this,55)">Milonga del Pecado</div>
+<div id=e56 class=hide onclick="loadevent(this,'2026-11-03',29368,event)" onmouseover="overcal(this,56)" onmouseout="outcal(this,56)">Los Villagra Tango Lessons & Practica</div>
+<div id=e57 class=hide onclick="loadevent(this,'2026-11-03',30316,event)" onmouseover="overcal(this,57)" onmouseout="outcal(this,57)">Lily Chenlo Private Lessons</div>
+<div id=e58 class=hide onclick="loadevent(this,'2026-11-03',30108,event)" onmouseover="overcal(this,58)" onmouseout="outcal(this,58)">Tango Times Dance Studio</div>
+<div id=e59 class=hide onclick="loadevent(this,'2026-11-03',30109,event)" onmouseover="overcal(this,59)" onmouseout="outcal(this,59)">TangoTimes dance Studio</div>
+<div id=e60 class=hide onclick="loadevent(this,'2026-11-03',30120,event)" onmouseover="overcal(this,60)" onmouseout="outcal(this,60)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">4</div>
+<div id=e61 class=hide onclick="loadevent(this,'2026-11-04',22434,event)" onmouseover="overcal(this,61)" onmouseout="outcal(this,61)">Diego's Milonga guest DJ Sandra Samolik</div>
+<div id=e62 class=hide onclick="loadevent(this,'2026-11-04',30711,event)" onmouseover="overcal(this,62)" onmouseout="outcal(this,62)">Diego Santana Private Lessons</div>
+<div id=e63 class=hide onclick="loadevent(this,'2026-11-04',30316,event)" onmouseover="overcal(this,63)" onmouseout="outcal(this,63)">Lily Chenlo Private Lessons</div>
+<div id=e64 class=hide onclick="loadevent(this,'2026-11-04',30652,event)" onmouseover="overcal(this,64)" onmouseout="outcal(this,64)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e65 class=hide onclick="loadevent(this,'2026-11-04',30108,event)" onmouseover="overcal(this,65)" onmouseout="outcal(this,65)">Tango Times Dance Studio</div>
+<div id=e66 class=hide onclick="loadevent(this,'2026-11-04',30109,event)" onmouseover="overcal(this,66)" onmouseout="outcal(this,66)">TangoTimes dance Studio</div>
+<div id=e67 class=hide onclick="loadevent(this,'2026-11-04',30120,event)" onmouseover="overcal(this,67)" onmouseout="outcal(this,67)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">5</div>
+<div id=e68 class=hide onclick="loadevent(this,'2026-11-05',30711,event)" onmouseover="overcal(this,68)" onmouseout="outcal(this,68)">Diego Santana Private Lessons</div>
+<div id=e69 class=hide onclick="loadevent(this,'2026-11-05',30749,event)" onmouseover="overcal(this,69)" onmouseout="outcal(this,69)">Class And Practilonga With Alex And Martina</div>
+<div id=e70 class=hide onclick="loadevent(this,'2026-11-05',30316,event)" onmouseover="overcal(this,70)" onmouseout="outcal(this,70)">Lily Chenlo Private Lessons</div>
+<div id=e71 class=hide onclick="loadevent(this,'2026-11-05',30648,event)" onmouseover="overcal(this,71)" onmouseout="outcal(this,71)">Adrian & Alejandra Tangopro School N Miami Beach</div>
+<div id=e72 class=hide onclick="loadevent(this,'2026-11-05',30652,event)" onmouseover="overcal(this,72)" onmouseout="outcal(this,72)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e73 class=hide onclick="loadevent(this,'2026-11-05',30108,event)" onmouseover="overcal(this,73)" onmouseout="outcal(this,73)">Tango Times Dance Studio</div>
+<div id=e74 class=hide onclick="loadevent(this,'2026-11-05',30109,event)" onmouseover="overcal(this,74)" onmouseout="outcal(this,74)">TangoTimes dance Studio</div>
+<div id=e75 class=hide onclick="loadevent(this,'2026-11-05',30120,event)" onmouseover="overcal(this,75)" onmouseout="outcal(this,75)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">6</div>
+<div id=e76 class=hide onclick="loadevent(this,'2026-11-06',30315,event)" onmouseover="overcal(this,76)" onmouseout="outcal(this,76)">Miami Tango Role Switch Championship & Festival</div>
+<div id=e77 class=hide onclick="loadevent(this,'2026-11-06',30711,event)" onmouseover="overcal(this,77)" onmouseout="outcal(this,77)">Diego Santana Private Lessons</div>
+<div id=e78 class=hide onclick="loadevent(this,'2026-11-06',30316,event)" onmouseover="overcal(this,78)" onmouseout="outcal(this,78)">Lily Chenlo Private Lessons</div>
+<div id=e79 class=hide onclick="loadevent(this,'2026-11-06',30108,event)" onmouseover="overcal(this,79)" onmouseout="outcal(this,79)">Tango Times Dance Studio</div>
+<div id=e80 class=hide onclick="loadevent(this,'2026-11-06',30109,event)" onmouseover="overcal(this,80)" onmouseout="outcal(this,80)">TangoTimes dance Studio</div>
+<div id=e81 class=hide onclick="loadevent(this,'2026-11-06',30120,event)" onmouseover="overcal(this,81)" onmouseout="outcal(this,81)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">7</div>
+<div id=e82 class=hide onclick="loadevent(this,'2026-11-07',30315,event)" onmouseover="overcal(this,82)" onmouseout="outcal(this,82)">Miami Tango Role Switch Championship & Festival</div>
+<div id=e83 class=hide onclick="loadevent(this,'2026-11-07',30711,event)" onmouseover="overcal(this,83)" onmouseout="outcal(this,83)">Diego Santana Private Lessons</div>
+<div id=e84 class=hide onclick="loadevent(this,'2026-11-07',30808,event)" onmouseover="overcal(this,84)" onmouseout="outcal(this,84)">La Milonguita tango Times</div>
+<div id=e85 class=hide onclick="loadevent(this,'2026-11-07',30316,event)" onmouseover="overcal(this,85)" onmouseout="outcal(this,85)">Lily Chenlo Private Lessons</div>
+<div id=e86 class=hide onclick="loadevent(this,'2026-11-07',30825,event)" onmouseover="overcal(this,86)" onmouseout="outcal(this,86)">Argentine Tango Course On Calle 8</div>
+<div id=e87 class=hide onclick="loadevent(this,'2026-11-07',30120,event)" onmouseover="overcal(this,87)" onmouseout="outcal(this,87)">Tango Times Private Lessons</div>
+
+                </td>
+        </tr>
+        <tr></tr>
+
+        <tr valign=top>
+                <td class=cal height=60>
+                        <div class="styled caldate">8</div>
+<div id=e88 class=hide onclick="loadevent(this,'2026-11-08',30315,event)" onmouseover="overcal(this,88)" onmouseout="outcal(this,88)">Miami Tango Role Switch Championship & Festival</div>
+<div id=e89 class=hide onclick="loadevent(this,'2026-11-08',30711,event)" onmouseover="overcal(this,89)" onmouseout="outcal(this,89)">Diego Santana Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">9</div>
+<div id=e90 class=hide onclick="loadevent(this,'2026-11-09',30711,event)" onmouseover="overcal(this,90)" onmouseout="outcal(this,90)">Diego Santana Private Lessons</div>
+<div id=e91 class=hide onclick="loadevent(this,'2026-11-09',30316,event)" onmouseover="overcal(this,91)" onmouseout="outcal(this,91)">Lily Chenlo Private Lessons</div>
+<div id=e92 class=hide onclick="loadevent(this,'2026-11-09',29556,event)" onmouseover="overcal(this,92)" onmouseout="outcal(this,92)">Alma de Tango Group Classes</div>
+<div id=e93 class=hide onclick="loadevent(this,'2026-11-09',30108,event)" onmouseover="overcal(this,93)" onmouseout="outcal(this,93)">Tango Times Dance Studio</div>
+<div id=e94 class=hide onclick="loadevent(this,'2026-11-09',30109,event)" onmouseover="overcal(this,94)" onmouseout="outcal(this,94)">TangoTimes dance Studio</div>
+<div id=e95 class=hide onclick="loadevent(this,'2026-11-09',30120,event)" onmouseover="overcal(this,95)" onmouseout="outcal(this,95)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">10</div>
+<div id=e96 class=hide onclick="loadevent(this,'2026-11-10',30711,event)" onmouseover="overcal(this,96)" onmouseout="outcal(this,96)">Diego Santana Private Lessons</div>
+<div id=e97 class=hide onclick="loadevent(this,'2026-11-10',30821,event)" onmouseover="overcal(this,97)" onmouseout="outcal(this,97)">Milonga del Pecado</div>
+<div id=e98 class=hide onclick="loadevent(this,'2026-11-10',29368,event)" onmouseover="overcal(this,98)" onmouseout="outcal(this,98)">Los Villagra Tango Lessons & Practica</div>
+<div id=e99 class=hide onclick="loadevent(this,'2026-11-10',30316,event)" onmouseover="overcal(this,99)" onmouseout="outcal(this,99)">Lily Chenlo Private Lessons</div>
+<div id=e100 class=hide onclick="loadevent(this,'2026-11-10',30108,event)" onmouseover="overcal(this,100)" onmouseout="outcal(this,100)">Tango Times Dance Studio</div>
+<div id=e101 class=hide onclick="loadevent(this,'2026-11-10',30109,event)" onmouseover="overcal(this,101)" onmouseout="outcal(this,101)">TangoTimes dance Studio</div>
+<div id=e102 class=hide onclick="loadevent(this,'2026-11-10',30120,event)" onmouseover="overcal(this,102)" onmouseout="outcal(this,102)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">11</div>
+<div id=e103 class=hide onclick="loadevent(this,'2026-11-11',22434,event)" onmouseover="overcal(this,103)" onmouseout="outcal(this,103)">Diego's Milonga New location</div>
+<div id=e104 class=hide onclick="loadevent(this,'2026-11-11',30711,event)" onmouseover="overcal(this,104)" onmouseout="outcal(this,104)">Diego Santana Private Lessons</div>
+<div id=e105 class=hide onclick="loadevent(this,'2026-11-11',30316,event)" onmouseover="overcal(this,105)" onmouseout="outcal(this,105)">Lily Chenlo Private Lessons</div>
+<div id=e106 class=hide onclick="loadevent(this,'2026-11-11',30652,event)" onmouseover="overcal(this,106)" onmouseout="outcal(this,106)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e107 class=hide onclick="loadevent(this,'2026-11-11',30108,event)" onmouseover="overcal(this,107)" onmouseout="outcal(this,107)">Tango Times Dance Studio</div>
+<div id=e108 class=hide onclick="loadevent(this,'2026-11-11',30109,event)" onmouseover="overcal(this,108)" onmouseout="outcal(this,108)">TangoTimes dance Studio</div>
+<div id=e109 class=hide onclick="loadevent(this,'2026-11-11',30120,event)" onmouseover="overcal(this,109)" onmouseout="outcal(this,109)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">12</div>
+<div id=e110 class=hide onclick="loadevent(this,'2026-11-12',30711,event)" onmouseover="overcal(this,110)" onmouseout="outcal(this,110)">Diego Santana Private Lessons</div>
+<div id=e111 class=hide onclick="loadevent(this,'2026-11-12',30749,event)" onmouseover="overcal(this,111)" onmouseout="outcal(this,111)">Class And Practilonga With Alex And Martina</div>
+<div id=e112 class=hide onclick="loadevent(this,'2026-11-12',30316,event)" onmouseover="overcal(this,112)" onmouseout="outcal(this,112)">Lily Chenlo Private Lessons</div>
+<div id=e113 class=hide onclick="loadevent(this,'2026-11-12',30648,event)" onmouseover="overcal(this,113)" onmouseout="outcal(this,113)">Adrian & Alejandra Tangopro School N Miami Beach</div>
+<div id=e114 class=hide onclick="loadevent(this,'2026-11-12',30652,event)" onmouseover="overcal(this,114)" onmouseout="outcal(this,114)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e115 class=hide onclick="loadevent(this,'2026-11-12',30108,event)" onmouseover="overcal(this,115)" onmouseout="outcal(this,115)">Tango Times Dance Studio</div>
+<div id=e116 class=hide onclick="loadevent(this,'2026-11-12',30109,event)" onmouseover="overcal(this,116)" onmouseout="outcal(this,116)">TangoTimes dance Studio</div>
+<div id=e117 class=hide onclick="loadevent(this,'2026-11-12',30120,event)" onmouseover="overcal(this,117)" onmouseout="outcal(this,117)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">13</div>
+<div id=e118 class=hide onclick="loadevent(this,'2026-11-13',30711,event)" onmouseover="overcal(this,118)" onmouseout="outcal(this,118)">Diego Santana Private Lessons</div>
+<div id=e119 class=hide onclick="loadevent(this,'2026-11-13',30316,event)" onmouseover="overcal(this,119)" onmouseout="outcal(this,119)">Lily Chenlo Private Lessons</div>
+<div id=e120 class=hide onclick="loadevent(this,'2026-11-13',30108,event)" onmouseover="overcal(this,120)" onmouseout="outcal(this,120)">Tango Times Dance Studio</div>
+<div id=e121 class=hide onclick="loadevent(this,'2026-11-13',30109,event)" onmouseover="overcal(this,121)" onmouseout="outcal(this,121)">TangoTimes dance Studio</div>
+<div id=e122 class=hide onclick="loadevent(this,'2026-11-13',30120,event)" onmouseover="overcal(this,122)" onmouseout="outcal(this,122)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">14</div>
+<div id=e123 class=hide onclick="loadevent(this,'2026-11-14',30711,event)" onmouseover="overcal(this,123)" onmouseout="outcal(this,123)">Diego Santana Private Lessons</div>
+<div id=e124 class=hide onclick="loadevent(this,'2026-11-14',30316,event)" onmouseover="overcal(this,124)" onmouseout="outcal(this,124)">Lily Chenlo Private Lessons</div>
+<div id=e125 class=hide onclick="loadevent(this,'2026-11-14',30825,event)" onmouseover="overcal(this,125)" onmouseout="outcal(this,125)">Argentine Tango Course On Calle 8</div>
+<div id=e126 class=hide onclick="loadevent(this,'2026-11-14',30120,event)" onmouseover="overcal(this,126)" onmouseout="outcal(this,126)">Tango Times Private Lessons</div>
+
+                </td>
+        </tr>
+        <tr></tr>
+
+        <tr valign=top>
+                <td class=cal height=60>
+                        <div class="styled caldate">15</div>
+<div id=e127 class=hide onclick="loadevent(this,'2026-11-15',30711,event)" onmouseover="overcal(this,127)" onmouseout="outcal(this,127)">Diego Santana Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">16</div>
+<div id=e128 class=hide onclick="loadevent(this,'2026-11-16',30711,event)" onmouseover="overcal(this,128)" onmouseout="outcal(this,128)">Diego Santana Private Lessons</div>
+<div id=e129 class=hide onclick="loadevent(this,'2026-11-16',30316,event)" onmouseover="overcal(this,129)" onmouseout="outcal(this,129)">Lily Chenlo Private Lessons</div>
+<div id=e130 class=hide onclick="loadevent(this,'2026-11-16',29556,event)" onmouseover="overcal(this,130)" onmouseout="outcal(this,130)">Alma de Tango Group Classes</div>
+<div id=e131 class=hide onclick="loadevent(this,'2026-11-16',30108,event)" onmouseover="overcal(this,131)" onmouseout="outcal(this,131)">Tango Times Dance Studio</div>
+<div id=e132 class=hide onclick="loadevent(this,'2026-11-16',30109,event)" onmouseover="overcal(this,132)" onmouseout="outcal(this,132)">TangoTimes dance Studio</div>
+<div id=e133 class=hide onclick="loadevent(this,'2026-11-16',30120,event)" onmouseover="overcal(this,133)" onmouseout="outcal(this,133)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">17</div>
+<div id=e134 class=hide onclick="loadevent(this,'2026-11-17',30711,event)" onmouseover="overcal(this,134)" onmouseout="outcal(this,134)">Diego Santana Private Lessons</div>
+<div id=e135 class=hide onclick="loadevent(this,'2026-11-17',30821,event)" onmouseover="overcal(this,135)" onmouseout="outcal(this,135)">Milonga del Pecado</div>
+<div id=e136 class=hide onclick="loadevent(this,'2026-11-17',30316,event)" onmouseover="overcal(this,136)" onmouseout="outcal(this,136)">Lily Chenlo Private Lessons</div>
+<div id=e137 class=hide onclick="loadevent(this,'2026-11-17',30108,event)" onmouseover="overcal(this,137)" onmouseout="outcal(this,137)">Tango Times Dance Studio</div>
+<div id=e138 class=hide onclick="loadevent(this,'2026-11-17',30109,event)" onmouseover="overcal(this,138)" onmouseout="outcal(this,138)">TangoTimes dance Studio</div>
+<div id=e139 class=hide onclick="loadevent(this,'2026-11-17',30120,event)" onmouseover="overcal(this,139)" onmouseout="outcal(this,139)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">18</div>
+<div id=e140 class=hide onclick="loadevent(this,'2026-11-18',22434,event)" onmouseover="overcal(this,140)" onmouseout="outcal(this,140)">Diego's Milonga New location</div>
+<div id=e141 class=hide onclick="loadevent(this,'2026-11-18',30711,event)" onmouseover="overcal(this,141)" onmouseout="outcal(this,141)">Diego Santana Private Lessons</div>
+<div id=e142 class=hide onclick="loadevent(this,'2026-11-18',30316,event)" onmouseover="overcal(this,142)" onmouseout="outcal(this,142)">Lily Chenlo Private Lessons</div>
+<div id=e143 class=hide onclick="loadevent(this,'2026-11-18',30652,event)" onmouseover="overcal(this,143)" onmouseout="outcal(this,143)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e144 class=hide onclick="loadevent(this,'2026-11-18',30108,event)" onmouseover="overcal(this,144)" onmouseout="outcal(this,144)">Tango Times Dance Studio</div>
+<div id=e145 class=hide onclick="loadevent(this,'2026-11-18',30109,event)" onmouseover="overcal(this,145)" onmouseout="outcal(this,145)">TangoTimes dance Studio</div>
+<div id=e146 class=hide onclick="loadevent(this,'2026-11-18',30120,event)" onmouseover="overcal(this,146)" onmouseout="outcal(this,146)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">19</div>
+<div id=e147 class=hide onclick="loadevent(this,'2026-11-19',30711,event)" onmouseover="overcal(this,147)" onmouseout="outcal(this,147)">Diego Santana Private Lessons</div>
+<div id=e148 class=hide onclick="loadevent(this,'2026-11-19',30749,event)" onmouseover="overcal(this,148)" onmouseout="outcal(this,148)">Class And Practilonga With Alex And Martina</div>
+<div id=e149 class=hide onclick="loadevent(this,'2026-11-19',30316,event)" onmouseover="overcal(this,149)" onmouseout="outcal(this,149)">Lily Chenlo Private Lessons</div>
+<div id=e150 class=hide onclick="loadevent(this,'2026-11-19',30648,event)" onmouseover="overcal(this,150)" onmouseout="outcal(this,150)">Adrian & Alejandra Tangopro School N Miami Beach</div>
+<div id=e151 class=hide onclick="loadevent(this,'2026-11-19',30652,event)" onmouseover="overcal(this,151)" onmouseout="outcal(this,151)">Privates Adrian Veredice in North Miami Beach</div>
+<div id=e152 class=hide onclick="loadevent(this,'2026-11-19',30108,event)" onmouseover="overcal(this,152)" onmouseout="outcal(this,152)">Tango Times Dance Studio</div>
+<div id=e153 class=hide onclick="loadevent(this,'2026-11-19',30109,event)" onmouseover="overcal(this,153)" onmouseout="outcal(this,153)">TangoTimes dance Studio</div>
+<div id=e154 class=hide onclick="loadevent(this,'2026-11-19',30120,event)" onmouseover="overcal(this,154)" onmouseout="outcal(this,154)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">20</div>
+<div id=e155 class=hide onclick="loadevent(this,'2026-11-20',30711,event)" onmouseover="overcal(this,155)" onmouseout="outcal(this,155)">Diego Santana Private Lessons</div>
+<div id=e156 class=hide onclick="loadevent(this,'2026-11-20',30316,event)" onmouseover="overcal(this,156)" onmouseout="outcal(this,156)">Lily Chenlo Private Lessons</div>
+<div id=e157 class=hide onclick="loadevent(this,'2026-11-20',30108,event)" onmouseover="overcal(this,157)" onmouseout="outcal(this,157)">Tango Times Dance Studio</div>
+<div id=e158 class=hide onclick="loadevent(this,'2026-11-20',30109,event)" onmouseover="overcal(this,158)" onmouseout="outcal(this,158)">TangoTimes dance Studio</div>
+<div id=e159 class=hide onclick="loadevent(this,'2026-11-20',30120,event)" onmouseover="overcal(this,159)" onmouseout="outcal(this,159)">Tango Times Private Lessons</div>
+
+                </td>
+                <td class=cal height=60>
+                        <div class="styled caldate">21</div>
+<div id=e160 class=hide onclick="loadevent(this,'2026-11-21',30711,event)" onmouseover="overcal(this,160)" onmouseout="outcal(this,160)">Diego Santana Private Lessons</div>
+<div id=e161 class=hide onclick="loadevent(this,'2026-11-21',30316,event)" onmouseover="overcal(this,161)" onmouseout="outcal(this,161)">Lily Chenlo Private Lessons</div>
+<div id=e162 class=hide onclick="loadevent(this,'2026-11-21',30825,event)" onmouseover="overcal(this,162)" onmouseout="outcal(this,162)">Argentine Tango Course On Calle 8</div>
+<div id=e163 class=hide onclick="loadevent(this,'2026-11-21',30841,event)" onmouseover="overcal(this,163)" onmouseout="outcal(this,163)">Intensive Tango Seminar by Adrian & Alejandra</div>
+<div id=e164 class=hide onclick="loadevent(this,'2026-11-21',30120,event)" onmouseover="overcal(this,164)" onmouseout="outcal(this,164)">Tango Times Private Lessons</div>
+
+                </td>
+        </tr>
+        <tr></tr>
+</table>
+
+<!-- SUB TEXT -->
+<div id=subtext class=noprint style="padding-top:4px;text-align:center">
+    Click any event for info. Some event organizers don't post their own events,<br>so if anything is missing, please <a href="editevent.php">post it</a> for them.
+            <div nowrap colspan=2 valign=bottom class=noprint style="text-align:center">
+<input type=hidden name=pagecomplete value=events>
+<iframe name=dataframe width=0 height=0 frameborder=0></iframe>
+<br>
+<br>
+<div style="padding-bottom:2px;text-align:center">
+<a href="/about.php">&copy; Bay Area Argentine Tango Association &nbsp; About this site</a> &nbsp;&nbsp;|&nbsp;
+&nbsp <a href="/help.php">Help</a> &nbsp;&nbsp;|&nbsp;
+&nbsp <a href="/v2/privacy">Privacy</a> &nbsp;&nbsp;|&nbsp;
+&nbsp <a href="/advertise.php">Advertise</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; <a href="/link.php">Link to this site</a>
+</div>
+</div>
+</div>
+
+</td>
+</tr>
+</table><!-- two column layout -->
+</form>
+</body>
+</html>
+
+<script>
+autosave=false;
+resave=false;
+
+eventids=new Array('',30711,30002,30711,30002,30316,30108,30109,30120,30711,30821,30002,29368,30316,30108,30109,30120,22434,30711,30002,30316,30652,29556,30108,30109,30120,30711,30002,30749,30316,30648,30652,30108,30109,30120,30711,30623,30002,30316,30108,30109,30120,30711,30002,30316,30825,30120,30711,30711,30316,29556,30108,30109,30120,30711,30821,29368,30316,30108,30109,30120,22434,30711,30316,30652,30108,30109,30120,30711,30749,30316,30648,30652,30108,30109,30120,30315,30711,30316,30108,30109,30120,30315,30711,30808,30316,30825,30120,30315,30711,30711,30316,29556,30108,30109,30120,30711,30821,29368,30316,30108,30109,30120,22434,30711,30316,30652,30108,30109,30120,30711,30749,30316,30648,30652,30108,30109,30120,30711,30316,30108,30109,30120,30711,30316,30825,30120,30711,30711,30316,29556,30108,30109,30120,30711,30821,30316,30108,30109,30120,22434,30711,30316,30652,30108,30109,30120,30711,30749,30316,30648,30652,30108,30109,30120,30711,30316,30108,30109,30120,30711,30316,30825,30841,30120);
+especials=new Array('',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+favs=new Array('',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+totalitems=164;
+
+etypes=new Array('','1111111','0111001','1111111','0111001','0110000','0010001','0010001','0000001','1111111','1110101','0111001','0011000','0110000','0010001','0010001','0000001','1111111','1111111','0111001','0110000','0110000','0010000','0010001','0010001','0000001','1111111','0111001','0011000','0110000','0110001','0110000','0010001','0010001','0000001','1111111','1000000','0111001','0110000','0010001','0010001','0000001','1111111','0111001','0110000','0110001','0000001','1111111','1111111','0110000','0010000','0010001','0010001','0000001','1111111','1110101','0011000','0110000','0010001','0010001','0000001','1111111','1111111','0110000','0110000','0010001','0010001','0000001','1111111','0011000','0110000','0110001','0110000','0010001','0010001','0000001','1110111','1111111','0110000','0010001','0010001','0000001','1110111','1111111','1000000','0110000','0110001','0000001','1110111','1111111','1111111','0110000','0010000','0010001','0010001','0000001','1111111','1110101','0011000','0110000','0010001','0010001','0000001','1111111','1111111','0110000','0110000','0010001','0010001','0000001','1111111','0011000','0110000','0110001','0110000','0010001','0010001','0000001','1111111','0110000','0010001','0010001','0000001','1111111','0110000','0110001','0000001','1111111','1111111','0110000','0010000','0010001','0010001','0000001','1111111','1110101','0110000','0010001','0010001','0000001','1111111','1111111','0110000','0110000','0010001','0010001','0000001','1111111','0011000','0110000','0110001','0110000','0010001','0010001','0000001','1111111','0110000','0010001','0010001','0000001','1111111','0110000','0110001','0110001','0000001');
+eareas=new Array('',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+// ecatids[i] holds the non-legacy categoryids for event i as ',id1,id2,' (leading
+// and trailing comma).  The JS filter searches for ',id,' so adjacent IDs like
+// 1 and 11 cannot match each other (indexOf(',1,') never hits ',11,').
+ecatids=["",",8,","",",8,","","","","","",",8,",",8,","","","","","","","",",8,","","",",8,","","","","",",8,","",",8,","","",",8,","","","",",8,","","","","","","",",8,","","","","",",8,",",8,","","","","","",",8,",",8,","","","","","","",",8,","",",8,","","","",",8,",",8,","","",",8,","","","","",",8,","","","","","",",8,","","","","","",",8,",",8,","","","","","",",8,",",8,","","","","","","",",8,","",",8,","","","",",8,",",8,","","",",8,","","","",",8,","","","","",",8,","","","",",8,",",8,","","","","","",",8,",",8,","","","","","",",8,","",",8,","","","",",8,",",8,","","",",8,","","","",",8,","","","","",",8,","","","",""];
+update('init');
+
+function update(init) {
+        // read area selections
+        fareas=new Array();
+        for(a=0;a<1;a++)
+                fareas[a]=checked('area'+a);
+        // read category selections:
+        //   ftypes  = bit positions (0-6) for the seven legacy categories
+        //   fcatids = categoryids for non-legacy (new) categories
+        ftypes=new Array();
+        fcatids=new Array();
+        if(checked('milonga')) ftypes[ftypes.length]=0;
+        if(checked('practica')) ftypes[ftypes.length]=3;
+        if(checked('dropin')) ftypes[ftypes.length]=1;
+        if(checked('series')) ftypes[ftypes.length]=2;
+        if(checked('livemusic')) ftypes[ftypes.length]=4;
+        if(checked('performance')) ftypes[ftypes.length]=5;
+        if(checked('other')) ftypes[ftypes.length]=6;
+        if(checked('private')) fcatids[fcatids.length]=8;
+        fmax=ftypes.length-1;
+        fmax_cat=fcatids.length-1;
+        // each event: show if any selected legacy category bit OR selected
+        // non-legacy categoryid matches (OR-within-type, OR-across-types).
+        for(i=1;i<=totalitems;i++) {
+                style='hide';
+                if(fareas[eareas[i]]) {  // skip if area not selected
+                        var matched=false;
+                        for(f=0;f<=fmax&&!matched;f++) {
+                                if(etypes[i].charAt(ftypes[f])=='1') matched=true;
+                                }
+                        for(f=0;f<=fmax_cat&&!matched;f++) {
+                                // ','+id+',' never partially matches a longer ID (e.g. ',1,' vs ',11,').
+                                if(ecatids[i].indexOf(','+fcatids[f]+',')!=-1) matched=true;
+                                }
+                        if(matched) {
+                                style=(i==ei)?'callit ':'cal ';
+                                if(favs[i]) style+='fav';
+                                else if(especials[i]) style+='special';
+                                else style+='norm';
+                                }
+                        }
+                setstyle('e'+i,style);
+                }
+        if(!init) {  // save prefs
+                if(autosave) clearTimeout(autosave);
+                autosave=setTimeout('saveprefs()',4000);  // auto-save prefs after idle 4 secs
+                }
+        }
+
+// "only" button: check just this area, uncheck all others
+function onlyarea(name) {
+        var els=document.form1.elements;
+        for(var a=0;els['area'+a];a++)
+                els['area'+a].checked=('area'+a==name);
+        update();
+        }
+
+function saveprefs() {
+        document.form1.target='dataframe';
+        document.form1.action='lib/saveprefs.php';
+        document.form1.submit();
+        autosave=false;
+        resave=false;
+        }
+
+window.addEventListener('beforeunload', function() {
+        if(autosave) {
+                clearTimeout(autosave);
+                autosave=false;
+                var fd=new FormData(document.form1);
+                navigator.sendBeacon('lib/saveprefs.php', fd);
+                }
+        });
+
+
+
+// HILITE FAVORITES
+
+function addfav(one) {  // one for specific date, empty for all dates
+        try {
+        console.log('ADDFAV called: ei='+ei+' favs[ei]='+favs[ei]+' eventid='+eventid+' date='+date);
+        var x=(favs[ei])?0:1;
+        if(one)
+                favs[ei]=x;
+        else {
+                for(var j=1;j<=totalitems;j++) {
+                        if(eventids[j]==eventid) favs[j]=x;
+                        }
+                }
+        setspan('favlink1',(x)?'Un-highlight this date':'Highlight this date');
+        setspan('favlink2',(x)?'Un-highlight all dates':'Highlight all dates');
+        update(true);
+        console.log('ADDFAV after update: element e'+ei+' class='+document.getElementById('e'+ei).className);
+        var d=(one)?date:'';
+        var favoriteUrl='lib/savefavorites.php?eventid='+eventid+'&date='+d+'&set='+x+sessionParam;
+        if (x && nudgeCanAppearAfterHighlight && window.fetch) {
+                fetch(favoriteUrl+'&nudge=1', {credentials:'same-origin'})
+                .then(function(response) {
+                        if (!response.ok) throw new Error('Favorite save failed');
+                        return response.json();
+                })
+                .then(function(data) {
+                        if (data && data.show_nudge) revealEmailNudgeAfterHighlight();
+                })
+                .catch(function() {
+                        // Preserve the legacy iframe request as a fallback when
+                        // the enhanced JSON request cannot complete.
+                        window.dataframe.location=favoriteUrl;
+                });
+        } else {
+                window.dataframe.location=favoriteUrl;
+        }
+        } catch(err) { console.log('ADDFAV ERROR: '+err.message); }
+        }
+
+
+// LINK TO EVENT
+
+function linktoevent() {
+        location='link.php?eventid='+eventid+'&date='+date+sessionParam;
+        }
+
+
+// PROMPT
+
+function openprompt() {
+            location='login.php?prompt=update'+sessionParam;
+            }
+
+function promptdelete(one) {
+        if(!editable) confirmprompt(
+                "Sorry, " + "" + " is not allowed to delete this event. You must be listed as one of the organizers for this event to delete it.",'','');
+        else if(one) confirmprompt(
+                'Are you sure you want to delete this date from the public calendar?','Delete','okdelete(1)');
+        else if(datecount>1) confirmprompt(
+                'Are you absolutely, positively certain beyond a reasonable doubt that you want to permanently delete this event from all dates from the public calendar, or forever hold your peace?','Delete All','okdelete(0)');
+        else confirmprompt(
+                'Are you absolutely, positively certain beyond a reasonable doubt that you want to permanently delete this event from the public calendar, or forever hold your peace?','Delete','okdelete(0)');
+        }
+
+function confirmprompt(html,btn,action) {
+        html+='<br><br>'+
+'<input class=button type=button value="Cancel" onClick="cancelprompt()">';
+        if(btn) html+='&nbsp; '+
+'<input class=button type=button value="'+btn+'" onClick="'+action+'">';
+        setstyle('details','hide');
+        setspan('prompt',html);
+        }
+
+function okdelete(one) {
+        if(one) location='lib/deleteevent.php?eventid='+eventid+'&date='+date+sessionParam;
+        else    location='lib/deleteevent.php?eventid='+eventid+sessionParam;
+        }
+
+function cancelprompt() {
+        setstyle('details','');
+        setspan('prompt','');
+        }
+
+
+</script>
+
+

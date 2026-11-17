@@ -1,0 +1,124 @@
+{
+  "data": {
+    "eventListings": {
+      "data": [
+        {
+          "id": "listing1",
+          "listingDate": "2026-10-31",
+          "event": {
+            "id": "2201001",
+            "title": "Daft Disko Halloween",
+            "date": "2026-10-31T00:00:00.000",
+            "startTime": "2026-10-31T22:00:00.000",
+            "endTime": "2026-11-01T05:00:00.000",
+            "contentUrl": "/events/2201001",
+            "isTicketed": true,
+            "images": [{ "filename": "daft.jpg" }],
+            "venue": {
+              "id": "venue1",
+              "name": "Edge Miami",
+              "address": "123 Edge St, Miami, FL",
+              "contentUrl": "/venue/edge",
+              "area": { "name": "Miami" },
+              "location": { "latitude": 25.7907, "longitude": -80.136 }
+            },
+            "artists": [{ "name": "DJ A" }, { "name": "DJ B" }]
+          }
+        },
+        {
+          "id": "listing2",
+          "listingDate": "2026-10-31",
+          "event": {
+            "id": "2201002",
+            "title": "Area 94",
+            "date": "2026-10-31T00:00:00.000",
+            "startTime": "2026-10-31T21:00:00.000",
+            "endTime": null,
+            "contentUrl": "/events/2201002",
+            "isTicketed": false,
+            "images": [],
+            "venue": {
+              "id": "venue2",
+              "name": "94th Aero Squadron",
+              "address": null,
+              "contentUrl": null,
+              "area": { "name": "Miami" },
+              "location": null
+            },
+            "artists": []
+          }
+        },
+        {
+          "id": "listing3",
+          "listingDate": "2026-11-01",
+          "event": {
+            "id": "2201001",
+            "title": "Daft Disko Halloween",
+            "date": "2026-11-01T00:00:00.000",
+            "startTime": "2026-10-31T22:00:00.000",
+            "endTime": "2026-11-01T05:00:00.000",
+            "contentUrl": "/events/2201001",
+            "isTicketed": true,
+            "images": [{ "filename": "daft.jpg" }],
+            "venue": {
+              "id": "venue1",
+              "name": "Edge Miami",
+              "address": "123 Edge St, Miami, FL",
+              "contentUrl": "/venue/edge",
+              "area": { "name": "Miami" },
+              "location": { "latitude": 25.7907, "longitude": -80.136 }
+            },
+            "artists": [{ "name": "DJ A" }, { "name": "DJ B" }]
+          }
+        },
+        {
+          "id": "listing4",
+          "listingDate": "2026-11-02",
+          "event": {
+            "id": "2201003",
+            "title": "Late Night",
+            "date": "2026-11-02T00:00:00.000",
+            "startTime": null,
+            "endTime": null,
+            "contentUrl": null,
+            "isTicketed": false,
+            "images": [],
+            "venue": {
+              "id": "venue3",
+              "name": "Club X",
+              "address": null,
+              "contentUrl": null,
+              "area": { "name": "Miami" },
+              "location": null
+            },
+            "artists": []
+          }
+        },
+        {
+          "id": "listing5",
+          "listingDate": "2026-12-20",
+          "event": {
+            "id": "2201004",
+            "title": "Future Event",
+            "date": "2026-12-20T00:00:00.000",
+            "startTime": "2026-12-20T20:00:00.000",
+            "endTime": null,
+            "contentUrl": "/events/2201004",
+            "isTicketed": true,
+            "images": [],
+            "venue": {
+              "id": "venue4",
+              "name": "Far Venue",
+              "address": "Far St",
+              "contentUrl": null,
+              "area": { "name": "Miami" },
+              "location": { "latitude": 25.8, "longitude": -80.2 }
+            },
+            "artists": []
+          }
+        }
+      ],
+      "totalResults": 5
+    }
+  }
+}

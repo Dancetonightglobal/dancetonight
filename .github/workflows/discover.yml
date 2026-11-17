@@ -1,0 +1,76 @@
+name: discover
+
+# Venue-website discovery (D-040 step 3, D-120): probes the seeded venues' own websites, club,
+# salsa and nightlife places first, at most 80 hosts a run, and stores what each one is. Discovery
+# calls no model and needs no key. The report goes on the run's summary page.
+#
+# It shares the ingest's concurrency group, so it never writes sources while an ingest reads them.
+#
+# By hand only: the 9:27am ingest runs discovery first, in the same job (D-089), so the refresh
+# stays two runs a day.
+on:
+  workflow_dispatch:
+    inputs:
+      metro:
+        description: Metro to probe
+        default: nyc
+        required: true
+      limit:
+        description: Hosts to probe this run
+        default: "80"
+        required: true
+
+# Reads the repository, nothing more.
+permissions:
+  contents: read
+
+concurrency:
+  group: ingest-${{ inputs.metro || 'nyc' }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      METRO: ${{ inputs.metro || 'nyc' }}
+      LIMIT: ${{ inputs.limit || '80' }}
+      DANCETONIGHT_MODE: production
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+      BOT_CONTACT_EMAIL: ${{ vars.BOT_CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check the database addresses (never prints the password)
+        run: pnpm db:check
+      - name: Apply migrations
+        run: pnpm db:migrate
+
+      - name: Discover
+        run: pnpm discover --metro "$METRO" --limit "$LIMIT" --record fixtures --report discover-report.txt
+
+      - name: Report
+        if: always()
+        run: |
+          if [ -f discover-report.txt ]; then
+            { echo '```'; cat discover-report.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: discover-${{ env.METRO }}-${{ github.run_id }}
+          path: |
+            discover-report.txt
+            discover-report.json
+            fixtures/
+          if-no-files-found: ignore
+          retention-days: 14
