@@ -352,4 +352,9 @@ export const RALEIGH_RETIRED: readonly RetiredSource[] = [
     url: "https://motorcomusic.com/calendar/",
     reason: "read fine three times but never wrote a row; no dance nights in its next 7 days",
   },
+  {
+    url: "https://arts.duke.edu/events/",
+    reason:
+      "Duke Arts' university events calendar (wind symphony, vespers, talks, plays, info sessions): 19 non-dance cards in the 2026-11-16 daily report (cities sweep 2026-11-17)",
+  },
 ];

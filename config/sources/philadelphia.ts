@@ -826,4 +826,9 @@ export const PHILADELPHIA_RETIRED: readonly RetiredSource[] = [
     reason:
       'Polish American Citizens Home events page: "PKM Open House", not a dance night (coverage daily check 2026-11-13)',
   },
+  {
+    url: "https://boyer.temple.edu/events",
+    reason:
+      "Temple's Boyer College events calendar: student concerts and recitals (e.g. Wind Symphony), no social dance nights (2026-11-16 daily report; cities sweep 2026-11-17)",
+  },
 ];

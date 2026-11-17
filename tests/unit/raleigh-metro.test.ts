@@ -125,6 +125,7 @@ describe("Raleigh in the shared tables", () => {
       "https://www.honeygirlmeadery.com/",
       "https://www.livingartscollective.com/dancewave/",
       "https://motorcomusic.com/calendar/",
+      "https://arts.duke.edu/events/",
     ]);
     expect(METRO_SOURCES.raleigh?.map((s) => s.url)).not.toContain(
       "https://www.8countcountry.com/lessons",

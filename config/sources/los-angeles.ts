@@ -425,4 +425,9 @@ export const LOS_ANGELES_RETIRED: readonly RetiredSource[] = [
     reason:
       'Vibrato Grill Jazz: a supper club\'s concerts ("Adam Hawley Christmas", "Tim Hockenberry & The 559 Band"), not dance nights (cities sweep 2026-11-14)',
   },
+  {
+    url: "https://www.oxy.edu/events",
+    reason:
+      "Occidental College's campus events calendar: colloquia and concerts, no social dance nights (2026-11-16 daily report; cities sweep 2026-11-17)",
+  },
 ];

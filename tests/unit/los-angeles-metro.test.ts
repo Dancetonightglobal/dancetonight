@@ -149,6 +149,7 @@ describe("Los Angeles in the shared tables", () => {
       "https://grammymuseum.org/programs/",
       "https://vipnightlife.com/events/",
       "https://www.vibratogrilljazz.com",
+      "https://www.oxy.edu/events",
     ]);
     // Canonical names for venues two sources spell differently (2026-11-07).
     expect(KNOWN_VENUES["los-angeles"]?.map((v) => v.names[0])).toEqual([

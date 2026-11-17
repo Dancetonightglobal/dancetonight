@@ -51,7 +51,7 @@ describe("philadelphia seed module (D-300)", () => {
     ]);
     expect(PHILADELPHIA_SOURCES.length).toBeGreaterThan(0);
     const retired = (METRO_RETIRED_SOURCES.philadelphia ?? []).map((r) => r.url);
-    expect(retired).toHaveLength(16);
+    expect(retired).toHaveLength(17);
     expect(retired).toContain("https://www.wharton.upenn.edu/events/");
     expect(retired).toContain("https://waynepres.org/music/");
     expect(retired).toContain("https://ulife.vpul.upenn.edu/calendar/");
