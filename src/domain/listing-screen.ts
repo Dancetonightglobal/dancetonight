@@ -104,6 +104,10 @@ const HOLIDAYS = words(`
   holiday holidays thanksgiving christmas xmas easter halloween new eve labor labour memorial
   independence juneteenth day days`);
 
+/** "closed for Thanksgiving", "closed on Christmas Day", "closed for the holidays" (D-888). */
+const CLOSED_FOR_HOLIDAY =
+  /\bclosed (?:for|on|over) (?:the )?(?:thanksgiving|christmas|xmas|easter|holidays?|new year s?)\b/;
+
 /** What a "No ..." notice says is not on ("No class", "No classes this week", "No social"). */
 const ACTIVITIES = words(`
   class classes lesson lessons social socials dance dances dancing practica practicas practice
@@ -585,13 +589,22 @@ const WATCH_LISTENING_CHALLENGE = new RegExp(
       // dining experiences, synth workshops, vinyl and DJ masterclasses
       "panel talks?|panel discussions?|pre ?listening|listening events?|swap markets?|musiktheater|music theat(?:re|er)",
       "string quartets?|dining experiences?|circuit design|(?:vinyl|dj|production) masterclass(?:es)?",
+      // D-888 (weekly review 2026-11-23, daily checks 11-18 to 11-22): markets and errands, services, gyms,
+      // talks and visits, film cycles, tea ceremonies, juggling, ice skating, surf lessons, speed friending
+      "farmers? markets?|food pantr(?:y|ies)|colheita de sangue|blood donations?|citizenship class(?:es)?",
+      "bible stud(?:y|ies)|personal trainers?|group fitness|book launch(?:es)?|author events?|in conversation",
+      "table ronde|visites? commentees?|visites? hors les murs|ciclo de cine|ciclo de cinema|documentales",
+      "proyeccion (?:de )?pelicula|cine para escuelas|tea ceremon(?:y|ies)|juggling|ice skating|surf experiences?",
+      "surf lessons?|speed friending|music appreciation|close reading",
     ].join("|") +
     ")\\b",
 );
 // D-770 (the owner 2026-11-07, "keep DJ/party brunches"): a brunch, carvery, roast or sunset dinner is a meal unless its
 // title also names a style, a dance word or a party word (Dubai "Bohemia Sunday Brunch", Havana "Brunch in Plaza
 // Vieja"; London "House & Disco Bottomless Brunch" and "Ibiza Anthems Brunch" stay).
-const MEAL_TITLE = /\b(?:brunch(?:es)?|carvery|carveries|sunday roasts?|sunset dinners?)\b/;
+// D-888: supper clubs, themed and holiday dinners, set lunches, tasting menus, "Drink & Dine", "Dine à la carte".
+const MEAL_TITLE =
+  /\b(?:brunch(?:es)?|carvery|carveries|sunday roasts?|sunset dinners?|supper clubs?|themed dinners?|thanksgiving dinners?|social lunch(?:es)?|set lunch(?:es)?|tasting menus?|drink dine|dine a la carte)\b/;
 const MEAL_PARTY_WORDS =
   /\b(?:party|parties|dj|djs|house|disco|club|clubbing|rave|anthems|electronik|electronic|[0-9]0s)\b/;
 const STATUS_ONLY_TITLES = new Set([
@@ -1140,6 +1153,10 @@ export function screenTitle(title: string, venueName?: string | null): NotAnEven
   const pa = screenTitlePa(title);
   if (pa) return pa;
   if (isClosure(tokens)) return { kind: "closure", reason: "a closure notice" };
+  // "CLOSED FOR THANKSGIVING DADA", "NO CONTRA Hancock closed for Thanksgiving": a holiday closure anywhere in the
+  // title, after a venue or a style name too (D-888).
+  if (CLOSED_FOR_HOLIDAY.test(normalized))
+    return { kind: "closure", reason: "a holiday closure notice (D-888)" };
   // Bill-payment SEO spam posted to RA as club nights (D-857).
   const spam = screenBillSpam(title);
   if (spam) return spam;
@@ -1170,7 +1187,8 @@ export function screenTitle(title: string, venueName?: string | null): NotAnEven
   }
   if (
     MEAL_TITLE.test(normalized) &&
-    !MEAL_PARTY_WORDS.test(normalized) &&
+    // "club" in "supper club" names the meal, not a club night (D-888).
+    !MEAL_PARTY_WORDS.test(normalized.replace(/\bsupper clubs?\b/g, " ")) &&
     matchStyles(normalized).styles.length === 0 &&
     !hasDanceWord(normalized)
   ) {

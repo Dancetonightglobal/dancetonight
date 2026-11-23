@@ -124,7 +124,7 @@ describe("Austin in the shared tables", () => {
     expect(donns?.handChecked).toBe(true);
     expect(donns?.fixedNights?.map((f) => f.days[0])).toEqual([1, 2, 3, 4, 5, 6]);
     for (const f of donns?.fixedNights ?? []) {
-      expect(f.checkedOn).toBe("2026-11-08");
+      expect(f.checkedOn).toBe("2026-11-23");
       expect(f.evidenceUrl).toBe("https://donnsdepot.com/");
       expect(f.danceCited).not.toBe("");
     }

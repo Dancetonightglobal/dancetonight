@@ -7,7 +7,7 @@ import type { StyleKey } from "@/config/styles";
 
 /** Where dancing at Donn's Depot is stated (hand check, D-798). */
 const DONNS_DANCE_CITED =
-  "own site, https://donnsdepot.com/: 'LIVE MUSIC / COCKTAILS / DANCING' and a band each night Mon-Sat on its event schedule (hand-checked in the owner's browser 2026-11-08, D-798)";
+  "own site, https://donnsdepot.com/: 'LIVE MUSIC / COCKTAILS / DANCING' and a band each night Mon-Sat on its event schedule (hand-checked in the owner's browser 2026-11-08, re-read 2026-11-23, D-798)";
 
 /** A directory page: pointers, never the organiser's own word (D-061, D-072). */
 const directory = (url: string, label: string, styles: StyleKey[]): SeedSource => ({
@@ -423,6 +423,8 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
   // answers 403 to GitHub Actions (read 42391420850), so it is hand-checked in the owner's browser monthly (D-798) and
   // never fetched. The 2026-11-08 check: a band every night Mon-Sat, Monday 8:30pm, Wednesday Double or Nothing
   // two-step lessons at 7:30pm then a band 8:30-11:30pm, other nights 9pm; closed Sunday.
+  // Re-checked 2026-11-23 (weekly review, fetched from the cloud: 200): still "DANCING" and a band each night
+  // Mon-Sat (Mon 8:30pm, Wed lessons 7:30pm then band 8:30pm, others 9pm); closed Thanksgiving 11-26.
   {
     url: "https://donnsdepot.com/",
     kind: "html",
@@ -441,7 +443,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         days: [1],
         start: "20:30",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
       {
@@ -450,7 +452,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         days: [2],
         start: "21:00",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
       {
@@ -460,7 +462,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         start: "19:30",
         end: "23:30",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
       {
@@ -469,7 +471,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         days: [4],
         start: "21:00",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
       {
@@ -478,7 +480,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         days: [5],
         start: "21:00",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
       {
@@ -487,7 +489,7 @@ export const AUSTIN_SOURCES: readonly SeedSource[] = [
         days: [6],
         start: "21:00",
         danceCited: DONNS_DANCE_CITED,
-        checkedOn: "2026-11-08",
+        checkedOn: "2026-11-23",
         evidenceUrl: "https://donnsdepot.com/",
       },
     ],
