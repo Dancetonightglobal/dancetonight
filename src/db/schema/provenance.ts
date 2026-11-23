@@ -96,6 +96,9 @@ export const fieldProvenance = pgTable(
   (t) => [
     index("field_provenance_entity_field_idx").on(t.entityType, t.entityId, t.field),
     index("field_provenance_source_id_idx").on(t.sourceId),
+    // conflicts_with references this table ON DELETE SET NULL: without an index every deleted row scans the whole table,
+    // and the archive delete (D-885) timed out on its first live run, 2026-11-23 (D-891).
+    index("field_provenance_conflicts_with_idx").on(t.conflictsWith),
     check("field_provenance_evidence_length", sql`char_length(${t.evidence}) <= 300`),
   ],
 );

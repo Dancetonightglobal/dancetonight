@@ -622,3 +622,4 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-886 Ad and stub rows, club-night morning slips, ends before starts, stale Halloween titles (coverage)
 ## D-887 Tango Mango venue is the block before the street, not the first non-price line (weekly review)
 ## D-888 Meals, markets, talks, visits, film cycles, errands and holiday closures are screened (weekly review)
+## D-891 Every foreign key a delete checks leads an index (the archive's first live run timed out)

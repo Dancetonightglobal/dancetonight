@@ -85,6 +85,13 @@
       "when": 1794840892602,
       "tag": "0011_archived_events",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1795463348104,
+      "tag": "0012_fk_delete_indexes",
+      "breakpoints": true
     }
   ]
 }

@@ -121,6 +121,9 @@ export const events = pgTable(
     index("events_title_normalized_trgm_idx").using("gin", sql`${t.titleNormalized} gin_trgm_ops`),
     index("events_metro_id_night_date_idx").on(t.metroId, t.nightDate),
     index("events_venue_id_idx").on(t.venueId),
+    // Deleting an event checks every row that names it as merged_into_id (ON DELETE SET NULL): without this index each
+    // deleted event scans the whole table, and the archive delete (D-885) ran past the statement timeout (D-891).
+    index("events_merged_into_id_idx").on(t.mergedIntoId),
     index("events_series_id_night_date_idx").on(t.seriesId, t.nightDate),
     // No start-time check since D-060: a listing may give its night and no time. night_date is
     // NOT NULL, so every row still carries a date.

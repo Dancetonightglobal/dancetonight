@@ -98,6 +98,8 @@ export const submissions = pgTable(
   (t) => [
     index("submissions_status_created_at_idx").on(t.status, t.createdAt),
     index("submissions_ip_hash_idx").on(t.ipHash),
+    // Deleting an event (the archive, D-885) checks this foreign key (ON DELETE SET NULL): it must lead an index (D-891).
+    index("submissions_resulting_event_id_idx").on(t.resultingEventId),
   ],
 );
 
