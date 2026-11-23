@@ -19,11 +19,12 @@
 import { DISCOVERY_ADAPTERS } from "@/src/adapters/registry/discovery";
 import { PLATFORM_ADAPTERS } from "@/src/adapters/registry/platforms";
 import { READER_ADAPTERS } from "@/src/adapters/registry/readers";
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq, inArray, sql } from "drizzle-orm";
 
 import { titleNamesOutsideTown } from "@/config/metro-regions";
 import { titleNamesVenueElsewhere } from "@/src/domain/title-elsewhere";
 import { METRO_RETIRED_SOURCES, METRO_SOURCES } from "@/config/sources";
+import { retiredMatches } from "@/src/pipeline/retired-sources";
 import { robotsWaiverLines } from "@/src/pipeline/robots-waiver";
 import { diceAdapter } from "@/src/adapters/apis/dice";
 import { eventbriteAdapter } from "@/src/adapters/apis/eventbrite";
@@ -613,11 +614,26 @@ export async function runIngest(options: IngestOptions): Promise<IngestReport> {
   report.venues.seedVenues.push(...(await storeVenueNeighbourhoods(db, metro.id)));
   // Retired starting addresses stop being fetched, and the report still names them (D-047). Their
   // listings from tonight on go too: nothing else would retire them (docs/WORKSTREAMS.md).
+  // A retired site's origin ("https://www.vteatro.com/") retires every page of it discovery stored (D-889).
+  const metroSourceUrls = (METRO_RETIRED_SOURCES[metro.slug] ?? []).some((r) => r.wholeSite)
+    ? await db
+        .select({ id: sourcesTable.id, url: sourcesTable.url })
+        .from(sourcesTable)
+        .where(eq(sourcesTable.metroId, metro.id))
+    : [];
   for (const retired of METRO_RETIRED_SOURCES[metro.slug] ?? []) {
+    const ids = retired.wholeSite
+      ? metroSourceUrls.filter((s) => retiredMatches(s.url, retired)).map((s) => s.id)
+      : [];
     const switchedOff = await db
       .update(sourcesTable)
       .set({ enabled: false })
-      .where(and(eq(sourcesTable.metroId, metro.id), eq(sourcesTable.url, retired.url)))
+      .where(
+        and(
+          eq(sourcesTable.metroId, metro.id),
+          ids.length > 0 ? inArray(sourcesTable.id, ids) : eq(sourcesTable.url, retired.url),
+        ),
+      )
       .returning();
     const line = emptyLine(retired.url, null);
     line.detail = `retired from the starting list: ${retired.reason}`;
@@ -1489,10 +1505,14 @@ export async function runIngest(options: IngestOptions): Promise<IngestReport> {
   report.refresh.skipped += enabled.length - queue.length;
   const queued = new Set(enabled.map((s) => s.url));
   // A page that still links to a retired starting address does not bring it back (D-110).
-  const retiredUrls = new Set((METRO_RETIRED_SOURCES[metro.slug] ?? []).map((r) => r.url));
+  const retiredAddresses = METRO_RETIRED_SOURCES[metro.slug] ?? [];
   const addDiscovered = async (candidates: SourceCandidate[]) => {
     for (const candidate of candidates) {
-      if (queued.has(candidate.url) || retiredUrls.has(candidate.url)) continue;
+      if (
+        queued.has(candidate.url) ||
+        retiredAddresses.some((r) => retiredMatches(candidate.url, r))
+      )
+        continue;
       queued.add(candidate.url);
       const source = await upsertSource(db, metro.id, candidate);
       report.discovered += 1;

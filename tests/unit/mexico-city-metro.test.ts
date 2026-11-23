@@ -97,6 +97,7 @@ describe("Ciudad de México (D-440)", () => {
     ]);
     // D-446: Departamento's agenda is a radio schedule; then six dead feeds discovery switched on (2026-11-01).
     expect(METRO_RETIRED_SOURCES["mexico-city"]?.map((r) => r.url)).toEqual([
+      "https://www.vteatro.com/",
       "https://depa.radio/agenda",
       "http://www.elduxdevenecia.com",
       "https://gentedemezcal.com/en/",

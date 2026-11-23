@@ -302,6 +302,8 @@ const DICE_BROWSE = "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59/mu
 export interface RetiredSource {
   url: string;
   reason: string;
+  /** Retire every page of this host in the metro, not just this address (D-889). */
+  wholeSite?: boolean;
 }
 
 export const NYC_SOURCES: readonly SeedSource[] = [

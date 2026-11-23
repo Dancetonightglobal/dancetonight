@@ -85,7 +85,20 @@ export function cancelledByTitle(title: string): boolean {
   return false;
 }
 
-const PLACEHOLDER_WHOLE = new Set(["tba", "tbd", "n a", "none"]);
+// D-889: link text a calendar's button gave as the row's title ("Learn more here", Nashville Skinny Dennis).
+const PLACEHOLDER_WHOLE = new Set([
+  "tba",
+  "tbd",
+  "n a",
+  "none",
+  "learn more",
+  "learn more here",
+  "click here",
+  "click for more",
+  "info coming soon",
+  "details coming soon",
+  "more details soon",
+]);
 const PLACEHOLDER_ENDINGS = [
   "is n a",
   "is tba",

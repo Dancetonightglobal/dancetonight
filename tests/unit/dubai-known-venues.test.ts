@@ -45,8 +45,8 @@ function makeListing({
 describe("Dubai known venues", () => {
   const dubaiVenues = KNOWN_VENUES.dubai ?? [];
 
-  it("has 12 entries", () => {
-    expect(dubaiVenues).toHaveLength(12);
+  it("has 13 entries (The Penthouse, D-889)", () => {
+    expect(dubaiVenues).toHaveLength(13);
   });
 
   it("each entry has a point within Dubai bounds", () => {

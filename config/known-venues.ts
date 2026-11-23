@@ -37,6 +37,20 @@ export interface KnownVenue {
 
 export const KNOWN_VENUES: Readonly<Record<string, readonly KnownVenue[]>> = {
   nyc: [
+    // House of Yes, 2 Wyckoff Ave, Bushwick: its own calendar row sat in Williamsburg, RA's "The Onyx Room at House of
+    // Yes" in Bushwick, so one night showed twice (weekly review 2026-11-23, D-889). Point: OSM events_venue "House of
+    // Yes, 2, Wyckoff Avenue, Bushwick, 11237" (Nominatim, 2026-11-23).
+    {
+      names: [
+        "House of Yes",
+        "The Onyx Room at House of Yes",
+        "Onyx Room at House of Yes",
+        "House of Yes NYC",
+      ],
+      address: "2 Wyckoff Ave, Brooklyn, NY 11237",
+      point: { lat: 40.7067833, lng: -73.9235822 },
+      canonical: true,
+    },
     // Astoria cocktail bar; Time Out NYC, NYC Tourism (2026-10-22).
     {
       names: ["The Last Word"],
@@ -134,6 +148,20 @@ export const KNOWN_VENUES: Readonly<Record<string, readonly KnownVenue[]>> = {
     },
   ],
   london: [
+    // Alexandra Palace, Alexandra Palace Way N22 7AY: DICE's row was geocoded to Mortlake beside Ticketmaster's
+    // "Alexandra Palace Theatre", so Gorgon City showed three times on 11-28 (weekly review 2026-11-23, D-889). Point:
+    // OSM exhibition_centre "Alexandra Palace, Alexandra Palace Way, Hornsey, N22 7AY" (Nominatim, 2026-11-23).
+    {
+      names: [
+        "Alexandra Palace",
+        "Alexandra Palace Theatre",
+        "Alexandra Palace Great Hall",
+        "Ally Pally",
+      ],
+      address: "Alexandra Palace Way, London N22 7AY",
+      point: { lat: 51.5943495, lng: -0.1306402 },
+      canonical: true,
+    },
     // UNDR, under the Westway at Portobello Green: ruedalibre writes "UNDR House Of Flavaz" (Casa Tumbao), which was
     // geocoded to East London (51.555, 0.016); social-dance.today writes "Undrw10", 3 Thorpe Close (daily check 11-05,
     // D-750). Thorpe Close is W10 5XL (freeofficefinder, zestate); point: OSM postcode W10 5XL (Nominatim, 2026-11-05).
@@ -1871,6 +1899,8 @@ export const KNOWN_VENUES: Readonly<Record<string, readonly KnownVenue[]>> = {
       names: ["Crobar", "Crobar Buenos Aires", "Crobar Studio"],
       address: "Av. Marcelino Freyre s/n, Paseo de la Infanta, Palermo, Buenos Aires",
       point: { lat: -34.5692392, lng: -58.420215 },
+      // RA's "Crobar - Buenos Aires" and the club's own "Crobar" were two venue rows (weekly review 2026-11-23, D-889).
+      canonical: true,
     },
     // Espacio Riobamba: Champagne Tango Club, Perteño Y Bailarín (Mapa Milonguero 2026, D-403;
     // unplaced in the full read of 2026-10-30). Point: OSM place "345, Riobamba, Balvanera" (Nominatim, 2026-10-30).
@@ -2561,6 +2591,21 @@ export const KNOWN_VENUES: Readonly<Record<string, readonly KnownVenue[]>> = {
   // hand-checked point. "streets" holds a phrase of the address the venue's own seed (config/sources/dubai.ts) or RA
   // writes, so its rows are matched whatever venue name the page gives. Refusals from read 42336307211 (2026-11-07).
   dubai: [
+    // The Penthouse, FIVE Palm Jumeirah: its own calendar's "Penthouse Dubai" and RA's "The Penthouse" were two venue
+    // rows about 3 km apart, so "HITTY | MASH-UP FRIDAYS" showed twice (weekly review 2026-11-23, D-889). Point: OSM
+    // hotel "FIVE Palm Jumeirah Dubai, No 1, West Beach Palm Jumeirah" (Nominatim, 2026-11-23). No streets: Bohemia
+    // shares the hotel's address.
+    {
+      names: [
+        "Penthouse Dubai",
+        "The Penthouse",
+        "The Penthouse Dubai",
+        "The Penthouse FIVE Palm Jumeirah",
+      ],
+      address: "FIVE Palm Jumeirah Hotel, No 1 The Palm Jumeirah, Palm Jumeirah, Dubai",
+      point: { lat: 25.1040786, lng: 55.1490731 },
+      canonical: true,
+    },
     // Bâoli Dubai, J1 Beach, Jumeira First (its own calendar page). Point: Google Maps pin for "Bâoli Dubai", plus
     // code 67G4+CG (Chrome audit, 2026-11-11; the J1 Beach complex pin is about 200 m away). OSM has no node.
     // All 5 rows unplaced on read 42956111758.

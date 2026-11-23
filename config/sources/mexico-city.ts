@@ -242,6 +242,12 @@ export const MEXICO_CITY_SOURCES: readonly SeedSource[] = [
 /** Starting addresses retired, each with the reason (D-047). */
 export const MEXICO_CITY_RETIRED: readonly RetiredSource[] = [
   {
+    url: "https://www.vteatro.com/",
+    wholeSite: true,
+    reason:
+      'a theatre ticket site: its plays ("Y llegaron las Brujas", "Alicia en el país de las maravillas") came through as Social at Roldán Sandoval Cultural Center (daily checks 2026-11-20 to 11-22, D-889)',
+  },
+  {
     url: "https://depa.radio/agenda",
     // Its weekly grid names "Radio Bar Sessions EN VIVO" (live radio) and no dance (run 41043406841, D-446).
     reason: "a radio schedule: its bar sessions are live radio and name no dance",

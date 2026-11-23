@@ -596,6 +596,9 @@ const WATCH_LISTENING_CHALLENGE = new RegExp(
       "table ronde|visites? commentees?|visites? hors les murs|ciclo de cine|ciclo de cinema|documentales",
       "proyeccion (?:de )?pelicula|cine para escuelas|tea ceremon(?:y|ies)|juggling|ice skating|surf experiences?",
       "surf lessons?|speed friending|music appreciation|close reading",
+      // D-889 (weekly review 2026-11-23): a pub's football screenings
+      "premier league|champions league|europa league|nations championship|games? on (?:our|the) (?:big )?screens?",
+      "live football|football screenings?|live sports? screenings?",
     ].join("|") +
     ")\\b",
 );
@@ -617,6 +620,24 @@ const STATUS_ONLY_TITLES = new Set([
   "obert",
   "acik",
 ]);
+
+/** Club names a fixture names on both sides of "vs" ("Arsenal vs Borussia Dortmund", "Packers vs Rams"): D-889. */
+const TEAM_WORDS = words(`
+  arsenal chelsea liverpool tottenham spurs everton newcastle united villa fulham brentford bournemouth brighton leeds
+  sunderland burnley celtic rangers dortmund borussia bayern juventus napoli lazio psg atletico betis
+  sporting benfica ajax psv feyenoord galatasaray fenerbahce besiktas boca flamengo fluminense botafogo
+  corinthians palmeiras packers rams cowboys patriots dolphins steelers ravens vikings falcons commanders
+  lakers knicks celtics warriors yankees mets dodgers`);
+
+/** "X vs Y" where a club name stands on each side and nothing names a dance or a party (D-889). */
+function isFixture(tokens: readonly string[]): boolean {
+  const at = tokens.findIndex((t) => t === "vs" || t === "v");
+  if (at <= 0 || at >= tokens.length - 1) return false;
+  return (
+    tokens.slice(0, at).some((t) => TEAM_WORDS.has(t)) &&
+    tokens.slice(at + 1).some((t) => TEAM_WORDS.has(t))
+  );
+}
 
 /** Music jam: "jam", "jams", "jam session", "jam sessions" but not dance jams or slow jams (R&B genre). */
 const MUSIC_JAM_REGEX = /(?<!\bslow\s+)\b(?:jam|jams|jam session|jam sessions)\b/i;
@@ -1184,6 +1205,14 @@ export function screenTitle(title: string, venueName?: string | null): NotAnEven
       reason:
         "a watch party, listening session, show, fair, outing or status label, not a dance (D-589, D-762)",
     };
+  }
+  if (
+    isFixture(tokens) &&
+    !MEAL_PARTY_WORDS.test(normalized) &&
+    matchStyles(normalized).styles.length === 0 &&
+    !hasDanceWord(normalized)
+  ) {
+    return { kind: "not_dance_scope", reason: "a sports fixture on a screen, not a dance (D-889)" };
   }
   if (
     MEAL_TITLE.test(normalized) &&
