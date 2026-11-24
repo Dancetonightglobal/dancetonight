@@ -626,3 +626,4 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-890 The weekly review fixes every real group by recipe, with helpers for the mechanical steps (maintenance)
 ## D-891 Every foreign key a delete checks leads an index (the archive's first live run timed out)
 ## D-892 A read-only Sabaki probe explains a day with no Sabaki cards (diagnostics)
+## D-893 Sabaki is read to 20 pages and says so when the cap cuts it off

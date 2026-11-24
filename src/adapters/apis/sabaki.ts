@@ -27,7 +27,12 @@ const num = (v: unknown): number | null => {
 
 export const SABAKI_BASE = "https://partner.sabaki.dance/v1/events";
 export const SABAKI_PAGE_SIZE = 500;
-export const SABAKI_MAX_PAGES = 5;
+/**
+ * Sabaki pages by change time (the cursor is "<updated at>|<event id>"), not by date, and has no date filter, so the
+ * newest events, mostly upcoming nights, come last: a cap cuts those off first. 20 pages is 10,000 events per metro
+ * (Barcelona held 646 on 2026-11-23), at 200 requests per 15 minutes allowed (D-893).
+ */
+export const SABAKI_MAX_PAGES = 20;
 export const SABAKI_METROS: readonly string[] = ["miami", "barcelona"];
 
 export function sabakiUrl(metro: Metro, cursor: string | null): string {
@@ -217,6 +222,13 @@ export const sabakiAdapter: SourceAdapter = {
       notes.push(`page ${page + 1}: ${items.length} events`);
       const nextCursor = str(body.nextCursor);
       if (!nextCursor) {
+        break;
+      }
+      if (page === SABAKI_MAX_PAGES - 1) {
+        // More pages remain: the newest events were not read (D-893).
+        notes.push(
+          `WARNING: stopped at the ${SABAKI_MAX_PAGES}-page cap (${allEvents.length} events) with more to read; the newest Sabaki events, mostly upcoming nights, were not read. Raise SABAKI_MAX_PAGES.`,
+        );
         break;
       }
       cursor = nextCursor;

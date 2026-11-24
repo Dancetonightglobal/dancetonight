@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   SABAKI_BASE,
+  SABAKI_MAX_PAGES,
   SABAKI_METROS,
   SABAKI_PAGE_SIZE,
   sabakiAdapter,
@@ -246,6 +247,55 @@ describe("Sabaki", () => {
     expect(result.listings).toHaveLength(2);
     expect(result.notes).toContain("page 1: 1 events");
     expect(result.notes).toContain("page 2: 1 events");
+  });
+
+  // D-893: Sabaki pages by change time, not by date, so the newest events (mostly upcoming nights) come last. The
+  // reader follows the cursor up to 20 pages (10,000 events) and says so in the report when it stops at the cap.
+  it("reads up to 20 pages and warns when the cap cuts the newest events off", async () => {
+    expect(SABAKI_MAX_PAGES).toBe(20);
+    const fixtures: Fixture[] = Array.from({ length: SABAKI_MAX_PAGES }, (_, i) => {
+      const url = sabakiUrl(MIAMI, i === 0 ? null : `c${i}`);
+      return {
+        request: { method: "GET", url },
+        response: {
+          url,
+          status: 200,
+          headers: {},
+          body: JSON.stringify({
+            items: [
+              {
+                eventId: `e${i}`,
+                eventUrl: `https://sabaki.dance/event/e${i}`,
+                title: `Salsa Social ${i}`,
+                startDateTime: "2026-10-30T20:00:00-04:00",
+                danceStyles: ["Salsa"],
+              },
+            ],
+            nextCursor: `c${i + 1}`,
+          }),
+        },
+      };
+    });
+    let t = Date.now();
+    const runCtx: RunCtx = {
+      metro: MIAMI,
+      now: () => new Date(t),
+      http: createPoliteHttp({
+        transport: fixtureTransport(fixtures),
+        userAgent: "test",
+        now: () => t,
+        sleep: async (ms) => void (t += ms),
+      }),
+      env: { SABAKI_API_KEY: "key" },
+      log: () => {},
+    };
+    const result = await sabakiAdapter.harvestMetro!(MIAMI, NIGHTS, runCtx);
+    expect(result.listings).toHaveLength(SABAKI_MAX_PAGES);
+    expect(result.notes).toContain(`page ${SABAKI_MAX_PAGES}: 1 events`);
+    const warnings = (result.notes ?? []).filter((n) =>
+      n.startsWith("WARNING: stopped at the 20-page cap"),
+    );
+    expect(warnings).toHaveLength(1);
   });
 
   it("rejects on API error", async () => {
