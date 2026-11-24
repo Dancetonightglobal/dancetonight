@@ -1,8 +1,10 @@
 // Sabaki Partner API probe (D-892): one read per metro with the repository's key, then the reader's own rules, so a
-// day with no Sabaki cards is explained in one minute instead of one ingest run per guess. It writes nothing, reads
-// no database, and never prints the key. Started by hand: .github/workflows/sabaki-probe.yml.
+// day with no Sabaki cards is explained in one minute instead of one ingest run per guess. It writes nothing (with
+// DATABASE_URL set it also runs read-only SELECTs in a read-only transaction) and never prints the key. Started by
+// hand: .github/workflows/sabaki-probe.yml.
 //   pnpm -s sabaki:probe            (miami and barcelona)
 //   pnpm -s sabaki:probe miami
+import postgres from "postgres";
 import { SABAKI_MAX_PAGES, sabakiToListings, sabakiUrl } from "@/src/adapters/apis/sabaki";
 import type { Metro } from "@/src/adapters/types";
 import { BARCELONA_METRO } from "@/src/db/seed/barcelona";
@@ -120,6 +122,58 @@ async function probe(slug: string, key: string): Promise<void> {
   for (const s of screened.slice(0, 5)) console.log(`    screened: ${s.title} (${s.reason})`);
 }
 
+/**
+ * What the live database says about Sabaki (read-only SELECTs, D-892): its flag rows, its source rows per metro
+ * (enabled, next harvest, health), how many stored events it gave, and what each metro's latest runs wrote from it.
+ */
+async function database(url: string): Promise<void> {
+  const sql = postgres(url, { max: 1, prepare: false, idle_timeout: 5 });
+  try {
+    await sql.begin("read only", async (tx) => {
+      const flags = await tx`
+        select f.key, f.scope, m.slug, f.enabled from feature_flags f left join metros m on m.id = f.metro_id
+        where f.key ilike '%sabaki%'`;
+      console.log(`database: ${flags.length} sabaki flag rows`);
+      for (const f of flags)
+        console.log(`  flag ${f.key} ${f.scope} ${f.slug ?? "-"} enabled=${f.enabled}`);
+      const srcs = await tx`
+        select s.url, m.slug, s.enabled, s.next_harvest_at, s.health from sources s
+        left join metros m on m.id = s.metro_id
+        where s.platform = 'sabaki' or s.url ilike '%sabaki%'`;
+      console.log(`database: ${srcs.length} sabaki source rows`);
+      for (const r of srcs)
+        console.log(
+          `  source ${r.url} metro=${r.slug ?? "-"} enabled=${r.enabled} next=${r.next_harvest_at?.toISOString?.() ?? r.next_harvest_at} health=${JSON.stringify(r.health)}`,
+        );
+      const evs = await tx`
+        select m.slug, count(distinct e.id)::int as n, min(e.night_date)::text as first, max(e.night_date)::text as last,
+               count(distinct e.id) filter (where e.night_date >= current_date)::int as upcoming
+        from event_sources es join sources s on s.id = es.source_id join events e on e.id = es.event_id
+        join metros m on m.id = e.metro_id
+        where s.platform = 'sabaki' or s.url ilike '%sabaki%' group by m.slug`;
+      console.log(`database: events with a Sabaki source: ${evs.length === 0 ? "none" : ""}`);
+      for (const r of evs)
+        console.log(
+          `  ${r.slug}: ${r.n} events (${r.upcoming} upcoming), nights ${r.first}..${r.last}`,
+        );
+      const runs = await tx`
+        select m.slug, j.started_at, j.status, j.error,
+               j.stats -> 'listingsBySource' ->> 'https://www.sabaki.com/' as sabaki_written,
+               jsonb_typeof(j.stats -> 'listingsBySource') as has_sources
+        from job_runs j join metros m on m.id = j.metro_id
+        where j.job = 'ingest' and m.slug in ('miami', 'barcelona')
+        order by j.started_at desc limit 8`;
+      console.log("database: latest ingest runs (miami, barcelona)");
+      for (const r of runs)
+        console.log(
+          `  ${r.slug} ${r.started_at?.toISOString?.() ?? r.started_at} ${r.status} sabaki_written=${r.sabaki_written ?? "absent"}${r.error ? ` error=${String(r.error).slice(0, 120)}` : ""}`,
+        );
+    });
+  } finally {
+    await sql.end({ timeout: 5 });
+  }
+}
+
 async function main(): Promise<number> {
   const key = process.env.SABAKI_API_KEY?.trim();
   if (!key) {
@@ -128,6 +182,14 @@ async function main(): Promise<number> {
   }
   const slugs = process.argv.slice(2).length > 0 ? process.argv.slice(2) : Object.keys(METROS);
   for (const slug of slugs) await probe(slug, key);
+  const url = process.env.DATABASE_URL?.trim();
+  if (url) {
+    try {
+      await database(url);
+    } catch (err) {
+      console.log(`database: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  } else console.log("database: DATABASE_URL not set, skipped");
   return 0;
 }
 

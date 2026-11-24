@@ -2,7 +2,7 @@ name: sabaki-probe
 
 # Reads Sabaki's Partner API once per metro with the SABAKI_API_KEY secret and prints what came back and what the
 # reader keeps, so a day with no Sabaki cards is explained in a minute (D-892). Started by hand from the Actions tab.
-# It writes nothing, reads no database, and never prints the key.
+# It writes nothing (its database reads run in a read-only transaction) and never prints the key.
 
 on:
   workflow_dispatch:
@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 10
     env:
       SABAKI_API_KEY: ${{ secrets.SABAKI_API_KEY }}
+      # Read-only SELECTs in a read-only transaction: Sabaki's flags, source rows, stored events and latest runs.
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
       DANCETONIGHT_MODE: production
     steps:
       - uses: actions/checkout@v4
