@@ -1,0 +1,33 @@
+name: sabaki-probe
+
+# Reads Sabaki's Partner API once per metro with the SABAKI_API_KEY secret and prints what came back and what the
+# reader keeps, so a day with no Sabaki cards is explained in a minute (D-892). Started by hand from the Actions tab.
+# It writes nothing, reads no database, and never prints the key.
+
+on:
+  workflow_dispatch:
+    inputs:
+      metro:
+        description: "Metro (miami or barcelona; blank: both)"
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SABAKI_API_KEY: ${{ secrets.SABAKI_API_KEY }}
+      DANCETONIGHT_MODE: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Probe Sabaki
+        run: pnpm -s sabaki:probe ${{ inputs.metro }}

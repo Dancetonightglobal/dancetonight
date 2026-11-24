@@ -625,3 +625,4 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-889 One club, one canonical venue; football fixtures, link text and whole-site retirements (weekly review follow-up)
 ## D-890 The weekly review fixes every real group by recipe, with helpers for the mechanical steps (maintenance)
 ## D-891 Every foreign key a delete checks leads an index (the archive's first live run timed out)
+## D-892 A read-only Sabaki probe explains a day with no Sabaki cards (diagnostics)

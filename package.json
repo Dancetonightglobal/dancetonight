@@ -27,6 +27,7 @@
     "link:check": "tsx src/jobs/link-check.ts",
     "archive:past": "tsx src/jobs/archive-past.ts",
     "review:screen": "tsx src/jobs/review-screen.ts",
+    "sabaki:probe": "tsx src/jobs/sabaki-probe.ts",
     "discover": "tsx src/jobs/discover.ts",
     "eval:extraction": "tsx evals/extraction/run.ts",
     "eval:refresh": "tsx evals/refresh/replay.ts",
