@@ -1,0 +1,37 @@
+name: extraction-scorecard
+
+# The extraction scorecard (D-897): a sample of real pages from the database read by Workers AI's models and by
+# DeepSeek V3.2 on Bedrock, scored side by side. Read-only on the database; a few cents of model calls. Started by hand.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: "How many pages to sample"
+        default: "40"
+
+permissions:
+  contents: read
+
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+      BEDROCK_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      BEDROCK_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      BEDROCK_INFERENCE_PROFILE_ARN: ${{ vars.BEDROCK_INFERENCE_PROFILE_ARN }}
+      AI_ENABLE_PAID: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Score the models
+        run: pnpm -s eval:scorecard "${{ inputs.pages }}"

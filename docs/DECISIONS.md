@@ -629,3 +629,5 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-893 Sabaki is read to 20 pages and says so when the cap cuts it off
 ## D-894 Trim the database before a Supabase downgrade (maintenance)
 ## D-895 A read-only cost report from cost_log and the AWS bill (maintenance)
+## D-896 No nightly test run in the private repository (decided by the owner)
+## D-897 An extraction scorecard on real pages (maintenance)

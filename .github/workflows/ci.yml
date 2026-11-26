@@ -5,15 +5,12 @@ name: ci
 # the check passes and something the interface is built from changed (`ui` below).
 # Pull requests only (D-162): every change reaches main through one, and `foreman ship` merges only
 # when its checks pass, so a second run on main checked the same tree again. Run it by hand on main
-# with workflow_dispatch. Every night the whole suite and the browser suite run on main (D-569).
+# with workflow_dispatch. The nightly run of the whole suite on main (D-569) stopped on 2026-11-26
+# (D-896): it re-tested an unchanged tree every night for ~21 minutes of private-repository Actions time.
 on:
   pull_request:
     paths-ignore: ["docs/**", "**/*.md"]
   workflow_dispatch:
-  # D-569: a pull request runs only the tests its change reaches; the whole suite and the browser
-  # suite run every night on main (and by hand with workflow_dispatch).
-  schedule:
-    - cron: "17 4 * * *"
 
 # A newer push to a pull request cancels the run it supersedes. Several chats push in parallel
 # (docs/WORKSTREAMS.md), and a private repository's Actions minutes are limited. Pushes to main are

@@ -32,6 +32,7 @@
     "sabaki:probe": "tsx src/jobs/sabaki-probe.ts",
     "discover": "tsx src/jobs/discover.ts",
     "eval:extraction": "tsx evals/extraction/run.ts",
+    "eval:scorecard": "tsx evals/extraction/scorecard.ts",
     "eval:refresh": "tsx evals/refresh/replay.ts",
     "eval:recall": "tsx evals/recall/run.ts",
     "eval:serper-gap": "tsx src/jobs/serper-gap.ts",
