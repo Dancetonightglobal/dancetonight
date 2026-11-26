@@ -1,4 +1,4 @@
-// Maintenance M1 (the owner 2026-11-16): copy nights more than 30 days past to the archive spreadsheet (a tab per month),
+// Maintenance M1 (the owner 2026-11-16): copy nights more than 7 days past (D-894) to the archive spreadsheet (a tab per month),
 // then delete them; their addresses then say "This night has passed" (archived_events).
 // `pnpm archive:past`, run daily by .github/workflows/archive.yml.
 // A dry run (the default: anything but ARCHIVE_DRY_RUN=0) only counts and needs no Google credentials.

@@ -1,0 +1,39 @@
+name: db-trim
+
+# Measures what fills the database and, only when started with "apply", trims what nothing reads again and returns
+# the space with VACUUM FULL (D-894), so the Supabase plan can be downgraded. Started by hand from the Actions tab.
+# The default is a dry run: read-only counts and sizes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Delete and compact (otherwise a read-only dry run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: db-trim
+  cancel-in-progress: false
+
+jobs:
+  trim:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+      DB_TRIM_APPLY: ${{ inputs.apply && '1' || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Trim the database
+        run: pnpm -s db:trim

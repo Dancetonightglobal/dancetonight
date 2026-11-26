@@ -1,4 +1,4 @@
-// Maintenance M1 (the owner 2026-11-16 'A', 1a, 2a): nights more than 30 days past (each city's own tonight) are written
+// Maintenance M1 (the owner 2026-11-16 'A', 1a, 2a): nights more than 7 days past since D-894 (30 before; each city's own tonight) are written
 // to one Google spreadsheet, a tab per month ("2026-10", with user reports on them in "reports 2026-10"), then
 // deleted with their provenance; each deleted slug goes to archived_events so its address says the night passed.
 // Nothing is deleted unless the sheet write succeeded; a dry run only counts. Re-runs never write a row twice.
@@ -23,7 +23,7 @@ import { closeTestDb, describeDb, requireDbInCi, resetDb, testDb } from "@/tests
 
 requireDbInCi();
 
-const NOW = new Date("2026-11-16T16:00:00Z"); // tonight in New York is 2026-11-16; cutoff: nights before 2026-10-17
+const NOW = new Date("2026-11-16T16:00:00Z"); // tonight in New York is 2026-11-16; cutoff: nights before 2026-11-09
 const NY = "America/New_York";
 
 class FakeSheets implements SheetsClient {
@@ -50,8 +50,8 @@ class FakeSheets implements SheetsClient {
 }
 
 describe("archive tabs", () => {
-  it("keeps 30 days and names a tab per month", () => {
-    expect(ARCHIVE_KEEP_DAYS).toBe(30);
+  it("keeps 7 days (D-894) and names a tab per month", () => {
+    expect(ARCHIVE_KEEP_DAYS).toBe(7);
     expect(monthTab("2026-10-06")).toBe("2026-10");
     expect(reportsTab("2026-10-06")).toBe("reports 2026-10");
     expect(EVENT_HEADER[0]).toBe("event_id");
@@ -148,8 +148,8 @@ describeDb("runArchive", () => {
       status: "cancelled",
       confirmation: "cancelled",
     });
-    const boundary = await event("swing-on-the-cutoff", "2026-10-17");
-    const recent = await event("bachata-last-week", "2026-11-06");
+    const boundary = await event("swing-on-the-cutoff", "2026-11-09");
+    const recent = await event("bachata-last-week", "2026-11-12");
     for (const id of [old, merged, cancelled, boundary, recent]) await provenance(id);
     await db.insert(reports).values({
       eventId: old,

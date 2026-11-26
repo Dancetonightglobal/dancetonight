@@ -10,7 +10,8 @@ import type { SheetsClient } from "@/src/pipeline/google-sheets";
 import { currentNightDate } from "@/src/domain/tonight";
 import { addCalendarDays, localDateOf } from "@/src/domain/time";
 
-export const ARCHIVE_KEEP_DAYS = 30;
+/** Nights kept after each city's tonight: 30 until 2026-11-26, then 7 so the plan fits the free tier (D-894). */
+export const ARCHIVE_KEEP_DAYS = 7;
 
 export const EVENT_HEADER = [
   "event_id",

@@ -26,6 +26,7 @@
     "dedupe:unmerge": "tsx src/jobs/dedupe-unmerge.ts",
     "link:check": "tsx src/jobs/link-check.ts",
     "archive:past": "tsx src/jobs/archive-past.ts",
+    "db:trim": "tsx src/jobs/db-trim.ts",
     "review:screen": "tsx src/jobs/review-screen.ts",
     "sabaki:probe": "tsx src/jobs/sabaki-probe.ts",
     "discover": "tsx src/jobs/discover.ts",

@@ -1,6 +1,6 @@
 name: archive
 
-# Maintenance M1 (the owner 2026-11-16): nights more than 30 days past each city's tonight are copied to the archive
+# Maintenance M1 (the owner 2026-11-16): nights more than 7 days past (D-894) each city's tonight are copied to the archive
 # spreadsheet (a tab per month, user reports in "reports <month>"), then deleted; their addresses answer "This night
 # has passed". Dry run (counts only) unless the repository variable ARCHIVE_DRY_RUN is "0". Writing needs the
 # GOOGLE_SA_JSON secret (a service-account key) and the ARCHIVE_SPREADSHEET_ID variable (a sheet shared with it).
