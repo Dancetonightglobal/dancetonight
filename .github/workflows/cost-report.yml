@@ -1,0 +1,40 @@
+name: cost-report
+
+# What the AI spent (D-895): the database's cost_log over the last 30 days (read-only), then the AWS account's real
+# Bedrock bill from Cost Explorer when the keys may read it. Started by hand from the Actions tab.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: AI spend from cost_log
+        run: pnpm -s cost:report
+      - name: AWS bill (Cost Explorer)
+        # The keys belong to an IAM user that may only invoke the model, so this may be denied; it never fails the run.
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          START=$(date -u -d '30 days ago' +%Y-%m-%d); END=$(date -u +%Y-%m-%d)
+          echo "AWS cost by service, $START .. $END:"
+          aws ce get-cost-and-usage --time-period Start=$START,End=$END --granularity MONTHLY \
+            --metrics UnblendedCost --group-by Type=DIMENSION,Key=SERVICE \
+            --query 'ResultsByTime[].Groups[].[Keys[0],Metrics.UnblendedCost.Amount]' --output text 2>&1 | sed 's/^/  /' || true
