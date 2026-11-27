@@ -71,6 +71,12 @@ import { unplacedTitlePrefix } from "@/src/domain/unplaced-title-prefix";
 import { placedBesideBareCopy } from "@/src/domain/placed-beside-bare-copy";
 import { sameSourceSubsetTwin } from "@/src/domain/same-source-subset";
 import {
+  FAR_METRES,
+  ONE_START_MINUTES,
+  WIDE_START_MINUTES,
+  widePairVerdict,
+} from "@/src/domain/wide-pairs";
+import {
   CLOSING_TIME_TAIL,
   oneTitleStartsApart,
   TITLE_STARTS_APART_MINUTES,
@@ -90,7 +96,7 @@ export interface MergedPair {
   survivor: string;
   merged: string;
   /** How the pair was found: the organizer link's kind, the D-006 score, or the model review. */
-  by: OrganizerLink | "score" | "model" | "weekly";
+  by: OrganizerLink | "score" | "model" | "weekly" | "wide";
   conflicting: boolean;
 }
 
@@ -110,6 +116,8 @@ export interface DedupeReport {
   possible: string[];
   /** Pairs from two sources at one venue and one start, not merged, whose titles share no telling word: queued for model review (owner, 2026-10-17). */
   sameSlot: string[];
+  /** The wide pass (D-901): pairs it looked at, merged by its rule, and queued for the model. */
+  wide: { pairs: number; merged: number; queued: number };
 }
 
 export const EMPTY_DEDUPE_REPORT: DedupeReport = {
@@ -123,6 +131,7 @@ export const EMPTY_DEDUPE_REPORT: DedupeReport = {
   released: [],
   possible: [],
   sameSlot: [],
+  wide: { pairs: 0, merged: 0, queued: 0 },
 };
 
 /**
@@ -139,6 +148,7 @@ export function formatDedupeReport(report: DedupeReport): string[] {
     score: "score",
     model: "model review",
     weekly: "a weekly rule night yields to a dated night at the venue",
+    wide: "one title, two venue names or times (wide pass)",
   };
   for (const m of report.mergedPairs) {
     lines.push(
@@ -150,6 +160,9 @@ export function formatDedupeReport(report: DedupeReport): string[] {
       `Unmerged: ${r} (its source cancelled it; both listed, so the sources' disagreement shows)`,
     );
   }
+  lines.push(
+    `Wide pass: ${report.wide.pairs} pairs (two venue names or times), ${report.wide.merged} merged by rule, ${report.wide.queued} queued for model review.`,
+  );
   if (report.possible.length > 0) {
     lines.push(`Possible duplicates left (one venue, one start): ${report.possible.length}`);
     for (const p of report.possible) {
@@ -494,6 +507,57 @@ export async function findCandidates(
             )
           )
         )
+      )
+  `);
+  return [...rows];
+}
+
+interface WideCandidateRow extends Record<string, unknown> {
+  a_id: string;
+  b_id: string;
+  same_source: boolean;
+}
+
+/**
+ * Pairs for the wide pass (D-901): one night in one city, both listed, starts within
+ * WIDE_START_MINUTES or untimed, titles alike or one event page, and places within FAR_METRES, or
+ * one side unplaced, or one exact title at one start anywhere in the city. widePairVerdict decides.
+ * A pair a person or the model called distinct is skipped in code (distinctPairs).
+ */
+export async function findWideCandidates(
+  db: Db,
+  metroId: string,
+  nights: readonly string[],
+): Promise<WideCandidateRow[]> {
+  if (nights.length === 0) return [];
+  const rows = await db.execute<WideCandidateRow>(sql`
+    select a.id as a_id, b.id as b_id,
+      exists (
+        select 1 from event_sources x join event_sources y on y.source_id = x.source_id
+        where x.event_id = a.id and y.event_id = b.id and x.role = 'primary' and y.role = 'primary'
+      ) as same_source
+    from events a
+    join events b on b.metro_id = a.metro_id and b.night_date = a.night_date and a.id < b.id
+    left join venues va on va.id = a.venue_id
+    left join venues vb on vb.id = b.venue_id
+    where a.metro_id = ${metroId}
+      and a.night_date = any(${`{${nights.join(",")}}`}::date[])
+      and a.status = 'active' and b.status = 'active'
+      and (a.starts_at is null or b.starts_at is null
+        or abs(extract(epoch from (a.starts_at - b.starts_at))) <= ${WIDE_START_MINUTES * 60})
+      and (
+        a.title_normalized = b.title_normalized
+        or similarity(a.title_normalized, b.title_normalized) >= 0.5
+        or word_similarity(a.title_normalized, b.title_normalized) >= 0.8
+        or word_similarity(b.title_normalized, a.title_normalized) >= 0.8
+        or (a.ticket_url is not null and a.ticket_url in (b.ticket_url, b.canonical_url))
+        or (a.canonical_url is not null and a.canonical_url in (b.ticket_url, b.canonical_url))
+      )
+      and (
+        coalesce(a.geo, va.location) is null or coalesce(b.geo, vb.location) is null
+        or ST_DWithin(coalesce(a.geo, va.location), coalesce(b.geo, vb.location), ${FAR_METRES})
+        or (a.title_normalized = b.title_normalized and a.starts_at is not null and b.starts_at is not null
+          and abs(extract(epoch from (a.starts_at - b.starts_at))) <= ${ONE_START_MINUTES * 60})
       )
   `);
   return [...rows];
@@ -1026,6 +1090,8 @@ export async function dedupeMetro(
     linkPairs: linkRows.length,
     mergedPairs: [],
     released,
+    // A fresh object: the spread above copies one level, so EMPTY_DEDUPE_REPORT's own would be shared.
+    wide: { pairs: 0, merged: 0, queued: 0 },
   };
   const gone = new Set<string>();
   const titles = await titlesOf(db, ids);
@@ -1037,6 +1103,7 @@ export async function dedupeMetro(
     by: MergedPair["by"],
     reasoning: Record<string, unknown>,
     shiftedId: string | null = null,
+    wide = false,
   ): Promise<boolean> => {
     if (gone.has(loadedA.id) || gone.has(loadedB.id)) return false;
     // Each side as it stands now: an earlier merge in this run may have given one of them a
@@ -1046,7 +1113,7 @@ export async function dedupeMetro(
     const b = sides.get(loadedB.id) ?? loadedB;
     // A source that prints its times wrong (startTimesShifted, D-146) never wins and never makes a conflict: its times say nothing.
     const isShifted = shiftedId !== null && (shiftedId === a.id || shiftedId === b.id);
-    if (!isShifted) {
+    if (!isShifted && !wide) {
       if (
         a.startsAt !== null &&
         b.startsAt !== null &&
@@ -1081,7 +1148,7 @@ export async function dedupeMetro(
       sides.set(survivor.id, { ...survivor, startsAt: merged.startsAt, times: merged.times });
     gone.add(merged.id);
     report.merged += 1;
-    if (by !== "score" && by !== "weekly") report.linked += 1;
+    if (by !== "score" && by !== "weekly" && by !== "wide") report.linked += 1;
     if (conflict) report.conflicting += 1;
     const info = titles.get(survivor.id);
     report.mergedPairs.push({
@@ -1396,6 +1463,38 @@ export async function dedupeMetro(
       }
     }
   }
+  // The wide pass (D-901): one night that two sources name with different venues or times.
+  const wideRows = await findWideCandidates(db, metro.id, nights);
+  const wideIds = [...new Set(wideRows.flatMap((c) => [c.a_id, c.b_id]))].filter(
+    (id) => !gone.has(id),
+  );
+  const wideSides = await loadSides(db, wideIds);
+  const wideDistinct = await distinctPairs(db, wideIds);
+  const wideModel = await modelMergePairs(db, wideIds);
+  for (const [id, title] of await titlesOf(db, wideIds)) if (!titles.has(id)) titles.set(id, title);
+  for (const [id, side] of wideSides) if (!sides.has(id)) sides.set(id, side);
+  for (const row of wideRows) {
+    if (gone.has(row.a_id) || gone.has(row.b_id)) continue;
+    const key = pairKey(row.a_id, row.b_id);
+    if (wideDistinct.has(key)) continue;
+    const a = sides.get(row.a_id);
+    const b = sides.get(row.b_id);
+    if (a === undefined || b === undefined) continue;
+    const verdict = widePairVerdict(a, b, row.same_source);
+    if (verdict === null) continue;
+    report.wide.pairs += 1;
+    if (wideModel.has(key)) {
+      if (await apply(a, b, 1, "model", { wide: true, verdict }, null, true))
+        report.wide.merged += 1;
+    } else if (verdict === "merge") {
+      if (await apply(a, b, 0.9, "wide", { wide: true }, null, true)) report.wide.merged += 1;
+    } else {
+      report.wide.queued += 1;
+      report.queued += 1;
+      await recordDecision(db, a.id, b.id, 0.5, "queued", JSON.stringify({ wide: true }));
+    }
+  }
+
   report.possible = Array.from(possibleSet).sort().slice(0, 25);
   report.sameSlot = Array.from(sameSlotSet).sort().slice(0, 25);
   // The report names merges by night, then title: the link pairs come back in whatever order the

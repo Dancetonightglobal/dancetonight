@@ -193,7 +193,7 @@ describeDb("dedupe review by model", () => {
     expect(decisions[0]?.decision).toBe("llm_merge");
     const reasoning = JSON.parse(decisions[0]?.reasoning || "{}");
     expect(reasoning.model).toBe("flash-lite");
-    expect(reasoning.prompt).toBe("dedupe-v2");
+    expect(reasoning.prompt).toBe("dedupe-v3");
     expect(reasoning.reason).toBe("lineup added");
   });
 
