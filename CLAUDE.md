@@ -53,12 +53,20 @@ pnpm eval:recall --metro nyc --date YYYY-MM-DD
 End-to-end, the recipe that runs green in a cloud container (Chromium is pre-installed; never run `playwright install`; confirm the folder with `ls /opt/pw-browsers`):
 
 ```
-pnpm build                                          # always rebuild first: a stale .next serves old code
-DANCETONIGHT_MODE=mock pnpm start -p 3112           # in the background
-E2E_BASE_URL=http://127.0.0.1:3112 \
-E2E_CHROMIUM_PATH=/opt/pw-browsers/chromium-1194/chrome-linux/chrome \
-pnpm exec playwright test
+E2E_CHROMIUM_PATH=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome \
+pnpm exec playwright test --trace off
 ```
+
+Leave `E2E_BASE_URL` unset, as CI does: Playwright then starts `pnpm dev` itself with `DANCETONIGHT_MOCK_NOW`
+pinned to 2pm New York (D-823). A server you start yourself with `pnpm start` does not apply that pin: between
+midnight and 6am ET the page reads "Last night" and about 23 specs fail (seen 2026-11-26). Stop any server
+already on port 3000 first, because `reuseExistingServer` would use it. The folder under `/opt/pw-browsers` changes
+with the image (`chromium-1243/chrome-linux64` on 2026-11-26).
+
+In a cloud session on the "dancetonight" environment, PostGIS, the `dancetonight_test` database and
+`node_modules` are ready from its setup script. The SessionStart hook in `.claude/settings.json` starts Postgres
+(cloud sessions only). `TEST_DATABASE_URL`, `DANCETONIGHT_MODE=mock` and `E2E_CHROMIUM_PATH` are set, so
+`pnpm check`, `pnpm build` and `pnpm exec playwright test --trace off` run with no further setup.
 
 The network proxy blocks map tile hosts, so the map specs stub them (`stubTiles` in `tests/e2e`). Keep stubbing; never skip a map test.
 

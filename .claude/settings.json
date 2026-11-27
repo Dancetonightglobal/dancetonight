@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ \"$CLAUDE_CODE_REMOTE\" = true ] && command -v pg_ctlcluster >/dev/null; then pg_ctlcluster 16 main start >/dev/null 2>&1; fi; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
