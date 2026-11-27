@@ -13,6 +13,7 @@ import { SearchPlace } from "./SearchPlace";
 import { UseMyLocation } from "./UseMyLocation";
 import type { RawParams, UnopenedDay } from "./params";
 import { CityButton, CityPicker } from "./CityPicker";
+import { RefreshStatus } from "./RefreshStatus";
 import type { CitySummary } from "@/src/data/repository";
 
 export interface HeaderProps {
@@ -41,6 +42,8 @@ export interface HeaderProps {
   currentSlug?: string | null;
   /** The city the site opens on, linked as "/". */
   openingSlug?: string | null;
+  /** A city read on demand (D-899): its slug, for the "Last updated" line; null for New York. */
+  refreshCity?: string | null;
 }
 
 /**
@@ -122,6 +125,9 @@ export function Header(props: HeaderProps) {
           <span>{formatCalendarDate(props.nightDate, props.locale)}</span>
         ) : null}
       </p>
+
+      {/* A city read on demand says when it was read, and starts a read when stale (D-899). */}
+      {props.refreshCity ? <RefreshStatus city={props.refreshCity} locale={props.locale} /> : null}
 
       {/* Never another night in silence: the link named one the page does not open (audit F16). */}
       {props.unopenedDay === null ? null : (

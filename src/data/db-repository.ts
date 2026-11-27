@@ -10,7 +10,7 @@
 // sharedStore, across isolates until anything next runs (D-578). Callers must not mutate
 // returned listings.
 
-import { and, asc, eq, inArray, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, sql } from "drizzle-orm";
 
 import {
   LISTED_STATUSES,
@@ -280,6 +280,38 @@ export class DbListingsRepository implements ListingsRepository {
       };
       return sharedStamp({ store: this.sharedStore, read });
     });
+  }
+
+  /**
+   * A city's read status for the on-demand refresh (D-899): when its last ingest finished well,
+   * and when the one running now started. Null when no metro has this slug.
+   */
+  async ingestStatus(
+    slug: string,
+  ): Promise<{ lastSuccessAt: Date | null; runningSince: Date | null } | null> {
+    const db = this.db();
+    const metro = await db
+      .select({ id: metros.id })
+      .from(metros)
+      .where(eq(metros.slug, slug))
+      .limit(1);
+    if (metro[0] === undefined) return null;
+    const rows = await db
+      .select({
+        status: jobRuns.status,
+        startedAt: jobRuns.startedAt,
+        finishedAt: jobRuns.finishedAt,
+      })
+      .from(jobRuns)
+      .where(and(eq(jobRuns.job, "ingest"), eq(jobRuns.metroId, metro[0].id)))
+      .orderBy(desc(jobRuns.startedAt))
+      .limit(20);
+    const success = rows.find((r) => r.status === "succeeded");
+    const running = rows.find((r) => r.status === "running");
+    return {
+      lastSuccessAt: success?.finishedAt ?? success?.startedAt ?? null,
+      runningSince: running?.startedAt ?? null,
+    };
   }
 
   /**

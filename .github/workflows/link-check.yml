@@ -26,7 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      METRO: ${{ inputs.metro }}
+      # The scheduled check reads New York only (D-899); a run by hand may name any city, or none for all.
+      METRO: ${{ github.event_name == 'schedule' && 'nyc' || inputs.metro }}
       DANCETONIGHT_MODE: production
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}

@@ -177,26 +177,11 @@ describe("triggerIngest", () => {
       /secret-token/,
     );
   });
-  it("dispatches london ingest at 07:27 UTC", async () => {
-    const mockFetch = vi.fn().mockResolvedValue({
-      ok: true,
-      status: 204,
-      text: () => Promise.resolve(""),
-    });
-    const date = new Date("2026-12-15T07:27:00Z");
-    const result = await triggerIngest(date, "some-token", mockFetch);
-    expect(result).toBe("dispatched the london ingest");
-    expect(mockFetch).toHaveBeenCalledTimes(1);
-    const [url, options] = mockFetch.mock.calls[0]!;
-    expect(url).toBe(INGEST_DISPATCH_URL);
-    expect(options.method).toBe("POST");
-    expect(options.headers.authorization).toBe("Bearer some-token");
-    const body = JSON.parse(options.body);
-    expect(body).toEqual({
-      ref: "main",
-      inputs: londonDispatchInputs(date),
-    });
-    expect(body.inputs.metro).toBe("london");
+  it("dispatches nothing at London's old 07:27 UTC slot: London is read on demand (D-899)", async () => {
+    const mockFetch = vi.fn();
+    const result = await triggerIngest(new Date("2026-12-15T07:27:00Z"), "some-token", mockFetch);
+    expect(result).toBe("not an ingest minute");
+    expect(mockFetch).not.toHaveBeenCalled();
   });
 });
 
@@ -374,47 +359,31 @@ describe("the daily metros (D-300)", () => {
     expect(result).toBe("not an ingest minute");
   });
 
-  it("triggerIngest at 2026-11-01T10:27:00Z dispatches exactly buenos-aires", async () => {
+  it.each([
+    ["2026-11-01T10:27:00Z", "buenos-aires"],
+    ["2026-11-01T15:57:00Z", "new-orleans"],
+    ["2026-11-01T06:27:00Z", "barcelona"],
+    ["2026-11-01T07:27:00Z", "london"],
+  ])("at %s the cron no longer reads %s: it is read on demand (D-899)", async (at) => {
     const fetchFn = ok();
-    const result = await triggerIngest(new Date("2026-11-01T10:27:00Z"), "some-token", fetchFn);
-    expect(metrosOf(fetchFn)).toEqual(["buenos-aires"]);
-    expect(result).toBe("dispatched the buenos-aires ingest");
+    const result = await triggerIngest(new Date(at), "some-token", fetchFn);
+    expect(metrosOf(fetchFn)).toEqual([]);
+    expect(result).toBe("not an ingest minute");
   });
 
-  it("triggerIngest at 2026-11-01T15:57:00Z dispatches exactly new-orleans", async () => {
-    const fetchFn = ok();
-    const result = await triggerIngest(new Date("2026-11-01T15:57:00Z"), "some-token", fetchFn);
-    expect(metrosOf(fetchFn)).toEqual(["new-orleans"]);
-    expect(result).toBe("dispatched the new-orleans ingest");
-  });
-
-  it("triggerIngest at 2026-11-01T06:27:00Z dispatches exactly barcelona", async () => {
-    const fetchFn = ok();
-    const result = await triggerIngest(new Date("2026-11-01T06:27:00Z"), "some-token", fetchFn);
-    expect(metrosOf(fetchFn)).toEqual(["barcelona"]);
-    expect(result).toBe("dispatched the barcelona ingest");
-  });
-
-  it("triggerIngest at 2026-11-01T07:27:00Z dispatches exactly london", async () => {
-    const fetchFn = ok();
-    const result = await triggerIngest(new Date("2026-11-01T07:27:00Z"), "some-token", fetchFn);
-    expect(metrosOf(fetchFn)).toEqual(["london"]);
-    expect(result).toBe("dispatched the london ingest");
-  });
-
-  it("one failed dispatch does not stop the others, and the error names it", async () => {
+  it("a failed dispatch throws, and the error names the city", async () => {
     const fetchFn = vi
       .fn()
       .mockResolvedValueOnce({ ok: false, status: 500, text: () => Promise.resolve("boom") });
     await expect(
-      triggerIngest(new Date("2026-12-15T10:27:00Z"), "secret-token", fetchFn),
-    ).rejects.toThrow(/ingest dispatch failed: 500 boom \(buenos-aires\)/);
-    expect(metrosOf(fetchFn)).toEqual(["buenos-aires"]);
+      triggerIngest(new Date("2026-12-15T14:27:00Z"), "secret-token", fetchFn),
+    ).rejects.toThrow(/ingest dispatch failed: 500 boom \(nyc\)/);
+    expect(metrosOf(fetchFn)).toEqual(["nyc"]);
   });
 
   it("no token: nothing is dispatched", async () => {
     const fetchFn = ok();
-    const result = await triggerIngest(new Date("2026-12-15T11:27:00Z"), undefined, fetchFn);
+    const result = await triggerIngest(new Date("2026-12-15T14:27:00Z"), undefined, fetchFn);
     expect(result).toBe("INGEST_DISPATCH_TOKEN is not set");
     expect(fetchFn).not.toHaveBeenCalled();
   });

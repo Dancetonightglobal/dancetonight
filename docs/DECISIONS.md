@@ -631,3 +631,5 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-895 A read-only cost report from cost_log and the AWS bill (maintenance)
 ## D-896 No nightly test run in the private repository (decided by the owner)
 ## D-897 An extraction scorecard on real pages (maintenance)
+## D-898 DeepSeek reads pages first again; Cloudflare is the fallback (decided by the owner)
+## D-899 Every city but New York is read only when someone opens it (decided by the owner)

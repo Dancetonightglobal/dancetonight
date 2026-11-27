@@ -9,6 +9,7 @@ import { cache } from "react";
 import { appNow } from "@/src/config/clock";
 import { env } from "@/src/config/env";
 import { getRepository } from "@/src/data";
+import { onDemandMetro } from "@/src/edge/ingest-trigger";
 import { resolveHomeQuery } from "@/src/ui/home/home-query";
 import { unplacedInReach } from "@/src/data/listing-mapper";
 import { formatTime } from "@/src/domain/time";
@@ -242,6 +243,7 @@ export default async function Home(props: PageProps<"/">) {
             cities={cities}
             currentSlug={place === null ? null : (metro?.slug ?? covered?.slug ?? null)}
             openingSlug={opening?.slug ?? null}
+            refreshCity={metro !== null && onDemandMetro(metro.slug) !== null ? metro.slug : null}
           />
 
           <DayPicker days={days} selected={query.nightDate} params={params} />

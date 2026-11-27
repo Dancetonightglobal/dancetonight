@@ -58,6 +58,24 @@ export const DAILY_METROS: readonly DailyMetro[] = [
 ];
 
 /**
+ * Whether the cron still reads London and the daily metros on their own schedule. False since
+ * D-899 (the owner, 2026-11-27): only New York is read on a schedule; every other city is read
+ * when someone opens it. Set true to go back to one read a day for every city.
+ */
+export const SCHEDULED_ALL_METROS = false;
+
+/** Every city read on demand (D-899): London and the daily metros, with their zones. */
+export const ON_DEMAND_METROS: readonly { slug: string; tz: string }[] = [
+  { slug: "london", tz: "Europe/London" },
+  ...DAILY_METROS.map(({ slug, tz }) => ({ slug, tz })),
+];
+
+/** The on-demand city with this slug, or null (New York and unknown slugs). */
+export function onDemandMetro(slug: string): { slug: string; tz: string } | null {
+  return ON_DEMAND_METROS.find((m) => m.slug === slug) ?? null;
+}
+
+/**
  * Read the New York wall clock of `when` and return the ingest slot if it matches 09:27 or 14:27.
  * Seconds are ignored (a cron fires within the minute).
  */
@@ -161,20 +179,24 @@ export async function triggerIngest(
     });
   }
 
-  if (isLondonMinute(when)) {
-    dispatches.push({
-      inputs: londonDispatchInputs(when),
-      label: "the london ingest",
-      metro: "london",
-    });
-  }
+  // London and the daily metros are read on demand only (D-899): when someone opens the city,
+  // src/edge/on-demand.ts starts its read. Their slots above stay as data (each city's zone).
+  if (SCHEDULED_ALL_METROS) {
+    if (isLondonMinute(when)) {
+      dispatches.push({
+        inputs: londonDispatchInputs(when),
+        label: "the london ingest",
+        metro: "london",
+      });
+    }
 
-  for (const { slug, tz } of dailyMetrosAt(when)) {
-    dispatches.push({
-      inputs: metroDispatchInputs(slug, tz, when),
-      label: `the ${slug} ingest`,
-      metro: slug,
-    });
+    for (const { slug, tz } of dailyMetrosAt(when)) {
+      dispatches.push({
+        inputs: metroDispatchInputs(slug, tz, when),
+        label: `the ${slug} ingest`,
+        metro: slug,
+      });
+    }
   }
 
   if (dispatches.length === 0) {

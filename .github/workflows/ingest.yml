@@ -1,5 +1,7 @@
 name: ingest
 
+# Since D-899 (2026-11-27) only New York is read on a schedule; every other city is read when someone opens
+# it on the site (app/api/refresh dispatches this workflow). The notes below on other cities' daily slots are history.
 # Runs twice a day for New York, a full read of every source each time, so the site is fresh by
 # 10am and 3pm New York time (the owner's instruction of 2026-10-05, D-089), and by hand from the
 # Actions tab (D-043 question 3). The morning run looks for new venue websites first, in the same

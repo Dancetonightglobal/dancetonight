@@ -45,6 +45,14 @@ export const en = {
         other: "{count} places to dance",
       },
       menu: "Menu",
+      // A city read on demand (D-899): what the line under the count says while its read runs.
+      refresh: {
+        updated: "Last updated {ago}",
+        updating: "Last updated {ago}; updating now",
+        updatingFirst: "Updating now",
+        ready: "Updated just now",
+        reload: "Show the new listings",
+      },
       city: {
         // Heard, never seen: the button's accessible name, the city then what tapping does.
         button: "{place}, change city",
