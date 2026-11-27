@@ -1,6 +1,6 @@
 // The on-demand read (D-899): a city page's script POSTs here when it opens, and again every
 // minute while that city's read runs. It answers what the page should say and, when the city's
-// listings are stale, starts its read. New York is read on its own schedule and is never started
+// city has not been read yet tonight (its own 6am-to-6am night), starts its read. New York is read on its own schedule and is never started
 // here. Every guard is in src/edge/on-demand.ts.
 
 import { z } from "zod";
@@ -50,7 +50,7 @@ export async function POST(request: Request): Promise<Response> {
   if (store === null) return answer({ state: "fresh", lastUpdated });
 
   const counters = await readCounters(store, metro.slug, now);
-  const decision = decideRefresh({ now, ...status, ...counters });
+  const decision = decideRefresh({ now, tz: metro.tz, ...status, ...counters });
 
   // A read this page started has finished: rebuild the city's snapshot once, so a reload shows it.
   if (

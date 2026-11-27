@@ -4,7 +4,6 @@ import { INGEST_DISPATCH_URL, ON_DEMAND_METROS, onDemandMetro } from "@/src/edge
 import {
   DISPATCH_GRACE_MS,
   ON_DEMAND_DAILY_CAP,
-  ON_DEMAND_STALE_MS,
   RUNNING_MAX_MS,
   dayKey,
   decideRefresh,
@@ -15,10 +14,14 @@ import {
 } from "@/src/edge/on-demand";
 import type { SnapshotStore } from "@/src/edge/snapshot-store";
 
+/** 4pm in Paris, Friday 27 November. */
 const NOW = new Date("2026-11-27T15:00:00Z");
+/** Last night in Paris (Thursday 8pm): a read of another night. */
+const LAST_NIGHT = new Date("2026-11-26T19:00:00Z");
 const ago = (ms: number) => new Date(NOW.getTime() - ms);
 const base = {
   now: NOW,
+  tz: "Europe/Paris",
   lastSuccessAt: null,
   runningSince: null,
   dispatchedAt: null,
@@ -50,12 +53,33 @@ describe("decideRefresh (D-899)", () => {
     expect(decideRefresh(base)).toBe("dispatch");
   });
 
-  it("starts a read when the last good read is older than the stale window", () => {
-    expect(decideRefresh({ ...base, lastSuccessAt: ago(ON_DEMAND_STALE_MS + 1) })).toBe("dispatch");
+  it("starts a read when the city has not been read yet tonight, by its own clock", () => {
+    expect(decideRefresh({ ...base, lastSuccessAt: LAST_NIGHT })).toBe("dispatch");
+    // 5:30am Paris belongs to last night (the night turns at 6am, src/domain/tonight.ts).
+    expect(decideRefresh({ ...base, lastSuccessAt: new Date("2026-11-27T04:30:00Z") })).toBe(
+      "dispatch",
+    );
   });
 
-  it("starts nothing when the last good read is recent", () => {
-    expect(decideRefresh({ ...base, lastSuccessAt: ago(ON_DEMAND_STALE_MS - 1) })).toBe("fresh");
+  it("starts nothing when the city was read tonight, even early this morning", () => {
+    // 7am Paris: tonight's night, nine hours ago.
+    expect(decideRefresh({ ...base, lastSuccessAt: new Date("2026-11-27T06:00:00Z") })).toBe(
+      "fresh",
+    );
+  });
+
+  it("judges tonight in the city's zone, not New York's", () => {
+    // A read at 4am New York (10am Paris): tonight in Paris; in New York it was last night by 7am.
+    const read = new Date("2026-11-27T09:00:00Z");
+    expect(decideRefresh({ ...base, lastSuccessAt: read })).toBe("fresh");
+    expect(
+      decideRefresh({
+        ...base,
+        tz: "America/New_York",
+        now: new Date("2026-11-27T12:00:00Z"),
+        lastSuccessAt: new Date("2026-11-27T09:00:00Z"),
+      }),
+    ).toBe("dispatch");
   });
 
   it("says updating while a read runs, stale or not", () => {
@@ -77,7 +101,7 @@ describe("decideRefresh (D-899)", () => {
     expect(
       decideRefresh({
         ...base,
-        lastSuccessAt: ago(ON_DEMAND_STALE_MS * 2),
+        lastSuccessAt: LAST_NIGHT,
         dispatchedAt: ago(DISPATCH_GRACE_MS - 1),
       }),
     ).toBe("updating");
@@ -97,7 +121,7 @@ describe("decideRefresh (D-899)", () => {
     expect(
       decideRefresh({
         ...base,
-        lastSuccessAt: ago(ON_DEMAND_STALE_MS * 2),
+        lastSuccessAt: LAST_NIGHT,
         dispatchedAt: ago(DISPATCH_GRACE_MS + 1),
       }),
     ).toBe("dispatch");

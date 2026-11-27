@@ -4,18 +4,19 @@
  * city's read, and tells the page what to say ("Last updated 9 hours ago; updating now").
  *
  * Guards, because the site is public and a read costs money (a full Paris read was $0.63):
- * - a read starts only when the last good one is older than ON_DEMAND_STALE_MS;
+ * - a read starts only when the city has had no good read yet tonight, by its own clock: the site's
+ *   night runs 6am to 6am local time (src/domain/tonight.ts), so the first open after 6am reads;
  * - never while one is running, or within DISPATCH_GRACE_MS of the last start (the run is queued
  *   on GitHub before it writes its job_runs row);
  * - at most ON_DEMAND_DAILY_CAP starts a day across every city;
  * - only from a POST the page's script sends, so a crawler reading the HTML starts nothing.
  */
 
+import { currentNightDate } from "@/src/domain/tonight";
+
 import { INGEST_DISPATCH_URL, metroDispatchInputs } from "./ingest-trigger";
 import type { SnapshotStore } from "./snapshot-store";
 
-/** A city's listings are fresh enough for this long after its last good read. */
-export const ON_DEMAND_STALE_MS = 6 * 60 * 60 * 1000;
 /** After a start, the read counts as under way this long even before it shows in job_runs. */
 export const DISPATCH_GRACE_MS = 20 * 60 * 1000;
 /** A job_runs row still "running" after this is a crashed run, not a live one. */
@@ -23,11 +24,13 @@ export const RUNNING_MAX_MS = 150 * 60 * 1000;
 /** At most this many on-demand starts a day (UTC), all cities together. */
 export const ON_DEMAND_DAILY_CAP = 12;
 
-/** What the page shows. "fresh": the last read is recent. "capped": a read was due, but the day's cap is used. */
+/** What the page shows. "fresh": the city was read tonight. "capped": a read was due, but the day's cap is used. */
 export type RefreshState = "updating" | "fresh" | "capped";
 
 export interface RefreshInput {
   now: Date;
+  /** The city's IANA zone: "tonight" is its night, not ours. */
+  tz: string;
   lastSuccessAt: Date | null;
   runningSince: Date | null;
   /** When this city's last on-demand start was sent, from KV. */
@@ -52,7 +55,12 @@ export function decideRefresh(input: RefreshInput): RefreshState | "dispatch" {
   ) {
     return "updating";
   }
-  if (lastSuccess !== null && now - lastSuccess < ON_DEMAND_STALE_MS) return "fresh";
+  if (
+    input.lastSuccessAt !== null &&
+    currentNightDate(input.lastSuccessAt, input.tz) === currentNightDate(input.now, input.tz)
+  ) {
+    return "fresh";
+  }
   if (input.startsToday >= ON_DEMAND_DAILY_CAP) return "capped";
   return "dispatch";
 }
