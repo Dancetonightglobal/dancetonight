@@ -248,6 +248,16 @@ export function widePairVerdict(a: DedupeSide, b: DedupeSide, sameSource: boolea
       ? Math.abs(a.startsAt.getTime() - b.startsAt.getTime()) / 60_000
       : null;
   if (gap !== null && gap > WIDE_START_MINUTES) return null;
+  // A studio runs one class title at several times (D-157): NYC Swings' "Lindy Hop – Swing Dance Classes"
+  // is Lindy 200 at 7pm and Lindy 100 and 150 at 8pm (2026-12-01). Two classes pair only at one start.
+  if (
+    a.listingType === "class" &&
+    b.listingType === "class" &&
+    gap !== null &&
+    gap > ONE_START_MINUTES
+  ) {
+    return null;
+  }
 
   // A source's list page shared by two rows is not one event: sharedEventPage counts event pages only.
   const link = sharedEventPage(a, b);

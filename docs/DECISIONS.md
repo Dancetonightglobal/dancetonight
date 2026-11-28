@@ -636,3 +636,4 @@ Headings only: the full decision log is kept in the private development reposito
 ## D-900 An on-demand city is read once a night, not every 6 hours (decided by the owner)
 ## D-901 The wide pass: one night two sites list with different venue names or times (decided by the owner)
 ## D-902 The wide pass settles its queue in the same read; one title in two spellings (amends D-901)
+## D-903 Two classes pair in the wide pass only at one start (amends D-901)

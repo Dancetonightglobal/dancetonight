@@ -201,6 +201,16 @@ describe("widePairVerdict leaves these alone (D-901)", () => {
     expect(widePairVerdict(early, late, false)).toBeNull();
   });
 
+  it("one class title at two times is two classes (NYC Swings Lindy 200 at 7pm, Lindy 100 at 8pm, D-903)", () => {
+    const title = "Lindy Hop – Swing Dance Classes with Gaby Cook & AJ Howard";
+    const seven = side(title, "2026-12-02T00:00:00Z", BIG_APPLE, { listingType: "class" });
+    const eight = side(title, "2026-12-02T01:00:00Z", BIG_APPLE, { listingType: "class" });
+    expect(widePairVerdict(seven, eight, false)).toBeNull();
+    // At one start, two sites' copies of one class still pair.
+    const again = side(title, "2026-12-02T01:00:00Z", MEADOWS, { listingType: "class" });
+    expect(widePairVerdict(eight, again, false)).not.toBeNull();
+  });
+
   it("titles that are not alike", () => {
     const a = side("Loco Carnaval", "2026-11-28T04:00:00Z", MEADOWS);
     const b = side("Michael Simpson", "2026-11-28T04:00:00Z", MEADOWS);
