@@ -39,6 +39,19 @@ export const emptyDedupeReviewReport = (): DedupeReviewReport => ({
   stoppedForTime: false,
 });
 
+/** Two reviews of one run added together (D-901: a second review settles the wide pass's queue). */
+export function addReviewReports(a: DedupeReviewReport, b: DedupeReviewReport): DedupeReviewReport {
+  return {
+    asked: a.asked + b.asked,
+    merged: a.merged + b.merged,
+    distinct: a.distinct + b.distinct,
+    unsure: a.unsure + b.unsure,
+    failed: a.failed + b.failed,
+    lines: [...a.lines, ...b.lines],
+    stoppedForTime: a.stoppedForTime || b.stoppedForTime,
+  };
+}
+
 function formatTime(date: Date | null, tz: string): string | undefined {
   if (!date) return undefined;
   const formatter = new Intl.DateTimeFormat("en-CA", {

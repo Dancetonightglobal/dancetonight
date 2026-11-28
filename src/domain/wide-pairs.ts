@@ -72,8 +72,7 @@ export const WIDE_GENERIC_WORDS: readonly string[] = [
   "rnb",
   "garage",
   "rooftop",
-  "brunch",
-  "bottomless",
+
   "session",
   "sessions",
   "vibes",
@@ -158,6 +157,66 @@ function twoPagesOneSeller(a: DedupeSide, b: DedupeSide): boolean {
   }
 }
 
+const DANCE_WORDS = new Set([
+  "salsa",
+  "bachata",
+  "kizomba",
+  "zouk",
+  "tango",
+  "milonga",
+  "practica",
+  "swing",
+  "lindy",
+  "blues",
+  "balboa",
+  "shag",
+  "ballroom",
+  "hustle",
+  "wcs",
+  "contra",
+  "country",
+  "line",
+  "folk",
+  "ceilidh",
+  "reggaeton",
+  "afrobeats",
+  "amapiano",
+  "techno",
+  "house",
+  "disco",
+  "kpop",
+  "forro",
+  "samba",
+  "cumbia",
+  "merengue",
+  "timba",
+  "rueda",
+  "semba",
+  "kuduro",
+  "dancehall",
+  "soca",
+  "bhangra",
+  "ecstatic",
+]);
+
+function danceWords(title: string): Set<string> {
+  return new Set(coreTitleWords(title).filter((w) => DANCE_WORDS.has(w)));
+}
+
+/** Both titles have the same set of telling words, enough of them to name one night. */
+export function sameTellingWords(a: string, b: string): boolean {
+  // "Kizomba Night with DJ Alexandre" and "Salsa Night with DJ Alexandre" are two nights: the dances must match too.
+  const da = danceWords(a);
+  const db = danceWords(b);
+  if (da.size !== db.size || [...da].some((w) => !db.has(w))) return false;
+  const wa = new Set(tellingWords(a));
+  const wb = new Set(tellingWords(b));
+  // Two words at least: one shared place name ("Wimbledon") is not one night (D-869's two house numbers).
+  if (wa.size < 2 || wa.size !== wb.size) return false;
+  for (const w of wa) if (!wb.has(w)) return false;
+  return [...wa].join("").length >= RULE_TELLING_CHARS;
+}
+
 /** Three quarters of the shorter title's telling words are in the other's. */
 function mostWordsShared(a: string, b: string): boolean {
   const [short, long] = a.length <= b.length ? [a, b] : [b, a];
@@ -193,7 +252,10 @@ export function widePairVerdict(a: DedupeSide, b: DedupeSide, sameSource: boolea
   // A source's list page shared by two rows is not one event: sharedEventPage counts event pages only.
   const link = sharedEventPage(a, b);
   const keyA = coreTitleKey(a.title);
-  const exact = keyA !== "" && keyA === coreTitleKey(b.title);
+  // One title, or the same telling words in any spelling around them ("Candy w/ Special Guest Ana Julieta" on
+  // DICE, "Candy with Special Guest Ana Julieta" on RA, London 2026-11-28).
+  const exact =
+    (keyA !== "" && keyA === coreTitleKey(b.title)) || sameTellingWords(a.title, b.title);
   const contained = !exact && coreTitlePrefix(a.title, b.title);
   // One link with two unalike titles is a page that lists several nights, not one; with one event page,
   // titles that share most telling words are one night ("Mutate: LUCIID w/ Callush 360º Stage" / "... 360°").

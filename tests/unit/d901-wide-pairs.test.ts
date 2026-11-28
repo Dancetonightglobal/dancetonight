@@ -4,7 +4,12 @@
 import { describe, expect, it } from "vitest";
 
 import type { DedupeSide } from "@/src/domain/dedupe";
-import { tellingWords, venueNamesShare, widePairVerdict } from "@/src/domain/wide-pairs";
+import {
+  sameTellingWords,
+  tellingWords,
+  venueNamesShare,
+  widePairVerdict,
+} from "@/src/domain/wide-pairs";
 
 let n = 0;
 function side(
@@ -81,6 +86,29 @@ describe("widePairVerdict merges by rule (D-901)", () => {
       ticketUrl: url,
     });
     expect(widePairVerdict(a, b, true)).toBe("merge");
+  });
+});
+
+describe("one title in two spellings (D-901, London 2026-11-28)", () => {
+  it("'w/' and 'with' around the same telling words is one title (Candy at Fire, DICE / RA)", () => {
+    expect(
+      sameTellingWords(
+        "Candy w/ Special Guest Ana Julieta",
+        "Candy with Special Guest Ana Julieta",
+      ),
+    ).toBe(true);
+    const a = side("Candy w/ Special Guest Ana Julieta", "2026-11-29T23:45:00Z", FIRE_A);
+    const b = side("Candy with Special Guest Ana Julieta", null, FIRE_B);
+    expect(widePairVerdict(a, b, false)).toBe("merge");
+  });
+
+  it("the same DJ's nights of two dances are two titles", () => {
+    expect(
+      sameTellingWords("Kizomba Night with DJ Alexandre", "Salsa Night with DJ Alexandre"),
+    ).toBe(false);
+    const a = side("Kizomba Night with DJ Alexandre", "2026-11-29T01:00:00Z", MEADOWS);
+    const b = side("Salsa Night with DJ Alexandre", "2026-11-29T01:00:00Z", MEADOWS);
+    expect(widePairVerdict(a, b, false)).toBeNull();
   });
 });
 

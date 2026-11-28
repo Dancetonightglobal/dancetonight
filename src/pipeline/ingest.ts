@@ -138,6 +138,7 @@ import {
 import {
   reviewQueuedPairs,
   DEDUPE_REVIEW_DUE_RUN_MS,
+  addReviewReports,
   formatDedupeReview,
   emptyDedupeReviewReport,
   type DedupeReviewReport,
@@ -1952,6 +1953,25 @@ export async function runIngest(options: IngestOptions): Promise<IngestReport> {
     });
   }
   report.dedupe = await dedupeMetro(db, metro, nights);
+  // The wide pass's queued pairs (D-901) are settled in this run, not the city's next one: a city read
+  // only when someone opens it (D-899) could otherwise show them for days. Review, then merge its "same".
+  if (options.ai?.summarize && report.dedupe.wide.queued > 0) {
+    const again = await reviewQueuedPairs(db, {
+      metro,
+      nights,
+      client: options.ai.client,
+      maxMs: full ? undefined : DEDUPE_REVIEW_DUE_RUN_MS,
+      clock: wallClock,
+    });
+    report.dedupeReview = addReviewReports(report.dedupeReview, again);
+    if (again.merged > 0) {
+      const second = await dedupeMetro(db, metro, nights);
+      report.dedupe.merged += second.merged;
+      report.dedupe.conflicting += second.conflicting;
+      report.dedupe.mergedPairs.push(...second.mergedPairs);
+      report.dedupe.wide.merged += second.wide.merged;
+    }
+  }
   // Summaries of what is listed now, after merges (D-109): tonight to the window's end.
   if (options.ai?.summarize) {
     report.summaries = await summarizeListings(db, {
